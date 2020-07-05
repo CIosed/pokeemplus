@@ -1,0 +1,561 @@
+----- ----- ----- ----- ----- ----
+ ### POKÉMON EMERALD+ CREDITS ###
+----- ----- ----- ----- ----- ----
+- Tainted -
+/ Edits/Custom Pokémon sprites
+#Bulbasaur (2nd frame)
+#Ivysaur (2nd frame)
+#Venusaur (2nd frame)
+#Squirtle (2nd frame)
+#Wartortle (2nd frame)
+#Blastoise (2nd frame)
+#Caterpie (2nd frame)
+#Metapod (2nd frame)
+#Butterfree (2nd frame)
+#Weedle (2nd frame)
+#Kakuna (2nd frame)
+#Beedrill (2nd frame)
+#Pidgey (2nd frame)
+#Pidgeotto (2nd frame and back)
+#Pidgeot (2n frame and back)
+#Rattata (2nd frame)
+#Raticate (2nd frame)
+#Spearow (2nd frame and back)
+#Fearow (2nd frame)
+#Arbok (2nd frame)
+#Raichu (2nd frame)
+#Sandshrew (2nd frame and back)
+#Sandslash (2nd frame)
+#NidoranF (2nd frame)
+#Nidorina (2nd frame)
+#Nidoqueen (2nd frame and back)
+#NidoranM (2nd frame)
+#Nidorino (2nd frame)
+#Nidoking (2nd frame and back)
+#Clefable (2nd frame)
+#Vulpix (2nd frame)
+#Ninetales (2nd frame)
+#Jigglypuff (2nd frame and back)
+#Wigglytuff (2nd frame)
+#Zubat (2nd frame)
+#Golbat (2nd frame and back)
+#Oddish (2nd frame)
+#Gloom (2nd frame)
+#Vileplume (2nd frame) //test from here
+#Parasect (2nd frame)
+#Venonat (2nd frame)
+#Venomoth (2nd frame)
+#Dugtrio (2nd frame and back)
+#Mewoth (backsprite)
+#Persian (2nd frame)
+#Psyduck (backsprite)
+#Mankey (2nd frame)
+#Primape (2nd frame and back)
+#Poliwag (2nd frame)
+#Poliwhirl (2nd frame)
+#Poliwrath (2nd frame)
+#Kadabra (2nd frame)
+#Alakazam (2nd frame)
+#Machop (2nd frame and back)
+#Machoke (2nd frame)
+#Machamp (2nd frame and back)
+#Bellsprout (2nd frame and back)
+#Weepinbell (both frames and back)
+#Victreebel (both frames and back)
+#Tentacool (2nd frame and back)
+#Tentacruel (2nd frame and back)
+#Geodude (2nd frame)
+#Graveler (2nd frame)
+#Golem (2nd frame)
+#Ponyta (2nd frame)
+#Rapidash (2nd frame)
+#Slowpoke (2nd frame and back)
+#Slowbro (both frames and back)
+#Magnemite (2nd frame)
+#Farfetch'd (2nd frame)
+#Doduo (2nd frame)
+#Dorio (2nd frame)
+#Seel (both frames and back)
+#Dewgong (both frames and back)
+#Muk (2nd frame)
+#Shellder (2nd frame and back)
+#Cloyster (2nd frame)
+#Gastly (both frames)
+#Haunter (2nd frame)
+#Gengar (2nd frame)
+#Onix (both frames and back)
+#Drowzee (both frames)
+#Hypno (2nd frame and back)
+#Krabby (2nd frame and back)
+#Kingler (2nd frame)
+#Exeggcute (2nd frame)
+#Exeggutor (2nd frame)
+#Cubone (2nd frame)
+#Marowak (both frames)
+#Hitmonlee (2nd frame and back)
+#Lickitung (2nd frame)
+#Grimer (2nd frame)
+#Muk (2nd frame)
+#Koffing (2nd frame)
+#Weezing (2nd frame and back)
+#Rhyhorn (2nd frame)
+#Rhydon (2nd frame)
+#Chansey (2nd frame)
+#Kangaskhan (2nd frame)
+#Horsea (2nd frame)
+#Seadra (2nd frame)
+#Staryu (2nd frame)
+#Starmie (2nd frame)
+#Mr. Mime (2nd frame and back)
+#Scyther (2nd frame)
+#Jynx (2nd frame)
+#Electabuzz (2nd frame and back)
+#Magmar (2nd frame)
+#Pinsir (2nd frame)
+#Tauros (2nd frame)
+#Gyarados (2nd frame)
+#Lapras (2nd frame)
+#Eevee (2nd frame)
+#Jolteon (2nd frame)
+#Flareon (2nd frame)
+#Omanyte (2nd frame)
+#Kabuto (2nd frame)
+#Kabutops (2nd frame)
+#Aerodactyl (2nd frame)
+#Snorlax (2nd frame)
+#Articuno (2nd frame)
+#Zapdos (2nd frame)
+#Moltres (2nd frame)
+#Dragonair (2nd frame)
+#Dragonite (2nd frame)
+#Mew (2nd frame)
+
+
+
+
+#Chikorita (both frames and back)
+#Bayleef (both frames and back)
+#Meganium (both frames and back)
+#Cyndaquil (both frames and back)
+#Quilava (both frames and back)
+#Typhlosion (both frames and back)
+#Totodile (backsprite)
+#Croconaw (both frames and back)
+#Feraligatr (both frames and back)
+#Sentret (both frames and back)
+#Furret (backsprite
+#Hoothoot (both frames and back)
+#Noctowl (both frames and back)
+#Ledyba (both frames and back)
+#Ledian (both frames and back)
+#Spinarak (both frames and back)
+#Ariados (both frames and back)
+#Crobat (both frames and back)
+#Chinchou (both frames and back)
+#Lanturn (both frames and back)
+#Pichu (backsprite)
+#Cleffa (backsprite)
+#Togetic (backsprite)
+#Natu (both frames and back)
+#Xatu (both frames and back)
+#Mareep (both frames and back)
+#Flaffy (both frames and back)
+#Ampharos (both frames and backsprite)
+#Bellossom (backsprite)
+#Marill (backsprite)
+#Azumarill (backsprite)
+#Politoad (both frames and back)
+#Hoppip (backsprite)
+#Skiploom (backsprite)
+#Jumpluff (backsprite)
+#Aipom (backsprite)
+#Sunflora (backsprite)
+#Quagsire (both frames and back)
+#Espeon (both frames and back)
+#Slowking (both frames and back)
+#Girafarig (both frames and back)
+#Pineco (both frames and back)
+#Foretress (both frames and back)
+#Dunsparce (backsprite)
+#Gligar (both frames and back)
+#Steelix (both frames and back)
+#Snubull (both frames)
+#Granbull (both frames and back)
+#Scizor (both frames and back)
+#Shuckle (both frames and back)
+#Heracross (both frames and back)
+#Sneasel (backsprite)
+#Teddiursa (both frames and back)
+#Ursaring (both frames and back)
+#Slugma (backsprite)
+#Swinub (backsprite)
+#Piloswine (both frames and back)
+#Remoraid (backsprite)
+#Octillery (backsprite)
+#Mantine (both frames and back)
+#Skarmory (both frames and back)
+#Houndour (both frames and back)
+#Houndoom (both frames and back)
+#Kingdra (both frames and back)
+#Phanpy (backsprite)
+#Donphan (both frames and back)
+#Porygon2 (both frames and back)
+#Stantler (both frames and back)
+#Smeragle (backsprite)
+#Hitmontop (both frames and back)
+#Elekid (backsprite)
+#Magby (both frames and back)
+#Miltank (backsprite)
+#Blissey (backsprite)
+#Larvitar (backsprite)
+#Pupitar (backsprite)
+#Tyranitar (backsprite)
+
+#Treecko (backsprite)
+#Sceptile (both frames)
+#Torchic (both frames and back)
+#Mudkip (back)
+#Swampert (both frames and back)
+#Zigzagoon (ripped from RS Pinball, extended legs etc, 2nd frame)
+#Lombre (both frames and back)
+#Ludicolo (both frames and back)
+#Seedot (both frames and back)
+#Shiftry (both frames and back)
+#Nincada (both frames and back)
+#Ninjask (both frames and back)
+#Baltoy (both frames and back)
+#Claydoll (both frames and back)
+#Nosepass (both frames and back)
+#Feebas (backsprite)
+#Snorut (backsprite
+#Duskull (ripped from RS Pinball, 2nd frame and back)
+#Huntail (both frames and back
+#Gorebyss (both frames nad back)
+#Exploud (both frames and back)
+#Sharpedo (both frames)
+#Aggron (both frames and back)
+#Bagon (both frames and back)
+#Shelgon (both frames and back)
+#Salamence (both frames and back)
+
+/ Edits/Custom Trainer sprites
+#Wally
+
+/ Custom Moves   (some are from scratch, some are edits)
+#Dragon Pulse    (gfx & code)
+#Shadow Claw     (gfx & code)
+#Hammer Arm      (gfx & code)
+#Feint           (gfx)
+#Close Combat    (gfx edit)
+#Aura Sphere     (code)
+#Dark Pulse      (gfx & code)
+#Power Gem       (gfx & code)
+#Focus Blast     (gfx & code)
+#Earth Power     (code)
+#Thunder Fang    (gfx & code)
+#Ice Fang        (gfx & code)
+#Fire Fang       (gfx & code)
+#Psycho Cut      (code)
+#Zen Headbutt    (code)
+#Water Gun       (code)
+#Flash Cannon    (code)
+#Draco Meteor    (code)         #doesn't work in doubles
+
+
+
+# U-Turn (CHECK BATON-PASS)
+
+/ Edits/Custom OWs (Some of the fronts I have made is inspired by or used/edited from Starsparkless. So big credit to him/her. Their OW frames are listed further down in a link)
+#Tree Disguise
+#Mountain Disguise
+#Shrinked S.S Anne
+#Hoenn Beauty
+#Hoenn Birdkeeper
+#Hoenn Blackbelt
+#Hoenn Boy 1
+#Hoenn Boy 2
+#Hoenn Boy 3
+#Hoenn Breeder (F and M) (Bliz made the majority of it)
+#Hoenn Bug Catcher
+#Hoenn Cameraman
+#Hoenn Camper
+#Hoenn Contest Judge
+#Hoenn Cook
+#Hoenn Cycling Triathlete (F and M)
+#Hoenn Devon Employee
+#Hoenn Expert (F and M)
+#Hoenn Fat Man
+#Hoenn Fisherman
+#Hoenn Girl 1
+#Hoenn Girl 2
+#Hoenn Hex Maniac)
+#Hoenn Hiker
+#Hoenn Lass
+#Hoenn Little Boy
+#Hoenn Little Girl
+#Hoenn Man 1
+#Hoenn Man 4
+#Hoenn Guitarist
+#Hoenn Cooltrainer (F and M)
+#Hoenn Maniac
+#Hoenn Mauville Old Man
+#Hoenn Mom
+#Hoenn Mr. Briney
+#Hoenn Nurse
+#Hoenn Old Man
+#Hoenn Picknicker
+#Hoenn Pokemaniac (Spherical Ice's Maniac costume as base)
+#Hoenn Pokefan (F and M)
+#Hoenn Prof. Birch
+#Hoenn Psychic
+#Hoenn Ranger (F and M)
+#Hoenn Reporter (F and M)
+#Hoenn Running Trathlete (F and M)
+#Hoenn Sailor
+#Hoenn Scott
+#Hoenn Steven (Help from Bliz)
+#Hoenn Teala
+#Hoenn Tuber F
+#Hoenn Tuber M Swimming
+#Hoenn Wallace
+#Hoenn Wally (Help from Bliz)
+#Hoenn Woman 1
+#Hoenn Woman 2
+#Hoenn Woman 3
+#Hoenn Woman 4
+#Hoenn Youngster
+#Agatha
+#Bruno
+#Drake
+#Glacia
+#Phoebe
+#Sidney
+#Anabel
+#Brandon (Also by Mvit, made the first frame)
+#Greta
+#Lucy
+#Noland
+#Spenser
+#Tucker
+#Blaine (Walkframes)
+#Brawly (Help from Bliz)
+#Brock
+#Erika
+#Flannery
+#Juan
+#Koga
+#Liza
+#Lt. Surge
+#Misty (Walkframes
+#Norman
+#Roxanne
+#Sabrina
+#Tate
+#Wattson
+#Winona
+#Aqua Members
+#Magma Members
+#Library Members
+#Brendan (Help from Farore, made an overhaul)
+#May (Help from Farore, made an overhaul)
+
+#Groudon
+#Kyogre
+#Rayquaza
+#Snorlax (Breathing frame)
+
+/ Custom tiles
+#Littleroot/Oldale houses
+#Lilycove Motel
+#Mauville houses
+#Mossdeep houses
+#Dewford houses
+#Fallarbor houses
+#Slateport houses
+#Granite Cave Tablets (base tablet tiles Spherical Ice)
+#Saffron Rail Station
+#Rustoboro Houses (Doors from Mvit, animations by Tainted.)
+#Pokémon Center and Mart (Maddalenas custom Pokémon Center used as reference/base.)
+#S.S Anne Blue mats
+#Prof. Birch's lab machine edit
+#Aqua Hideout edits
+#Devon Corp edits
+
+/ Custom GFX
+#Bag interface edit
+#Battle HP boxes
+#Battle textbox
+#Overworld Textbox (Farore did the colors)
+#Rusturf Battle Bg
+#Route 113 Battle Bg
+#Mt. Chimney(s) Battle Bg
+#Meteor Falls Battle Bg
+#Jagged Pass Battle Bg
+#Mirage Tower Battle Bg
+#Mt. Pyre Battle Bg
+#Ice cave Battle Bg
+#Sky Pillar Battle Bg
+#Lab Battle Bg (Tiled floor. Platform by Gamefreak.)
+
+/ Edits/Custom Maps
+
+/ Writing Custom Scripts
+
+/ Configuring new anims to certain mons
+
+- Farore -
+/ Feedback
+/ Art related help
+/ Custom tiles
+#Devon Corp
+#Lilycove Museum
+#Weather Institute
+#Palm Trees
+#Mossdeep big trees
+#Secret base trees
+#Fallarbor trees
+#Lavaridge Houses (edit by lawless then edits by me)
+#Big and small trees found throughout Hoenn
+/ Custom OWs
+#Redid my old Brendan/May OWs
+
+- Bliz/Mystelex/Daman -
+/ Feedback
+/ Helping me out in general
+/ Helping me with OW sprites
+/ Implement new door animations
+/ Implement new tile animations
+/ Custom Tiles
+#Pacifidlog houses
+
+- Tetrable -
+/ Feedback
+/ Helping me with Decomp related stuff
+/ Helping me with GitHub related stuff
+
+- DizzyEgg -
+/ Em Battle Engine Upgrade
+# https://www.pokecommunity.com/showthread.php?t=417820
+/BWRepelSystem
+# https://www.pokecommunity.com/showthread.php?p=9986048#post9986048
+/Nature-affected stats colouring
+# https://www.pokecommunity.com/showthread.php?p=10024409#post10024409
+/Item-Expansion
+# https://www.pokecommunity.com/showthread.php?t=421090
+/ Helping me with Decomp related stuff
+/ Helping me with GitHub related stuff
+/ Helping me with scripting related stuff
+
+- Syreldar & Doesnt -
+/ Implementing fully controllable AI parties.
+
+- Eiko -
+/ Custom Pokémon sprites
+#Paras (2nd frame)
+#Clefairy (2nd frame)
+#Diglett (2nd frame)
+
+- Mvit -
+/ Helping me with Decomp related stuff
+/ Feedback
+/ Custom Tiles
+#Mossdeep Space Center
+#Pacifidlog houses
+#Pacifidlog floating bases
+#Mirage Tower tiles (inside)
+
+- Spherical Ice -
+/ Tiles from Gaia
+/ Custom OWs
+#Biker (Dismounted)
+#Kanto Bird Keeper
+#Expert (Male)
+#Expert (Female)
+#Kindler
+#Ruin Maniac
+
+- Slawter -
+/ Dynamic OW Palette System
+# https://www.pokecommunity.com/showthread.php?t=421384
+/ Expanding # of OWs
+# https://www.pokecommunity.com/showthread.php?t=421413
+/ Tutorial to insert new OWs
+# https://github.com/pret/pokeemerald/wiki/Adding-new-overworlds#3-adding-a-new-palette
+
+- Avara -
+/ Her various scripting tutorials
+/ Helping me regarding battle bgs
+
+- The Acanthite Team -
+/ Their useful Tileset
+
+- Avatar -
+/ Custom Tiles
+#Abandoned Ship Deck tiles
+/ Custom OWs
+#Rich Boy
+#Psychic (Male)
+#Rich Boy
+#Cue Ball (Dismounted)
+
+- Kimonas - 
+/Custom OWs
+#School Kid Male
+#Dragon Tamer
+
+- ghoulslash -
+/Sidewaystairs
+# https://www.pokecommunity.com/showthread.php?p=10166640#post10166640
+
+#Luna
+/ Custom Tiles
+#Mr. Briney's cottage
+#Pretty Petal Shop
+
+- Kalarie -
+/Custom Kanto OWs
+#Aroma Lady
+#Burglar
+#Crush Girl
+#Engineer
+#Juggler
+#Lady
+#Pokemon Breeder
+#Psychic (Female)
+#Rocker (slight edit by Tainted)
+#Tamer
+#Young Couple
+
+- Brolunite -
+/Custom Pokémon Sprites
+# Porygon (2nd frame)
+
+- ChaosRush -
+/Custom Pokémon Sprites
+# Grimer (2nd frame)
+
+- Aveontrainer -
+/Custom OWs
+#Lass
+
+- Dyskinesia - (I don't recall how it was typed.)
+/Custom OWs
+# Hoenn Tuber M
+
+- Starsparkless -
+/Their useful OW sheet
+https://orig08.deviantart.net/6578/f/2012/215/6/1/pokemon_all_generations_overworld_by_starsparkless-d59otmo.png
+
+- MSPaint -
+/Every sprite I've done has been made with this masterpiece
+
+
+
+
+
+
+
+
+
+
+#If you have contributed/see your or someone else's work used, but aren't credited, contact me @Tainted#3886 /discord. Or on Pokecommunity.
