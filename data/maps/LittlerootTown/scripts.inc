@@ -33,6 +33,7 @@ LittlerootTown_MapScripts:: @ 81E7DCB
 	@ 3: Met Rival
 	@ 4: Received Pokedex
 
+
 LittlerootTown_OnTransition: @ 81E7DDB
 	setflag FLAG_VISITED_LITTLEROOT_TOWN
 	call Common_EventScript_SetupRivalGfxId
