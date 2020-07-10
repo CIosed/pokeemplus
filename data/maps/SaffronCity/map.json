@@ -1,0 +1,162 @@
+{
+  "id": "MAP_SAFFRON_CITY",
+  "name": "SaffronCity",
+  "layout": "LAYOUT_SAFFRON_CITY",
+  "music": "MUS_RG_NIBI",
+  "region_map_section": "MAPSEC_SAFFRON_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "right",
+      "offset": 10,
+      "map": "MAP_ROUTE8"
+    },
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_ROUTE5"
+    },
+    {
+      "direction": "left",
+      "offset": 0,
+      "map": "MAP_ROUTE7"
+    },
+    {
+      "direction": "down",
+      "offset": 12,
+      "map": "MAP_ROUTE6"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 24,
+      "y": 0,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_NORTH_GATE",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 25,
+      "y": 0,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_NORTH_GATE",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 0,
+      "y": 20,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_WEST_GATE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 47,
+      "y": 20,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_EAST_GATE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 25,
+      "y": 39,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_SOUTH_GATE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 24,
+      "y": 39,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_SOUTH_GATE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 9,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_HOUSE1_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 17,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_HOUSE2",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 37,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_HOUSE3",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 33,
+      "y": 31,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_HOUSE4",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 30,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_POKEMON_MART",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 14,
+      "y": 31,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_POKEMON_CENTER",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 30,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_DOJO",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 36,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_GYM",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 23,
+      "y": 23,
+      "elevation": 3,
+      "dest_map": "MAP_SLIPH_CO_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 16,
+      "y": 7,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_TRAIN_STATION_ENTRANCE",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ],
+  "allow_bike": "",
+  "allow_escape_rope": ""
+}

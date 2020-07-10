@@ -1,0 +1,66 @@
+{
+    "allow_bike": false,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_SLIPH_CO_7F",
+    "layout": "LAYOUT_SLIPH_CO_7F",
+    "map_type": "MAP_TYPE_INDOOR",
+    "music": "MUS_RG_NIBI",
+    "name": "SliphCo_7F",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_SILPH_CO",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_SLIPH_CO_6F",
+            "dest_warp_id": 1,
+            "elevation": 3,
+            "x": 19,
+            "y": 2
+        },
+        {
+            "dest_map": "MAP_SLIPH_CO_8F",
+            "dest_warp_id": 0,
+            "elevation": 3,
+            "x": 27,
+            "y": 2
+        },
+        {
+            "dest_map": "MAP_SLIPH_CO_ELEVATOR",
+            "dest_warp_id": 0,
+            "elevation": 3,
+            "x": 23,
+            "y": 3
+        },
+        {
+            "dest_map": "MAP_SLIPH_CO_3F",
+            "dest_warp_id": 9,
+            "elevation": 3,
+            "x": 5,
+            "y": 4
+        },
+        {
+            "dest_map": "MAP_SLIPH_CO_5F",
+            "dest_warp_id": 5,
+            "elevation": 3,
+            "x": 25,
+            "y": 17
+        },
+        {
+            "dest_map": "MAP_SLIPH_CO_11F",
+            "dest_warp_id": 2,
+            "elevation": 3,
+            "x": 5,
+            "y": 8
+        }
+    ],
+    "weather": "WEATHER_SUNNY"
+}

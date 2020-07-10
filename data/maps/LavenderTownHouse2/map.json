@@ -1,0 +1,31 @@
+{
+    "allow_bike": false,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_LAVENDER_TOWN_HOUSE2",
+    "layout": "LAYOUT_LAVENDER_TOWN_HOUSE2",
+    "map_type": "MAP_TYPE_INDOOR",
+    "music": "MUS_RG_SHION",
+    "name": "LavenderTownHouse2",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_LAVENDER_TOWN",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_LAVENDER_TOWN",
+            "dest_warp_id": 1,
+            "elevation": 3,
+            "x": 4,
+            "y": 7
+        }
+    ],
+    "weather": "WEATHER_SUNNY"
+}

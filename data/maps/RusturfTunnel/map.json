@@ -12,12 +12,12 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 23,
-      "y": 5,
+      "x": 24,
+      "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -29,8 +29,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 24,
-      "y": 5,
+      "x": 25,
+      "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -42,8 +42,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 3,
-      "y": 1,
+      "x": 4,
+      "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -55,8 +55,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 30,
-      "y": 2,
+      "x": 31,
+      "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -68,8 +68,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
-      "x": 5,
-      "y": 4,
+      "x": 6,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -81,8 +81,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
-      "x": 14,
-      "y": 5,
+      "x": 15,
+      "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -94,8 +94,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WINGULL",
-      "x": 14,
-      "y": 4,
+      "x": 15,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -107,8 +107,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 24,
-      "y": 4,
+      "x": 25,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -120,8 +120,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 32,
-      "y": 13,
+      "x": 33,
+      "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -133,8 +133,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
-      "x": 25,
-      "y": 4,
+      "x": 26,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -147,22 +147,22 @@
   ],
   "warp_events": [
     {
-      "x": 4,
-      "y": 10,
+      "x": 5,
+      "y": 11,
       "elevation": 3,
       "dest_map": "MAP_ROUTE116",
       "dest_warp_id": 0
     },
     {
-      "x": 29,
-      "y": 16,
+      "x": 30,
+      "y": 17,
       "elevation": 3,
       "dest_map": "MAP_VERDANTURF_TOWN",
       "dest_warp_id": 4
     },
     {
-      "x": 18,
-      "y": 20,
+      "x": 19,
+      "y": 21,
       "elevation": 3,
       "dest_map": "MAP_ROUTE116",
       "dest_warp_id": 2
@@ -171,8 +171,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 23,
-      "y": 4,
+      "x": 24,
+      "y": 5,
       "elevation": 3,
       "var": "0",
       "var_value": "0",
@@ -180,16 +180,7 @@
     },
     {
       "type": "trigger",
-      "x": 9,
-      "y": 4,
-      "elevation": 3,
-      "var": "VAR_RUSTURF_TUNNEL_STATE",
-      "var_value": "2",
-      "script": "RusturfTunnel_EventScript_AquaGruntBackUp"
-    },
-    {
-      "type": "trigger",
-      "x": 9,
+      "x": 10,
       "y": 5,
       "elevation": 3,
       "var": "VAR_RUSTURF_TUNNEL_STATE",
@@ -198,8 +189,17 @@
     },
     {
       "type": "trigger",
-      "x": 25,
-      "y": 4,
+      "x": 10,
+      "y": 6,
+      "elevation": 3,
+      "var": "VAR_RUSTURF_TUNNEL_STATE",
+      "var_value": "2",
+      "script": "RusturfTunnel_EventScript_AquaGruntBackUp"
+    },
+    {
+      "type": "trigger",
+      "x": 26,
+      "y": 5,
       "elevation": 3,
       "var": "0",
       "var_value": "0",
@@ -207,13 +207,15 @@
     },
     {
       "type": "trigger",
-      "x": 25,
-      "y": 5,
+      "x": 26,
+      "y": 6,
       "elevation": 3,
       "var": "0",
       "var_value": "0",
       "script": "RusturfTunnel_EventScript_TunnelBlockagePos3"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+
+  ]
 }

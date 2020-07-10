@@ -1,0 +1,43 @@
+{
+  "id": "MAP_MT_SILVER1F",
+  "name": "MtSilver1F",
+  "layout": "LAYOUT_MT_SILVER1F",
+  "music": "MUS_DAN02",
+  "region_map_section": "MAPSEC_SEVII_ISLE_24",
+  "requires_flash": true,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 11,
+      "y": 48,
+      "elevation": 0,
+      "dest_map": "MAP_MT_SILVER_EXTERIOR",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 22,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_MT_SILVER2F",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ],
+  "allow_bike": "",
+  "allow_escape_rope": ""
+}

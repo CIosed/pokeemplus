@@ -60,31 +60,31 @@ $(CASTFORMGFXDIR)/shiny.gbapal: $(CASTFORMGFXDIR)/shiny_normal_form.gbapal \
 ### Tilesets ###
 
 $(TILESETGFXDIR)/secondary/petalburg/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 159
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/rustboro/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 498
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/dewford/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 503
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/slateport/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 504
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/mauville/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 503
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/lavaridge/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 450
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/fortree/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 493
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/pacifidlog/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 504
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/sootopolis/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 328
+	$(GFX) $< $@ -num_tiles 512
 
 SOOTOPOLISANIMDIR := $(TILESETGFXDIR)/secondary/sootopolis/anim
 
@@ -121,22 +121,22 @@ $(SOOTOPOLISANIMDIR)/stormy_water/7.4bpp: $(SOOTOPOLISANIMDIR)/stormy_water/7_ky
 	@cat $^ >$@
 
 $(TILESETGFXDIR)/secondary/battle_frontier_outside_west/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 508
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/battle_frontier_outside_east/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 508
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/primary/building/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 502
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/shop/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 502
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/pokemon_center/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 478
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/cave/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 425
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/pokemon_school/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 278
@@ -208,7 +208,7 @@ $(TILESETGFXDIR)/secondary/contest/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 430
 
 $(TILESETGFXDIR)/secondary/lilycove_museum/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 431
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/lab/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 500
@@ -223,7 +223,7 @@ $(TILESETGFXDIR)/secondary/mauville_game_corner/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 469
 
 $(TILESETGFXDIR)/secondary/unused_2/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 150
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/rustboro_gym/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 60
@@ -250,7 +250,7 @@ $(TILESETGFXDIR)/secondary/trick_house_puzzle/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 294
 
 $(TILESETGFXDIR)/secondary/inside_ship/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 342
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/elite_four/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 505
@@ -265,7 +265,7 @@ $(TILESETGFXDIR)/secondary/battle_pike/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 382
 
 $(TILESETGFXDIR)/secondary/mirage_tower/tiles.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 420
+	$(GFX) $< $@ -num_tiles 512
 
 $(TILESETGFXDIR)/secondary/mossdeep_game_corner/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 95
@@ -284,6 +284,51 @@ $(TILESETGFXDIR)/secondary/battle_frontier_ranking_hall/tiles.4bpp: %.4bpp: %.pn
 
 $(TILESETGFXDIR)/secondary/mystery_events_house/tiles.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 509
+	
+$(TILESETGFXDIR)/secondary/palett/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 512
+	
+$(TILESETGFXDIR)/primary/gtileset_kanto_general/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 512
+
+$(TILESETGFXDIR)/primary/kantoindoor/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 512
+
+$(TILESETGFXDIR)/secondary/viridian/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 512
+
+$(TILESETGFXDIR)/secondary/pewter/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 512
+
+$(TILESETGFXDIR)/secondary/cerulean/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 512
+
+$(TILESETGFXDIR)/secondary/lavender/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 512
+
+$(TILESETGFXDIR)/secondary/vermilion/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 512
+
+$(TILESETGFXDIR)/secondary/celadon/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 512
+
+$(TILESETGFXDIR)/secondary/fuchsia/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 512
+
+$(TILESETGFXDIR)/secondary/cinnabar/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 512
+
+$(TILESETGFXDIR)/secondary/indigo/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 512
+
+$(TILESETGFXDIR)/secondary/saffron/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 512
+
+$(TILESETGFXDIR)/secondary/viridianforest/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 512
+
+$(TILESETGFXDIR)/secondary/kantogatehouse/tiles.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -num_tiles 512
 
 
 

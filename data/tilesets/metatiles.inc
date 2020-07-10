@@ -557,3 +557,430 @@ gMetatiles_UnionRoom:: @ 83DF392
 	.align 1
 gMetatileAttributes_UnionRoom:: @ 83DF6A2
 	.incbin "data/tilesets/secondary/union_room/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_gTileset_Kanto_General::
+	.incbin "data/tilesets/primary/gtileset_kanto_general/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_gTileset_Kanto_General::
+	.incbin "data/tilesets/primary/gtileset_kanto_general/metatile_attributes.bin"
+	.align 1
+gMetatiles_Pallet::
+	.incbin "data/tilesets/secondary/pallet/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Pallet::
+	.incbin "data/tilesets/secondary/pallet/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Viridian::
+	.incbin "data/tilesets/secondary/viridian/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Viridian::
+	.incbin "data/tilesets/secondary/viridian/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Pewter::
+	.incbin "data/tilesets/secondary/pewter/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Pewter::
+	.incbin "data/tilesets/secondary/pewter/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Cerulean::
+	.incbin "data/tilesets/secondary/cerulean/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Cerulean::
+	.incbin "data/tilesets/secondary/cerulean/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Lavender::
+	.incbin "data/tilesets/secondary/lavender/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Lavender::
+	.incbin "data/tilesets/secondary/lavender/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Vermilion::
+	.incbin "data/tilesets/secondary/vermilion/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Vermilion::
+	.incbin "data/tilesets/secondary/vermilion/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Celadon::
+	.incbin "data/tilesets/secondary/celadon/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Celadon::
+	.incbin "data/tilesets/secondary/celadon/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Fuchsia::
+	.incbin "data/tilesets/secondary/fuchsia/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Fuchsia::
+	.incbin "data/tilesets/secondary/fuchsia/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Cinnabar::
+	.incbin "data/tilesets/secondary/cinnabar/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Cinnabar::
+	.incbin "data/tilesets/secondary/cinnabar/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Indigo::
+	.incbin "data/tilesets/secondary/indigo/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Indigo::
+	.incbin "data/tilesets/secondary/indigo/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Saffron::
+	.incbin "data/tilesets/secondary/saffron/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Saffron::
+	.incbin "data/tilesets/secondary/saffron/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_ViridianForest::
+	.incbin "data/tilesets/secondary/viridianforest/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_ViridianForest::
+	.incbin "data/tilesets/secondary/viridianforest/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_KantoIndoor::
+	.incbin "data/tilesets/primary/kantoindoor/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_KantoIndoor::
+	.incbin "data/tilesets/primary/kantoindoor/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_KantoGateHouse::
+	.incbin "data/tilesets/secondary/kantogatehouse/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_KantoGateHouse::
+	.incbin "data/tilesets/secondary/kantogatehouse/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_KantoCave::
+	.incbin "data/tilesets/secondary/kantocave/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_KantoCave::
+	.incbin "data/tilesets/secondary/kantocave/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_RockTunnel::
+	.incbin "data/tilesets/secondary/rocktunnel/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RockTunnel::
+	.incbin "data/tilesets/secondary/rocktunnel/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_DiggletsCave::
+	.incbin "data/tilesets/secondary/diggletscave/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_DiggletsCave::
+	.incbin "data/tilesets/secondary/diggletscave/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_UndergroundPath::
+	.incbin "data/tilesets/secondary/undergroundpath/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_UndergroundPath::
+	.incbin "data/tilesets/secondary/undergroundpath/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_KantoPlayerHouse::
+	.incbin "data/tilesets/secondary/kantoplayerhouse/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_KantoPlayerHouse::
+	.incbin "data/tilesets/secondary/kantoplayerhouse/metatile_attributes.bin"
+	.align 1
+gMetatiles_ProfOakLab::
+	.incbin "data/tilesets/secondary/profoaklab/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_ProfOakLab::
+	.incbin "data/tilesets/secondary/profoaklab/metatile_attributes.bin"
+	.align 1
+gMetatiles_KantoViridianSchool::
+	.incbin "data/tilesets/secondary/kantoviridianschool/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_KantoViridianSchool::
+	.incbin "data/tilesets/secondary/kantoviridianschool/metatile_attributes.bin"
+	.align 1
+gMetatiles_ViridianCityGym::
+	.incbin "data/tilesets/secondary/viridiancitygym/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_ViridianCityGym::
+	.incbin "data/tilesets/secondary/viridiancitygym/metatile_attributes.bin"
+	.align 1
+gMetatiles_PewterCityMuseum::
+	.incbin "data/tilesets/secondary/pewtercitymuseum/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_PewterCityMuseum::
+	.incbin "data/tilesets/secondary/pewtercitymuseum/metatile_attributes.bin"
+	.align 1
+gMetatiles_PewterCityGym::
+	.incbin "data/tilesets/secondary/pewtercitygym/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_PewterCityGym::
+	.incbin "data/tilesets/secondary/pewtercitygym/metatile_attributes.bin"
+	.align 1
+gMetatiles_CeruleanCityBikeShop::
+	.incbin "data/tilesets/secondary/ceruleancitybikeshop/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_CeruleanCityBikeShop::
+	.incbin "data/tilesets/secondary/ceruleancitybikeshop/metatile_attributes.bin"
+	.align 1
+gMetatiles_CeruleanCityGym::
+	.incbin "data/tilesets/secondary/ceruleancitygym/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_CeruleanCityGym::
+	.incbin "data/tilesets/secondary/ceruleancitygym/metatile_attributes.bin"
+	.align 1
+gMetatiles_CeruleanCityCrashedHouse::
+	.incbin "data/tilesets/secondary/ceruleancitycrashedhouse/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_CeruleanCityCrashedHouse::
+	.incbin "data/tilesets/secondary/ceruleancitycrashedhouse/metatile_attributes.bin"
+	.align 1
+gMetatiles_FanclubDaycareLavenderHouse::
+	.incbin "data/tilesets/secondary/fanclubdaycarelavenderhouse/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_FanclubDaycareLavenderHouse::
+	.incbin "data/tilesets/secondary/fanclubdaycarelavenderhouse/metatile_attributes.bin"
+	.align 1
+gMetatiles_PokemonTower::
+	.incbin "data/tilesets/secondary/pokemontower/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_PokemonTower::
+	.incbin "data/tilesets/secondary/pokemontower/metatile_attributes.bin"
+	.align 1
+gMetatiles_VermilionCityGym::
+	.incbin "data/tilesets/secondary/vermilioncitygym/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_VermilionCityGym::
+	.incbin "data/tilesets/secondary/vermilioncitygym/metatile_attributes.bin"
+	.align 1
+gMetatiles_SliphCo::
+	.incbin "data/tilesets/secondary/sliphco/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_SliphCo::
+	.incbin "data/tilesets/secondary/sliphco/metatile_attributes.bin"
+	.align 1
+gMetatiles_CeladonRestruant::
+	.incbin "data/tilesets/secondary/celadonrestruant/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_CeladonRestruant::
+	.incbin "data/tilesets/secondary/celadonrestruant/metatile_attributes.bin"
+	.align 1
+gMetatiles_CeladonInn::
+	.incbin "data/tilesets/secondary/celadoninn/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_CeladonInn::
+	.incbin "data/tilesets/secondary/celadoninn/metatile_attributes.bin"
+	.align 1
+gMetatiles_CeladonGameCorner::
+	.incbin "data/tilesets/secondary/celadongamecorner/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_CeladonGameCorner::
+	.incbin "data/tilesets/secondary/celadongamecorner/metatile_attributes.bin"
+	.align 1
+gMetatiles_CeladonCityGym::
+	.incbin "data/tilesets/secondary/celadoncitygym/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_CeladonCityGym::
+	.incbin "data/tilesets/secondary/celadoncitygym/metatile_attributes.bin"
+	.align 1
+gMetatiles_KantoSafariIndoor::
+	.incbin "data/tilesets/secondary/kantosafariindoor/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_KantoSafariIndoor::
+	.incbin "data/tilesets/secondary/kantosafariindoor/metatile_attributes.bin"
+	.align 1
+gMetatiles_FuchsiaCityGym::
+	.incbin "data/tilesets/secondary/fuchsiacitygym/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_FuchsiaCityGym::
+	.incbin "data/tilesets/secondary/fuchsiacitygym/metatile_attributes.bin"
+	.align 1
+gMetatiles_CinnabarIslandGym::
+	.incbin "data/tilesets/secondary/cinnabarislandgym/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_CinnabarIslandGym::
+	.incbin "data/tilesets/secondary/cinnabarislandgym/metatile_attributes.bin"
+	.align 1
+gMetatiles_PokemonMansion::
+	.incbin "data/tilesets/secondary/pokemonmansion/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_PokemonMansion::
+	.incbin "data/tilesets/secondary/pokemonmansion/metatile_attributes.bin"
+	.align 1
+gMetatiles_KantoPokemonLeague::
+	.incbin "data/tilesets/secondary/kantopokemonleague/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_KantoPokemonLeague::
+	.incbin "data/tilesets/secondary/kantopokemonleague/metatile_attributes.bin"
+	.align 1
+gMetatiles_KantoHallofFame::
+	.incbin "data/tilesets/secondary/kantohalloffame/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_KantoHallofFame::
+	.incbin "data/tilesets/secondary/kantohalloffame/metatile_attributes.bin"
+	.align 1
+gMetatiles_SaffronCityGym::
+	.incbin "data/tilesets/secondary/saffroncitygym/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_SaffronCityGym::
+	.incbin "data/tilesets/secondary/saffroncitygym/metatile_attributes.bin"
+	.align 1
+gMetatiles_SliphCo2::
+	.incbin "data/tilesets/secondary/sliphco2/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_SliphCo2::
+	.incbin "data/tilesets/secondary/sliphco2/metatile_attributes.bin"
+	.align 1
+gMetatiles_KantoSafari::
+	.incbin "data/tilesets/secondary/kantosafari/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_KantoSafari::
+	.incbin "data/tilesets/secondary/kantosafari/metatile_attributes.bin"
+	.align 1
+gMetatiles_KantoPowerPlant::
+	.incbin "data/tilesets/secondary/kantopowerplant/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_KantoPowerPlant::
+	.incbin "data/tilesets/secondary/kantopowerplant/metatile_attributes.bin"
+	.align 1
+gMetatiles_CeruleanCave::
+	.incbin "data/tilesets/secondary/ceruleancave/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_CeruleanCave::
+	.incbin "data/tilesets/secondary/ceruleancave/metatile_attributes.bin"
+	.align 1
+gMetatiles_SeafoamIslands::
+	.incbin "data/tilesets/secondary/seafoamislands/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_SeafoamIslands::
+	.incbin "data/tilesets/secondary/seafoamislands/metatile_attributes.bin"
+	.align 1
+gMetatiles_Rustboro2::
+	.incbin "data/tilesets/secondary/rustboro2/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Rustboro2::
+	.incbin "data/tilesets/secondary/rustboro2/metatile_attributes.bin"
+	.align 1
+gMetatiles_KantoTrainerTower::
+	.incbin "data/tilesets/secondary/kantotrainertower/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_KantoTrainerTower::
+	.incbin "data/tilesets/secondary/kantotrainertower/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Lavaridge2::
+	.incbin "data/tilesets/secondary/lavaridge2/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Lavaridge2::
+	.incbin "data/tilesets/secondary/lavaridge2/metatile_attributes.bin"
+	.align 1
+gMetatiles_SSAnne::
+	.incbin "data/tilesets/secondary/ssanne/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_SSAnne::
+	.incbin "data/tilesets/secondary/ssanne/metatile_attributes.bin"
+	.align 1
+gMetatiles_BillsHouse::
+	.incbin "data/tilesets/secondary/billshouse/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_BillsHouse::
+	.incbin "data/tilesets/secondary/billshouse/metatile_attributes.bin"
+	.align 1
+gMetatiles_MeteorCave::
+	.incbin "data/tilesets/secondary/meteorcave/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_MeteorCave::
+	.incbin "data/tilesets/secondary/meteorcave/metatile_attributes.bin"
+	.align 1
+gMetatiles_MagmaHideout::
+	.incbin "data/tilesets/secondary/magmahideout/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_MagmaHideout::
+	.incbin "data/tilesets/secondary/magmahideout/metatile_attributes.bin"
+	.align 1
+gMetatiles_mauville2::
+	.incbin "data/tilesets/secondary/mauville2/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_mauville2::
+	.incbin "data/tilesets/secondary/mauville2/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_aqua_hideout::
+	.incbin "data/tilesets/secondary/aqua_hideout/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_aqua_hideout::
+	.incbin "data/tilesets/secondary/aqua_hideout/metatile_attributes.bin"
+	.align 1
+gMetatiles_devon_corp::
+	.incbin "data/tilesets/secondary/devon_corp/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_devon_corp::
+	.incbin "data/tilesets/secondary/devon_corp/metatile_attributes.bin"

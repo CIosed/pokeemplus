@@ -1,0 +1,31 @@
+{
+    "allow_bike": false,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_ROUTE2_HOUSE",
+    "layout": "LAYOUT_ROUTE2_HOUSE",
+    "map_type": "MAP_TYPE_INDOOR",
+    "music": "MUS_RG_LOAD01",
+    "name": "Route2_House",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_ROUTE_2",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_ROUTE2",
+            "dest_warp_id": 9,
+            "elevation": 3,
+            "x": 4,
+            "y": 7
+        }
+    ],
+    "weather": "WEATHER_SUNNY"
+}

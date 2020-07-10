@@ -1,0 +1,45 @@
+{
+    "allow_bike": false,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_POKEMON_MANSION_3F",
+    "layout": "LAYOUT_POKEMON_MANSION_3F",
+    "map_type": "MAP_TYPE_INDOOR",
+    "music": "MUS_RG_POKEYASHI",
+    "name": "PokemonMansion_3F",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_CINNABAR_ISLAND",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_POKEMON_MANSION_2F",
+            "dest_warp_id": 1,
+            "elevation": 3,
+            "x": 11,
+            "y": 11
+        },
+        {
+            "dest_map": "MAP_POKEMON_MANSION_2F",
+            "dest_warp_id": 2,
+            "elevation": 3,
+            "x": 8,
+            "y": 3
+        },
+        {
+            "dest_map": "MAP_POKEMON_MANSION_2F",
+            "dest_warp_id": 3,
+            "elevation": 3,
+            "x": 34,
+            "y": 18
+        }
+    ],
+    "weather": "WEATHER_SHADE"
+}

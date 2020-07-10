@@ -15,7 +15,7 @@
   "connections": [
     {
       "direction": "down",
-      "offset": 0,
+      "offset": -2,
       "map": "MAP_RUSTBORO_CITY"
     },
     {
@@ -348,7 +348,9 @@
       "dest_warp_id": 0
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "secret_base",

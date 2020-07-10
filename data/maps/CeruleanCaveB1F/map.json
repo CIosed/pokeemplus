@@ -1,0 +1,31 @@
+{
+    "allow_bike": false,
+    "allow_escape_rope": true,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_CERULEAN_CAVE_B1F",
+    "layout": "LAYOUT_CERULEAN_CAVE_B1F",
+    "map_type": "MAP_TYPE_UNDERGROUND",
+    "music": "MUS_RG_AJITO",
+    "name": "CeruleanCaveB1F",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_CERULEAN_CAVE",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_CERULEAN_CAVE1F",
+            "dest_warp_id": 7,
+            "elevation": 3,
+            "x": 5,
+            "y": 7
+        }
+    ],
+    "weather": "WEATHER_SUNNY"
+}

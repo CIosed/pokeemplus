@@ -1,0 +1,50 @@
+{
+  "id": "MAP_SAFFRON_TRAIN_STATION_BACK",
+  "name": "SaffronTrainStationBack",
+  "layout": "LAYOUT_SAFFRON_TRAIN_STATION_BACK",
+  "music": "MUS_RG_NIBI",
+  "region_map_section": "MAPSEC_SAFFRON_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 18,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_TRAIN_STATION_ENTRANCE",
+      "dest_warp_id": 3
+    },
+    {
+      "x": 17,
+      "y": 18,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_TRAIN_STATION_ENTRANCE",
+      "dest_warp_id": 3
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_SAFFRON_TRAIN_STATION_BACK",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ],
+  "allow_bike": "",
+  "allow_escape_rope": ""
+}

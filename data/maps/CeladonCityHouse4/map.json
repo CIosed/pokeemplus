@@ -1,0 +1,31 @@
+{
+    "allow_bike": false,
+    "allow_escape_rope": false,
+    "allow_running": false,
+    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+    "bg_events": [
+    ],
+    "connections": null,
+    "coord_events": [
+    ],
+    "id": "MAP_CELADON_CITY_HOUSE4",
+    "layout": "LAYOUT_CELADON_CITY_HOUSE4",
+    "map_type": "MAP_TYPE_INDOOR",
+    "music": "MUS_RG_TAMAMUSI",
+    "name": "CeladonCityHouse4",
+    "object_events": [
+    ],
+    "region_map_section": "MAPSEC_CELADON_CITY",
+    "requires_flash": false,
+    "show_map_name": false,
+    "warp_events": [
+        {
+            "dest_map": "MAP_CELADON_CITY",
+            "dest_warp_id": 3,
+            "elevation": 3,
+            "x": 4,
+            "y": 9
+        }
+    ],
+    "weather": "WEATHER_SUNNY"
+}

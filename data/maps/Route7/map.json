@@ -1,0 +1,54 @@
+{
+  "id": "MAP_ROUTE7",
+  "name": "Route7",
+  "layout": "LAYOUT_ROUTE7",
+  "music": "MUS_RG_LOAD02",
+  "region_map_section": "MAPSEC_ROUTE_7",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_SAFFRON_CITY"
+    },
+    {
+      "direction": "left",
+      "offset": 0,
+      "map": "MAP_CELADON_CITY"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 15,
+      "y": 20,
+      "elevation": 3,
+      "dest_map": "MAP_SAFFRON_WEST_GATE",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 7,
+      "y": 24,
+      "elevation": 3,
+      "dest_map": "MAP_UNDERGROUND_PATH_WEST_ENTRANCE",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ],
+  "allow_bike": "",
+  "allow_escape_rope": ""
+}

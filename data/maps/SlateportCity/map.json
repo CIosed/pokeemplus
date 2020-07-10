@@ -32,8 +32,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 21,
-      "y": 11,
+      "x": 19,
+      "y": 13,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -474,7 +474,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCOTT",
-      "x": 10,
+      "x": 9,
       "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -509,10 +509,10 @@
       "dest_warp_id": 0
     },
     {
-      "x": 10,
+      "x": 9,
       "y": 12,
       "elevation": 0,
-      "dest_map": "MAP_SLATEPORT_CITY_BATTLE_TENT_LOBBY",
+      "dest_map": "MAP_SLATEPORT_CITY_CONTEST_LOBBY",
       "dest_warp_id": 0
     },
     {
@@ -568,7 +568,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 10,
+      "x": 9,
       "y": 13,
       "elevation": 3,
       "var": "VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE",
@@ -611,8 +611,8 @@
     },
     {
       "type": "sign",
-      "x": 24,
-      "y": 12,
+      "x": 21,
+      "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SlateportCity_EventScript_HarborSign"
@@ -659,8 +659,8 @@
     },
     {
       "type": "sign",
-      "x": 7,
-      "y": 13,
+      "x": 12,
+      "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SlateportCity_EventScript_BattleTentSign"

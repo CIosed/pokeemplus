@@ -1,0 +1,50 @@
+{
+  "id": "MAP_ROUTE12GATE1F",
+  "name": "Route12Gate1F",
+  "layout": "LAYOUT_ROUTE12GATE1F",
+  "music": "MUS_RG_NIBI",
+  "region_map_section": "MAPSEC_ROUTE_12",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE12",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE12",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 8,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE12GATE2F",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ],
+  "allow_bike": "",
+  "allow_escape_rope": ""
+}
