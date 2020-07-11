@@ -6051,11 +6051,19 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONT;
         default:
+		if (FlagGet(FLAG_KANTO))
+			return MUS_RG_VS_TORE ;
+         else
             return MUS_BATTLE20;
         }
     }
     else
+    {
+    if (FlagGet(FLAG_KANTO))
+        return MUS_RG_VS_YASEI;
+    else
         return MUS_BATTLE27;
+    }
 }
 
 void PlayBattleBGM(void)

@@ -1,5 +1,6 @@
 #include "global.h"
 #include "decompress.h"
+#include "event_data.h"
 #include "event_object_movement.h"
 #include "field_camera.h"
 #include "field_control_avatar.h"
@@ -2857,9 +2858,19 @@ u8 FldEff_UseSurf(void)
 {
     u8 taskId = CreateTask(sub_80B8D84, 0xff);
     gTasks[taskId].data[15] = gFieldEffectArguments[0];
+	if (FlagGet(FLAG_KANTO))
+	{
+	Overworld_ClearSavedMusic();
+    Overworld_ChangeMusicTo(MUS_RG_NAMINORI);
+	Overworld_SetSavedMusic(MUS_RG_NAMINORI);
+	}
+    else
+	{
     Overworld_ClearSavedMusic();
     Overworld_ChangeMusicTo(MUS_NAMINORI);
+	Overworld_SetSavedMusic(MUS_NAMINORI);
     return FALSE;
+	}
 }
 
 void (*const gUnknown_0855C4E0[])(struct Task *) = {

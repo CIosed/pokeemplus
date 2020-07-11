@@ -1188,6 +1188,13 @@ static void sub_8085810(void)
     {
         u16 newMusic = GetWarpDestinationMusic();
         u16 currentMusic = GetCurrentMapMusic();
+        if (FlagGet(FLAG_KANTO)&& newMusic != 0xFFFF)
+        {
+            if (currentMusic == MUS_DEEPDEEP || currentMusic == MUS_RG_NAMINORI)
+                return;
+            if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
+                newMusic = MUS_RG_NAMINORI;
+        }
         if (newMusic != MUS_OOAME && newMusic != 0xFFFF)
         {
             if (currentMusic == MUS_DEEPDEEP || currentMusic == MUS_NAMINORI)
