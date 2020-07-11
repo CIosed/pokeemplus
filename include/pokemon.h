@@ -52,7 +52,6 @@ struct PokemonSubstruct3
  /* 0x05 */ u32 spAttackIV:5;
  /* 0x06 */ u32 spDefenseIV:5;
  /* 0x07 */ u32 isEgg:1;
- /* 0x07 */ u32 abilityNum:1;
 
  /* 0x08 */ u32 coolRibbon:3;
  /* 0x08 */ u32 beautyRibbon:3;
@@ -71,7 +70,8 @@ struct PokemonSubstruct3
  /* 0x0B */ u32 giftRibbon5:1;
  /* 0x0B */ u32 giftRibbon6:1;
  /* 0x0B */ u32 giftRibbon7:1;
- /* 0x0B */ u32 fatefulEncounter:4;
+ /* 0x0B */ u32 fatefulEncounter:2;
+ /* 0x0B */ u32 abilityNum:2;
  /* 0x0B */ u32 obedient:1;
 };
 
@@ -199,8 +199,9 @@ struct BaseStats
  /* 0x14 */ u8 eggGroup1;
  /* 0x15 */ u8 eggGroup2;
  /* 0x16 */ u8 abilities[2];
- /* 0x18 */ u8 safariZoneFleeRate;
- /* 0x19 */ u8 bodyColor : 7;
+ /* 0x18 */ u8 abilityHidden;
+ /* 0x19 */ u8 safariZoneFleeRate;
+ /* 0x1A */ u8 bodyColor : 7;
             u8 noFlip : 1;
 };
 
