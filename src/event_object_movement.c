@@ -443,41 +443,41 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #include "data/object_events/object_event_graphics_info.h"
 
 const struct SpritePalette sObjectEventSpritePalettes[] = {
-    {gObjectEventPalette0,  OBJ_EVENT_PAL_TAG_0},
-    {gObjectEventPalette1,  OBJ_EVENT_PAL_TAG_1},
-    {gObjectEventPalette2,  OBJ_EVENT_PAL_TAG_2},
-    {gObjectEventPalette3,  OBJ_EVENT_PAL_TAG_3},
-    {gObjectEventPalette4,  OBJ_EVENT_PAL_TAG_4},
-    {gObjectEventPalette5,  OBJ_EVENT_PAL_TAG_5},
-    {gObjectEventPalette6,  OBJ_EVENT_PAL_TAG_6},
-    {gObjectEventPalette7,  OBJ_EVENT_PAL_TAG_7},
-    {gObjectEventPalette8,  OBJ_EVENT_PAL_TAG_8},
-    {gObjectEventPalette9,  OBJ_EVENT_PAL_TAG_9},
-    {gObjectEventPalette10, OBJ_EVENT_PAL_TAG_10},
-    {gObjectEventPalette11, OBJ_EVENT_PAL_TAG_11},
-    {gObjectEventPalette12, OBJ_EVENT_PAL_TAG_12},
-    {gObjectEventPalette13, OBJ_EVENT_PAL_TAG_13},
-    {gObjectEventPalette14, OBJ_EVENT_PAL_TAG_14},
-    {gObjectEventPalette15, OBJ_EVENT_PAL_TAG_15},
-    {gObjectEventPalette16, OBJ_EVENT_PAL_TAG_16},
-    {gObjectEventPalette17, OBJ_EVENT_PAL_TAG_17},
-    {gObjectEventPalette18, OBJ_EVENT_PAL_TAG_18},
-    {gObjectEventPalette19, OBJ_EVENT_PAL_TAG_19},
-    {gObjectEventPalette20, OBJ_EVENT_PAL_TAG_20},
-    {gObjectEventPalette21, OBJ_EVENT_PAL_TAG_21},
-    {gObjectEventPalette22, OBJ_EVENT_PAL_TAG_22},
-    {gObjectEventPalette23, OBJ_EVENT_PAL_TAG_23},
-    {gObjectEventPalette24, OBJ_EVENT_PAL_TAG_24},
-    {gObjectEventPalette25, OBJ_EVENT_PAL_TAG_25},
-    {gObjectEventPalette26, OBJ_EVENT_PAL_TAG_26},
-    {gObjectEventPalette27, OBJ_EVENT_PAL_TAG_27},
-    {gObjectEventPalette28, OBJ_EVENT_PAL_TAG_28},
-    {gObjectEventPalette29, OBJ_EVENT_PAL_TAG_29},
-    {gObjectEventPalette30, OBJ_EVENT_PAL_TAG_30},
-    {gObjectEventPalette31, OBJ_EVENT_PAL_TAG_31},
-    {gObjectEventPalette32, OBJ_EVENT_PAL_TAG_32},
-    {gObjectEventPalette33, OBJ_EVENT_PAL_TAG_33},
-    {gObjectEventPalette34, OBJ_EVENT_PAL_TAG_34},
+    {gObjectEventPalette0,  OBJ_EVENT_PAL_TAG_0},  // standard shared pal 1
+    {gObjectEventPalette1,  OBJ_EVENT_PAL_TAG_1},  // standard shared pal 2
+    {gObjectEventPalette2,  OBJ_EVENT_PAL_TAG_2},  // standard shared pal 3
+    {gObjectEventPalette3,  OBJ_EVENT_PAL_TAG_3},  // standard shared pal 4
+    {gObjectEventPalette4,  OBJ_EVENT_PAL_TAG_4},  // reflection pal 1
+    {gObjectEventPalette5,  OBJ_EVENT_PAL_TAG_5},  // reflection pal 2
+    {gObjectEventPalette6,  OBJ_EVENT_PAL_TAG_6},  // reflection pal 3
+    {gObjectEventPalette7,  OBJ_EVENT_PAL_TAG_7},  // reflection pal 4
+    {gObjectEventPalette8,  OBJ_EVENT_PAL_TAG_8},  // brendan
+    {gObjectEventPalette9,  OBJ_EVENT_PAL_TAG_9},  // reflection brendan
+    {gObjectEventPalette10, OBJ_EVENT_PAL_TAG_10}, // hero reflection (route 21?)
+    {gObjectEventPalette11, OBJ_EVENT_PAL_TAG_11}, // brendan/may underwater
+    {gObjectEventPalette12, OBJ_EVENT_PAL_TAG_12}, // quintyplump
+    {gObjectEventPalette13, OBJ_EVENT_PAL_TAG_13}, // reflection quintyplump
+    {gObjectEventPalette14, OBJ_EVENT_PAL_TAG_14}, // truck
+    {gObjectEventPalette15, OBJ_EVENT_PAL_TAG_15}, // vigoroth
+    {gObjectEventPalette16, OBJ_EVENT_PAL_TAG_16}, // zigzagoon
+    {gObjectEventPalette17, OBJ_EVENT_PAL_TAG_17}, // may
+    {gObjectEventPalette18, OBJ_EVENT_PAL_TAG_18}, // reflection may
+    {gObjectEventPalette19, OBJ_EVENT_PAL_TAG_19}, // moving box (inside of truck)
+    {gObjectEventPalette20, OBJ_EVENT_PAL_TAG_20}, // cable car
+    {gObjectEventPalette21, OBJ_EVENT_PAL_TAG_21}, // ss tidal
+    {gObjectEventPalette22, OBJ_EVENT_PAL_TAG_22}, // kyogre 2
+    {gObjectEventPalette23, OBJ_EVENT_PAL_TAG_23}, // unused (kyogre 2?)
+    {gObjectEventPalette24, OBJ_EVENT_PAL_TAG_24}, // groudon 2
+    {gObjectEventPalette25, OBJ_EVENT_PAL_TAG_25}, // unused (groudon 2?)
+    {gObjectEventPalette26, OBJ_EVENT_PAL_TAG_26}, // submarine shadow - Can use PAL_TAG_21
+    {gObjectEventPalette27, OBJ_EVENT_PAL_TAG_27}, // poocheyna
+    {gObjectEventPalette28, OBJ_EVENT_PAL_TAG_28}, // red/leaf
+    {gObjectEventPalette29, OBJ_EVENT_PAL_TAG_29}, // deoxys
+    {gObjectEventPalette30, OBJ_EVENT_PAL_TAG_30}, // birthislandstone
+    {gObjectEventPalette31, OBJ_EVENT_PAL_TAG_31}, // hooh
+    {gObjectEventPalette32, OBJ_EVENT_PAL_TAG_32}, // lugia
+    {gObjectEventPalette33, OBJ_EVENT_PAL_TAG_33}, // rs brendan
+    {gObjectEventPalette34, OBJ_EVENT_PAL_TAG_34}, // rs may
     {NULL,                  0x0000},
 };
 
