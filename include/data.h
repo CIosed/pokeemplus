@@ -46,12 +46,30 @@ struct TrainerMonItemCustomMoves
     u16 moves[MAX_MON_MOVES];
 };
 
+struct TrainerMonFullControl
+{
+    u8 nickname[POKEMON_NAME_LENGTH + 1];
+    u8 ivs[MON_DATA_SPDEF_IV - MON_DATA_HP_IV + 1];
+    u8 lvl;
+    u16 species;
+    u16 heldItem;
+    u16 moves[MAX_MON_MOVES];
+    u8 gender;
+    u8 nature;
+    u8 ability;
+    u8 evs[MON_DATA_SPDEF_EV - MON_DATA_HP_EV + 1];
+    u8 ball;
+    bool32 shiny;
+    u8 friendship;
+};
+
 union TrainerMonPtr
 {
     const struct TrainerMonNoItemDefaultMoves *NoItemDefaultMoves;
     const struct TrainerMonNoItemCustomMoves *NoItemCustomMoves;
     const struct TrainerMonItemDefaultMoves *ItemDefaultMoves;
     const struct TrainerMonItemCustomMoves *ItemCustomMoves;
+	const struct TrainerMonFullControl *FullControl;
 };
 
 struct Trainer

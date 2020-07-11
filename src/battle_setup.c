@@ -766,6 +766,14 @@ static u8 GetSumOfEnemyPartyLevel(u16 opponentId, u8 numMons)
                 sum += party[i].lvl;
         }
         break;
+	    case F_TRAINER_PARTY_FULL_CONTROL:
+        {
+            const struct TrainerMonFullControl *party;
+            party = gTrainers[opponentId].party.FullControl;
+            for (i = 0; i < count; i++)
+                sum += party[i].lvl;
+        }
+        break;
     }
 
     return sum;

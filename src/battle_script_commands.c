@@ -5969,6 +5969,12 @@ static u32 GetTrainerMoneyToGive(u16 trainerId)
                 lastMonLevel = party[gTrainers[trainerId].partySize - 1].lvl;
             }
             break;
+		case F_TRAINER_PARTY_FULL_CONTROL:
+            {
+                const struct TrainerMonFullControl *party = gTrainers[trainerId].party.FullControl;
+                lastMonLevel = party[gTrainers[trainerId].partySize - 1].lvl;
+            }
+            break;
         }
 
         for (; gTrainerMoneyTable[i].classId != 0xFF; i++)
