@@ -130,9 +130,6 @@
 #Dragonite (2nd frame)
 #Mew (2nd frame)
 
-
-
-
 #Chikorita (both frames and back)
 #Bayleef (both frames and back)
 #Meganium (both frames and back)
@@ -241,43 +238,13 @@
 / Edits/Custom Trainer sprites
 #Wally
 
-/ Custom Moves   (some are from scratch, some are edits)
-#Dragon Pulse    (gfx & code)
-#Shadow Claw     (gfx & code)
-#Hammer Arm      (gfx & code)
-#Feint           (gfx)
-#Close Combat    (gfx edit)
-#Aura Sphere     (code)
-#Dark Pulse      (gfx & code)
-#Power Gem       (gfx & code)
-#Focus Blast     (gfx & code)
-#Earth Power     (code)
-#Thunder Fang    (gfx & code)
-#Ice Fang        (gfx & code)
-#Fire Fang       (gfx & code)
-#Psycho Cut      (code)
-#Zen Headbutt    (code)
-#Water Gun       (code)
-#Flash Cannon    (code)
-#Draco Meteor    (code)         #doesn't work in doubles
-
-
-
-# U-Turn (CHECK BATON-PASS)
-
 / Edits/Custom OWs (Some of the fronts I have made is inspired by or used/edited from Starsparkless. So big credit to him/her. Their OW frames are listed further down in a link)
-#Tree Disguise
-#Mountain Disguise
-#Shrinked S.S Anne
 #Hoenn Beauty
-#Hoenn Birdkeeper
 #Hoenn Blackbelt
 #Hoenn Boy 1
 #Hoenn Boy 2
 #Hoenn Boy 3
-#Hoenn Breeder (F and M) (Bliz made the majority of it)
 #Hoenn Bug Catcher
-#Hoenn Cameraman
 #Hoenn Camper
 #Hoenn Contest Judge
 #Hoenn Cook
@@ -288,9 +255,8 @@
 #Hoenn Fisherman
 #Hoenn Girl 1
 #Hoenn Girl 2
-#Hoenn Hex Maniac)
+#Hoenn Hex Maniac
 #Hoenn Hiker
-#Hoenn Lass
 #Hoenn Little Boy
 #Hoenn Little Girl
 #Hoenn Man 1
@@ -298,19 +264,13 @@
 #Hoenn Guitarist
 #Hoenn Cooltrainer (F and M)
 #Hoenn Maniac
-#Hoenn Mauville Old Man
 #Hoenn Mom
-#Hoenn Mr. Briney
 #Hoenn Nurse
 #Hoenn Old Man
-#Hoenn Picknicker
-#Hoenn Pokemaniac (Spherical Ice's Maniac costume as base)
 #Hoenn Pokefan (F and M)
 #Hoenn Prof. Birch
 #Hoenn Psychic
-#Hoenn Ranger (F and M)
-#Hoenn Reporter (F and M)
-#Hoenn Running Trathlete (F and M)
+#Hoenn Running Trathlete F
 #Hoenn Sailor
 #Hoenn Scott
 #Hoenn Steven (Help from Bliz)
@@ -324,12 +284,8 @@
 #Hoenn Woman 3
 #Hoenn Woman 4
 #Hoenn Youngster
-#Agatha
-#Bruno
-#Drake
-#Glacia
+
 #Phoebe
-#Sidney
 #Anabel
 #Brandon (Also by Mvit, made the first frame)
 #Greta
@@ -337,32 +293,19 @@
 #Noland
 #Spenser
 #Tucker
-#Blaine (Walkframes)
 #Brawly (Help from Bliz)
-#Brock
-#Erika
 #Flannery
 #Juan
-#Koga
 #Liza
-#Lt. Surge
-#Misty (Walkframes
 #Norman
 #Roxanne
-#Sabrina
 #Tate
 #Wattson
 #Winona
 #Aqua Members
 #Magma Members
-#Library Members
 #Brendan (Help from Farore, made an overhaul)
 #May (Help from Farore, made an overhaul)
-
-#Groudon
-#Kyogre
-#Rayquaza
-#Snorlax (Breathing frame)
 
 / Custom tiles
 #Littleroot/Oldale houses
@@ -525,6 +468,20 @@
 #Rocker (slight edit by Tainted)
 #Tamer
 #Young Couple
+
+
+- Hairpin -
+/ Custom OWs
+#Hoenn Cameraman
+#Hoenn Lass / Edits by Tainted
+#Hoenn Mauville Old Man
+#Hoenn Picknicker
+#Hoenn Reporter (F and M)
+#Hoenn Running Trathlete M
+#Drake
+#Glacia
+#Sidney
+#Artist
 
 - Brolunite -
 /Custom Pokémon Sprites

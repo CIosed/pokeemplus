@@ -469,7 +469,7 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette23, OBJ_EVENT_PAL_TAG_23}, // unused (kyogre 2?)
     {gObjectEventPalette24, OBJ_EVENT_PAL_TAG_24}, // groudon 2
     {gObjectEventPalette25, OBJ_EVENT_PAL_TAG_25}, // unused (groudon 2?)
-    {gObjectEventPalette26, OBJ_EVENT_PAL_TAG_26}, // submarine shadow - Can use PAL_TAG_21
+    {gObjectEventPalette26, OBJ_EVENT_PAL_TAG_26}, // standard pal 5 (was submarine shadow)
     {gObjectEventPalette27, OBJ_EVENT_PAL_TAG_27}, // poocheyna
     {gObjectEventPalette28, OBJ_EVENT_PAL_TAG_28}, // red/leaf
     {gObjectEventPalette29, OBJ_EVENT_PAL_TAG_29}, // deoxys
