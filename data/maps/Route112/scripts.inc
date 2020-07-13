@@ -66,25 +66,9 @@ Route112_EventScript_Brice:: @ 81F1E6A
 	end
 
 Route112_EventScript_Trent:: @ 81F1E81
-	trainerbattle_single TRAINER_TRENT_1, Route112_Text_TrentIntro, Route112_Text_TrentDefeat, Route112_EventScript_RegisterTrent
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route112_EventScript_RematchTrent
+	trainerbattle_single TRAINER_TRENT, Route112_Text_TrentIntro, Route112_Text_TrentDefeat
 	msgbox Route112_Text_TrentPostBattle, MSGBOX_DEFAULT
 	release
-	end
-
-Route112_EventScript_RegisterTrent:: @ 81F1EAD
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route112_Text_TrentRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_TRENT_1
-	release
-	end
-
-Route112_EventScript_RematchTrent:: @ 81F1ECC
-	trainerbattle_rematch TRAINER_TRENT_1, Route112_Text_TrentRematchIntro, Route112_Text_TrentRematchDefeat
-	msgbox Route112_Text_TrentRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route112_EventScript_Larry:: @ 81F1EE3

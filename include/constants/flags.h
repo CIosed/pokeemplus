@@ -375,70 +375,70 @@
 
 // Trainer Rematch Flags
 #define FLAG_MATCH_CALL_REGISTERED           0x15C
-#define FLAG_REMATCH_ROSE                    0x15D
-#define FLAG_REMATCH_ANDRES                  0x15E
-#define FLAG_REMATCH_DUSTY                   0x15F
-#define FLAG_REMATCH_LOLA                    0x160
-#define FLAG_REMATCH_RICKY                   0x161
-#define FLAG_REMATCH_LILA_AND_ROY            0x162
-#define FLAG_REMATCH_CRISTIN                 0x163
-#define FLAG_REMATCH_BROOKE                  0x164
-#define FLAG_REMATCH_WILTON                  0x165
-#define FLAG_REMATCH_VALERIE                 0x166
-#define FLAG_REMATCH_CINDY                   0x167
-#define FLAG_REMATCH_THALIA                  0x168
-#define FLAG_REMATCH_JESSICA                 0x169
-#define FLAG_REMATCH_WINSTON                 0x16A
-#define FLAG_REMATCH_STEVE                   0x16B
-#define FLAG_REMATCH_TONY                    0x16C
-#define FLAG_REMATCH_NOB                     0x16D
-#define FLAG_REMATCH_KOJI                    0x16E
-#define FLAG_REMATCH_FERNANDO                0x16F
-#define FLAG_REMATCH_DALTON                  0x170
-#define FLAG_REMATCH_BERNIE                  0x171
-#define FLAG_REMATCH_ETHAN                   0x172
-#define FLAG_REMATCH_JOHN_AND_JAY            0x173
-#define FLAG_REMATCH_JEFFREY                 0x174
-#define FLAG_REMATCH_CAMERON                 0x175
-#define FLAG_REMATCH_JACKI                   0x176
-#define FLAG_REMATCH_WALTER                  0x177
-#define FLAG_REMATCH_KAREN                   0x178
-#define FLAG_REMATCH_JERRY                   0x179
-#define FLAG_REMATCH_ANNA_AND_MEG            0x17A
-#define FLAG_REMATCH_ISABEL                  0x17B
-#define FLAG_REMATCH_MIGUEL                  0x17C
-#define FLAG_REMATCH_TIMOTHY                 0x17D
-#define FLAG_REMATCH_SHELBY                  0x17E
-#define FLAG_REMATCH_CALVIN                  0x17F
-#define FLAG_REMATCH_ELLIOT                  0x180
-#define FLAG_REMATCH_ISAIAH                  0x181
-#define FLAG_REMATCH_MARIA                   0x182
-#define FLAG_REMATCH_ABIGAIL                 0x183
-#define FLAG_REMATCH_DYLAN                   0x184
-#define FLAG_REMATCH_KATELYN                 0x185
-#define FLAG_REMATCH_BENJAMIN                0x186
-#define FLAG_REMATCH_PABLO                   0x187
-#define FLAG_REMATCH_NICOLAS                 0x188
-#define FLAG_REMATCH_ROBERT                  0x189
-#define FLAG_REMATCH_LAO                     0x18A
-#define FLAG_REMATCH_CYNDY                   0x18B
-#define FLAG_REMATCH_MADELINE                0x18C
-#define FLAG_REMATCH_JENNY                   0x18D
-#define FLAG_REMATCH_DIANA                   0x18E
-#define FLAG_REMATCH_AMY_AND_LIV             0x18F
-#define FLAG_REMATCH_ERNEST                  0x190
-#define FLAG_REMATCH_CORY                    0x191
-#define FLAG_REMATCH_EDWIN                   0x192
-#define FLAG_REMATCH_LYDIA                   0x193
-#define FLAG_REMATCH_ISAAC                   0x194
-#define FLAG_REMATCH_GABRIELLE               0x195
-#define FLAG_REMATCH_CATHERINE               0x196
-#define FLAG_REMATCH_JACKSON                 0x197
-#define FLAG_REMATCH_HALEY                   0x198
-#define FLAG_REMATCH_JAMES                   0x199
-#define FLAG_REMATCH_TRENT                   0x19A
-#define FLAG_REMATCH_SAWYER                  0x19B
-#define FLAG_REMATCH_KIRA_AND_DAN            0x19C
+#define FLAG_REMATCH_ROSE                    0x15D // Unused Flag
+#define FLAG_REMATCH_ANDRES                  0x15E // Unused Flag
+#define FLAG_REMATCH_DUSTY                   0x15F // Unused Flag
+#define FLAG_REMATCH_LOLA                    0x160 // Unused Flag
+#define FLAG_REMATCH_RICKY                   0x161 // Unused Flag
+#define FLAG_REMATCH_LILA_AND_ROY            0x162 // Unused Flag
+#define FLAG_REMATCH_CRISTIN                 0x163 // Unused Flag
+#define FLAG_REMATCH_BROOKE                  0x164 // Unused Flag
+#define FLAG_REMATCH_WILTON                  0x165 // Unused Flag
+#define FLAG_REMATCH_VALERIE                 0x166 // Unused Flag
+#define FLAG_REMATCH_CINDY                   0x167 // Unused Flag
+#define FLAG_REMATCH_THALIA                  0x168 // Unused Flag
+#define FLAG_REMATCH_JESSICA                 0x169 // Unused Flag
+#define FLAG_REMATCH_WINSTON                 0x16A // Unused Flag
+#define FLAG_REMATCH_STEVE                   0x16B // Unused Flag
+#define FLAG_REMATCH_TONY                    0x16C // Unused Flag
+#define FLAG_REMATCH_NOB                     0x16D // Unused Flag
+#define FLAG_REMATCH_KOJI                    0x16E // Unused Flag
+#define FLAG_REMATCH_FERNANDO                0x16F // Unused Flag
+#define FLAG_REMATCH_DALTON                  0x170 // Unused Flag
+#define FLAG_REMATCH_BERNIE                  0x171 // Unused Flag
+#define FLAG_REMATCH_ETHAN                   0x172 // Unused Flag
+#define FLAG_REMATCH_JOHN_AND_JAY            0x173 // Unused Flag
+#define FLAG_REMATCH_JEFFREY                 0x174 // Unused Flag
+#define FLAG_REMATCH_CAMERON                 0x175 // Unused Flag
+#define FLAG_REMATCH_JACKI                   0x176 // Unused Flag
+#define FLAG_REMATCH_WALTER                  0x177 // Unused Flag
+#define FLAG_REMATCH_KAREN                   0x178 // Unused Flag
+#define FLAG_REMATCH_JERRY                   0x179 // Unused Flag
+#define FLAG_REMATCH_ANNA_AND_MEG            0x17A // Unused Flag
+#define FLAG_REMATCH_ISABEL                  0x17B // Unused Flag
+#define FLAG_REMATCH_MIGUEL                  0x17C // Unused Flag
+#define FLAG_REMATCH_TIMOTHY                 0x17D // Unused Flag
+#define FLAG_REMATCH_SHELBY                  0x17E // Unused Flag
+#define FLAG_REMATCH_CALVIN                  0x17F // Unused Flag
+#define FLAG_REMATCH_ELLIOT                  0x180 // Unused Flag
+#define FLAG_REMATCH_ISAIAH                  0x181 // Unused Flag
+#define FLAG_REMATCH_MARIA                   0x182 // Unused Flag
+#define FLAG_REMATCH_ABIGAIL                 0x183 // Unused Flag
+#define FLAG_REMATCH_DYLAN                   0x184 // Unused Flag
+#define FLAG_REMATCH_KATELYN                 0x185 // Unused Flag
+#define FLAG_REMATCH_BENJAMIN                0x186 // Unused Flag
+#define FLAG_REMATCH_PABLO                   0x187 // Unused Flag
+#define FLAG_REMATCH_NICOLAS                 0x188 // Unused Flag
+#define FLAG_REMATCH_ROBERT                  0x189 // Unused Flag
+#define FLAG_REMATCH_LAO                     0x18A // Unused Flag
+#define FLAG_REMATCH_CYNDY                   0x18B // Unused Flag
+#define FLAG_REMATCH_MADELINE                0x18C // Unused Flag
+#define FLAG_REMATCH_JENNY                   0x18D // Unused Flag
+#define FLAG_REMATCH_DIANA                   0x18E // Unused Flag
+#define FLAG_REMATCH_AMY_AND_LIV             0x18F // Unused Flag
+#define FLAG_REMATCH_ERNEST                  0x190 // Unused Flag
+#define FLAG_REMATCH_CORY                    0x191 // Unused Flag
+#define FLAG_REMATCH_EDWIN                   0x192 // Unused Flag
+#define FLAG_REMATCH_LYDIA                   0x193 // Unused Flag
+#define FLAG_REMATCH_ISAAC                   0x194 // Unused Flag
+#define FLAG_REMATCH_GABRIELLE               0x195 // Unused Flag
+#define FLAG_REMATCH_CATHERINE               0x196 // Unused Flag
+#define FLAG_REMATCH_JACKSON                 0x197 // Unused Flag
+#define FLAG_REMATCH_HALEY                   0x198 // Unused Flag
+#define FLAG_REMATCH_JAMES                   0x199 // Unused Flag
+#define FLAG_REMATCH_TRENT                   0x19A // Unused Flag
+#define FLAG_REMATCH_SAWYER                  0x19B // Unused Flag
+#define FLAG_REMATCH_KIRA_AND_DAN            0x19C // Unused Flag
 #define FLAG_REMATCH_WALLY                   0x19D
 #define FLAG_REMATCH_ROXANNE                 0x19E
 #define FLAG_REMATCH_BRAWLY                  0x19F
@@ -867,7 +867,7 @@
 #define FLAG_HIDE_AQUA_HIDEOUT_1F_GRUNT_2_BLOCKING_ENTRANCE         0x336
 #define FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA                          0x337
 #define FLAG_HIDE_PETALBURG_GYM_WALLYS_UNCLE                        0x338
-#define FLAG_HIDE_LEGEND_MON_CAVE_OF_ORIGIN                         0x339 // Unused, leftover from R/S
+#define FLAG_HIDE_LEGEND_MON_CAVE_OF_ORIGIN                         0x339 // Unused Flag, leftover from R/S
 #define FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE                            0x33A
 #define FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE                             0x33B
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_ARCHIE                     0x33C

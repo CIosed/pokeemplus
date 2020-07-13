@@ -71,25 +71,9 @@ Route121_EventScript_Vanessa:: @ 81F5E74
 	end
 
 Route121_EventScript_Walter:: @ 81F5E8B
-	trainerbattle_single TRAINER_WALTER_1, Route121_Text_WalterIntro, Route121_Text_WalterDefeat, Route121_EventScript_RegisterWalter
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route121_EventScript_RematchWalter
+	trainerbattle_single TRAINER_WALTER, Route121_Text_WalterIntro, Route121_Text_WalterDefeat
 	msgbox Route121_Text_WalterPostBattle, MSGBOX_DEFAULT
 	release
-	end
-
-Route121_EventScript_RegisterWalter:: @ 81F5EB7
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route121_Text_WalterRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_WALTER_1
-	release
-	end
-
-Route121_EventScript_RematchWalter:: @ 81F5ED6
-	trainerbattle_rematch TRAINER_WALTER_1, Route121_Text_WalterRematchIntro, Route121_Text_WalterRematchDefeat
-	msgbox Route121_Text_WalterPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route121_EventScript_Tammy:: @ 81F5EED
@@ -108,25 +92,9 @@ Route121_EventScript_Joy:: @ 81F5F1F
 	end
 
 Route121_EventScript_Jessica:: @ 81F5F3A
-	trainerbattle_single TRAINER_JESSICA_1, Route121_Text_JessicaIntro, Route121_Text_JessicaDefeat, Route121_EventScript_RegisterJessica
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route121_EventScript_RematchJessica
+	trainerbattle_single TRAINER_JESSICA, Route121_Text_JessicaIntro, Route121_Text_JessicaDefeat
 	msgbox Route121_Text_JessicaPostBattle, MSGBOX_DEFAULT
 	release
-	end
-
-Route121_EventScript_RegisterJessica:: @ 81F5F66
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route121_Text_JessicaRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_JESSICA_1
-	release
-	end
-
-Route121_EventScript_RematchJessica:: @ 81F5F85
-	trainerbattle_rematch TRAINER_JESSICA_1, Route121_Text_JessicaRematchIntro, Route121_Text_JessicaRematchDefeat
-	msgbox Route121_Text_JessicaPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route121_EventScript_Cale:: @ 81F5F9C
@@ -150,25 +118,9 @@ Route121_EventScript_Marcel:: @ 81F5FE1
 	end
 
 Route121_EventScript_Cristin:: @ 81F5FF8
-	trainerbattle_single TRAINER_CRISTIN_1, Route121_Text_CristinIntro, Route121_Text_CristinDefeat, Route121_EventScript_RegisterCristin
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route121_EventScript_RematchCristin
+	trainerbattle_single TRAINER_CRISTIN, Route121_Text_CristinIntro, Route121_Text_CristinDefeat
 	msgbox Route121_Text_CristinPostBattle, MSGBOX_DEFAULT
 	release
-	end
-
-Route121_EventScript_RegisterCristin:: @ 81F6024
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route121_Text_CristinRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_CRISTIN_1
-	release
-	end
-
-Route121_EventScript_RematchCristin:: @ 81F6043
-	trainerbattle_rematch TRAINER_CRISTIN_1, Route121_Text_CristinRematchIntro, Route121_Text_CristinRematchDefeat
-	msgbox Route121_Text_CristinPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route121_Text_OkayMoveOutToMtPyre: @ 81F605A

@@ -175,47 +175,15 @@ Route128_Movement_MaxieApproachPlayer: @ 81F6CBB
 	step_end
 
 Route128_EventScript_Isaiah:: @ 81F6CBE
-	trainerbattle_single TRAINER_ISAIAH_1, Route128_Text_IsaiahIntro, Route128_Text_IsaiahDefeat, Route128_EventScript_RegisterIsaiah
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route128_EventScript_RematchIsaiah
+	trainerbattle_single TRAINER_ISAIAH, Route128_Text_IsaiahIntro, Route128_Text_IsaiahDefeat
 	msgbox Route128_Text_IsaiahPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
-Route128_EventScript_RegisterIsaiah:: @ 81F6CEA
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route128_Text_IsaiahRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_ISAIAH_1
-	release
-	end
-
-Route128_EventScript_RematchIsaiah:: @ 81F6D09
-	trainerbattle_rematch TRAINER_ISAIAH_1, Route128_Text_IsaiahRematchIntro, Route128_Text_IsaiahRematchDefeat
-	msgbox Route128_Text_IsaiahPostRematch, MSGBOX_AUTOCLOSE
-	end
-
 Route128_EventScript_Katelyn:: @ 81F6D20
-	trainerbattle_single TRAINER_KATELYN_1, Route128_Text_KatelynIntro, Route128_Text_KatelynDefeat, Route128_EventScript_RegisterKatelyn
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route128_EventScript_RematchKatelyn
+	trainerbattle_single TRAINER_KATELYN, Route128_Text_KatelynIntro, Route128_Text_KatelynDefeat
 	msgbox Route128_Text_KatelynPostBattle, MSGBOX_DEFAULT
 	release
-	end
-
-Route128_EventScript_RegisterKatelyn:: @ 81F6D4C
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route128_Text_KatelynRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_KATELYN_1
-	release
-	end
-
-Route128_EventScript_RematchKatelyn:: @ 81F6D6B
-	trainerbattle_rematch TRAINER_KATELYN_1, Route128_Text_KatelynRematchIntro, Route128_Text_KatelynRematchDefeat
-	msgbox Route128_Text_KatelynPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route128_EventScript_Alexa:: @ 81F6D82

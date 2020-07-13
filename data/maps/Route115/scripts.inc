@@ -37,25 +37,9 @@ Route115_EventScript_MeteorFallsSign:: @ 81F2985
 	end
 
 Route115_EventScript_Timothy:: @ 81F298E
-	trainerbattle_single TRAINER_TIMOTHY_1, Route115_Text_TimothyIntro, Route115_Text_TimothyDefeat, Route115_EventScript_RegisterTimothy
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route115_EventScript_RematchTimothy
+	trainerbattle_single TRAINER_TIMOTHY, Route115_Text_TimothyIntro, Route115_Text_TimothyDefeat
 	msgbox Route115_Text_TimothyPostBattle, MSGBOX_DEFAULT
 	release
-	end
-
-Route115_EventScript_RegisterTimothy:: @ 81F29BA
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route115_Text_TimothyRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_TIMOTHY_1
-	release
-	end
-
-Route115_EventScript_RematchTimothy:: @ 81F29D9
-	trainerbattle_rematch TRAINER_TIMOTHY_1, Route115_Text_TimothyRematchIntro, Route115_Text_TimothyRematchDefeat
-	msgbox Route115_Text_TimothyPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route115_EventScript_Koichi:: @ 81F29F0
@@ -64,47 +48,15 @@ Route115_EventScript_Koichi:: @ 81F29F0
 	end
 
 Route115_EventScript_Nob:: @ 81F2A07
-	trainerbattle_single TRAINER_NOB_1, Route115_Text_NobIntro, Route115_Text_NobDefeat, Route115_EventScript_RegisterNob
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route115_EventScript_RematchNob
+	trainerbattle_single TRAINER_NOB, Route115_Text_NobIntro, Route115_Text_NobDefeat
 	msgbox Route115_Text_NobPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
-Route115_EventScript_RegisterNob:: @ 81F2A33
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route115_Text_NobRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_NOB_1
-	release
-	end
-
-Route115_EventScript_RematchNob:: @ 81F2A52
-	trainerbattle_rematch TRAINER_NOB_1, Route115_Text_NobRematchIntro, Route115_Text_NobRematchDefeat
-	msgbox Route115_Text_NobPostRematch, MSGBOX_AUTOCLOSE
-	end
-
 Route115_EventScript_Cyndy:: @ 81F2A69
-	trainerbattle_single TRAINER_CYNDY_1, Route115_Text_CyndyIntro, Route115_Text_CyndyDefeat, Route115_EventScript_RegisterCyndy
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route115_EventScript_RematchCyndy
+	trainerbattle_single TRAINER_CYNDY, Route115_Text_CyndyIntro, Route115_Text_CyndyDefeat
 	msgbox Route115_Text_CyndyPostBattle, MSGBOX_DEFAULT
 	release
-	end
-
-Route115_EventScript_RegisterCyndy:: @ 81F2A95
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route115_Text_CyndyRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_CYNDY_1
-	release
-	end
-
-Route115_EventScript_RematchCyndy:: @ 81F2AB4
-	trainerbattle_rematch TRAINER_CYNDY_1, Route115_Text_CyndyRematchIntro, Route115_Text_CyndyRematchDefeat
-	msgbox Route115_Text_CyndyPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route115_EventScript_Hector:: @ 81F2ACB

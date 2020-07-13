@@ -290,25 +290,9 @@ Route120_EventScript_Colin:: @ 81F57D7
 	end
 
 Route120_EventScript_Robert:: @ 81F57EE
-	trainerbattle_single TRAINER_ROBERT_1, Route120_Text_RobertIntro, Route120_Text_RobertDefeat, Route120_EventScript_RegisterRobert
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route120_EventScript_RematchRobert
+	trainerbattle_single TRAINER_ROBERT, Route120_Text_RobertIntro, Route120_Text_RobertDefeat
 	msgbox Route120_Text_RobertPostBattle, MSGBOX_DEFAULT
 	release
-	end
-
-Route120_EventScript_RegisterRobert:: @ 81F581A
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route120_Text_RobertRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_ROBERT_1
-	release
-	end
-
-Route120_EventScript_RematchRobert:: @ 81F5839
-	trainerbattle_rematch TRAINER_ROBERT_1, Route120_Text_RobertRematchIntro, Route120_Text_RobertRematchDefeat
-	msgbox Route120_Text_RobertPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route120_EventScript_Lorenzo:: @ 81F5850
@@ -322,25 +306,9 @@ Route120_EventScript_Jenna:: @ 81F5867
 	end
 
 Route120_EventScript_Jeffrey:: @ 81F587E
-	trainerbattle_single TRAINER_JEFFREY_1, Route120_Text_JeffreyIntro, Route120_Text_JeffreyDefeat, Route120_EventScript_RegisterJeffrey
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route120_EventScript_RematchJeffrey
+	trainerbattle_single TRAINER_JEFFREY, Route120_Text_JeffreyIntro, Route120_Text_JeffreyDefeat
 	msgbox Route120_Text_JeffreyPostBattle, MSGBOX_DEFAULT
 	release
-	end
-
-Route120_EventScript_RegisterJeffrey:: @ 81F58AA
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route120_Text_JeffreyRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_JEFFREY_1
-	release
-	end
-
-Route120_EventScript_RematchJeffrey:: @ 81F58C9
-	trainerbattle_rematch TRAINER_JEFFREY_1, Route120_Text_JeffreyRematchIntro, Route120_Text_JeffreyRematchDefeat
-	msgbox Route120_Text_JeffreyPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route120_EventScript_Jennifer:: @ 81F58E0

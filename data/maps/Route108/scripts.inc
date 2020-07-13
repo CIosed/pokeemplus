@@ -27,24 +27,7 @@ Route108_EventScript_Carolina:: @ 81EE6E6
 	end
 
 Route108_EventScript_Cory:: @ 81EE6FD
-	trainerbattle_single TRAINER_CORY_1, Route108_Text_CoryIntro, Route108_Text_CoryDefeated, Route108_EventScript_CoryRegisterMatchCallAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route108_EventScript_CoryRematch
+	trainerbattle_single TRAINER_CORY, Route108_Text_CoryIntro, Route108_Text_CoryDefeated
 	msgbox Route108_Text_CoryPostBattle, MSGBOX_DEFAULT
 	release
 	end
-
-Route108_EventScript_CoryRegisterMatchCallAfterBattle:: @ 81EE729
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route108_Text_CoryRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_CORY_1
-	release
-	end
-
-Route108_EventScript_CoryRematch:: @ 81EE748
-	trainerbattle_rematch TRAINER_CORY_1, Route108_Text_CoryRematchIntro, Route108_Text_CoryRematchDefeated
-	msgbox Route108_Text_CoryRematchPostBattle, MSGBOX_AUTOCLOSE
-	end
-

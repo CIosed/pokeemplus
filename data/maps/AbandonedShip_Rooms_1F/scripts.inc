@@ -11,25 +11,9 @@ AbandonedShip_Rooms_1F_EventScript_Demetrius:: @ 8237A9C
 	end
 
 AbandonedShip_Rooms_1F_EventScript_Thalia:: @ 8237AB3
-	trainerbattle_single TRAINER_THALIA_1, AbandonedShip_Rooms_1F_Text_ThaliaIntro, AbandonedShip_Rooms_1F_Text_ThaliaDefeat, AbandonedShip_Rooms_1F_EventScript_RegisterThalia
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq AbandonedShip_Rooms_1F_EventScript_ThaliaRematch
+	trainerbattle_single TRAINER_THALIA, AbandonedShip_Rooms_1F_Text_ThaliaIntro, AbandonedShip_Rooms_1F_Text_ThaliaDefeat
 	msgbox AbandonedShip_Rooms_1F_Text_ThaliaPostBattle, MSGBOX_DEFAULT
 	release
-	end
-
-AbandonedShip_Rooms_1F_EventScript_RegisterThalia:: @ 8237ADF
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox AbandonedShip_Rooms_1F_Text_ThaliaRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_THALIA_1
-	release
-	end
-
-AbandonedShip_Rooms_1F_EventScript_ThaliaRematch:: @ 8237AFE
-	trainerbattle_rematch TRAINER_THALIA_1, AbandonedShip_Rooms_1F_Text_ThaliaRematchIntro, AbandonedShip_Rooms_1F_Text_ThaliaRematchDefeat
-	msgbox AbandonedShip_Rooms_1F_Text_ThaliaPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 AbandonedShip_Rooms_1F_Text_TakingALookAround: @ 8237B15

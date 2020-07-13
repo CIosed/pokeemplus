@@ -42,24 +42,7 @@ Route126_EventScript_Sienna:: @ 81F6960
 	end
 
 Route126_EventScript_Pablo:: @ 81F6977
-	trainerbattle_single TRAINER_PABLO_1, Route126_Text_PabloIntro, Route126_Text_PabloDefeat, Route126_EventScript_RegisterPablo
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route126_EventScript_RematchPablo
+	trainerbattle_single TRAINER_PABLO, Route126_Text_PabloIntro, Route126_Text_PabloDefeat
 	msgbox Route126_Text_PabloPostBattle, MSGBOX_DEFAULT
 	release
-	end
-
-Route126_EventScript_RegisterPablo:: @ 81F69A3
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route126_Text_PabloRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_PABLO_1
-	release
-	end
-
-Route126_EventScript_RematchPablo:: @ 81F69C2
-	trainerbattle_rematch TRAINER_PABLO_1, Route126_Text_PabloRematchIntro, Route126_Text_PabloRematchDefeat
-	msgbox Route126_Text_PabloPostRematch, MSGBOX_AUTOCLOSE
-	end
-
+    end

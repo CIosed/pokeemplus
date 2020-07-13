@@ -60,47 +60,15 @@ Route123_EventScript_Violet:: @ 81F61F3
 	end
 
 Route123_EventScript_Cameron:: @ 81F620A
-	trainerbattle_single TRAINER_CAMERON_1, Route123_Text_CameronIntro, Route123_Text_CameronDefeat, Route123_EventScript_RegisterCameron
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route123_EventScript_RematchCameron
+	trainerbattle_single TRAINER_CAMERON, Route123_Text_CameronIntro, Route123_Text_CameronDefeat
 	msgbox Route123_Text_CameronPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
-Route123_EventScript_RegisterCameron:: @ 81F6236
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route123_Text_CameronRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_CAMERON_1
-	release
-	end
-
-Route123_EventScript_RematchCameron:: @ 81F6255
-	trainerbattle_rematch TRAINER_CAMERON_1, Route123_Text_CameronRematchIntro, Route123_Text_CameronRematchDefeat
-	msgbox Route123_Text_CameronPostRematch, MSGBOX_AUTOCLOSE
-	end
-
 Route123_EventScript_Jacki:: @ 81F626C
-	trainerbattle_single TRAINER_JACKI_1, Route123_Text_JackiIntro, Route123_Text_JackiDefeat, Route123_EventScript_RegisterJacki
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route123_EventScript_RematchJacki
+	trainerbattle_single TRAINER_JACKI, Route123_Text_JackiIntro, Route123_Text_JackiDefeat
 	msgbox Route123_Text_JackiPostBattle, MSGBOX_DEFAULT
 	release
-	end
-
-Route123_EventScript_RegisterJacki:: @ 81F6298
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route123_Text_JackiRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_JACKI_1
-	release
-	end
-
-Route123_EventScript_RematchJacki:: @ 81F62B7
-	trainerbattle_rematch TRAINER_JACKI_1, Route123_Text_JackiRematchIntro, Route123_Text_JackiRematchDefeat
-	msgbox Route123_Text_JackiPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route123_EventScript_Miu:: @ 81F62CE
@@ -154,25 +122,9 @@ Route123_EventScript_Davis:: @ 81F63A5
 	end
 
 Route123_EventScript_Fernando:: @ 81F63BC
-	trainerbattle_single TRAINER_FERNANDO_1, Route123_Text_FernandoIntro, Route123_Text_FernandoDefeat, Route123_EventScript_RegisterFernando
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route123_EventScript_RematchFernando
+	trainerbattle_single TRAINER_FERNANDO, Route123_Text_FernandoIntro, Route123_Text_FernandoDefeat
 	msgbox Route123_Text_FernandoPostBattle, MSGBOX_DEFAULT
 	release
-	end
-
-Route123_EventScript_RegisterFernando:: @ 81F63E8
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route123_Text_FernandoRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_FERNANDO_1
-	release
-	end
-
-Route123_EventScript_RematchFernando:: @ 81F6407
-	trainerbattle_rematch TRAINER_FERNANDO_1, Route123_Text_FernandoRematchIntro, Route123_Text_FernandoRematchDefeat
-	msgbox Route123_Text_FernandoPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route123_Text_LoveGrassMonsHaveAny: @ 81F641E

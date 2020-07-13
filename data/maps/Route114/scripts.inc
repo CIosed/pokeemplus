@@ -92,7 +92,7 @@ Route114_EventScript_Lenny:: @ 81F2640
 	end
 
 Route114_EventScript_Lucas:: @ 81F2657
-	trainerbattle_single TRAINER_LUCAS_1, Route114_Text_LucasIntro, Route114_Text_LucasDefeat
+	trainerbattle_single TRAINER_LUCAS, Route114_Text_LucasIntro, Route114_Text_LucasDefeat
 	msgbox Route114_Text_LucasPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -107,47 +107,15 @@ Route114_EventScript_Nancy:: @ 81F2685
 	end
 
 Route114_EventScript_Steve:: @ 81F269C
-	trainerbattle_single TRAINER_STEVE_1, Route114_Text_SteveIntro, Route114_Text_SteveDefeat, Route114_EventScript_RegisterSteve
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route114_EventScript_RematchSteve
+	trainerbattle_single TRAINER_STEVE, Route114_Text_SteveIntro, Route114_Text_SteveDefeat
 	msgbox Route114_Text_StevePostBattle, MSGBOX_DEFAULT
 	release
 	end
 
-Route114_EventScript_RegisterSteve:: @ 81F26C8
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route114_Text_SteveRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_STEVE_1
-	release
-	end
-
-Route114_EventScript_RematchSteve:: @ 81F26E7
-	trainerbattle_rematch TRAINER_STEVE_1, Route114_Text_SteveRematchIntro, Route114_Text_SteveRematchDefeat
-	msgbox Route114_Text_StevePostRematch, MSGBOX_AUTOCLOSE
-	end
-
 Route114_EventScript_Bernie:: @ 81F26FE
-	trainerbattle_single TRAINER_BERNIE_1, Route114_Text_BernieIntro, Route114_Text_BernieDefeat, Route114_EventScript_RegisterBernie
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route114_EventScript_RematchBernie
+	trainerbattle_single TRAINER_BERNIE, Route114_Text_BernieIntro, Route114_Text_BernieDefeat
 	msgbox Route114_Text_BerniePostBattle, MSGBOX_DEFAULT
 	release
-	end
-
-Route114_EventScript_RegisterBernie:: @ 81F272A
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route114_Text_BernieRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_BERNIE_1
-	release
-	end
-
-Route114_EventScript_RematchBernie:: @ 81F2749
-	trainerbattle_rematch TRAINER_BERNIE_1, Route114_Text_BernieRematchIntro, Route114_Text_BernieRematchDefeat
-	msgbox Route114_Text_BerniePostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route114_EventScript_Claude:: @ 81F2760
