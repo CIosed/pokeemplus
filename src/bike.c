@@ -248,6 +248,9 @@ static void MachBikeTransition_TrySpeedUp(u8 direction)
         }
         else
         {
+            if (ObjectMovingOnRockStairs(playerObjEvent, direction) && gPlayerAvatar.bikeFrameCounter > 1)
+                gPlayerAvatar.bikeFrameCounter--;
+            
             sMachBikeSpeedCallbacks[gPlayerAvatar.bikeFrameCounter](direction);
             gPlayerAvatar.bikeSpeed = gPlayerAvatar.bikeFrameCounter + (gPlayerAvatar.bikeFrameCounter >> 1); // same as dividing by 2, but compiler is insistent on >> 1
             if (gPlayerAvatar.bikeFrameCounter < 2) // do not go faster than the last element in the mach bike array
@@ -382,7 +385,6 @@ static u8 AcroBikeHandleInputWheelieStanding(u8 *newDirection, u16 newKeys, u16 
     struct ObjectEvent *playerObjEvent;
 
     direction = GetPlayerMovementDirection();
-    //gSidewaysStairsDirection = direction;
     
     playerObjEvent = &gObjectEvents[gPlayerAvatar.objectEventId];
     gPlayerAvatar.runningState = NOT_MOVING;
@@ -579,7 +581,10 @@ static void AcroBikeTransition_Moving(u8 direction)
     }
     else
     {
-        PlayerRideWaterCurrent(direction);
+        if (ObjectMovingOnRockStairs(playerObjEvent, direction))
+            PlayerGoSpeed2(direction);
+        else
+            PlayerRideWaterCurrent(direction);
     }
 }
 
@@ -647,7 +652,7 @@ static void AcroBikeTransition_WheelieHoppingMoving(u8 direction)
         }
         else
         {
-        derp:
+        derp:            
             PlayerMovingHoppingWheelie(direction);
         }
     }
@@ -1040,7 +1045,6 @@ void Bike_UpdateBikeCounterSpeed(u8 counter)
 
 static void Bike_SetBikeStill(void)
 {
-    //gSidewaysStairsDirection = gObjectEvents[gPlayerAvatar.objectEventId].facingDirection;
     gPlayerAvatar.bikeFrameCounter = 0;
     gPlayerAvatar.bikeSpeed = SPEED_STANDING;
 }
