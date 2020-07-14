@@ -339,6 +339,7 @@
 #Ice cave Battle Bg
 #Sky Pillar Battle Bg
 #Lab Battle Bg (Tiled floor. Platform by Gamefreak.)
+#Petalburg Woods Map Preview
 
 / Edits/Custom Maps
 
@@ -449,6 +450,8 @@
 - ghoulslash -
 /Sidewaystairs
 # https://www.pokecommunity.com/showthread.php?p=10166640#post10166640
+/Map Previews
+# https://www.pokecommunity.com/showthread.php?t=435664
 
 #Luna
 / Custom Tiles
