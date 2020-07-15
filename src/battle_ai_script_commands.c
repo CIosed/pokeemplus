@@ -176,6 +176,8 @@ static void Cmd_get_best_dmg_hp_percent(void);
 static void Cmd_get_curr_dmg_hp_percent(void);
 static void Cmd_get_move_split_from_result(void);
 static void Cmd_get_considered_move_split(void);
+static void Cmd_get_considered_move_target(void);
+static void Cmd_compare_speeds(void);
 
 // ewram
 EWRAM_DATA const u8 *gAIScriptPtr = NULL;
@@ -304,6 +306,8 @@ static const BattleAICmdFunc sBattleAICmdTable[] =
     Cmd_get_curr_dmg_hp_percent,                    // 0x73
     Cmd_get_move_split_from_result,                 // 0x74
     Cmd_get_considered_move_split,                  // 0x75
+    Cmd_get_considered_move_target,                 // 0x76
+    Cmd_compare_speeds,                             // 0x77
 };
 
 static const u16 sDiscouragedPowerfulMoveEffects[] =
@@ -933,7 +937,7 @@ s32 AI_CalcPartyMonDamage(u16 move, u8 battlerAtk, u8 battlerDef, struct Pokemon
 
 u16 AI_GetTypeEffectiveness(u16 move, u8 battlerAtk, u8 battlerDef)
 {
-    u16 typeEffectiveness;
+    u16 typeEffectiveness, moveType;
 
     SaveBattlerData(battlerAtk);
     SaveBattlerData(battlerDef);
@@ -941,7 +945,10 @@ u16 AI_GetTypeEffectiveness(u16 move, u8 battlerAtk, u8 battlerDef)
     SetBattlerData(battlerAtk);
     SetBattlerData(battlerDef);
 
-    typeEffectiveness = CalcTypeEffectivenessMultiplier(move, gBattleMoves[move].type, battlerAtk, battlerDef, FALSE);
+    gBattleStruct->dynamicMoveType = 0;
+    SetTypeBeforeUsingMove(move, battlerAtk);
+    GET_MOVE_TYPE(move, moveType);
+    typeEffectiveness = CalcTypeEffectivenessMultiplier(move, moveType, battlerAtk, battlerDef, FALSE);
 
     RestoreBattlerData(battlerAtk);
     RestoreBattlerData(battlerDef);
@@ -1706,12 +1713,9 @@ static void Cmd_check_ability(void)
 static void Cmd_get_highest_type_effectiveness(void)
 {
     s32 i;
-    u8 *dynamicMoveType;
 
-    gBattleStruct->dynamicMoveType = 0;
     gMoveResultFlags = 0;
     AI_THINKING_STRUCT->funcResult = 0;
-
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         gCurrentMove = gBattleMons[sBattler_AI].moves[i];
@@ -1755,10 +1759,8 @@ static void Cmd_if_type_effectiveness(void)
     u8 damageVar;
     u32 effectivenessMultiplier;
 
-    gBattleStruct->dynamicMoveType = 0;
     gMoveResultFlags = 0;
     gCurrentMove = AI_THINKING_STRUCT->moveConsidered;
-
     effectivenessMultiplier = AI_GetTypeEffectiveness(gCurrentMove, sBattler_AI, gBattlerTarget);
     switch (effectivenessMultiplier)
     {
@@ -2809,4 +2811,18 @@ static void Cmd_get_considered_move_split(void)
 {
     AI_THINKING_STRUCT->funcResult = gBattleMoves[AI_THINKING_STRUCT->moveConsidered].split;
     gAIScriptPtr += 1;
+}
+
+static void Cmd_get_considered_move_target(void)
+{
+    AI_THINKING_STRUCT->funcResult = gBattleMoves[AI_THINKING_STRUCT->moveConsidered].target;
+    gAIScriptPtr += 1;
+}
+
+static void Cmd_compare_speeds(void)
+{
+    u8 battler1 = BattleAI_GetWantedBattler(gAIScriptPtr[1]);
+    u8 battler2 = BattleAI_GetWantedBattler(gAIScriptPtr[2]);
+    AI_THINKING_STRUCT->funcResult = GetWhoStrikesFirst(battler1, battler2, TRUE);
+    gAIScriptPtr += 3;
 }
