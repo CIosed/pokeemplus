@@ -340,6 +340,7 @@
 #Sky Pillar Battle Bg
 #Lab Battle Bg (Tiled floor. Platform by Gamefreak.)
 #Petalburg Woods Map Preview
+#Rusturf Tunnel Map Preview
 
 / Edits/Custom Maps
 

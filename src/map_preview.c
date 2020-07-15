@@ -103,6 +103,8 @@ static const u8 sAlteringCaveMapPreviewTilemap[] = INCBIN_U8("graphics/map_previ
 static const u8 sPetalburgWoodsMapPreviewPalette[] = INCBIN_U8("graphics/map_preview/petalburg_woods_pal.gbapal");
 static const u8 sPetalburgWoodsMapPreviewTiles[] = INCBIN_U8("graphics/map_preview/petalburg_woods_tiles.4bpp.lz");
 static const u8 sPetalburgWoodsMapPreviewTilemap[] = INCBIN_U8("graphics/map_preview/petalburg_woods_tilemap.bin.lz");
+static const u8 sRusturfTunnelMapPreviewPalette[] = INCBIN_U8("graphics/map_preview/rusturf_tunnel_pal.gbapal");
+static const u8 sRusturfTunnelMapPreviewTiles[] = INCBIN_U8("graphics/map_preview/rusturf_tunnel_tiles.4bpp.lz");
 
 static const struct MapPreviewScreen sMapPreviewScreenData[MPS_COUNT] =
 {
@@ -117,16 +119,16 @@ static const struct MapPreviewScreen sMapPreviewScreenData[MPS_COUNT] =
         .tilemapptr = sPetalburgWoodsMapPreviewTilemap,
         .palptr = sPetalburgWoodsMapPreviewPalette
     },
-    [MPS_METEOR_FALLS] = 
+    [MPS_RUSTURF_TUNNEL] = 
     {
-        .mapsec = MAPSEC_METEOR_FALLS,
+        .mapsec = MAPSEC_RUSTURF_TUNNEL,
         .type = MPS_TYPE_CAVE,
         #if FLAG_BASED_MAP_PREVIEW_TIME
         .flagId = FLAG_VISITED_METEOR_FALLS, //flag needs to be added to constants/flags.h
         #endif
-        .tilesptr = sMtMoonMapPreviewTiles,
-        .tilemapptr = sMtMoonMapPreviewTilemap,
-        .palptr = sMtMoonMapPreviewPalette
+        .tilesptr = sRusturfTunnelMapPreviewTiles,
+        .tilemapptr = sPetalburgWoodsMapPreviewTilemap,
+        .palptr = sRusturfTunnelMapPreviewPalette
     },
     //etc...
     
