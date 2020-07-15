@@ -8,7 +8,6 @@
 #include "overworld.h"
 #include "sound.h"
 #include "event_data.h"
-#include "constants/flags.h"
 #include "constants/map_types.h"
 #include "constants/songs.h"
 
