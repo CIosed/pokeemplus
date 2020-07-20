@@ -229,7 +229,7 @@ struct WishFutureKnock
 struct AI_SavedBattleMon
 {
     u8 ability;
-    u16 moves[4];
+    u16 moves[MAX_MON_MOVES];
     u16 heldItem;
     u16 species;
 };
@@ -249,17 +249,15 @@ struct AI_ThinkingStruct
     bool8 switchMon; // Because all available moves have no/little effect.
 };
 
-struct UsedMoves
-{
-    u16 moves[MAX_MON_MOVES];
-    u16 unknown[MAX_MON_MOVES];
-};
+#define AI_MOVE_HISTORY_COUNT 3
 
 struct BattleHistory
 {
-    struct UsedMoves usedMoves[MAX_BATTLERS_COUNT];
     u8 abilities[MAX_BATTLERS_COUNT];
     u8 itemEffects[MAX_BATTLERS_COUNT];
+    u16 usedMoves[MAX_BATTLERS_COUNT][MAX_MON_MOVES];
+    u16 moveHistory[MAX_BATTLERS_COUNT][AI_MOVE_HISTORY_COUNT]; // 3 last used moves for each battler
+    u8 moveHistoryIndex[MAX_BATTLERS_COUNT];
     u16 trainerItems[MAX_BATTLERS_COUNT];
     u8 itemsNo;
 };
@@ -540,6 +538,7 @@ struct BattleStruct
     bool8 friskedAbility; // If identifies two mons, show the ability pop-up only once.
     u8 sameMoveTurns[MAX_BATTLERS_COUNT]; // For Metronome, number of times the same moves has been SUCCESFULLY used.
     u16 moveEffect2; // For Knock Off
+    u16 changedSpecies[PARTY_SIZE]; // For Zygarde or future forms when multiple mons can change into the same pokemon.
 };
 
 #define GET_MOVE_TYPE(move, typeArg)                        \
