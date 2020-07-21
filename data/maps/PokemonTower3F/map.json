@@ -1,38 +1,43 @@
 {
-    "allow_bike": false,
-    "allow_escape_rope": false,
-    "allow_running": false,
-    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-    "bg_events": [
-    ],
-    "connections": null,
-    "coord_events": [
-    ],
-    "id": "MAP_POKEMON_TOWER3F",
-    "layout": "LAYOUT_POKEMON_TOWER3F",
-    "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_P_TOWER",
-    "name": "PokemonTower3F",
-    "object_events": [
-    ],
-    "region_map_section": "MAPSEC_POKEMON_TOWER",
-    "requires_flash": false,
-    "show_map_name": false,
-    "warp_events": [
-        {
-            "dest_map": "MAP_POKEMON_TOWER2F",
-            "dest_warp_id": 1,
-            "elevation": 3,
-            "x": 4,
-            "y": 10
-        },
-        {
-            "dest_map": "MAP_POKEMON_TOWER4F",
-            "dest_warp_id": 0,
-            "elevation": 3,
-            "x": 18,
-            "y": 10
-        }
-    ],
-    "weather": "WEATHER_SUNNY"
+  "id": "MAP_POKEMON_TOWER3F",
+  "name": "PokemonTower3F",
+  "layout": "LAYOUT_POKEMON_TOWER3F",
+  "music": "MUS_RG_P_TOWER",
+  "region_map_section": "MAPSEC_POKEMON_TOWER",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_POKEMON_TOWER2F",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 18,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_POKEMON_TOWER4F",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ],
+  "allow_bike": "",
+  "allow_escape_rope": ""
 }

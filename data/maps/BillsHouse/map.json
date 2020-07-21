@@ -1,31 +1,36 @@
 {
-    "allow_bike": false,
-    "allow_escape_rope": false,
-    "allow_running": false,
-    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-    "bg_events": [
-    ],
-    "connections": null,
-    "coord_events": [
-    ],
-    "id": "MAP_BILLS_HOUSE",
-    "layout": "LAYOUT_BILLS_HOUSE",
-    "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_HANADA",
-    "name": "BillsHouse",
-    "object_events": [
-    ],
-    "region_map_section": "MAPSEC_ROUTE_25",
-    "requires_flash": false,
-    "show_map_name": true,
-    "warp_events": [
-        {
-            "dest_map": "MAP_ROUTE25",
-            "dest_warp_id": 0,
-            "elevation": 0,
-            "x": 7,
-            "y": 9
-        }
-    ],
-    "weather": "WEATHER_SUNNY"
+  "id": "MAP_BILLS_HOUSE",
+  "name": "BillsHouse",
+  "layout": "LAYOUT_BILLS_HOUSE",
+  "music": "MUS_RG_HANADA",
+  "region_map_section": "MAPSEC_ROUTE_25",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 7,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE25",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ],
+  "allow_bike": "",
+  "allow_escape_rope": ""
 }

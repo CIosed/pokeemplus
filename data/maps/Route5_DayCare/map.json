@@ -1,31 +1,36 @@
 {
-    "allow_bike": false,
-    "allow_escape_rope": false,
-    "allow_running": false,
-    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-    "bg_events": [
-    ],
-    "connections": null,
-    "coord_events": [
-    ],
-    "id": "MAP_ROUTE5_DAY_CARE",
-    "layout": "LAYOUT_ROUTE5_DAY_CARE",
-    "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_LOAD02",
-    "name": "Route5_DayCare",
-    "object_events": [
-    ],
-    "region_map_section": "MAPSEC_ROUTE_5",
-    "requires_flash": false,
-    "show_map_name": false,
-    "warp_events": [
-        {
-            "dest_map": "MAP_ROUTE5",
-            "dest_warp_id": 3,
-            "elevation": 3,
-            "x": 4,
-            "y": 7
-        }
-    ],
-    "weather": "WEATHER_SUNNY"
+  "id": "MAP_ROUTE5_DAY_CARE",
+  "name": "Route5_DayCare",
+  "layout": "LAYOUT_ROUTE5_DAY_CARE",
+  "music": "MUS_RG_LOAD02",
+  "region_map_section": "MAPSEC_ROUTE_5",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 7,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE5",
+      "dest_warp_id": 3
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ],
+  "allow_bike": "",
+  "allow_escape_rope": ""
 }

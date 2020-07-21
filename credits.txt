@@ -453,6 +453,8 @@
 # https://www.pokecommunity.com/showthread.php?p=10166640#post10166640
 /Map Previews
 # https://www.pokecommunity.com/showthread.php?t=435664
+/Stair Warps
+# https://www.pokecommunity.com/showthread.php?p=10183669#post10183669
 
 #Luna
 / Custom Tiles

@@ -1,31 +1,36 @@
 {
-    "allow_bike": false,
-    "allow_escape_rope": false,
-    "allow_running": false,
-    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-    "bg_events": [
-    ],
-    "connections": null,
-    "coord_events": [
-    ],
-    "id": "MAP_ROUTE12_HOUSE",
-    "layout": "LAYOUT_ROUTE12_HOUSE",
-    "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_OPENING",
-    "name": "Route12_House",
-    "object_events": [
-    ],
-    "region_map_section": "MAPSEC_ROUTE_12",
-    "requires_flash": false,
-    "show_map_name": true,
-    "warp_events": [
-        {
-            "dest_map": "MAP_ROUTE12",
-            "dest_warp_id": 2,
-            "elevation": 3,
-            "x": 3,
-            "y": 7
-        }
-    ],
-    "weather": "WEATHER_SUNNY"
+  "id": "MAP_ROUTE12_HOUSE",
+  "name": "Route12_House",
+  "layout": "LAYOUT_ROUTE12_HOUSE",
+  "music": "MUS_RG_OPENING",
+  "region_map_section": "MAPSEC_ROUTE_12",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 7,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE12",
+      "dest_warp_id": 2
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ],
+  "allow_bike": "",
+  "allow_escape_rope": ""
 }

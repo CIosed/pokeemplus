@@ -1,31 +1,36 @@
 {
-    "allow_bike": false,
-    "allow_escape_rope": false,
-    "allow_running": false,
-    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-    "bg_events": [
-    ],
-    "connections": null,
-    "coord_events": [
-    ],
-    "id": "MAP_VIRIDIAN_CITY_HOUSE1",
-    "layout": "LAYOUT_VIRIDIAN_CITY_HOUSE1",
-    "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_NIBI",
-    "name": "ViridianCityHouse1",
-    "object_events": [
-    ],
-    "region_map_section": "MAPSEC_VIRIDIAN_CITY",
-    "requires_flash": false,
-    "show_map_name": false,
-    "warp_events": [
-        {
-            "dest_map": "MAP_VIRIDIAN_CITY",
-            "dest_warp_id": 4,
-            "elevation": 3,
-            "x": 4,
-            "y": 7
-        }
-    ],
-    "weather": "WEATHER_SUNNY"
+  "id": "MAP_VIRIDIAN_CITY_HOUSE1",
+  "name": "ViridianCityHouse1",
+  "layout": "LAYOUT_VIRIDIAN_CITY_HOUSE1",
+  "music": "MUS_RG_NIBI",
+  "region_map_section": "MAPSEC_VIRIDIAN_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 7,
+      "elevation": 3,
+      "dest_map": "MAP_VIRIDIAN_CITY",
+      "dest_warp_id": 4
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ],
+  "allow_bike": "",
+  "allow_escape_rope": ""
 }

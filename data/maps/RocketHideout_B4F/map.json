@@ -1,38 +1,43 @@
 {
-    "allow_bike": false,
-    "allow_escape_rope": false,
-    "allow_running": false,
-    "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-    "bg_events": [
-    ],
-    "connections": null,
-    "coord_events": [
-    ],
-    "id": "MAP_ROCKET_HIDEOUT_B4F",
-    "layout": "LAYOUT_ROCKET_HIDEOUT_B4F",
-    "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_AJITO",
-    "name": "RocketHideout_B4F",
-    "object_events": [
-    ],
-    "region_map_section": "MAPSEC_ROCKET_HIDEOUT",
-    "requires_flash": false,
-    "show_map_name": false,
-    "warp_events": [
-        {
-            "dest_map": "MAP_ROCKET_HIDEOUT_B3F",
-            "dest_warp_id": 1,
-            "elevation": 3,
-            "x": 11,
-            "y": 15
-        },
-        {
-            "dest_map": "MAP_ROCKET_HIDEOUT_ELEVATOR",
-            "dest_warp_id": 0,
-            "elevation": 3,
-            "x": 20,
-            "y": 23
-        }
-    ],
-    "weather": "WEATHER_SUNNY"
+  "id": "MAP_ROCKET_HIDEOUT_B4F",
+  "name": "RocketHideout_B4F",
+  "layout": "LAYOUT_ROCKET_HIDEOUT_B4F",
+  "music": "MUS_RG_AJITO",
+  "region_map_section": "MAPSEC_ROCKET_HIDEOUT",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 11,
+      "y": 15,
+      "elevation": 3,
+      "dest_map": "MAP_ROCKET_HIDEOUT_B3F",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 20,
+      "y": 23,
+      "elevation": 3,
+      "dest_map": "MAP_ROCKET_HIDEOUT_ELEVATOR",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ],
+  "allow_bike": "",
+  "allow_escape_rope": ""
 }
