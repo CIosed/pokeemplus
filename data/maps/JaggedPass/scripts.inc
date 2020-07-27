@@ -1,3 +1,5 @@
+.set LOCALID_HIDEOUT_GUARD, 5
+
 JaggedPass_MapScripts:: @ 8230656
 	map_script MAP_SCRIPT_ON_RESUME, JaggedPass_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, JaggedPass_OnTransition
@@ -12,7 +14,7 @@ JaggedPass_OnResume: @ 8230666
 
 JaggedPass_EventScript_CheckHasMagmaEmblem:: @ 8230674
 	checkitem ITEM_MAGMA_EMBLEM, 1
-	compare VAR_RESULT, 1
+	compare VAR_RESULT, TRUE
 	goto_if_eq JaggedPass_EventScript_SetReadyToOpenHideout
 	return
 
@@ -71,27 +73,27 @@ JaggedPass_EventScript_MagmaHideoutGuard:: @ 8230718
 	goto_if_set FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS, JaggedPass_EventScript_GuardDefeated
 	waitse
 	playse SE_PIN
-	applymovement 5, Common_Movement_ExclamationMark
+	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement 5, Common_Movement_Delay48
+	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_Delay48
 	waitmovement 0
-	applymovement 5, Common_Movement_FacePlayer
+	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox JaggedPass_Text_GruntIntro, MSGBOX_DEFAULT
 	closemessage
 	trainerbattle_no_intro TRAINER_GRUNT_JAGGED_PASS, JaggedPass_Text_GruntDefeat
 	setflag FLAG_BEAT_MAGMA_GRUNT_JAGGED_PASS
-	applymovement 5, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	releaseall
 	end
 
 JaggedPass_EventScript_GuardDefeated:: @ 8230766
-	applymovement 5, Common_Movement_FacePlayer
+	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox JaggedPass_Text_GoWhereverYouWant, MSGBOX_DEFAULT
 	closemessage
-	applymovement 5, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_HIDEOUT_GUARD, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	releaseall
 	end
