@@ -854,6 +854,8 @@
 #define MAP_MT_SILVER_ITEM_ROOM (5 | (38 << 8))
 #define MAP_MT_SILVER_PEAK      (6 | (38 << 8))
 #define MAP_ROUTE26             (7 | (38 << 8))
+#define MAP_ROUTE27             (8 | (38 << 8))
+#define MAP_TOHJO_FALLS         (9 | (38 << 8))
 
 #define MAP_GROUPS_COUNT 39
 

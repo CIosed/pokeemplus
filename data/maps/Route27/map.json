@@ -1,7 +1,7 @@
 {
-  "id": "MAP_ROUTE26",
-  "name": "Route26",
-  "layout": "LAYOUT_ROUTE26",
+  "id": "MAP_ROUTE27",
+  "name": "Route27",
+  "layout": "LAYOUT_ROUTE27",
   "music": "MUS_DAN02",
   "region_map_section": "MAPSEC_NONE",
   "requires_flash": false,
@@ -14,23 +14,34 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
-      "offset": 100,
-      "map": "MAP_ROUTE27"
+      "direction": "right",
+      "offset": -100,
+      "map": "MAP_ROUTE26"
     }
   ],
   "object_events": [
 
   ],
   "warp_events": [
-
+    {
+      "x": 37,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_TOHJO_FALLS",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 24,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_TOHJO_FALLS",
+      "dest_warp_id": 1
+    }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
 
-  ],
-  "allow_bike": "",
-  "allow_escape_rope": ""
+  ]
 }

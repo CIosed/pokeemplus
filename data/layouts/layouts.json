@@ -7050,6 +7050,26 @@
       "secondary_tileset": "gTileset_Contest",
       "border_filepath": "data/layouts/FallarborTown_ContestHall/border.bin",
       "blockdata_filepath": "data/layouts/FallarborTown_ContestHall/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE27",
+      "name": "Route27_Layout",
+      "width": 84,
+      "height": 30,
+      "primary_tileset": "gTileset_gTileset_Kanto_General",
+      "secondary_tileset": "gTileset_Lavender",
+      "border_filepath": "data/layouts/Route27/border.bin",
+      "blockdata_filepath": "data/layouts/Route27/map.bin"
+    },
+    {
+      "id": "LAYOUT_TOHJO_FALLS",
+      "name": "TohjoFalls_Layout",
+      "width": 40,
+      "height": 25,
+      "primary_tileset": "gTileset_gTileset_Kanto_General",
+      "secondary_tileset": "gTileset_KantoCave",
+      "border_filepath": "data/layouts/TohjoFalls/border.bin",
+      "blockdata_filepath": "data/layouts/TohjoFalls/map.bin"
     }
   ]
 }
