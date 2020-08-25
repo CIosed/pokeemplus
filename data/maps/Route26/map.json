@@ -23,7 +23,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 16,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE22GATE",
+      "dest_warp_id": 3
+    }
   ],
   "coord_events": [
 

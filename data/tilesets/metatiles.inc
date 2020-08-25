@@ -984,3 +984,11 @@ gMetatiles_devon_corp::
 	.align 1
 gMetatileAttributes_devon_corp::
 	.incbin "data/tilesets/secondary/devon_corp/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Snow::
+	.incbin "data/tilesets/secondary/snow/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Snow::
+	.incbin "data/tilesets/secondary/snow/metatile_attributes.bin"

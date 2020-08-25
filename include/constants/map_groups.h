@@ -846,16 +846,18 @@
 #define MAP_BILLS_HOUSE                    (90 | (37 << 8))
 
 // Map Group 38
-#define MAP_ROUTE28             (0 | (38 << 8))
-#define MAP_MT_SILVER_EXTERIOR  (1 | (38 << 8))
-#define MAP_MT_SILVER1F         (2 | (38 << 8))
-#define MAP_MT_SILVER2F         (3 | (38 << 8))
-#define MAP_MT_SILVER3F         (4 | (38 << 8))
-#define MAP_MT_SILVER_ITEM_ROOM (5 | (38 << 8))
-#define MAP_MT_SILVER_PEAK      (6 | (38 << 8))
-#define MAP_ROUTE26             (7 | (38 << 8))
-#define MAP_ROUTE27             (8 | (38 << 8))
-#define MAP_TOHJO_FALLS         (9 | (38 << 8))
+#define MAP_ROUTE28               (0 | (38 << 8))
+#define MAP_MT_SILVER_EXTERIOR    (1 | (38 << 8))
+#define MAP_MT_SILVER1F           (2 | (38 << 8))
+#define MAP_MT_SILVER2F           (3 | (38 << 8))
+#define MAP_MT_SILVER3F           (4 | (38 << 8))
+#define MAP_MT_SILVER_ITEM_ROOM   (5 | (38 << 8))
+#define MAP_MT_SILVER_PEAK        (6 | (38 << 8))
+#define MAP_ROUTE26               (7 | (38 << 8))
+#define MAP_ROUTE27               (8 | (38 << 8))
+#define MAP_TOHJO_FALLS           (9 | (38 << 8))
+#define MAP_MT_SILVER_PEAK2F      (10 | (38 << 8))
+#define MAP_MT_SILVER_PEAK_SUMMIT (11 | (38 << 8))
 
 #define MAP_GROUPS_COUNT 39
 

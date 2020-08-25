@@ -2888,3 +2888,23 @@ gTilesetPalettes_devon_corp::
 	.align 2
 gTilesetTiles_devon_corp::
 	.incbin "data/tilesets/secondary/devon_corp/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Snow::
+	.incbin "data/tilesets/secondary/snow/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/snow/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/snow/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/snow/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/snow/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/snow/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/snow/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/snow/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/snow/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/snow/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/snow/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/snow/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/snow/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Snow::
+	.incbin "data/tilesets/secondary/snow/tiles.4bpp.lz"

@@ -7070,6 +7070,26 @@
       "secondary_tileset": "gTileset_KantoCave",
       "border_filepath": "data/layouts/TohjoFalls/border.bin",
       "blockdata_filepath": "data/layouts/TohjoFalls/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER_PEAK2F",
+      "name": "MtSilverPeak2F_Layout",
+      "width": 20,
+      "height": 10,
+      "primary_tileset": "gTileset_gTileset_Kanto_General",
+      "secondary_tileset": "gTileset_KantoCave",
+      "border_filepath": "data/layouts/MtSilverPeak2F/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilverPeak2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_SILVER_PEAK_SUMMIT",
+      "name": "MtSilverPeakSummit_Layout",
+      "width": 27,
+      "height": 28,
+      "primary_tileset": "gTileset_gTileset_Kanto_General",
+      "secondary_tileset": "gTileset_Snow",
+      "border_filepath": "data/layouts/MtSilverPeakSummit/border.bin",
+      "blockdata_filepath": "data/layouts/MtSilverPeakSummit/map.bin"
     }
   ]
 }

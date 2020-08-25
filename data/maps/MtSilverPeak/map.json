@@ -23,6 +23,13 @@
       "elevation": 0,
       "dest_map": "MAP_MT_SILVER3F",
       "dest_warp_id": 5
+    },
+    {
+      "x": 9,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_MT_SILVER_PEAK2F",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

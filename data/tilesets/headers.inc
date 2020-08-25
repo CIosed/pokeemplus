@@ -1467,3 +1467,14 @@ gTileset_devon_corp::
 	.4byte gMetatiles_devon_corp
 	.4byte gMetatileAttributes_devon_corp
 	.4byte NULL
+
+	.align 2
+gTileset_Snow::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Snow
+	.4byte gTilesetPalettes_Snow
+	.4byte gMetatiles_Snow
+	.4byte gMetatileAttributes_Snow
+	.4byte NULL

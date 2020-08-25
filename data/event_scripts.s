@@ -1325,3 +1325,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Route27/scripts.inc"
 
 	.include "data/maps/TohjoFalls/scripts.inc"
+
+	.include "data/maps/MtSilverPeak2F/scripts.inc"
+
+	.include "data/maps/MtSilverPeakSummit/scripts.inc"
