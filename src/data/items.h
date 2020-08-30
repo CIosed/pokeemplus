@@ -3747,7 +3747,6 @@ const struct Item gItems[] =
 
     [ITEM_SUPER_ROD] =
     {
-        .name = _("Super Rod"),
         .itemId = ITEM_SUPER_ROD,
         .price = 0,
         .description = sSuperRodDesc,
@@ -3756,7 +3755,7 @@ const struct Item gItems[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = 2,
         .fieldUseFunc = ItemUseOutOfBattle_Rod,
-        .secondaryId = 2,
+        .secondaryId = SUPER_ROD,
     },
 
     [ITEM_SS_TICKET] =
