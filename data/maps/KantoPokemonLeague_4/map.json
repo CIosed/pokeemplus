@@ -2,7 +2,7 @@
   "id": "MAP_KANTO_POKEMON_LEAGUE_4",
   "name": "KantoPokemonLeague_4",
   "layout": "LAYOUT_KANTO_POKEMON_LEAGUE_4",
-  "music": "MUS_RG_CHAMP_R",
+  "music": "MUS_RG_VICTORY_ROAD",
   "region_map_section": "MAPSEC_INDIGO_PLATEAU",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

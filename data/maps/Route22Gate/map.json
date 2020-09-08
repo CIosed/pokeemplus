@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE22GATE",
   "name": "Route22Gate",
   "layout": "LAYOUT_ROUTE22GATE",
-  "music": "MUS_RG_CHAMP_R",
+  "music": "MUS_RG_VICTORY_ROAD",
   "region_map_section": "MAPSEC_ROUTE_22",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

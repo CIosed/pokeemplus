@@ -11,7 +11,7 @@
     "id": "MAP_SEAFOAM_ISLANDS_B2F",
     "layout": "LAYOUT_SEAFOAM_ISLANDS_B2F",
     "map_type": "MAP_TYPE_UNDERGROUND",
-    "music": "MUS_RG_OTSUKIMI",
+    "music": "MUS_RG_MT_MOON",
     "name": "SeafoamIslands_B2F",
     "object_events": [
     ],

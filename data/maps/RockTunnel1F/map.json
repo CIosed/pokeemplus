@@ -2,7 +2,7 @@
   "id": "MAP_ROCK_TUNNEL1F",
   "name": "RockTunnel1F",
   "layout": "LAYOUT_ROCK_TUNNEL1F",
-  "music": "MUS_RG_OTSUKIMI",
+  "music": "MUS_RG_MT_MOON",
   "region_map_section": "MAPSEC_ROCK_TUNNEL",
   "requires_flash": true,
   "weather": "WEATHER_NONE",

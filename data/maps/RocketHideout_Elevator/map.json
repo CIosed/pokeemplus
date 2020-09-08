@@ -11,7 +11,7 @@
     "id": "MAP_ROCKET_HIDEOUT_ELEVATOR",
     "layout": "LAYOUT_ROCKET_HIDEOUT_ELEVATOR",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_AJITO",
+    "music": "MUS_RG_ROCKET_HIDEOUT",
     "name": "RocketHideout_Elevator",
     "object_events": [
     ],

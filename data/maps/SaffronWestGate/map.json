@@ -2,7 +2,7 @@
   "id": "MAP_SAFFRON_WEST_GATE",
   "name": "SaffronWestGate",
   "layout": "LAYOUT_SAFFRON_WEST_GATE",
-  "music": "MUS_RG_NIBI",
+  "music": "MUS_RG_PEWTER",
   "region_map_section": "MAPSEC_ROUTE_7",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

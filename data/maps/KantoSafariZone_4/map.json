@@ -11,7 +11,7 @@
     "id": "MAP_KANTO_SAFARI_ZONE_4",
     "layout": "LAYOUT_KANTO_SAFARI_ZONE_4",
     "map_type": "MAP_TYPE_ROUTE",
-    "music": "MUS_SHINKA",
+    "music": "MUS_EVOLUTION",
     "name": "KantoSafariZone_4",
     "object_events": [
     ],

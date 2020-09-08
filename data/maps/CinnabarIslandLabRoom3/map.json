@@ -11,7 +11,7 @@
     "id": "MAP_CINNABAR_ISLAND_LAB_ROOM3",
     "layout": "LAYOUT_CINNABAR_ISLAND_LAB_ROOM3",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_GUREN",
+    "music": "MUS_RG_CINNABAR",
     "name": "CinnabarIslandLabRoom3",
     "object_events": [
     ],

@@ -2,7 +2,7 @@
   "id": "MAP_CELADON_CITY_GAME_CORNER1",
   "name": "CeladonCityGameCorner1",
   "layout": "LAYOUT_CELADON_CITY_GAME_CORNER1",
-  "music": "MUS_RG_SLOT",
+  "music": "MUS_RG_GAME_CORNER",
   "region_map_section": "MAPSEC_CELADON_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

@@ -11,7 +11,7 @@
     "id": "MAP_SAFFRON_POKEMON_MART",
     "layout": "LAYOUT_SAFFRON_POKEMON_MART",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_POKECEN",
+    "music": "MUS_RG_POKE_CENTER",
     "name": "SaffronPokemonMart",
     "object_events": [
     ],

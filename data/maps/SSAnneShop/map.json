@@ -2,7 +2,7 @@
   "id": "MAP_SSANNE_SHOP",
   "name": "SSAnneShop",
   "layout": "LAYOUT_SSANNE_SHOP",
-  "music": "MUS_RG_POKECEN",
+  "music": "MUS_RG_POKE_CENTER",
   "region_map_section": "MAPSEC_S_S_ANNE",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

@@ -2,7 +2,7 @@
   "id": "MAP_KANTO_POKEMON_LEAGUE_2",
   "name": "KantoPokemonLeague_2",
   "layout": "LAYOUT_KANTO_POKEMON_LEAGUE_2",
-  "music": "MUS_RG_AJITO",
+  "music": "MUS_RG_ROCKET_HIDEOUT",
   "region_map_section": "MAPSEC_INDIGO_PLATEAU",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

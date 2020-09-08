@@ -27,7 +27,7 @@
     "id": "MAP_VERDANTURF_TOWN_CONTEST_HALL",
     "layout": "LAYOUT_VERDANTURF_TOWN_CONTEST_HALL",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_CONLOBBY",
+    "music": "MUS_CONTEST_LOBBY",
     "name": "VerdanturfTown_ContestHall",
     "object_events": [
         {

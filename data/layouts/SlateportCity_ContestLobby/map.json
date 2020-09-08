@@ -43,7 +43,7 @@
     "id": "MAP_SLATEPORT_CITY_CONTEST_LOBBY",
     "layout": "LAYOUT_SLATEPORT_CITY_CONTEST_LOBBY",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_CONLOBBY",
+    "music": "MUS_CONTEST_LOBBY",
     "name": "SlateportCity_ContestLobby",
     "object_events": [
         {

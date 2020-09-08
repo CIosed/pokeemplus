@@ -11,7 +11,7 @@
     "id": "MAP_VIRIDIAN_CITY_HOUSE2",
     "layout": "LAYOUT_VIRIDIAN_CITY_HOUSE2",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_NIBI",
+    "music": "MUS_RG_PEWTER",
     "name": "ViridianCityHouse2",
     "object_events": [
     ],

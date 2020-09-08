@@ -2,7 +2,7 @@
   "id": "MAP_SSANNE3",
   "name": "SSAnne3",
   "layout": "LAYOUT_SSANNE3",
-  "music": "MUS_RG_SANTOAN",
+  "music": "MUS_RG_SS_ANNE",
   "region_map_section": "MAPSEC_S_S_ANNE",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

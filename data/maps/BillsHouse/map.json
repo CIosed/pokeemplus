@@ -2,7 +2,7 @@
   "id": "MAP_BILLS_HOUSE",
   "name": "BillsHouse",
   "layout": "LAYOUT_BILLS_HOUSE",
-  "music": "MUS_RG_HANADA",
+  "music": "MUS_RG_FUCHSIA",
   "region_map_section": "MAPSEC_ROUTE_25",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

@@ -11,7 +11,7 @@
     "id": "MAP_PEWTER_CITY_MART",
     "layout": "LAYOUT_PEWTER_CITY_MART",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_POKECEN",
+    "music": "MUS_RG_POKE_CENTER",
     "name": "PewterCityMart",
     "object_events": [
     ],

@@ -51,7 +51,7 @@
     "id": "MAP_FALLARBOR_TOWN_CONTEST_LOBBY",
     "layout": "LAYOUT_FALLARBOR_TOWN_CONTEST_LOBBY",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_CONLOBBY",
+    "music": "MUS_CONTEST_LOBBY",
     "name": "FallarborTown_ContestLobby",
     "object_events": [
         {

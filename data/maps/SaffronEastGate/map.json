@@ -2,7 +2,7 @@
   "id": "MAP_SAFFRON_EAST_GATE",
   "name": "SaffronEastGate",
   "layout": "LAYOUT_SAFFRON_EAST_GATE",
-  "music": "MUS_RG_NIBI",
+  "music": "MUS_RG_PEWTER",
   "region_map_section": "MAPSEC_ROUTE_8",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

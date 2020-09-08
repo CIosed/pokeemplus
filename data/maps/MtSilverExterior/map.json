@@ -2,7 +2,7 @@
   "id": "MAP_MT_SILVER_EXTERIOR",
   "name": "MtSilverExterior",
   "layout": "LAYOUT_MT_SILVER_EXTERIOR",
-  "music": "MUS_RG_CHAMP_R",
+  "music": "MUS_RG_VICTORY_ROAD",
   "region_map_section": "MAPSEC_SEVII_ISLE_23",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

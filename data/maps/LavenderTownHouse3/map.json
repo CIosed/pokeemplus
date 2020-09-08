@@ -11,7 +11,7 @@
     "id": "MAP_LAVENDER_TOWN_HOUSE3",
     "layout": "LAYOUT_LAVENDER_TOWN_HOUSE3",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_SHION",
+    "music": "MUS_RG_LAVENDER",
     "name": "LavenderTownHouse3",
     "object_events": [
     ],

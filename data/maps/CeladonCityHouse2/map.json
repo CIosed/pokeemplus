@@ -11,7 +11,7 @@
     "id": "MAP_CELADON_CITY_HOUSE2",
     "layout": "LAYOUT_CELADON_CITY_HOUSE2",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_TAMAMUSI",
+    "music": "MUS_RG_CELADON",
     "name": "CeladonCityHouse2",
     "object_events": [
     ],

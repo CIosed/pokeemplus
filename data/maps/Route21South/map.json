@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE21SOUTH",
   "name": "Route21South",
   "layout": "LAYOUT_ROUTE21SOUTH",
-  "music": "MUS_RG_LOAD02",
+  "music": "MUS_RG_ROUTE3",
   "region_map_section": "MAPSEC_ROUTE_21",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

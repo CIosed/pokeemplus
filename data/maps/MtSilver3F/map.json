@@ -2,7 +2,7 @@
   "id": "MAP_MT_SILVER3F",
   "name": "MtSilver3F",
   "layout": "LAYOUT_MT_SILVER3F",
-  "music": "MUS_DAN02",
+  "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_SEVII_ISLE_24",
   "requires_flash": true,
   "weather": "WEATHER_SUNNY",

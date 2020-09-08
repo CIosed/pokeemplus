@@ -2,7 +2,7 @@
   "id": "MAP_METEOR_CAVE1F_2",
   "name": "MeteorCave1F_2",
   "layout": "LAYOUT_METEOR_CAVE1F_2",
-  "music": "MUS_DEEPDEEP",
+  "music": "MUS_UNDERWATER",
   "region_map_section": "MAPSEC_ROUTE_114",
   "requires_flash": false,
   "weather": "WEATHER_UNDERWATER",

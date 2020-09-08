@@ -2,7 +2,7 @@
   "id": "MAP_MT_MOON1F",
   "name": "MtMoon1F",
   "layout": "LAYOUT_MT_MOON1F",
-  "music": "MUS_RG_OTSUKIMI",
+  "music": "MUS_RG_MT_MOON",
   "region_map_section": "MAPSEC_MT_MOON",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

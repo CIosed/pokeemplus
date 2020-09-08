@@ -11,7 +11,7 @@
     "id": "MAP_FUCHSIA_CITY_HOUSE4",
     "layout": "LAYOUT_FUCHSIA_CITY_HOUSE4",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_HANADA",
+    "music": "MUS_RG_FUCHSIA",
     "name": "FuchsiaCityHouse4",
     "object_events": [
     ],

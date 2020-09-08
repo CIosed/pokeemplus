@@ -2,7 +2,7 @@
   "id": "MAP_UDNERGROUND_PATH_HORIZONTAL",
   "name": "UdnergroundPathHorizontal",
   "layout": "LAYOUT_UDNERGROUND_PATH_HORIZONTAL",
-  "music": "MUS_RG_LOAD01",
+  "music": "MUS_RG_ROUTE1",
   "region_map_section": "MAPSEC_UNDERGROUND_PATH",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

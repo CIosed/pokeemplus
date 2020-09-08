@@ -2,7 +2,7 @@
   "id": "MAP_CELADON_CITY_HOUSE4",
   "name": "CeladonCityHouse4",
   "layout": "LAYOUT_CELADON_CITY_HOUSE4",
-  "music": "MUS_RG_TAMAMUSI",
+  "music": "MUS_RG_CELADON",
   "region_map_section": "MAPSEC_CELADON_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

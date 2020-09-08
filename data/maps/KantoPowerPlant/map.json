@@ -2,7 +2,7 @@
   "id": "MAP_KANTO_POWER_PLANT",
   "name": "KantoPowerPlant",
   "layout": "LAYOUT_KANTO_POWER_PLANT",
-  "music": "MUS_RG_POKEYASHI",
+  "music": "MUS_RG_POKE_MANSION",
   "region_map_section": "MAPSEC_POWER_PLANT",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

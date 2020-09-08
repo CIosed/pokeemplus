@@ -11,7 +11,7 @@
     "id": "MAP_CERULEAN_CAVE_B1F",
     "layout": "LAYOUT_CERULEAN_CAVE_B1F",
     "map_type": "MAP_TYPE_UNDERGROUND",
-    "music": "MUS_RG_AJITO",
+    "music": "MUS_RG_ROCKET_HIDEOUT",
     "name": "CeruleanCaveB1F",
     "object_events": [
     ],

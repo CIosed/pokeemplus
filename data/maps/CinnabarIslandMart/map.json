@@ -11,7 +11,7 @@
     "id": "MAP_CINNABAR_ISLAND_MART",
     "layout": "LAYOUT_CINNABAR_ISLAND_MART",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_POKECEN",
+    "music": "MUS_RG_POKE_CENTER",
     "name": "CinnabarIslandMart",
     "object_events": [
     ],

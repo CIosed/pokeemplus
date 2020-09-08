@@ -11,7 +11,7 @@
     "id": "MAP_KANTO_SAFARI_ZONE_HOUSE_3",
     "layout": "LAYOUT_KANTO_SAFARI_ZONE_HOUSE_3",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_SHINKA",
+    "music": "MUS_EVOLUTION",
     "name": "KantoSafariZoneHouse_3",
     "object_events": [
     ],

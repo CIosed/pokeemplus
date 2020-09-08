@@ -11,7 +11,7 @@
     "id": "MAP_PEWTER_CITY_HOUSE1",
     "layout": "LAYOUT_PEWTER_CITY_HOUSE1",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_NIBI",
+    "music": "MUS_RG_PEWTER",
     "name": "PewterCityHouse1",
     "object_events": [
     ],

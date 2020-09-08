@@ -2,7 +2,7 @@
   "id": "MAP_DIGLETTS_CAVE_SOUTH_ENTRANCE",
   "name": "DiglettsCaveSouthEntrance",
   "layout": "LAYOUT_DIGLETTS_CAVE_SOUTH_ENTRANCE",
-  "music": "MUS_RG_T_MORI",
+  "music": "MUS_RG_VIRIDIAN_FOREST",
   "region_map_section": "MAPSEC_DIGLETTS_CAVE",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

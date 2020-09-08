@@ -11,7 +11,7 @@
     "id": "MAP_SAFFRON_HOUSE1_2F",
     "layout": "LAYOUT_SAFFRON_HOUSE1_2F",
     "map_type": "MAP_TYPE_INDOOR",
-    "music": "MUS_RG_NIBI",
+    "music": "MUS_RG_PEWTER",
     "name": "SaffronHouse1_2F",
     "object_events": [
     ],

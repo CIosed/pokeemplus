@@ -2,7 +2,7 @@
   "id": "MAP_SSANNE_CAPTAINS_CABIN",
   "name": "SSAnneCaptainsCabin",
   "layout": "LAYOUT_SSANNE_CAPTAINS_CABIN",
-  "music": "MUS_RG_ROCKET",
+  "music": "MUS_RG_ENCOUNTER_ROCKET",
   "region_map_section": "MAPSEC_S_S_ANNE",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
