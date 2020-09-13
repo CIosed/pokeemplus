@@ -455,6 +455,8 @@
 # https://www.pokecommunity.com/showthread.php?t=435664
 /Stair Warps
 # https://www.pokecommunity.com/showthread.php?p=10183669#post10183669
+/Repeated Field Medicine Use
+# https://www.pokecommunity.com/showthread.php?p=10206290#post10206290
 
 #Luna
 / Custom Tiles
