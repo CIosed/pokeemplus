@@ -22,6 +22,8 @@
 #include "trainer_see.h"
 #include "trainer_hill.h"
 #include "util.h"
+#include "sound.h"
+#include "constants/songs.h"
 #include "constants/event_object_movement.h"
 #include "constants/event_objects.h"
 #include "constants/field_effects.h"
