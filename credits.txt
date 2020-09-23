@@ -418,6 +418,7 @@
 #Expert (Female)
 #Kindler
 #Ruin Maniac
+/ Colored text based on gender
 
 - Slawter -
 / Dynamic OW Palette System
