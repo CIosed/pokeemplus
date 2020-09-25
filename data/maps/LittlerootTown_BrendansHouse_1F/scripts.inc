@@ -300,12 +300,12 @@ LittlerootTown_BrendansHouse_1F_Movement_BrendanGoUpstairs2: @ 81F7A16
 	step_end
 
 PlayersHouse_1F_Text_IsntItNiceInHere: @ 81F7A1C
-	.string "MOM: See, {PLAYER}?\n"
+	.string "{COLOR RED}MOM: See, {PLAYER}?\n"
 	.string "Isn't it nice in here, too?$"
 
 PlayersHouse_1F_Text_MoversPokemonGoSetClock: @ 81F7A46
-	.string "The mover's POKéMON do all the work\n"
-	.string "of moving us in and cleaning up after.\l"
+	.string "{COLOR RED}The mover's POKéMON do all the work\n"
+	.string "of moving us in and cleaning up.\l"
 	.string "This is so convenient!\p"
 	.string "{PLAYER}, your room is upstairs.\n"
 	.string "Go check it out, dear!\p"
@@ -314,33 +314,35 @@ PlayersHouse_1F_Text_MoversPokemonGoSetClock: @ 81F7A46
 	.string "Don't forget to set it!$"
 
 PlayersHouse_1F_Text_ArentYouInterestedInRoom: @ 81F7B24
-	.string "MOM: Well, {PLAYER}?\p"
+	.string "{COLOR RED}MOM: Well, {PLAYER}?\p"
 	.string "Aren't you interested in seeing your\n"
 	.string "very own room?$"
 
 PlayersHouse_1F_Text_GoSetTheClock: @ 81F7B67
-	.string "MOM: {PLAYER}.\p"
+	.string "{COLOR RED}MOM: {PLAYER}.\p"
 	.string "Go set the clock in your room, honey.$"
 
 PlayersHouse_1F_Text_OhComeQuickly: @ 81F7B96
-	.string "MOM: Oh! {PLAYER}, {PLAYER}!\n"
+	.string "{COLOR RED}MOM: Oh! {PLAYER}, {PLAYER}!\n"
 	.string "Quick! Come quickly!$"
 
 PlayersHouse_1F_Text_MaybeDadWillBeOn: @ 81F7BBC
-	.string "MOM: Look! It's PETALBURG GYM!\n"
+	.string "{COLOR RED}MOM: Look! It's PETALBURG GYM!\n"
 	.string "Maybe DAD will be on!$"
 
 PlayersHouse_1F_Text_ItsOverWeMissedHim: @ 81F7BF1
-	.string "MOM: Oh… It's over.\p"
-	.string "I think DAD was on, but we missed him.\n"
+	.string "{COLOR RED}MOM: Oh… It's over.\p"
+	.string "I think DAD was on, but we missed\n"
+	.string "him.\p"
 	.string "Too bad.$"
 
 PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor: @ 81F7C35
-	.string "Oh, yes.\n"
+	.string "{COLOR RED}Oh, yes.\n"
 	.string "One of DAD's friends lives in town.\p"
 	.string "PROF. BIRCH is his name.\p"
-	.string "He lives right next door, so you should\n"
-	.string "go over and introduce yourself.$"
+	.string "He lives right next door, so you\n"
+	.string "should go over and introduce\l"
+	.string "yourself.$"
 
 PlayersHouse_1F_Text_SeeYouHoney: @ 81F7CC3
 	.string "MOM: See you, honey!$"
@@ -385,7 +387,7 @@ PlayersHouse_1F_Text_Vigoroth2: @ 81F7EB3
 
 PlayersHouse_1F_Text_ReportFromPetalburgGym: @ 81F7EC6
 	.string "INTERVIEWER: …We brought you this\n"
-	.string "report from in front of PETALBURG GYM.$"
+	.string "report in front of PETALBURG GYM.$"
 
 PlayersHouse_1F_Text_TheresAMovieOnTV: @ 81F7F0F
 	.string "There is a movie on TV.\p"

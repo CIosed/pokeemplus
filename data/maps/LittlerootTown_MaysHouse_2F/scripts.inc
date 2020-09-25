@@ -330,7 +330,7 @@ LittlerootTown_MaysHouse_2F_EventScript_TurnOffPlayerPC:: @ 81F958F
 	end
 
 RivalsHouse_2F_Text_MayWhoAreYou: @ 81F959C
-	.string "Huh?\n"
+	.string "{COLOR RED}Huh?\n"
 	.string "Who… Who are you?\p"
 	.string "… … … … … … … …\n"
 	.string "… … … … … … … …\p"
@@ -339,12 +339,14 @@ RivalsHouse_2F_Text_MayWhoAreYou: @ 81F959C
 	.string "Um… I'm MAY.\n"
 	.string "Glad to meet you!\p"
 	.string "I…\n"
-	.string "I have this dream of becoming friends\l"
-	.string "with POKéMON all over the world.\p"
+	.string "I have this dream of becoming\l"
+	.string "friends with POKéMON all over\l"
+	.string "the world.\p"
 	.string "I… I heard about you, {PLAYER}{KUN}, from\n"
 	.string "my dad, PROF. BIRCH.\p"
 	.string "I was hoping that you would be nice,\n"
-	.string "{PLAYER}{KUN}, and that we could be friends.\p"
+	.string "{PLAYER}{KUN}, and that we could be\l"
+	.string "friends.\p"
 	.string "Oh, this is silly, isn't it?\n"
 	.string "I… I've just met you, {PLAYER}{KUN}.\p"
 	.string "Eheheh…\p"
@@ -358,7 +360,7 @@ RivalsHouse_2F_Text_MayGettingReady: @ 81F978A
 	.string "Items ready, and…$"
 
 RivalsHouse_2F_Text_BrendanWhoAreYou: @ 81F97B4
-	.string "Hey!\n"
+	.string "{COLOR BLUE}Hey!\n"
 	.string "You…\p"
 	.string "Who are you?\p"
 	.string "Oh, you're {PLAYER}, aren't you?\n"
@@ -373,8 +375,8 @@ RivalsHouse_2F_Text_BrendanWhoAreYou: @ 81F97B4
 	.string "a POKéMON?\p"
 	.string "Do you want me to go catch you one?\p"
 	.string "Aw, darn, I forgot…\p"
-	.string "I'm supposed to go help my dad catch\n"
-	.string "some wild POKéMON.\p"
+	.string "I'm supposed to go help my dad\n"
+	.string "catch some wild POKéMON.\p"
 	.string "Some other time, okay?$"
 
 RivalsHouse_2F_Text_BrendanGettingReady: @ 81F9962

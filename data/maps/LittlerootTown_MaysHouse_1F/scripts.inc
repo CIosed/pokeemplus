@@ -334,15 +334,15 @@ LittlerootTown_MaysHouse_1F_Movement_MayGoUpstairs2: @ 81F8BBF
 	step_end
 
 RivalsHouse_1F_Text_OhYoureTheNewNeighbor: @ 81F8BC5
-	.string "Oh, hello. And you are?\p"
+	.string "{COLOR RED}Oh, hello. And you are?\p"
 	.string "… … … … … … … … …\n"
 	.string "… … … … … … … … …\p"
-	.string "Oh, you're {PLAYER}{KUN}, our new next-door\n"
-	.string "neighbor! Hi!\p"
+	.string "Oh, you're {PLAYER}{KUN}, our new\n"
+	.string "next-door neighbor! Hi!\p"
 	.string "We have a {STR_VAR_1} about the same\n"
 	.string "age as you.\p"
-	.string "Our {STR_VAR_1} was excited about making\n"
-	.string "a new friend.\p"
+	.string "Our {STR_VAR_1} was excited about\n"
+	.string "making a new friend.\p"
 	.string "Our {STR_VAR_1} is upstairs, I think.$"
 
 RivalsHouse_1F_Text_LikeChildLikeFather: @ 81F8CA5
@@ -372,8 +372,8 @@ RivalsHouse_1F_Text_ShouldGoHomeEverySoOften: @ 81F8E01
 	.string "She might not say it, but I'm sure she\n"
 	.string "worries about you, {PLAYER}{KUN}.$"
 
-RivalsHouse_1F_Text_MayWhoAreYou: @ 81F8EC6
-	.string "Huh?\n"
+RivalsHouse_1F_Text_MayWhoAreYou: @ 81F959C
+	.string "{COLOR RED}Huh?\n"
 	.string "Who… Who are you?\p"
 	.string "… … … … … … … …\n"
 	.string "… … … … … … … …\p"
@@ -382,8 +382,9 @@ RivalsHouse_1F_Text_MayWhoAreYou: @ 81F8EC6
 	.string "Um… I'm MAY.\n"
 	.string "Glad to meet you!\p"
 	.string "I…\n"
-	.string "I have this dream of becoming friends\l"
-	.string "with POKéMON all over the world.\p"
+	.string "I have this dream of becoming\l"
+	.string "friends with POKéMON all over\l"
+	.string "the world.\p"
 	.string "I… I heard about you, {PLAYER}{KUN}, from\n"
 	.string "my dad, PROF. BIRCH.\p"
 	.string "I was hoping that you would be nice,\n"
@@ -396,8 +397,8 @@ RivalsHouse_1F_Text_MayWhoAreYou: @ 81F8EC6
 	.string "some wild POKéMON!\p"
 	.string "{PLAYER}{KUN}, I'll catch you later!$"
 
-RivalsHouse_1F_Text_BrendanWhoAreYou: @ 81F90B4
-	.string "Hey!\n"
+RivalsHouse_1F_Text_BrendanWhoAreYou: @ 81F97B4
+	.string "{COLOR BLUE}Hey!\n"
 	.string "You…\p"
 	.string "Who are you?\p"
 	.string "Oh, you're {PLAYER}, aren't you?\n"
@@ -412,8 +413,8 @@ RivalsHouse_1F_Text_BrendanWhoAreYou: @ 81F90B4
 	.string "a POKéMON?\p"
 	.string "Do you want me to go catch you one?\p"
 	.string "Aw, darn, I forgot…\p"
-	.string "I'm supposed to go help my dad catch\n"
-	.string "some wild POKéMON.\p"
+	.string "I'm supposed to go help my dad\n"
+	.string "catch some wild POKéMON.\p"
 	.string "Some other time, okay?$"
 
 RivalsHouse_1F_Text_DoYouHavePokemon: @ 81F9262

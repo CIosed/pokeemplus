@@ -263,10 +263,10 @@ Route101_Movement_BirchApproachPlayer: @ 81EBE8D
 	step_end
 
 Route101_Text_HelpMe: @ 81EBE8F
-	.string "H-help me!$"
+	.string "{COLOR BLUE}H-help me!$"
 
 Route101_Text_PleaseHelp: @ 81EBE9A
-	.string "Hello! You over there!\n"
+	.string "{COLOR BLUE}Hello! You over there!\n"
 	.string "Please! Help!\p"
 	.string "In my BAG!\n"
 	.string "There's a POKé BALL!$"
