@@ -64,11 +64,11 @@ static EWRAM_DATA void *sTempTileDataBuffer[0x20] = {NULL};
 
 const u16 gUnknown_0860F074[] = INCBIN_U16("graphics/interface/860F074.gbapal");
 
-static const u8 sTextSpeedFrameDelays[] = 
-{ 
-    [OPTIONS_TEXT_SPEED_SLOW] = 8, 
-    [OPTIONS_TEXT_SPEED_MID]  = 4, 
-    [OPTIONS_TEXT_SPEED_FAST] = 1 
+static const u8 sTextSpeedFrameDelays[] =
+{
+    [OPTIONS_TEXT_SPEED_SLOW] = 8,
+    [OPTIONS_TEXT_SPEED_MID]  = 4,
+    [OPTIONS_TEXT_SPEED_FAST] = 1
 };
 
 static const struct WindowTemplate sStandardTextBox_WindowTemplates[] =
@@ -175,13 +175,13 @@ u16 AddTextPrinterParameterized2(u8 windowId, u8 fontId, const u8 *str, u8 speed
 
     printer.currentChar = str;
     printer.windowId = windowId;
-    printer.fontId = fontId;
+    printer.fontId = 2;
     printer.x = 0;
     printer.y = 1;
     printer.currentX = 0;
     printer.currentY = 1;
     printer.letterSpacing = 0;
-    printer.lineSpacing = 0;
+    printer.lineSpacing = 1;
     printer.style = 0;
     printer.fgColor = fgColor;
     printer.bgColor = bgColor;
