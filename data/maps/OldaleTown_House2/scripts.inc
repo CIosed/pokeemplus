@@ -15,6 +15,6 @@ OldaleTown_House2_Text_PokemonLevelUp: @ 81FBF6D
 
 OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon: @ 81FBFB0
 	.string "If the POKéMON with you become\n"
-	.string "stronger, you'll be able to go farther\l"
-	.string "away from here.$"
+	.string "stronger, you'll be able to go\l"
+	.string "farther away from here.$"
 

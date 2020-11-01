@@ -350,8 +350,8 @@ OldaleTown_Movement_ReturnToOriginalPosition: @ 81E918B
 	step_end
 
 OldaleTown_Text_SavingMyProgress: @ 81E918E
-	.string "I want to take a rest, so I'm saving my\n"
-	.string "progress.$"
+	.string "I want to take a rest, so I'm saving\n"
+	.string "my progress.$"
 
 OldaleTown_Text_IWorkAtPokemonMart: @ 81E91C0
 	.string "Hi!\n"
@@ -367,12 +367,12 @@ OldaleTown_Text_ThisIsAPokemonMart: @ 81E91FD
 	.string "a promotional item.$"
 
 OldaleTown_Text_PotionExplanation: @ 81E92AF
-	.string "A POTION can be used anytime, so it's\n"
-	.string "even more useful than a POKéMON CENTER\l"
-	.string "in certain situations.$"
+	.string "{COLOR BLUE}A POTION can be used anytime, so it's\n"
+	.string "even more useful than a POKéMON\l"
+	.string "CENTER in certain situations.$"
 
 OldaleTown_Text_WaitDontComeInHere: @ 81E9313
-	.string "Aaaaah! Wait!\n"
+	.string "{COLOR BLUE}Aaaaah! Wait!\n"
 	.string "Please don't come in here.\p"
 	.string "I just discovered the footprints of\n"
 	.string "a rare POKéMON!\p"

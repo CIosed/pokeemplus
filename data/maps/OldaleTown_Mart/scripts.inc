@@ -64,8 +64,10 @@ OldaleTown_Mart_Text_ImGoingToBuyPokeBalls: @ 81FC2F3
 	.string "and catch a bunch of POKéMON!$"
 
 OldaleTown_Mart_Text_RestoreHPWithPotion: @ 81FC338
-	.string "If a POKéMON gets hurt and loses its HP\n"
-	.string "and faints, it won't be able to battle.\p"
-	.string "To prevent your POKéMON from fainting,\n"
-	.string "restore its HP with a POTION.$"
+	.string "If a POKéMON gets hurt and loses its\n"
+	.string "HP and faints, it won't be able\l"
+	.string "to battle.\p"
+	.string "To prevent your POKéMON from fainting\n"
+	.string "you need to restore its HP with\l"
+	.string "a POTION.$"
 
