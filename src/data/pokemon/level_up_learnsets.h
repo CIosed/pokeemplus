@@ -5565,7 +5565,8 @@ static const struct LevelUpMove sLudicoloLevelUpLearnset[] = {
 
 static const struct LevelUpMove sSeedotLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BIDE),
-    LEVEL_UP_MOVE( 3, MOVE_HARDEN),
+    LEVEL_UP_MOVE( 2, MOVE_HARDEN),
+    LEVEL_UP_MOVE( 4, MOVE_TACKLE),
     LEVEL_UP_MOVE( 9, MOVE_GROWTH),
     LEVEL_UP_MOVE(15, MOVE_NATURE_POWER),
     LEVEL_UP_MOVE(21, MOVE_SYNTHESIS),
