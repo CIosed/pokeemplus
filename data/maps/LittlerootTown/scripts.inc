@@ -979,11 +979,13 @@ LittlerootTown_Text_WearTheseRunningShoes: @ 81E87F0
 	.string "{COLOR RED}MOM: {PLAYER}! {PLAYER}! Did you\n"
 	.string "introduce yourself to PROF. BIRCH?\p"
 	.string "Oh! What an adorable POKéMON!\n"
-	.string "You got it from PROF. BIRCH. How nice!\p"
+	.string "You got it from PROF. BIRCH.\l"
+	.string "How nice!\p"
 	.string "You're your father's child, all right.\n"
 	.string "You look good together with POKéMON!\p"
-	.string "Here, honey! If you're going out on an\n"
-	.string "adventure, wear these RUNNING SHOES.\p"
+	.string "Here, honey! If you're going out on\n"
+	.string "an adventure, wear these RUNNING\l"
+	.string "SHOES.\p"
 	.string "They'll put a zip in your step!$"
 
 LittlerootTown_Text_SwitchShoesWithRunningShoes: @ 81E8925
@@ -991,21 +993,21 @@ LittlerootTown_Text_SwitchShoesWithRunningShoes: @ 81E8925
 	.string "RUNNING SHOES.$"
 
 LittlerootTown_Text_ExplainRunningShoes: @ 81E894F
-	.string "MOM: {PLAYER}, those shoes came with\n"
+	.string "{COLOR RED}MOM: {PLAYER}, those shoes came with\n"
 	.string "instructions.\p"
-	.string "“Press the B Button while wearing these\n"
-	.string "RUNNING SHOES to run extra-fast!\p"
-	.string "“Slip on these RUNNING SHOES and race\n"
-	.string "in the great outdoors!”$"
+	.string "“Press the B Button while wearing\n"
+	.string "the RUNNING SHOES to run extra-fast!\p"
+	.string "“Slip on these RUNNING SHOES and\n"
+	.string "race in the great outdoors!”$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens: @ 81E8A03
-	.string "… … … … … … … …\n"
+	.string "{COLOR RED}… … … … … … … …\n"
 	.string "… … … … … … … …\p"
-	.string "To think that you have your very own\n"
-	.string "POKéMON now…\l"
+	.string "To think that you have your very\n"
+	.string "own POKéMON now…\l"
 	.string "Your father will be overjoyed.\p"
-	.string "…But please be careful.\n"
-	.string "If anything happens, you can come home.\p"
+	.string "…But please be careful. If anything\n"
+	.string "happens, you can come home.\p"
 	.string "Go on, go get them, honey!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems: @ 81E8ACF

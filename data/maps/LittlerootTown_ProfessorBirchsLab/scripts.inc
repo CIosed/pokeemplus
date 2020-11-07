@@ -786,7 +786,7 @@ LittlerootTown_ProfessorBirchsLab_Text_BirchRivalGoneHome: @ 81FAA74
 	.string "you should get some rest at home.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex: @ 81FAB22
-	.string "PROF. BIRCH: Oh, hi, {PLAYER}{KUN}!\p"
+	.string "{COLOR BLUE}PROF. BIRCH: Oh, hi, {PLAYER}{KUN}!\p"
 	.string "I heard you beat {RIVAL} on\n"
 	.string "your first try. That's excellent!\p"
 	.string "{RIVAL}'s been helping with my research\n"
@@ -794,61 +794,63 @@ LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex: @ 81FAB22
 	.string "{RIVAL} has an extensive history as\n"
 	.string "a TRAINER already.\p"
 	.string "Here, {PLAYER}{KUN}, I ordered this for my\n"
-	.string "research, but I think you should have\l"
-	.string "this POKéDEX.$"
+	.string "research, but I think you should\l"
+	.string "have this POKéDEX.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex: @ 81FAC32
 	.string "{PLAYER} received the POKéDEX!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex: @ 81FAC4B
-	.string "PROF. BIRCH: The POKéDEX is a high-tech\n"
-	.string "tool that automatically makes a record\l"
-	.string "of any POKéMON you meet or catch.\p"
+	.string "{COLOR BLUE}PROF. BIRCH: The POKéDEX is a\n"
+	.string "high-tech tool that automatically\l"
+	.string "makes a record of any POKéMON you\n"
+	.string "meet or catch.\p"
 	.string "My kid, {RIVAL}, goes everywhere\n"
 	.string "with it.\p"
-	.string "Whenever my kid catches a rare POKéMON\n"
-	.string "and records its data in the POKéDEX,\l"
-	.string "why, {RIVAL} looks for me while I'm out\l"
-	.string "doing fieldwork, and shows me.$"
+	.string "Whenever my kid catches a rare\n"
+	.string "POKéMON and records its data in\l"
+	.string "the POKéDEX, why, {RIVAL} looks\l"
+	.string "for me while I'm out doing fieldwork,\l"
+	.string "and shows me.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait: @ 81FAD6F
 	.string "PROF. BIRCH: Countless POKéMON\n"
 	.string "await you!\p"
-	.string "Argh, I'm getting the itch to get out\n"
-	.string "and do fieldwork again!$"
+	.string "Argh, I'm getting the itch to get\n"
+	.string "out and do fieldwork again!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese: @ 81FADD7
-	.string "MAY: Oh, wow, {PLAYER}{KUN}!\n"
+	.string "{COLOR RED}MAY: Oh, wow, {PLAYER}{KUN}!\n"
 	.string "You got a POKéDEX, too!\p"
 	.string "That's great! Just like me!\n"
 	.string "I've got something for you, too!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls: @ 81FAE40
-	.string "MAY: It's fun if you can get a lot of\n"
-	.string "POKéMON!\p"
+	.string "{COLOR RED}MAY: It's fun if you can get a\n"
+	.string "lot of POKéMON!\p"
 	.string "I'm going to look all over the place\n"
 	.string "because I want different POKéMON.\p"
-	.string "If I find any cute POKéMON, I'll catch\n"
-	.string "them with POKé BALLS!$"
+	.string "If I find any cute POKéMON, I'll\n"
+	.string "catch them with POKé BALLS!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OhYourBagsFull: @ 81FAEF3
 	.string "Oh? Your BAG's full.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhereShouldIGoNext: @ 81FAF08
-	.string "MAY: I wonder where I should go look\n"
-	.string "for POKéMON next?$"
+	.string "MAY: I wonder where I should go\n"
+	.string "look for POKéMON next?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese: @ 81FAF3F
-	.string "BRENDAN: Huh…\n"
+	.string "{COLOR BLUE}BRENDAN: Huh…\n"
 	.string "So you got a POKéDEX, too.\p"
 	.string "Well then, here.\n"
 	.string "I'll give you these.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls: @ 81FAF8E
-	.string "BRENDAN: You know it's more fun to\n"
+	.string "{COLOR BLUE}BRENDAN: You know it's more fun to\n"
 	.string "have a whole bunch of POKéMON.\p"
-	.string "I'm going to explore all over the place\n"
-	.string "to find different POKéMON.\p"
+	.string "I'm going to explore all over the\n"
+	.string "place to find different POKéMON.\p"
 	.string "If I find any cool POKéMON, you bet\n"
 	.string "I'll try to get them with POKé BALLS.$"
 
