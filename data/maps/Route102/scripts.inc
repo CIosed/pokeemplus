@@ -55,7 +55,7 @@ Route102_Text_LetsGoBack: @ 81EC297
 	.string "Let's go back to the GYM!$"
 
 Route102_Text_ImNotVeryTall: @ 81EC2C0
-	.string "I'm…not very tall, so I sink right\n"
+	.string "I'm… not very tall, so I sink right\n"
 	.string "into tall grass.\p"
 	.string "The grass goes up my nose and…\n"
 	.string "Fwafwafwafwafwa…\p"

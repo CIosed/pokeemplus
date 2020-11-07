@@ -43,8 +43,8 @@ Route102_Text_TianaDefeated: @ 82948F3
 	.string "I ended up furthering your career…$"
 
 Route102_Text_TianaPostBattle: @ 8294916
-	.string "To keep winning my way up, I see that\n"
-	.string "I have to catch more POKéMON.$"
+	.string "To keep winning my way up, I see\n"
+	.string "that I have to catch more POKéMON.$"
 
 Route103_Text_DaisyIntro: @ 829495A
 	.string "Did you feel the tug of our\n"
