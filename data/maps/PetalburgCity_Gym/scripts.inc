@@ -1305,7 +1305,7 @@ PetalburgCity_Gym_Text_WallyThankYouBye: @ 8205B4C
 	.string "Bye, {PLAYER}!$"
 
 PetalburgCity_Gym_Text_DadGoCollectBadges: @ 8205C40
-	.string "DAD: Now…\p"
+	.string "{COLOR BLUE}DAD: Now…\p"
 	.string "{PLAYER}, if you want to become a\n"
 	.string "strong TRAINER, here's my advice.\p"
 	.string "Head for RUSTBORO CITY beyond this\n"

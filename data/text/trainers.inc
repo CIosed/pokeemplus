@@ -260,8 +260,8 @@ Route104_Text_CindyDefeat: @ 8295ABB
 	.string "Oh, my!$"
 
 Route104_Text_CindyPostBattle: @ 8295AC3
-	.string "“Hello” is the beginning of “good-bye.”\n"
-	.string "I hope we meet again.$"
+	.string "“Hello” is the beginning of\n"
+	.string "“good-bye.” I hope we meet again.$"
 
 Route104_Text_DarianIntro: @ 8295C5D
 	.string "I fished up a tough-looking POKéMON!\p"
@@ -272,8 +272,8 @@ Route104_Text_DarianDefeat: @ 8295CC9
 	.string "What the…$"
 
 Route104_Text_DarianPostBattle: @ 8295CD3
-	.string "Hey, MAGIKARP, you sure don't live up\n"
-	.string "to your name, do you?$"
+	.string "Hey, MAGIKARP, you sure don't\n"
+	.string "live up to your name, do you?$"
 
 Route105_Text_FosterIntro: @ 8295D0F
 	.string "There's supposed to be a mystical\n"

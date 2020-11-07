@@ -919,10 +919,12 @@ Route104_Text_WhatsItLikeAtBottomOfSea: @ 81ED662
 	.string "of the sea?$"
 
 Route104_Text_ThrowBallAtWeakenedPokemon: @ 81ED6A2
-	.string "If you're going to throw a POKé BALL,\n"
-	.string "weaken the wild POKéMON first.\p"
-	.string "It will be easier to catch if it's been\n"
-	.string "poisoned, burned, or lulled to sleep.$"
+	.string "If you're going to throw a\n"
+	.string "POKé BALL, weaken the wild\l"
+	.string "POKéMON first.\p"
+	.string "It will be easier to catch if\n"
+	.string "it's been poisoned, burned,\l"
+	.string "or lulled to sleep.$"
 
 Route104_Text_OnlyThrowBallAtWildPokemon: @ 81ED735
 	.string "You're a thief if you try to steal\n"
@@ -932,10 +934,10 @@ Route104_Text_OnlyThrowBallAtWildPokemon: @ 81ED735
 
 Route104_Text_ImNotATrainer: @ 81ED7A2
 	.string "Oh, no, I'm not a TRAINER.\p"
-	.string "But that's right, if TRAINERS lock eyes,\n"
-	.string "it's a challenge to battle.\p"
-	.string "If you don't want to battle, stay out\n"
-	.string "of their sight.$"
+	.string "But that's right, if TRAINERS lock,\n"
+	.string "eyes it's a challenge to battle.\p"
+	.string "If you don't want to battle, stay\n"
+	.string "out of their sight.$"
 
 Route104_Text_LikeFillingMouthWithSeedsTakeThis: @ 81ED838
 	.string "I like filling my mouth with seeds,\n"
