@@ -948,8 +948,8 @@ Route104_Text_LikeFillingMouthWithSeedsTakeThis: @ 81ED838
 
 Route104_Text_TMsAreOneTimeUse: @ 81ED8E7
 	.string "A word of advice!\p"
-	.string "A TM, TECHNICAL MACHINE, is good only\n"
-	.string "for one-time use.\p"
+	.string "A TM, TECHNICAL MACHINE, is good\n"
+	.string "only for one-time use.\p"
 	.string "Once you use it, it's gone.\n"
 	.string "Think twice before using it!$"
 
@@ -987,9 +987,10 @@ Route104_Text_TrainerTipsDoubleBattles: @ 81EDAEF
 	.string "of TRAINERS who challenge others\l"
 	.string "for 2-on-2 POKéMON battles called\l"
 	.string "DOUBLE BATTLES.\p"
-	.string "In a DOUBLE BATTLE, the TRAINER must\n"
-	.string "send out two POKéMON, the one at the\l"
-	.string "left of the list and the top one.\l"
+	.string "In a DOUBLE BATTLE, the TRAINER\n"
+	.string "must send out two POKéMON, the\l"
+	.string "one at the left of the list and\l"
+	.string "the top one.\p"
 	.string "Watch how POKéMON are lined up.$"
 
 Route104_Text_MayWeShouldRegister: @ 81EDBFF

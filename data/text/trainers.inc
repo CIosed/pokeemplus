@@ -249,7 +249,8 @@ Route104_Text_WinstonDefeat: @ 82958AD
 	.string "Why couldn't I win?$"
 
 Route104_Text_WinstonPostBattle: @ 82958C1
-	.string "There are some things money can't buy.\n"
+	.string "There are some things money can't\n"
+	.string "buy.\p"
 	.string "That's POKéMON…$"
 
 Route104_Text_CindyIntro: @ 8295A7E
