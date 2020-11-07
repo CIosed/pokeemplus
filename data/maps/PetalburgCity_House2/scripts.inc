@@ -12,8 +12,8 @@ PetalburgCity_House2_EventScript_SchoolKid:: @ 82078FC
 PetalburgCity_House2_Text_NormanBecameGymLeader: @ 8207905
 	.string "NORMAN became our town's new\n"
 	.string "GYM LEADER.\p"
-	.string "I think he called his family over from\n"
-	.string "somewhere far away.$"
+	.string "I think he called his family over\n"
+	.string "from somewhere far away.$"
 
 PetalburgCity_House2_Text_BattledNormanOnce: @ 8207969
 	.string "I battled NORMAN once, but, whew,\n"

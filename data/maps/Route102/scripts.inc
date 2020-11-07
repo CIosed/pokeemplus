@@ -39,7 +39,7 @@ Route102_EventScript_Allen:: @ 81EC1E1
 	end
 
 Route102_Text_WatchMeCatchPokemon: @ 81EC1F8
-	.string "WALLY: {PLAYER}…\n"
+	.string "{COLOR BLUE}WALLY: {PLAYER}…\n"
 	.string "POKéMON hide in tall grass like this,\l"
 	.string "don't they?\p"
 	.string "Please watch me and see if I can\n"
@@ -47,11 +47,11 @@ Route102_Text_WatchMeCatchPokemon: @ 81EC1F8
 	.string "…Whoa!$"
 
 Route102_Text_WallyIDidIt: @ 81EC271
-	.string "WALLY: I did it… It's my…\n"
+	.string "{COLOR BLUE}WALLY: I did it… It's my…\n"
 	.string "My POKéMON!$"
 
 Route102_Text_LetsGoBack: @ 81EC297
-	.string "{PLAYER}, thank you!\n"
+	.string "{COLOR BLUE}{PLAYER}, thank you!\n"
 	.string "Let's go back to the GYM!$"
 
 Route102_Text_ImNotVeryTall: @ 81EC2C0

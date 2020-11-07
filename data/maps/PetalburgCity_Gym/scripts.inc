@@ -1253,10 +1253,11 @@ PetalburgCity_Gym_Text_DadOhYoureWallyRight: @ 82058DB
 PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon: @ 8205910
 	.string "WALLY: I'm going to go stay with my\n"
 	.string "relatives in VERDANTURF TOWN.\p"
-	.string "I thought I would be lonely by myself,\n"
-	.string "so I wanted to take a POKéMON along.\p"
-	.string "But I've never caught a POKéMON before.\n"
-	.string "I don't know how…$"
+	.string "I thought I would be lonely by\n"
+	.string "myself, so I wanted to take a\l"
+	.string "POKéMON along.\p"
+	.string "But I've never caught a POKéMON\n"
+	.string "before. I don't know how…$"
 
 PetalburgCity_Gym_Text_DadHmISee: @ 82059D8
 	.string "DAD: Hm. I see.$"
@@ -1268,14 +1269,15 @@ PetalburgCity_Gym_Text_DadPlayerGoWithWally: @ 82059E8
 	.string "safely catches a POKéMON.$"
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon: @ 8205A46
-	.string "WALLY, here, I'll loan you my POKéMON.\p"
+	.string "WALLY, here, I'll loan\n"
+	.string "you my POKéMON.\p"
 	.string "WALLY received a ZIGZAGOON!$"
 
 PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall: @ 8205A89
 	.string "WALLY: Oh, wow!\n"
 	.string "A POKéMON!\p"
-	.string "DAD: Hm. I'll give you a POKé BALL, too.\n"
-	.string "Go for it!\p"
+	.string "DAD: Hm. I'll give you a\n"
+	.string "POKé BALL, too. Go for it!\p"
 	.string "WALLY received a POKé BALL!$"
 
 PetalburgCity_Gym_Text_WallyOhWowThankYou: @ 8205AF4
@@ -1287,10 +1289,10 @@ PetalburgCity_Gym_Text_WouldYouReallyComeWithMe: @ 8205B0F
 	.string "with me?$"
 
 PetalburgCity_Gym_Text_DadSoDidItWorkOut: @ 8205B32
-	.string "DAD: So, did it work out?$"
+	.string "{COLOR BLUE}DAD: So, did it work out?$"
 
 PetalburgCity_Gym_Text_WallyThankYouBye: @ 8205B4C
-	.string "WALLY: Thank you, yes, it did.\n"
+	.string "{COLOR BLUE}WALLY: Thank you, yes, it did.\n"
 	.string "Here's your POKéMON back.\p"
 	.string "{PLAYER}, thank you for coming along\n"
 	.string "with me.\p"

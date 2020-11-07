@@ -414,7 +414,7 @@ CableClub_Text_EnjoyUnionRoom: @ 827961C
 	.string "the UNION ROOM.$"
 
 CableClub_Text_FirstTimeRightThisWay: @ 827964A
-	.string "Hello!\n"
+	.string "{COLOR RED}Hello!\n"
 	.string "My name is TEALA.\p"
 	.string "This must be your first time\n"
 	.string "up here.\p"
@@ -425,7 +425,7 @@ CableClub_Text_FirstTimeRightThisWay: @ 827964A
 	.string "Right this way, please.$"
 
 CableClub_Text_ExplainWirelessClubFirstTime: @ 8279718
-	.string "On the top floor, there are two\n"
+	.string "{COLOR RED}On the top floor, there are two\n"
 	.string "rooms.\p"
 	.string "First, the room on the left.\n"
 	.string "It's the UNION ROOM.\p"

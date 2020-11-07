@@ -98,8 +98,8 @@ MysteryEventClub_EventScript_Ret:: @ 8291686
 MysteryEventClub_Text_CollectTrainerProfiles: @ 8291687
 	.string "Hello there, TRAINER!\n"
 	.string "You've got a wonderful smile, there.\p"
-	.string "I have a hobby--collecting the profiles\n"
-	.string "of POKéMON TRAINERS.$"
+	.string "I have a hobby--collecting the\n"
+	.string "profiles of POKéMON TRAINERS.$"
 
 MysteryEventClub_Text_MayISeeYourProfile: @ 82916FF
 	.string "So, how about it?\n"
@@ -121,8 +121,9 @@ MysteryEventClub_Text_EasyChatExplanation: @ 8291729
 	.string "So, first, choose the group of text\n"
 	.string "pieces to display a list of choices.\p"
 	.string "Then, pick the choice you want.\p"
-	.string "Repeat for the remaining text choices,\n"
-	.string "and you'll have your very own profile.$"
+	.string "Repeat for the remaining text\n"
+	.string "choices, and you'll have your very\l"
+	.string "own profile.$"
 
 MysteryEventClub_Text_LetsSeeItThen: @ 8291969
 	.string "Yes! Thank you!\n"
@@ -130,8 +131,8 @@ MysteryEventClub_Text_LetsSeeItThen: @ 8291969
 
 MysteryEventClub_Text_ImagineYouWouldHaveWonderfulProfile: @ 8291991
 	.string "Oh, no, really?\p"
-	.string "I imagine someone like you would have\n"
-	.string "a wonderful profile…$"
+	.string "I imagine someone like you would\n"
+	.string "have a wonderful profile…$"
 
 MysteryEventClub_Text_NotIntoItRightNow: @ 82919DC
 	.string "Oh? You're not into it right now?\p"
@@ -150,7 +151,8 @@ MysteryEventClub_Text_EvenBetterThanLastProfile: @ 8291A6B
 	.string "you showed me before.$"
 
 MysteryEventClub_Text_LikeProfileWayItIs: @ 8291ABA
-	.string "Oh, you like your profile the way it is.\p"
+	.string "Oh, you like your profile the\n"
+	.string "way it is.\p"
 	.string "I don't blame you--it's a wonderful\n"
 	.string "profile the way it is now.$"
 
@@ -158,8 +160,8 @@ MysteryEventClub_Text_FantasticProfile: @ 8291B22
 	.string "F-fantastic!\p"
 	.string "Your profile, it's wonderful!\n"
 	.string "It really says what you're about.\p"
-	.string "Why, anyone hearing this profile would\n"
-	.string "be captivated by you!\p"
+	.string "Why, anyone hearing this profile\n"
+	.string "would be captivated by you!\p"
 	.string "Thank you!$"
 
 @ Unused
