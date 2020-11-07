@@ -286,68 +286,67 @@ PetalburgWoods_EventScript_James:: @ 822E284
 	end
 
 PetalburgWoods_Text_NotAOneToBeFound: @ 822E332
-	.string "Hmmm…\n"
+	.string "{COLOR BLUE}Hmmm…\n"
 	.string "Not a one to be found…$"
 
 PetalburgWoods_Text_HaveYouSeenShroomish: @ 822E34F
-	.string "Hello, have you seen any POKéMON\n"
+	.string "{COLOR BLUE}Hello, have you seen any POKéMON\n"
 	.string "called SHROOMISH around here?\p"
 	.string "I really love that POKéMON.$"
 
 PetalburgWoods_Text_IWasGoingToAmbushYou: @ 822E3AA
-	.string "I was going to ambush you, but you\n"
+	.string "{COLOR BLUE}I was going to ambush you, but you\n"
 	.string "had to dawdle in PETALBURG WOODS\l"
 	.string "forever, didn't you?\p"
 	.string "I got sick of waiting, so here I am!$"
 
 PetalburgWoods_Text_HandOverThosePapers: @ 822E428
-	.string "You! DEVON RESEARCHER!\p"
+	.string "{COLOR BLUE}You! DEVON RESEARCHER!\p"
 	.string "Hand over those papers!$"
 
 PetalburgWoods_Text_YouHaveToHelpMe: @ 822E457
-	.string "Aiyeeeh!\p"
+	.string "{COLOR BLUE}Aiyeeeh!\p"
 	.string "You're a POKéMON TRAINER, aren't you?\n"
 	.string "You've got to help me, please!$"
 
 PetalburgWoods_Text_NoOneCrossesTeamAqua: @ 822E4A5
-	.string "Hunh? What do you think you're doing?\n"
+	.string "{COLOR BLUE}Hunh? What do you think you're doing?\n"
 	.string "What, you're going to protect him?\p"
 	.string "No one who crosses TEAM AQUA\n"
 	.string "gets any mercy, not even a kid!\p"
 	.string "Come on and battle me!$"
 
 PetalburgWoods_Text_YoureKiddingMe: @ 822E542
-	.string "You're kidding me! You're tough!$"
+	.string "{COLOR BLUE}You're kidding me! You're tough!$"
 
 PetalburgWoods_Text_YouveGotSomeNerve: @ 822E563
-	.string "Grrr… You've got some nerve\n"
+	.string "{COLOR BLUE}Grrr… You've got some nerve\n"
 	.string "meddling with TEAM AQUA!\l"
 	.string "Come on and battle me again!\p"
-	.string "I wish I could say that, but I'm out of\n"
-	.string "POKéMON…\p"
+	.string "I wish I could say that, but I'm\n"
+	.string "out of POKéMON…\p"
 	.string "And, hey, we of TEAM AQUA are also\n"
-	.string "after something in RUSTBORO.\p"
+	.string "after something else that's important!\p"
 	.string "I'll let you go today!$"
 
 PetalburgWoods_Text_ThatWasAwfullyClose: @ 822E63D
-	.string "Whew…\n"
+	.string "{COLOR BLUE}Whew…\n"
 	.string "That was awfully close!\p"
 	.string "Thanks to you, he didn't rob me of\n"
 	.string "these important papers.\p"
-	.string "I know, I'll give you a GREAT BALL as\n"
-	.string "my thanks!$"
+	.string "I know, I'll give you a GREAT BALL\n"
+	.string "as my thanks!$"
 
 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro: @ 822E6C7
-	.string "Didn't that TEAM AQUA thug say\n"
-	.string "they were after something in\l"
-	.string "RUSTBORO, too?$"
+	.string "{COLOR BLUE}Didn't that TEAM AQUA thug say\n"
+	.string "they were after something important?$"
 
 PetalburgWoods_Text_ICantBeWastingTime: @ 822E712
-	.string "Uh-oh! It's a crisis!\n"
+	.string "{COLOR BLUE}Hmmm… I wonder…\n"
 	.string "I can't be wasting time!$"
 
 PetalburgWoods_Text_YoureLoadedWithItems: @ 822E741
-	.string "You're loaded with items.\n"
+	.string "{COLOR BLUE}You're loaded with items.\n"
 	.string "I can't give you this GREAT BALL.$"
 
 PetalburgWoods_Text_GoBugPokemonTeam: @ 822E77D
