@@ -398,9 +398,9 @@ PetalburgWoods_Text_IveBeenTrainingHard: @ 822E9B6
 PetalburgWoods_Text_StayOutOfTallGrass: @ 822EA0C
 	.string "Yo, there!\n"
 	.string "Your POKéMON doing okay?\p"
-	.string "If your POKéMON are weak and you want\n"
-	.string "to avoid battles, you should stay out\l"
-	.string "of tall grass.$"
+	.string "If your POKéMON are weak and you\n"
+	.string "want to avoid battles, you should\l"
+	.string "stay out of tall grass.$"
 
 PetalburgWoods_Text_HiddenItemsExplanation: @ 822EA8B
 	.string "Sometimes, there are things on the\n"
