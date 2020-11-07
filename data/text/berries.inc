@@ -136,19 +136,20 @@ Route123_BerryMastersHouse_Text_Ah: @ 82A7682
 
 Route104_PrettyPetalFlowerShop_Text_ThisIsPrettyPetalFlowerShop: @ 82A7686
 	.string "Hello!\p"
-	.string "This is the PRETTY PETAL flower shop.\n"
+	.string "This is the PRETTY PETAL flower\n"
+	.string "shop.\p"
 	.string "Spreading flowers all over the world!$"
 
 Route104_PrettyPetalFlowerShop_Text_LearnAboutBerries: @ 82A76D9
-	.string "{PLAYER}{KUN}, would you like to learn about\n"
-	.string "BERRIES?$"
+	.string "{PLAYER}{KUN}, would you like to learn\n"
+	.string "about BERRIES?$"
 
 Route104_PrettyPetalFlowerShop_Text_IntroLearnAboutBerries: @ 82A7706
 	.string "Your name is?\p"
 	.string "{PLAYER}{KUN}.\n"
 	.string "That's a nice name.\p"
-	.string "{PLAYER}{KUN}, would you like to learn about\n"
-	.string "BERRIES?$"
+	.string "{PLAYER}{KUN}, would you like to learn\n"
+	.string "about BERRIES?$"
 
 Route104_PrettyPetalFlowerShop_Text_BerriesExplanation: @ 82A775B
 	.string "BERRIES grow on trees that thrive\n"
@@ -156,13 +157,14 @@ Route104_PrettyPetalFlowerShop_Text_BerriesExplanation: @ 82A775B
 	.string "If you take some BERRIES, be sure to\n"
 	.string "plant one in the loamy soil again.\p"
 	.string "A planted BERRY will soon sprout,\n"
-	.string "grow into a plant, flower beautifully,\l"
+	.string "grow into a plant, flower elegantly,\l"
 	.string "then grow BERRIES again.\p"
 	.string "I want to see the whole wide world\n"
 	.string "filled with beautiful flowers.\l"
 	.string "That's my dream.\p"
-	.string "Please help me, {PLAYER}{KUN}. Plant BERRIES\n"
-	.string "and bring more flowers into the world.$"
+	.string "Please help me, {PLAYER}{KUN}. Plant\n"
+	.string "BERRIES and bring more flowers\l"
+	.string "into the world.$"
 
 Route104_PrettyPetalFlowerShop_Text_FlowersBringHappiness: @ 82A78DF
 	.string "Flowers bring so much happiness to\n"
@@ -170,17 +172,19 @@ Route104_PrettyPetalFlowerShop_Text_FlowersBringHappiness: @ 82A78DF
 
 Route104_PrettyPetalFlowerShop_Text_YouCanHaveThis: @ 82A7916
 	.string "Hello!\p"
-	.string "The more attention you give to flowers,\n"
-	.string "the more beautifully they bloom.\p"
-	.string "You'll like tending flowers. I'm sure\n"
-	.string "of it. You can have this.$"
+	.string "The more attention you give to\n"
+	.string "flowers, the more beautifully\l"
+	.string "they bloom.\p"
+	.string "You'll like tending flowers.\n"
+	.string "I'm sure of it. You can have this.$"
 
 Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation: @ 82A79A6
 	.string "While BERRY plants are growing,\n"
 	.string "water them with the WAILMER PAIL.\p"
 	.string "Oh, another thing.\p"
-	.string "If you don't pick BERRIES for a while,\n"
-	.string "they'll drop off onto the ground.\l"
+	.string "If you don't pick BERRIES for a\n"
+	.string "while, they'll drop off onto the\l"
+	.string "ground.\p"
 	.string "But they'll sprout again.\p"
 	.string "Isn't that awesome?\n"
 	.string "It's like they have the will to live.$"
@@ -192,11 +196,12 @@ Route104_PrettyPetalFlowerShop_Text_ImGrowingFlowers: @ 82A7A98
 	.string "It's for you!$"
 
 Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries: @ 82A7AF3
-	.string "You can plant a BERRY and grow it big,\n"
-	.string "or you can make a POKéMON hold it.\p"
-	.string "But now they have a machine that mixes\n"
-	.string "up different BERRIES and makes candies\l"
-	.string "for POKéMON.\p"
+	.string "You can plant a BERRY and grow it\n"
+	.string "big, or you can make a POKéMON\l"
+	.string "hold it.\p"
+	.string "But now they have a machine that\n"
+	.string "mixes up different BERRIES and\l"
+	.string "makes candies for POKéMON.\p"
 	.string "I want some candy, too.$"
 
 SootopolisCity_Text_NameIsKiriHaveOneOfThese: @ 82A7BB0
