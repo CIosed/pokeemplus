@@ -8301,7 +8301,7 @@ static void DoTracksGroundEffect_Footprints(struct ObjectEvent *objEvent, struct
     gFieldEffectArguments[3] = 2;
     gFieldEffectArguments[4] = objEvent->facingDirection;
     FieldEffectStart(sandFootprints_FieldEffectData[a]);
-	PlaySE(SE_M_SAND_ATTACK);
+	PlaySE(SE_M_SANDSTEP);
 }
 
 static void DoTracksGroundEffect_BikeTireTracks(struct ObjectEvent *objEvent, struct Sprite *sprite, u8 a)
