@@ -787,14 +787,14 @@ LittlerootTown_ProfessorBirchsLab_Text_BirchRivalGoneHome: @ 81FAA74
 
 LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex: @ 81FAB22
 	.string "{COLOR BLUE}PROF. BIRCH: Oh, hi, {PLAYER}{KUN}!\p"
-	.string "I heard you beat {RIVAL} on\n"
-	.string "your first try. That's excellent!\p"
+	.string "I heard you beat {RIVAL} on your first try.\n"
+	.string "That's excellent!\p"
 	.string "{RIVAL}'s been helping with my research\n"
 	.string "for a long time.\p"
-	.string "{RIVAL} has an extensive history as\n"
-	.string "a TRAINER already.\p"
-	.string "Here, {PLAYER}{KUN}, I ordered this for my\n"
-	.string "research, but I think you should\l"
+	.string "{RIVAL} has an extensive history\n"
+	.string "as a TRAINER already.\p"
+	.string "Here, {PLAYER}{KUN}, I ordered this for\n"
+	.string "my research, but I think you should\l"
 	.string "have this POKéDEX.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex: @ 81FAC32
@@ -803,14 +803,13 @@ LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex: @ 81FAC32
 LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex: @ 81FAC4B
 	.string "{COLOR BLUE}PROF. BIRCH: The POKéDEX is a\n"
 	.string "high-tech tool that automatically\l"
-	.string "makes a record of any POKéMON you\n"
+	.string "makes a record of any POKéMON you\l"
 	.string "meet or catch.\p"
-	.string "My kid, {RIVAL}, goes everywhere\n"
-	.string "with it.\p"
+	.string "My kid, {RIVAL}, goes everywhere with it.\p"
 	.string "Whenever my kid catches a rare\n"
 	.string "POKéMON and records its data in\l"
-	.string "the POKéDEX, why, {RIVAL} looks\l"
-	.string "for me while I'm out doing fieldwork,\l"
+	.string "the POKéDEX, why, {RIVAL} looks for me\l"
+	.string "while I'm out doing fieldwork,\l"
 	.string "and shows me.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait: @ 81FAD6F
