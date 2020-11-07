@@ -367,10 +367,11 @@ RivalsHouse_1F_Text_WentOutToRoute103: @ 81F8D93
 RivalsHouse_1F_Text_ShouldGoHomeEverySoOften: @ 81F8E01
 	.string "I think it's wonderful for people to\n"
 	.string "travel with POKéMON.\p"
-	.string "But you should go home every so often\n"
-	.string "to let your mother know you're okay.\p"
-	.string "She might not say it, but I'm sure she\n"
-	.string "worries about you, {PLAYER}{KUN}.$"
+	.string "But you should go home every so\n"
+	.string "often to let your mother know\l"
+	.string "you're okay.\p"
+	.string "She might not say it, but I'm sure\n"
+	.string "she worries about you, {PLAYER}{KUN}.$"
 
 RivalsHouse_1F_Text_MayWhoAreYou: @ 81F959C
 	.string "{COLOR RED}Huh?\n"
