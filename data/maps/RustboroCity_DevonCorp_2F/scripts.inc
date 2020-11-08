@@ -318,8 +318,8 @@ RustboroCity_DevonCorp_2F_Text_WeFinallyMadeNewBalls: @ 8211C99
 
 RustboroCity_DevonCorp_2F_Text_IMadePokenav: @ 8211D9F
 	.string "I made the POKéNAV!\p"
-	.string "As an engineer, I feel blessed to have\n"
-	.string "made something so great!$"
+	.string "As an engineer, I feel blessed to\n"
+	.string "have made something so great!$"
 
 RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav: @ 8211DF3
 	.string "Oh, wow!\n"

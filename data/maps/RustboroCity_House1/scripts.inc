@@ -79,6 +79,6 @@ RustboroCity_House1_Text_AnyPokemonCanBeCute: @ 8215B17
 RustboroCity_House1_Text_AllSortsOfPlaces: @ 8215B57
 	.string "In all sorts of places, there are all\n"
 	.string "sorts of POKéMON and people.\p"
-	.string "I find that fascinating, so I go to all\n"
-	.string "sorts of places.$"
+	.string "I find that fascinating, so I go\n"
+	.string "to all sorts of places.$"
 

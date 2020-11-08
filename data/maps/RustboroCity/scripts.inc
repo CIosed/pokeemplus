@@ -23,11 +23,11 @@ RustboroCity_OnTransition: @ 81E06C8
 RustboroCity_EventScript_PositionScientistForExit:: @ 81E06EC
 	compare VAR_TEMP_0, 11
 	goto_if_eq RustboroCity_EventScript_PositionScientistLeftExit
-	setobjectxyperm LOCALID_SCIENTIST, 12, 15
+	setobjectxyperm LOCALID_SCIENTIST, 13, 15
 	end
 
 RustboroCity_EventScript_PositionScientistLeftExit:: @ 81E06FF
-	setobjectxyperm LOCALID_SCIENTIST, 11, 15
+	setobjectxyperm LOCALID_SCIENTIST, 12, 15
 	end
 
 RustboroCity_EventScript_HideMapNamePopup:: @ 81E0707
@@ -308,7 +308,7 @@ RustboroCity_EventScript_StolenGoodsScene:: @ 81E09CD
 	waitmovement 0
 	fadedefaultbgm
 	removeobject LOCALID_DEVON_EMPLOYEE
-	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 30, 10
+	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 36, 10
 	clearflag FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1
 	setflag FLAG_DEVON_GOODS_STOLEN
 	setvar VAR_RUSTBORO_CITY_STATE, 2
@@ -405,6 +405,8 @@ RustboroCity_Movement_GruntEscape: @ 81E0AA0
 	step_end
 
 RustboroCity_Movement_EmployeeChaseGrunt1: @ 81E0AB1
+	walk_right
+	walk_right
 	walk_right
 	walk_right
 	walk_right
@@ -1044,6 +1046,78 @@ RustboroCity_EventScript_Boy1:: @ 81E1236
 	msgbox RustboroCity_Text_YouCanHave2On2Battle, MSGBOX_NPC
 	end
 
+RustboroCity_EventScript_NPC1::
+	msgbox RustboroCity_Text_NPC1, MSGBOX_NPC
+	applymovement 18, Common_Movement_WalkInPlaceUp
+	waitmovement 0
+	playse SE_LEDGE
+	applymovement 18, Common_Movement_JumpInPlaceUp
+	waitmovement 0
+	delay 4
+	playse SE_LEDGE
+	applymovement 18, Common_Movement_JumpInPlaceUp
+	waitmovement 0
+	playmoncry SPECIES_MACHOP, 0
+	msgbox MachopText, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MachopTalk::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MACHOP, 0
+	msgbox MachopText, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+RustboroCity_EventScript_NPC2::
+	msgbox RustboroCity_Text_NPC2, MSGBOX_NPC
+	release
+	end
+
+RustboroCity_EventScript_NPC3::
+	msgbox RustboroCity_Text_NPC3, MSGBOX_NPC
+	release
+	end
+
+RustboroCity_EventScript_NPC4::
+	msgbox RustboroCity_Text_NPC4, MSGBOX_NPC
+	release
+	end
+
+MachopText::
+    .string "Machop: Guoh! Gogogoh!$"
+
+RustboroCity_Text_NPC1::
+    .string "You look like a trainer, are you\n"
+	.string "here to take on Roxanne?\p"
+	.string "She's the gym leader, and she's\n"
+	.string "mighty strong!\p"
+	.string "Even my Machop had a tough time\n"
+	.string "with her!$"
+
+RustboroCity_Text_NPC2::
+    .string "My Zigzagoon here has the ability\n"
+	.string "Pickup.\p"
+	.string "It allows my Zigzagoon to find lost\n"
+	.string "items on ground and pick them up.\p"
+	.string "It's very useful, and becomes even\n"
+	.string "moreso when they gain levels!$"
+
+RustboroCity_Text_NPC3::
+    .string "My husband collects Zigzagoon to get\n"
+	.string "items.\p"
+	.string "Why can't he just buy items like\n"
+	.string "everyone else?$"
+
+RustboroCity_Text_NPC4::
+    .string "Sorry, but this area is under\n"
+	.string "construction, please come back\l"
+	.string "another time.$"
+
 RustboroCity_Text_WeShortenItToDevon: @ 81E123F
 	.string "The DEVON CORPORATION…\n"
 	.string "We all just shorten it to DEVON.\p"
@@ -1068,9 +1142,9 @@ RustboroCity_Text_HeyThatsRustborosGymBadge: @ 81E139E
 	.string "RUSTBORO's is the coolest, I'd say.$"
 
 RustboroCity_Text_YoureNewAroundHere: @ 81E1407
-	.string "Oh? Who might you be?\n"
-	.string "You're a new face around these parts.\p"
-	.string "Have you just transferred into the\n"
+	.string "Oh? Who might you be?\p"
+	.string "You're a new face around these parts.\n"
+	.string "Have you just transferred into the\l"
 	.string "POKéMON TRAINER'S SCHOOL?$"
 
 RustboroCity_Text_GymLeaderIsntEasyWithFire: @ 81E1480
@@ -1095,14 +1169,15 @@ RustboroCity_Text_MrBrineyLovesPeeko: @ 81E1589
 	.string "that PEEKO.$"
 
 RustboroCity_Text_WowYouHavePokemon: @ 81E1633
-	.string "Wow, you have POKéMON with you, too.\p"
+	.string "Wow, you have POKéMON\n"
+	.string "with you, too.\p"
 	.string "When I get bigger, I'm going to go\n"
 	.string "places with POKéMON, too.$"
 
 RustboroCity_Text_CatchRarePokemonIfIGoToSchool: @ 81E1695
 	.string "POKéMON TRAINER'S SCHOOL!\p"
-	.string "If I go to this school, will I be able\n"
-	.string "to catch rare POKéMON easily?$"
+	.string "If I go to this school, will I be\n"
+	.string "able to catch rare POKéMON easily?$"
 
 RustboroCity_Text_PokemonCanChangeLookFromExp: @ 81E16F4
 	.string "If a POKéMON gains experience in\n"
@@ -1120,15 +1195,15 @@ RustboroCity_Text_TradePokemonGrowFast: @ 81E1789
 	.string "BADGES, it may not obey you…$"
 
 RustboroCity_Text_OutOfTheWay: @ 81E17FE
-	.string "Get out!\n"
+	.string "{COLOR BLUE}Get out!\n"
 	.string "Out of the way!$"
 
 RustboroCity_Text_WaitDontTakeMyGoods: @ 81E1817
-	.string "Wait! Pleeeaaase!\p"
+	.string "{COLOR BLUE}Wait! Pleeeaaase!\p"
 	.string "Don't take my GOODS!$"
 
 RustboroCity_Text_HelpMeIWasRobbed: @ 81E183E
-	.string "Oh, it's you!\p"
+	.string "{COLOR BLUE}Oh, it's you!\p"
 	.string "You're that fantastic TRAINER who\n"
 	.string "helped me in PETALBURG WOODS!\p"
 	.string "Help me! I was robbed by TEAM AQUA!\n"
@@ -1286,14 +1361,14 @@ RustboroCity_Text_CuttersHouse: @ 81E2296
 	.string "CUTTER'S HOUSE$"
 
 RustboroCity_Text_DevelopedNewPokenavFeature: @ 81E22A5
-	.string "I've been developing an added feature\n"
-	.string "for the POKéNAV…\p"
+	.string "{COLOR BLUE}I've been developing an added\n"
+	.string "feature for the POKéNAV…\p"
 	.string "And it turned out great!\p"
 	.string "{PLAYER}, may I see that POKéNAV?\n"
 	.string "The one our PRESIDENT gave you?$"
 
 RustboroCity_Text_AddedMatchCallPleaseCallMrStone: @ 81E2331
-	.string "There you go, {PLAYER}!\p"
+	.string "{COLOR BLUE}There you go, {PLAYER}!\p"
 	.string "I added a new feature named\n"
 	.string "MATCH CALL to your POKéNAV.\p"
 	.string "Using the MATCH CALL feature,\n"
@@ -1305,18 +1380,19 @@ RustboroCity_Text_AddedMatchCallPleaseCallMrStone: @ 81E2331
 	.string "Please give our PRESIDENT a call.$"
 
 RustboroCity_Text_PleaseSelectPokenav: @ 81E2449
-	.string "Please select the POKéNAV.$"
+	.string "{COLOR BLUE}Please select the POKéNAV.$"
 
 RustboroCity_Text_IdBetterGetBackToWork: @ 81E2464
-	.string "Okay, I'd better get back to work.\n"
+	.string "{COLOR BLUE}Okay, I'd better get back to work.\n"
 	.string "Please take care, {PLAYER}!$"
 
 RustboroCity_Text_YouCanHave2On2Battle: @ 81E249D
 	.string "Did you know this?\p"
 	.string "You can have a 2-on-2 battle even\n"
 	.string "if you're not with another TRAINER.\p"
-	.string "If you catch the eyes of two TRAINERS\n"
-	.string "when you have two or more POKéMON,\l"
-	.string "they'll both challenge you.\p"
+	.string "If you catch the eyes of two\n"
+	.string "TRAINERS when you have two or\l"
+	.string "more POKéMON, they'll both\l"
+	.string "challenge you.\p"
 	.string "Don't you think it'd be cool if you\n"
 	.string "could beat two TRAINERS by yourself?$"

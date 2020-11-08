@@ -9,7 +9,7 @@ RustboroCity_DevonCorp_1F_OnTransition: @ 821124B
 	end
 
 RustboroCity_DevonCorp_1F_EventScript_BlockStairs:: @ 8211255
-	setobjectxyperm LOCALID_STAIR_GUARD, 14, 2
+	setobjectxyperm LOCALID_STAIR_GUARD, 2, 3 //18 3
 	setobjectmovementtype LOCALID_STAIR_GUARD, MOVEMENT_TYPE_FACE_DOWN
 	return
 
@@ -93,8 +93,8 @@ RustboroCity_DevonCorp_1F_Text_StaffGotRobbed: @ 821138B
 RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct: @ 82113D1
 	.string "Hey, those RUNNING SHOES!\n"
 	.string "They're one of our products!\p"
-	.string "It makes me happy when I see someone\n"
-	.string "using something we made.$"
+	.string "It makes me happy when I see\n"
+	.string "someone using something we made.$"
 
 RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright: @ 8211446
 	.string "That stolen parcel…\p"
@@ -139,8 +139,10 @@ RustboroCity_DevonCorp_1F_Text_ProductDisplay: @ 8211722
 	.string "There's a panel with a description…\p"
 	.string "“In addition to industrial products,\n"
 	.string "DEVON now markets sundries and\l"
-	.string "pharmaceuticals for better lifestyles.\p"
+	.string "pharmaceuticals for better\l"
+	.string "lifestyles.\p"
 	.string "“Recently, DEVON has begun marketing\n"
-	.string "tools for POKéMON TRAINERS, including\l"
-	.string "POKé BALLS and POKéNAV systems.”$"
+	.string "tools for POKéMON TRAINERS,\l"
+	.string "including POKé BALLS and POKéNAV\l"
+	.string "systems.”$"
 

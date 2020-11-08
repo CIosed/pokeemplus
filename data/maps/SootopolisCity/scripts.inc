@@ -1487,7 +1487,7 @@ SootopolisCity_Text_CitySign: @ 81E65C8
 	.string "slumbers.”$"
 
 SootopolisCity_Text_DoorIsClosed: @ 81E6604
-	.string "The door is closed.$"
+	.string "The door is locked.$"
 
 SootopolisCity_Text_PhysicallyFitLivingHere: @ 81E6618
 	.string "Diving in the sea. Climbing up and\n"

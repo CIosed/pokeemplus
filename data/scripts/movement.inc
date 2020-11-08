@@ -1,3 +1,15 @@
+Common_Movement_JumpUp:
+    jump_up
+	step_end
+
+Common_Movement_JumpDown:
+    jump_down
+	step_end
+
+Common_Movement_JumpInPlaceUp:
+    jump_in_place_up
+	step_end
+
 Common_Movement_QuestionMark: @ 8272596
 	emote_question_mark
 	step_end
@@ -66,6 +78,10 @@ Common_Movement_WalkInPlaceLeft: @ 82725B6
 
 Common_Movement_WalkInPlaceRight: @ 82725B8
 	walk_in_place_right
+	step_end
+
+Common_Movement_WalkInPlaceUp:
+	walk_in_place_up
 	step_end
 
 Common_Movement_WalkUp6: @ 82725BA

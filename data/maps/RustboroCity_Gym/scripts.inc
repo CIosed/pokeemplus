@@ -107,15 +107,16 @@ RustboroCity_Gym_EventScript_RegisterRoxanne:: @ 821307B
 	end
 
 RustboroCity_Gym_Text_GymGuideAdvice: @ 821309D
-	.string "Yo, how's it going?\p"
-	.string "Listen, my friend!\n"
-	.string "Would you like to become the CHAMPION?\p"
+	.string "Yo, how's it going?\n"
+	.string "Listen, my friend!\p"
+	.string "Would you like to become the\n"
+	.string "CHAMPION?\p"
 	.string "I'm no TRAINER, not me, but I can\n"
 	.string "sure give you winning advice.\p"
-	.string "That's settled, then! We'll aim for the\n"
-	.string "POKéMON CHAMPIONSHIP together!\p"
-	.string "It's your job as a TRAINER to collect\n"
-	.string "GYM BADGES, am I right?\p"
+	.string "That's settled, then! We'll aim for\n"
+	.string "the POKéMON CHAMPIONSHIP together!\p"
+	.string "It's your job as a TRAINER to\n"
+	.string "collect GYM BADGES, am I right?\p"
 	.string "But GYM LEADERS aren't pushovers!\p"
 	.string "And that's where I come in!\n"
 	.string "I'm here to provide expert advice!\p"
@@ -148,12 +149,12 @@ RustboroCity_Gym_Text_JoshDefeat: @ 821342D
 	.string "You were too good for me…$"
 
 RustboroCity_Gym_Text_JoshPostBattle: @ 8213447
-	.string "You haven't seen anything of the ROCK\n"
-	.string "type's terrifying power!$"
+	.string "You haven't seen anything of the\n"
+	.string "ROCK type's terrifying power!$"
 
 RustboroCity_Gym_Text_TommyIntro: @ 8213486
-	.string "If you can't beat me, you won't stand\n"
-	.string "a chance against ROXANNE!$"
+	.string "If you can't beat me, you won't\n"
+	.string "stand a chance against ROXANNE!$"
 
 RustboroCity_Gym_Text_TommyDefeat: @ 82134C6
 	.string "Wow! You've got some potential!$"
@@ -170,8 +171,9 @@ RustboroCity_Gym_Text_MarcIntro: @ 8213533
 	.string "rampage!$"
 
 RustboroCity_Gym_Text_MarcDefeat: @ 8213589
-	.string "Oh, man oh man!\n"
-	.string "Our challenger is one feisty customer!$"
+	.string "Oh, man oh man!\p"
+	.string "Our challenger is one\n"
+	.string "feisty customer!$"
 
 RustboroCity_Gym_Text_MarcPostBattle: @ 82135C0
 	.string "I have to hand it to our LEADER.\p"
@@ -181,17 +183,18 @@ RustboroCity_Gym_Text_MarcPostBattle: @ 82135C0
 RustboroCity_Gym_Text_RoxanneIntro: @ 821362A
 	.string "Hello, I am ROXANNE, the RUSTBORO\n"
 	.string "POKéMON GYM LEADER.\p"
-	.string "I became a GYM LEADER so that I might\n"
-	.string "apply what I learned at the POKéMON\l"
-	.string "TRAINER'S SCHOOL in battle.\p"
+	.string "I became a GYM LEADER so that I\n"
+	.string "might apply what I learned at\l"
+	.string "the POKéMON TRAINER'S SCHOOL\l"
+	.string "in battle.\p"
 	.string "Would you kindly demonstrate how you\n"
 	.string "battle, and with which POKéMON?$"
 
 RustboroCity_Gym_Text_RoxanneDefeat: @ 821370B
 	.string "So…\n"
 	.string "I lost…\p"
-	.string "It seems that I still have much more\n"
-	.string "to learn…\p"
+	.string "It seems that I still have much\n"
+	.string "more to learn…\p"
 	.string "I understand.\p"
 	.string "The POKéMON LEAGUE's rules state\n"
 	.string "that TRAINERS are to be given this\l"
@@ -200,31 +203,30 @@ RustboroCity_Gym_Text_RoxanneDefeat: @ 821370B
 	.string "LEAGUE STONE BADGE.$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge: @ 82137EC
-	.string "{PLAYER} received the STONE BADGE\n"
+	.string "{COLOR DARK_GREY}{PLAYER} received the STONE BADGE\n"
 	.string "from ROXANNE.$"
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis: @ 8213816
-	.string "The STONE BADGE heightens the ATTACK\n"
-	.string "power of your POKéMON.\p"
-	.string "It also enables them to use the HM move\n"
+	.string "The STONE BADGE enables your\n"
+	.string "POKéMON to use the HM move\l"
 	.string "CUT outside of battle.\p"
 	.string "Please take this with you, too.$"
 
 RustboroCity_Gym_Text_ExplainRockTomb: @ 82138B1
 	.string "That TECHNICAL MACHINE, TM39,\n"
 	.string "contains ROCK TOMB.\p"
-	.string "It not only inflicts damage by dropping\n"
-	.string "rocks, it also lowers SPEED.\p"
-	.string "If you use a TM, it instantly teaches\n"
-	.string "the move to a POKéMON.\p"
-	.string "Remember, a TM can be used only once,\n"
-	.string "so think before you use it.$"
+	.string "It not only inflicts damage by\n"
+	.string "dropping rocks, it also lowers SPEED.\p"
+	.string "If you use a TM, it instantly\n"
+	.string "teaches the move to a POKéMON.\p"
+	.string "Remember, a TM can be used only\n"
+	.string "once, so think before you use it.$"
 
 RustboroCity_Gym_Text_RoxannePostBattle: @ 82139A7
 	.string "Since you are so strong, you should\n"
 	.string "challenge other GYM LEADERS.\p"
-	.string "By battling many TRAINERS, you should\n"
-	.string "learn many things.$"
+	.string "By battling many TRAINERS, you\n"
+	.string "should learn many things.$"
 
 RustboroCity_Gym_Text_GymStatue: @ 8213A21
 	.string "RUSTBORO CITY POKéMON GYM$"

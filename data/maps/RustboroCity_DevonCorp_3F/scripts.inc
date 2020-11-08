@@ -12,7 +12,7 @@ RustboroCity_DevonCorp_3F_OnTransition: @ 821243D
 	end
 
 RustboroCity_DevonCorp_3F_EventScript_SetEmployeePos:: @ 8212449
-	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 3, 2
+	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 3, 3
 	setobjectmovementtype LOCALID_DEVON_EMPLOYEE, MOVEMENT_TYPE_FACE_LEFT
 	return
 
@@ -82,10 +82,14 @@ RustboroCity_DevonCorp_3F_Movement_Unused: @ 821252F
 	step_end
 
 RustboroCity_DevonCorp_3F_Movement_LeadPlayerToPresident: @ 8212534
-	walk_right
-	walk_right
-	walk_right
 	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
 	walk_right
 	walk_right
 	walk_right
@@ -104,10 +108,13 @@ RustboroCity_DevonCorp_3F_Movement_EmployeeFaceDesk: @ 8212543
 	step_end
 
 RustboroCity_DevonCorp_3F_Movement_EmployeeWalkOffscreen: @ 8212546
-	walk_right
-	walk_right
-	walk_right
+    walk_down
 	walk_down
+	walk_down
+	walk_down
+	walk_right
+	walk_right
+	walk_right
 	walk_right
 	walk_right
 	walk_right
@@ -119,18 +126,26 @@ RustboroCity_DevonCorp_3F_Movement_EmployeeReturnToPlayer: @ 821254F
 	walk_left
 	walk_left
 	walk_left
+	walk_left
+	walk_left
+	walk_left
 	walk_up
-	walk_left
-	walk_left
-	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_in_place_fastest_left
 	step_end
 
 RustboroCity_DevonCorp_3F_Movement_PlayerFollowToPresident: @ 8212558
 	walk_right
-	walk_right
-	walk_right
-	walk_right
 	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
 	walk_right
 	walk_right
 	walk_right
@@ -146,7 +161,8 @@ RustboroCity_DevonCorp_3F_Movement_PlayerApproachDesk: @ 8212566
 	delay_16
 	walk_down
 	walk_down
-	walk_in_place_fastest_right
+	walk_down
+	walk_right
 	step_end
 
 RustboroCity_DevonCorp_3F_EventScript_MrStone:: @ 821256C
@@ -200,7 +216,7 @@ RustboroCity_DevonCorp_3F_EventScript_RareRocksDisplay:: @ 8212600
 	end
 
 RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor: @ 8212609
-	.string "I'm MR. STONE, the PRESIDENT of\n"
+	.string "{COLOR BLUE}I'm MR. STONE, the PRESIDENT of\n"
 	.string "the DEVON CORPORATION.\p"
 	.string "I'd just got word about you!\p"
 	.string "You saved our staff not just once,\n"
@@ -209,13 +225,13 @@ RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor: @ 8212609
 	.string "person like you.\p"
 	.string "I understand that you're delivering\n"
 	.string "a package to SLATEPORT's SHIPYARD.\p"
-	.string "Well, on the way, could you stop off in\n"
-	.string "DEWFORD TOWN?\p"
+	.string "Well, on the way, could you stop\n"
+	.string "off in DEWFORD TOWN?\p"
 	.string "I was hoping that you'd deliver a\n"
 	.string "LETTER to STEVEN in DEWFORD.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis: @ 821277C
-	.string "MR. STONE: Now, you should know that\n"
+	.string "{COLOR BLUE}MR. STONE: Now, you should know that\n"
 	.string "I am a great PRESIDENT.\p"
 	.string "So, I'd never be so cheap as to ask\n"
 	.string "a favor for nothing in return.\p"
@@ -225,22 +241,23 @@ RustboroCity_DevonCorp_3F_Text_ReceivedPokenav: @ 8212820
 	.string "{PLAYER} received a POKéNAV.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp: @ 8212837
-	.string "MR. STONE: That device…\p"
-	.string "It's a POKéMON NAVIGATOR, or POKéNAV\n"
-	.string "for short.\p"
+	.string "{COLOR BLUE}MR. STONE: That device…\p"
+	.string "It's a POKéMON NAVIGATOR, or\n"
+	.string "POKéNAV for short.\p"
 	.string "It's an indispensable tool for any\n"
 	.string "TRAINER on an adventure.\p"
 	.string "It has a map of the HOENN region.\p"
 	.string "You can check the locations of\n"
 	.string "DEWFORD and SLATEPORT easily!\p"
 	.string "By the way, I've heard that sinister\n"
-	.string "criminals--MAGMA and AQUA, I believe--\l"
-	.string "have been making trouble far and wide.\p"
-	.string "I think it would be best if you rested\n"
-	.string "up before you go on your way.$"
+	.string "criminals--MAGMA and AQUA, I believe,\l"
+	.string "have been making trouble far\l"
+	.string "and wide.\p"
+	.string "I think it would be best if you\n"
+	.string "rested up before you go on your way.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare: @ 82129D2
-	.string "MR. STONE: Well, then, {PLAYER}{KUN},\n"
+	.string "{COLOR BLUE}MR. STONE: Well, then, {PLAYER}{KUN},\n"
 	.string "go with caution and care!$"
 
 RustboroCity_DevonCorp_3F_Text_CountingOnYou: @ 8212A09
@@ -270,12 +287,12 @@ RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends: @ 8212B78
 	.string "TRAINERS in the POKéMON LEAGUE?$"
 
 RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere: @ 8212C37
-	.string "This is the DEVON CORPORATION's\n"
+	.string "{COLOR BLUE}This is the DEVON CORPORATION's\n"
 	.string "third floor.\p"
 	.string "Our PRESIDENT's OFFICE is on\n"
 	.string "this floor.\p"
-	.string "Anyway, I can't tell you how much I'm\n"
-	.string "grateful for what you've done.\p"
+	.string "Anyway, I can't tell you how much\n"
+	.string "I'm grateful for what you've done.\p"
 	.string "Um… By the way, that parcel\n"
 	.string "you got back for us…\p"
 	.string "Could I get you to deliver that to\n"
@@ -288,16 +305,17 @@ RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere: @ 8212C37
 	.string "Could you wait here a second?$"
 
 RustboroCity_DevonCorp_3F_Text_WordWithPresidentComeWithMe: @ 8212DE8
-	.string "Our PRESIDENT would like to have\n"
+	.string "{COLOR BLUE}Our PRESIDENT would like to have\n"
 	.string "a word with you.\p"
 	.string "Please come with me.$"
 
 RustboroCity_DevonCorp_3F_Text_PleaseGoAhead: @ 8212E2F
-	.string "Please, go ahead.$"
+	.string "{COLOR BLUE}Please, go ahead.$"
 
 RustboroCity_DevonCorp_3F_Text_VisitCaptSternShipyard: @ 8212E41
-	.string "If you visit the SHIPYARD in SLATEPORT,\n"
-	.string "you should go see CAPT. STERN.$"
+	.string "If you visit the SHIPYARD in\n"
+	.string "SLATEPORT, you should go see\l"
+	.string "CAPT. STERN.$"
 
 RustboroCity_DevonCorp_3F_Text_RepeatAndTimerHugelyPopular: @ 8212E88
 	.string "DEVON's new products, the REPEAT BALL\n"

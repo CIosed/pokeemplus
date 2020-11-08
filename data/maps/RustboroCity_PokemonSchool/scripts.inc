@@ -249,14 +249,14 @@ RustboroCity_PokemonSchool_Text_ExplainFreeze: @ 82143B8
 RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw: @ 8214433
 	.string "Students who don't study get a little\n"
 	.string "taste of my QUICK CLAW.\p"
-	.string "Whether or not you are a good student \n"
-	.string "will be evident from the way you use\l"
-	.string "this item.$"
+	.string "Whether or not you are a good\n"
+	.string "student will be evident from the\l"
+	.string "way you use this item.$"
 
 RustboroCity_PokemonSchool_Text_ExplainQuickClaw: @ 82144C8
-	.string "A POKéMON holding the QUICK CLAW will\n"
-	.string "occasionally speed up and get to move\l"
-	.string "before its opponent.\p"
+	.string "A POKéMON holding the QUICK CLAW\n"
+	.string "will occasionally speed up and\l"
+	.string "get to move before its opponent.\p"
 	.string "There are many other items that are\n"
 	.string "meant to be held by POKéMON.\p"
 	.string "Just those alone will give you many\n"
