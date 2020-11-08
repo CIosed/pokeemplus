@@ -1947,14 +1947,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                     SetMonData(&party[i], MON_DATA_MOVE1 + j, &partyData[i].moves[j]);
                     SetMonData(&party[i], MON_DATA_PP1 + j, &gBattleMoves[partyData[i].moves[j]].pp);
                 }
-                for (j = 0; j < MON_DATA_SPDEF_IV - MON_DATA_HP_IV + 1; j++)
-                {
-                    SetMonData(&party[i], MON_DATA_HP_IV + j, &partyData[i].ivs[j]);
-                }
-                for (j = 0; j < MON_DATA_SPDEF_EV - MON_DATA_HP_EV + 1; j++)
+                for (j = 0; j < NUM_STATS; j++)
                 {
                     SetMonData(&party[i], MON_DATA_HP_EV + j, &partyData[i].evs[j]);
                 }
+                CalculateMonStats(&party[i]);
                 break;
             }
             }

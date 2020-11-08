@@ -57,7 +57,7 @@ struct TrainerMonFullControl
     u8 gender;
     u8 nature;
     u8 ability;
-    u8 evs[MON_DATA_SPDEF_EV - MON_DATA_HP_EV + 1];
+    u8 evs[NUM_STATS];
     u8 ball;
     bool32 shiny;
     u8 friendship;

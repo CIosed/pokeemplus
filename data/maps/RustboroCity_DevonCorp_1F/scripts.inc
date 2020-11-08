@@ -9,7 +9,7 @@ RustboroCity_DevonCorp_1F_OnTransition: @ 821124B
 	end
 
 RustboroCity_DevonCorp_1F_EventScript_BlockStairs:: @ 8211255
-	setobjectxyperm LOCALID_STAIR_GUARD, 2, 3 //18 3
+	setobjectxyperm LOCALID_STAIR_GUARD, 18, 3
 	setobjectmovementtype LOCALID_STAIR_GUARD, MOVEMENT_TYPE_FACE_DOWN
 	return
 

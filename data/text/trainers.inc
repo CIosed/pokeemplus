@@ -1659,8 +1659,8 @@ Route115_Text_MarlenePostBattle: @ 829BA87
 	.string "But this place isn't very peaceful…$"
 
 Route116_Text_ClarkIntro: @ 829BACD
-	.string "If the tunnel doesn't go through, then\n"
-	.string "I'll just go over the top.$"
+	.string "If the tunnel doesn't go through,\n"
+	.string "then I'll just go over the top.$"
 
 Route116_Text_ClarkDefeat: @ 829BB0F
 	.string "Gasp… Gasp…\n"
