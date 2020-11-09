@@ -625,7 +625,7 @@ RustboroCity_EventScript_ReturnGoods:: @ 81E0C5B
 	setflag FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1
 	setvar VAR_RUSTBORO_CITY_STATE, 5
 	delay 30
-	warp MAP_RUSTBORO_CITY_DEVON_CORP_3F, 255, 2, 2
+	warp MAP_RUSTBORO_CITY_DEVON_CORP_3F, 255, 2, 3
 	waitstate
 	releaseall
 	end
@@ -1218,7 +1218,7 @@ RustboroCity_Text_ShadyCharacterTookOffTowardsTunnel: @ 81E1904
 	.string "off towards the tunnel over there.$"
 
 RustboroCity_Text_YouGotItThankYou: @ 81E194D
-	.string "Oh! How did it go?\n"
+	.string "{COLOR BLUE}Oh! How did it go?\n"
 	.string "The DEVON GOODS?\p"
 	.string "You did!\n"
 	.string "You got them back!\p"
@@ -1227,11 +1227,11 @@ RustboroCity_Text_YouGotItThankYou: @ 81E194D
 	.string "another GREAT BALL!$"
 
 RustboroCity_Text_YoureLoadedWithItems: @ 81E19E5
-	.string "You're loaded with items.\n"
+	.string "{COLOR BLUE}You're loaded with items.\n"
 	.string "I can't give you this GREAT BALL.$"
 
 RustboroCity_Text_PleaseComeWithMe: @ 81E1A21
-	.string "Excuse me, please!\n"
+	.string "{COLOR BLUE}Excuse me, please!\n"
 	.string "Please come with me!$"
 
 RustboroCity_Text_MayHiLetsRegister: @ 81E1A49
