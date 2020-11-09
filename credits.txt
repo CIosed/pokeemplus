@@ -458,6 +458,8 @@
 # https://www.pokecommunity.com/showthread.php?p=10183669#post10183669
 /Repeated Field Medicine Use
 # https://www.pokecommunity.com/showthread.php?p=10206290#post10206290
+/Fog Blending
+# https://www.pokecommunity.com/showthread.php?p=10222192#post10222192
 
 #Luna
 / Custom Tiles
