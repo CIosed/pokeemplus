@@ -41,7 +41,7 @@
 #define TRAINER_ROSE                         37
 #define TRAINER_FELIX                        38
 #define TRAINER_VIOLET                       39
-#define TRAINER_ROSE_2                       40 // Unused
+#define TRAINER_WALLY_RUSTURF                40
 #define TRAINER_ROSE_3                       41 // Unused
 #define TRAINER_ROSE_4                       42 // Unused
 #define TRAINER_ROSE_5                       43 // Unused

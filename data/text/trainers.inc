@@ -1731,23 +1731,23 @@ Route116_Text_KarenPostBattle: @ 829C010
 	.string "TRAINER like ROXANNE this way!$"
 
 Route116_Text_SarahIntro: @ 829C173
-	.string "Just so you know, I've never once been\n"
-	.string "bested by anyone at anything.$"
+	.string "Just so you know, I've never once\n"
+	.string "POKéMON's bested by anyone at anything.$"
 
 Route116_Text_SarahDefeat: @ 829C1B8
 	.string "Oh, my goodness.\n"
 	.string "This is a new experience for me.$"
 
 Route116_Text_SarahPostBattle: @ 829C1EA
-	.string "My life of luxury affords me all that\n"
-	.string "I could possibly desire.\p"
+	.string "My life of luxury affords me all\n"
+	.string "that I could possibly desire.\p"
 	.string "However, when it comes to POKéMON,\n"
 	.string "my wealth has no meaning.$"
 
 Route116_Text_DawsonIntro: @ 829C266
-	.string "When you lay your eyes on my POKéMON's\n"
-	.string "gorgeous fur, their beauty will render\l"
-	.string "you helpless!$"
+	.string "When you lay your eyes on my\n"
+	.string "POKéMON's gorgeous fur, their\l"
+	.string "beauty will render you helpless!$"
 
 Route116_Text_DawsonDefeat: @ 829C2C2
 	.string "Oh, baby, say it isn't so!$"

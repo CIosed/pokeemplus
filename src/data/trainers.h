@@ -559,18 +559,18 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_Violet},
     },
 
-    [TRAINER_ROSE_2] =
+    [TRAINER_WALLY_RUSTURF] =
     {
-        .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
-        .trainerName = _("ROSE"),
+        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerName = _("WALLY"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_Rose2),
-        .party = {.NoItemDefaultMoves = sParty_Rose2},
+        .partySize = ARRAY_COUNT(sParty_WallyRusturf),
+        .party = {.NoItemCustomMoves = sParty_WallyRusturf},
     },
 
     [TRAINER_ROSE_3] =

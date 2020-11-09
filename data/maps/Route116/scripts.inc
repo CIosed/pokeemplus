@@ -154,13 +154,69 @@ Route116_EventScript_Briney:: @ 81F2D84
 
 Route116_EventScript_BrineyTrigger:: @ 81F2D95
 	lockall
-	applymovement LOCALID_BRINEY, Common_Movement_WalkInPlaceFastestRight
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestLeft
+	applymovement 29, Common_Movement_WalkInPlaceLeft
+	waitmovement 0
+	delay 20
+	playse SE_PIN
+	applymovement 29, Common_Movement_ExclamationMark
+	waitmovement 0
+	delay 40
+	msgbox Wally_Talk_1, MSGBOX_DEFAULT
+	closemessage
+	call getplayerposRoute116
+	msgbox Wally_Talk_2, MSGBOX_DEFAULT
+	applymovement 11, Common_Movement_WalkInPlaceDown
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
+	applymovement 29, Common_Movement_WalkInPlaceUp
 	waitmovement 0
 	msgbox Route116_Text_ScoundrelMadeOffWithPeeko, MSGBOX_DEFAULT
+	closemessage
+	playmoncry SPECIES_WINGULL, 2
+	delay 40
+	waitmoncry
+	playse SE_PIN
+	applymovement 11, WalkInPlaceRightExlamation
+	applymovement OBJ_EVENT_ID_PLAYER, WalkInPlaceRightExlamation
+	applymovement 29, WalkInPlaceRightExlamation
+	waitmovement 0
+	delay 40
+	msgbox Scream_Cave, MSGBOX_DEFAULT
+	applymovement 29, Common_Movement_WalkInPlaceLeft
+	waitmovement 0
+	msgbox Wally_Talk_3, MSGBOX_DEFAULT
+	closemessage
+	applymovement 29, WallyWalkInCave
+	waitmovement 0
+	playse SE_EXIT
+	removeobject 29
 	setvar VAR_ROUTE116_STATE, 2
 	releaseall
 	end
+
+	getplayerposRoute116::
+	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	compare VAR_TEMP_1, 10
+	goto_if_le PlayerLocatedUp
+	compare VAR_TEMP_1, 11
+	goto_if_le PlayerLocatedMid
+	compare VAR_TEMP_1, 12
+	goto_if_ge PlayerLocatedBot
+	return
+
+PlayerLocatedUp:
+	applymovement OBJ_EVENT_ID_PLAYER, WalkFromUp
+	waitmovement 0
+	return
+
+PlayerLocatedMid:
+	applymovement OBJ_EVENT_ID_PLAYER, WalkFromMid
+	waitmovement 0
+	return
+
+PlayerLocatedBot:
+	applymovement OBJ_EVENT_ID_PLAYER, WalkFromBot
+	waitmovement 0
+	return
 
 Route116_EventScript_GlassesMan:: @ 81F2DB6
 	lock
@@ -298,16 +354,66 @@ Route116_EventScript_Johnson:: @ 81F3086
 	msgbox Route116_Text_JohnsonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+WalkFromUp:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+WalkFromMid:
+	walk_right
+	walk_right
+	walk_up
+	walk_right
+	walk_right
+	step_end
+
+WalkFromBot:
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	step_end
+
+WalkInPlaceRightExlamation:
+	walk_in_place_fast_right
+	emote_exclamation_mark
+	step_end
+
+WallyWalkInCave:
+	walk_right
+	walk_up
+	walk_up
+	step_end
+
+Wally_Talk_1:
+	.string "{COLOR BLUE}Wally: {PLAYER}!$"
+
+Wally_Talk_2:
+	.string "{COLOR BLUE}Uhm… I… I need your help!\p"
+	.string "Mr. Briney here got his Pokémon\n"
+	.string "kidnapped by this thug.\p"
+	.string "But I don't think me and Ralts can\n"
+	.string "take him on by ourselves.$"
+
+Wally_Talk_3:
+	.string "{COLOR BLUE}Let's go, {PLAYER}!$"
+
 Route116_Text_ScoundrelMadeOffWithPeeko: @ 81F309D
-	.string "Ohhh, what am I to do?\p"
-	.string "We were on our walk, PEEKO and I, when\n"
-	.string "we were jumped by an odd thug…\p"
+	.string "{COLOR BLUE}Ohhh, what am I to do?\p"
+	.string "We were on our walk, PEEKO and I,\n"
+	.string "when we were jumped by an odd thug…\p"
 	.string "The scoundrel made off with my\n"
-	.string "darling PEEKO!\p"
-	.string "Wrrrooooooaaaar! PEEKO!$"
+	.string "darling PEEKO!$"
+
+Scream_Cave:
+	.string "{COLOR BLUE}Wrrrooooooaaaar! Peeko!$"
 
 Route116_Text_WantToDigTunnel: @ 81F3140
-	.string "Nnn… Roar!\p"
+	.string "{COLOR BLUE}Nnn… Roar!\p"
 	.string "I want to dig that tunnel!$"
 
 Route116_Text_DiggingTunnelWhenGoonOrderedMeOut: @ 81F3166

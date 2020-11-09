@@ -166,8 +166,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Declan[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntRusturfTunnel[] = {
     {
     .iv = 0,
-    .lvl = 11,
+    .lvl = 15,
     .species = SPECIES_POOCHYENA,
+    },
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_TENTACOOL,
     }
 };
 
@@ -442,16 +447,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Violet[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Rose2[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_WallyRusturf[] = {
     {
     .iv = 10,
-    .lvl = 26,
-    .species = SPECIES_SHROOMISH,
-    },
-    {
-    .iv = 10,
-    .lvl = 26,
-    .species = SPECIES_ROSELIA,
+    .lvl = 15,
+    .species = SPECIES_RALTS,
+    .moves = {MOVE_CONFUSION, MOVE_DISARMING_VOICE, MOVE_DOUBLE_TEAM, MOVE_GROWL}
     }
 };
 
