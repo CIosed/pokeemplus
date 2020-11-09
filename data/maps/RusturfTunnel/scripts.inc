@@ -310,16 +310,10 @@ RusturfTunnel_EventScript_AquaGruntBackUp:: @ 822D083
 	call DoubleTagBattle
 
 DoubleTagBattle::
-    special SavePlayerParty
-	
-	fadescreen 1
-    special ChooseHalfPartyForBattle
-    waitstate
+    choose_mons
     compare VAR_RESULT, 0
     goto_if_eq CancelParty
-
-	special ReducePlayerPartyToSelectedMons
-    multi_fixed_2_vs_1 TRAINER_GRUNT_RUSTURF_TUNNEL, RusturfTunnel_Text_GruntDefeat, TRAINER_WALLY_RUSTURF, TRAINER_BACK_PIC_WALLY
+    multi_2_vs_1 TRAINER_GRUNT_RUSTURF_TUNNEL, RusturfTunnel_Text_GruntDefeat, TRAINER_WALLY_RUSTURF, TRAINER_BACK_PIC_WALLY
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, B_OUTCOME_LOST
 	goto_if_eq RusturfTagLostBattle
