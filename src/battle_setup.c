@@ -585,6 +585,8 @@ u8 BattleSetup_GetTerrainId(void)
         return BATTLE_TERRAIN_LONG_GRASS;
     if (MetatileBehavior_IsSandOrDeepSand(tileBehavior))
         return BATTLE_TERRAIN_SAND;
+	if (MetatileBehavior_IsRusturf(tileBehavior))
+        return BATTLE_TERRAIN_RUSTURF;
 
     switch (gMapHeader.mapType)
     {
