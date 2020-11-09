@@ -317,7 +317,6 @@ DoubleTagBattle::
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, B_OUTCOME_LOST
 	goto_if_eq RusturfTagLostBattle
-	
     fadedefaultbgm
 	msgbox RusturfTunnel_Text_GruntTakePackage, MSGBOX_DEFAULT
 	giveitem ITEM_DEVON_GOODS
@@ -340,7 +339,6 @@ DoubleTagBattle::
 	applymovement LOCALID_BRINEY, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox RusturfTunnel_Text_ThankYouLetsGoHomePeeko
-
 	applymovement 11, Common_Movement_WalkInPlaceDown
 	waitmovement 0
 	checkplayergender
@@ -348,35 +346,32 @@ DoubleTagBattle::
 	call_if_eq RusturfBoy
 	compare VAR_RESULT, FEMALE
 	call_if_eq RusturfGirl
-	
 	applymovement 5, Common_Movement_WalkInPlaceUp
 	waitmovement 0
 	msgbox RusturfTunnel_Text_ThankYouLetsGoHomePeeko2, MSGBOX_DEFAULT
 	applymovement 5, Common_Movement_WalkInPlaceRight
 	waitmovement 0
 	msgbox RusturfTunnel_Text_ThankYouLetsGoHomePeeko3, MSGBOX_DEFAULT
-	
 	playmoncry SPECIES_WINGULL, 0
 	waitbuttonpress
 	waitmoncry
-
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, RusturfTunnel_Movement_PlayerWatchBrineyExit
 	applymovement LOCALID_BRINEY, RusturfTunnel_Movement_BrineyExit
 	applymovement LOCALID_PEEKO, RusturfTunnel_Movement_PeekoExit
 	waitmovement 0
-	
 	playse SE_EXIT
-	
 	delay 25
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
 	applymovement 11, Common_Movement_WalkInPlaceLeft
 	waitmovement 0
 	msgbox Wally_Talk_RusturfTunnel_4, MSGBOX_DEFAULT
 	applymovement 11, Common_Movement_WalkInPlaceRight
+	delay 25
 	msgbox Wally_Talk_RusturfTunnel_5, MSGBOX_DEFAULT
 	applymovement 11, Common_Movement_WalkInPlaceLeft
 	waitmovement 0
+	delay 25
 	msgbox Wally_Talk_RusturfTunnel_6, MSGBOX_DEFAULT
 	playse SE_PIN
 	applymovement 11, Common_Movement_ExclamationMark
@@ -384,10 +379,12 @@ DoubleTagBattle::
 	delay 40
 	msgbox Wally_Talk_RusturfTunnel_7, MSGBOX_DEFAULT
 	closemessage
-	fadescreen 1
+	applymovement OBJ_EVENT_ID_PLAYER, RusturfTunnel_Movement_PlayerObserveWallyLeaving
+	applymovement 11, RusturfTunnel_Movement_WallyLeaveCave
+	waitmovement 0
 	delay 30
+	playse SE_EXIT
 	removeobject 11
-	fadescreen 0
 	removeobject LOCALID_BRINEY
 	removeobject LOCALID_PEEKO
 	copyobjectxytoperm LOCALID_GRUNT
@@ -399,9 +396,6 @@ DoubleTagBattle::
 	setvar VAR_BRINEY_HOUSE_STATE, 1
 	setflag FLAG_HIDE_ROUTE_116_MR_BRINEY
 	release
-	end
-	
-	releaseall
 	end
 
 RusturfTagLostBattle::
@@ -471,6 +465,30 @@ RusturfTunnel_Movement_PushPlayerAsideForGrunt: @ 822D178
 	walk_fast_up
 	unlock_facing_direction
 	walk_in_place_fastest_left
+	step_end
+
+RusturfTunnel_Movement_PlayerObserveWallyLeaving:
+    delay_16
+	delay_16
+	walk_in_place_fast_down
+    delay_16
+	delay_16
+	walk_in_place_fast_left
+	step_end
+	
+RusturfTunnel_Movement_WallyLeaveCave:
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
 	step_end
 
 RusturfTunnel_Movement_PlayerMoveAsideForBriney: @ 822D17E
@@ -643,9 +661,9 @@ Wally_Talk_RusturfTunnel_6:
 
 Wally_Talk_RusturfTunnel_7:
 	.string "{COLOR BLUE}Oh! I just remembered!\p"
-	.string "Wasn't there talk about the\n"
-	.string "wild Whismurs getting upset by\l"
-	.string "heavy machinery noice lately?\p"
+	.string "I heard somewhere that the\n"
+	.string "wild Whismur was getting upset\l"
+	.string "by heavy machinery here lately.\p"
 	.string "I hope the battle didn't disturb\n"
 	.string "them!\p"
 	.string "We'd better leave for now.\n"
