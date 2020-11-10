@@ -19,12 +19,12 @@
       "x": 8,
       "y": 6,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "GraniteCave_StevensRoom_EventScript_Steven",
+      "script": "NULL",
       "flag": "FLAG_HIDE_GRANITE_CAVE_STEVEN"
     }
   ],
@@ -41,6 +41,37 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GraniteCave_StevensRoom_MuralText"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GraniteCave_StevensRoom_MuralText"
+    },
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GraniteCave_StevensRoom_MuralText"
+    },
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GraniteCave_StevensRoom_MuralText"
+    }
   ]
 }
