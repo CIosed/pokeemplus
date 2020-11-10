@@ -271,16 +271,16 @@ RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter: @ 8212A29
 
 RustboroCity_DevonCorp_3F_Text_ExplainExpShare: @ 8212A9E
 	.string "MR. STONE: A POKéMON holding that\n"
-	.string "EXP. SHARE will be given some of the\l"
-	.string "EXP Points from battle.\p"
-	.string "It will get EXP Points even if it didn't\n"
-	.string "actually battle.\p"
-	.string "I would say EXP. SHARE is quite useful\n"
-	.string "for raising weak POKéMON.$"
+	.string "EXP. SHARE will be given some of\l"
+	.string "the EXP Points from battle.\p"
+	.string "It will get EXP Points even if it\n"
+	.string "didn't actually battle.\p"
+	.string "I would say EXP. SHARE is quite\n"
+	.string "useful for raising weak POKéMON.$"
 
 RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends: @ 8212B78
-	.string "MR. STONE: Since my youth, I've immersed\n"
-	.string "myself in work.\p"
+	.string "MR. STONE: Since my youth, I've\n"
+	.string "immersed myself in work.\p"
 	.string "Consequently, I'm not familiar with\n"
 	.string "trends and that sort of thing.\p"
 	.string "But do young people all want to be\n"

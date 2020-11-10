@@ -688,7 +688,7 @@ DewfordTown_Text_GoDeliverIllBeWaiting: @ 81E9BD9
 	.string "deliver the LETTER. I'll be waiting.$"
 
 DewfordTown_Text_BrineyLandedInDewford: @ 81E9C1D
-	.string "MR. BRINEY: Ahoy!\n"
+	.string "{COLOR BLUE}MR. BRINEY: Ahoy!\n"
 	.string "We've hit land in DEWFORD!\p"
 	.string "You just go on and tell me whenever\n"
 	.string "you want to set sail again!$"

@@ -300,8 +300,8 @@ DewfordTown_Gym_EventScript_GymStatue:: @ 81FC9CC
 DewfordTown_Gym_Text_GymGuideAdvice: @ 81FC9D6
 	.string "Hey, how's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"
-	.string "DEWFORD's GYM LEADER BRAWLY commands\n"
-	.string "FIGHTING-type POKéMON.\p"
+	.string "DEWFORD's GYM LEADER BRAWLY\n"
+	.string "commands FIGHTING-type POKéMON.\p"
 	.string "Going against him with NORMAL-type\n"
 	.string "POKéMON is asking for trouble.\p"
 	.string "FIGHTING POKéMON will lay a serious\n"
@@ -309,8 +309,8 @@ DewfordTown_Gym_Text_GymGuideAdvice: @ 81FC9D6
 	.string "so be careful!\p"
 	.string "What's worse, the GYM is as dark as\n"
 	.string "the ocean floor.\p"
-	.string "But it will get brighter after defeating\n"
-	.string "the TRAINERS in your way.\p"
+	.string "But it will get brighter after\n"
+	.string "defeating the TRAINERS in your way.\p"
 	.string "Hey, okay, go for it!$"
 
 DewfordTown_Gym_Text_GymGuidePostVictory: @ 81FCB5C
@@ -353,10 +353,10 @@ DewfordTown_Gym_Text_LauraDefeat: @ 81FCD3C
 	.string "I lost!$"
 
 DewfordTown_Gym_Text_LauraPostBattle: @ 81FCD4F
-	.string "I battle in the dark to make my heart\n"
-	.string "stronger.\p"
-	.string "But because it's so dark, I can never\n"
-	.string "see BRAWLY's face…$"
+	.string "I battle in the dark to make my\n"
+	.string "heart stronger.\p"
+	.string "But because it's so dark, I can\n"
+	.string "never see BRAWLY's face…$"
 
 DewfordTown_Gym_Text_LilithIntro: @ 81FCDB8
 	.string "Ufufu…\n"
