@@ -376,7 +376,7 @@ PlayersHouse_1F_Text_IsThatAPokenav: @ 81F7E0E
 	.string "… … …$"
 
 PlayersHouse_1F_Text_RegisteredMom: @ 81F7E89
-	.string "Registered MOM\n"
+	.string "{COLOR DARK_GREY}Registered MOM\n"
 	.string "in the POKéNAV.$"
 
 PlayersHouse_1F_Text_Vigoroth1: @ 81F7EA8

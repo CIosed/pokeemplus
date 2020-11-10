@@ -827,7 +827,7 @@ MatchCall_Text_BirchRegisterCall: @ 82B5F52
 	.string "… … … … … …$"
 
 MatchCall_Text_RegisteredBirch: @ 82B603A
-	.string "Registered PROF. BIRCH\n"
+	.string "{COLOR DARK_GREY}Registered PROF. BIRCH\n"
 	.string "in the POKéNAV.$"
 
 MatchCall_Text_UnusedProfBirch:

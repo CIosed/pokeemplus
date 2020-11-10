@@ -667,7 +667,7 @@ DewfordTown_Text_HallSign: @ 81E9A7F
 	.string "“Everyone's information exchange!”$"
 
 Route104_Text_LandedInDewfordDeliverLetter: @ 81E9AAF
-	.string "MR. BRINEY: Ahoy!\n"
+	.string "{COLOR BLUE}MR. BRINEY: Ahoy!\n"
 	.string "We've hit land in DEWFORD.\p"
 	.string "I suppose you're off to deliver that\n"
 	.string "LETTER to, who was it now, STEVEN!$"
@@ -684,8 +684,8 @@ DewfordTown_Text_PetalburgWereSettingSail2: @ 81E9B7F
 	.string "PEEKO, we're setting sail, my darling!$"
 
 DewfordTown_Text_GoDeliverIllBeWaiting: @ 81E9BD9
-	.string "MR. BRINEY: Then you go on and deliver\n"
-	.string "the LETTER. I'll be waiting.$"
+	.string "MR. BRINEY: Then you go on and\n"
+	.string "deliver the LETTER. I'll be waiting.$"
 
 DewfordTown_Text_BrineyLandedInDewford: @ 81E9C1D
 	.string "MR. BRINEY: Ahoy!\n"
@@ -722,16 +722,17 @@ DewfordTown_Text_GiveYouOneOfMyRods: @ 81E9E14
 	.string "I'll give you one of my fishing RODS.$"
 
 DewfordTown_Text_ThrowInFishingAdvice: @ 81E9E65
-	.string "And, as an added bonus, I'll even throw\n"
-	.string "in a little fishing advice!\p"
+	.string "And, as an added bonus, I'll even\n"
+	.string "throw in a little fishing advice!\p"
 	.string "First, you want to face the water,\n"
 	.string "then use the ROD.\p"
-	.string "Focus your mind…\n"
-	.string "If you get a bite, pull on the ROD.\p"
+	.string "Focus your mind…\p"
+	.string "If you get a bite, pull\n"
+	.string "on the ROD.\p"
 	.string "Sometimes you can snag something\n"
 	.string "immediately, but with bigger catches,\l"
-	.string "you need to time the pulls on your ROD\l"
-	.string "to haul them in.$"
+	.string "you need to time the pulls on your\l"
+	.string "ROD to haul them in.$"
 
 DewfordTown_Text_ThatsTooBadThen: @ 81E9F92
 	.string "Oh, is that so?\n"
@@ -758,8 +759,8 @@ DewfordTown_Text_FishingAdvice: @ 81EA004
 	.string "to haul them in.$"
 
 DewfordTown_Text_XIsTheBiggestHappeningThingRight: @ 81EA136
-	.string "I like what's hip, happening, and trendy.\n"
-	.string "I'm always checking it out.\p"
+	.string "I like what's hip, happening, and\n"
+	.string "trendy. I'm always checking it out.\p"
 	.string "Listen, have you heard about this new\n"
 	.string "“{STR_VAR_1}”?\p"
 	.string "That's right!\n"
@@ -782,7 +783,8 @@ DewfordTown_Text_OfCourseIKnowAboutThat: @ 81EA2AA
 	.string "“{STR_VAR_2}”?\p"
 	.string "… …\p"
 	.string "…Uh… Yeah! That's right!\n"
-	.string "Yeah, I knew that! Knew it all along!\p"
+	.string "Yeah, I knew that!\l"
+	.string "Knew it all along!\p"
 	.string "Of course I know about that!\n"
 	.string "“{STR_VAR_2},” right?\p"
 	.string "Yeah, that's it, it's there!\n"
@@ -792,8 +794,8 @@ DewfordTown_Text_OfCourseIKnowAboutThat: @ 81EA2AA
 	.string "You think I'd not know about it?\p"
 	.string "“{STR_VAR_1}”…\n"
 	.string "It's, like, so five minutes ago.\p"
-	.string "Now, “{STR_VAR_2}” is\n"
-	.string "what's vital and in tune with the times!$"
+	.string "Now, “{STR_VAR_2}” is what's\n"
+	.string "vital and in tune with the times!$"
 
 DewfordTown_Text_XHuhIThinkYIsCool: @ 81EA3FE
 	.string "Hmm…\n"

@@ -274,8 +274,8 @@ DewfordTown_Hall_EventScript_ReceivedSludgeBomb:: @ 81FD80E
 DewfordTown_Hall_Text_CantImagineLifeWithoutTrend: @ 81FD818
 	.string "What's in vogue? Why, it has to be\n"
 	.string "“{STR_VAR_1}”!\p"
-	.string "I can't imagine what life would be like\n"
-	.string "without “{STR_VAR_1}”!$"
+	.string "I can't imagine what life would be\n"
+	.string "like without “{STR_VAR_1}”!$"
 
 DewfordTown_Hall_Text_GettingBoredOfTrend: @ 81FD877
 	.string "What's in vogue? Why, it has to be\n"
@@ -305,8 +305,8 @@ DewfordTown_Hall_Text_MyHunchWasRight: @ 81FD9B3
 DewfordTown_Hall_Text_NotEasyToKeepUp: @ 81FDA06
 	.string "What?!\n"
 	.string "Is that so?!\p"
-	.string "It's not easy for an older fellow like\n"
-	.string "me to keep up with trends!$"
+	.string "It's not easy for an older fellow\n"
+	.string "like me to keep up with trends!$"
 
 DewfordTown_Hall_Text_TVShowAboutTrend: @ 81FDA5C
 	.string "This whole business about\n"

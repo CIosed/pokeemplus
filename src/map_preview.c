@@ -105,6 +105,8 @@ static const u8 sPetalburgWoodsMapPreviewTiles[] = INCBIN_U8("graphics/map_previ
 static const u8 sPetalburgWoodsMapPreviewTilemap[] = INCBIN_U8("graphics/map_preview/petalburg_woods_tilemap.bin.lz");
 static const u8 sRusturfTunnelMapPreviewPalette[] = INCBIN_U8("graphics/map_preview/rusturf_tunnel_pal.gbapal");
 static const u8 sRusturfTunnelMapPreviewTiles[] = INCBIN_U8("graphics/map_preview/rusturf_tunnel_tiles.4bpp.lz");
+static const u8 sGraniteCaveMapPreviewPalette[] = INCBIN_U8("graphics/map_preview/granite_cave_pal.gbapal");
+static const u8 sGraniteCaveMapPreviewTiles[] = INCBIN_U8("graphics/map_preview/granite_cave_tiles.4bpp.lz");
 
 static const struct MapPreviewScreen sMapPreviewScreenData[MPS_COUNT] =
 {
@@ -129,6 +131,17 @@ static const struct MapPreviewScreen sMapPreviewScreenData[MPS_COUNT] =
         .tilesptr = sRusturfTunnelMapPreviewTiles,
         .tilemapptr = sPetalburgWoodsMapPreviewTilemap,
         .palptr = sRusturfTunnelMapPreviewPalette
+    },
+    [MPS_GRANITE_CAVE] = 
+    {
+        .mapsec = MAPSEC_GRANITE_CAVE,
+        .type = MPS_TYPE_CAVE,
+        #if FLAG_BASED_MAP_PREVIEW_TIME
+        .flagId = FLAG_VISITED_METEOR_FALLS, //flag needs to be added to constants/flags.h
+        #endif
+        .tilesptr = sGraniteCaveMapPreviewTiles,
+        .tilemapptr = sPetalburgWoodsMapPreviewTilemap,
+        .palptr = sGraniteCaveMapPreviewPalette
     },
     //etc...
     

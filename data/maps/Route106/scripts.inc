@@ -28,6 +28,7 @@ Route106_EventScript_Ned:: @ 81EE523
 
 Route106_Text_TrainerTips: @ 81EE53A
 	.string "TRAINER TIPS\p"
-	.string "Advice on catching POKéMON with a ROD:\n"
+	.string "Advice on catching POKéMON\n"
+	.string "with a ROD:\l"
 	.string "Press the A Button if you get a bite.$"
 

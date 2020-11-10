@@ -379,18 +379,18 @@ Route106_Text_ElliotPostBattle: @ 829638C
 	.string "You agree with me, right?$"
 
 Route106_Text_NedIntro: @ 82964D4
-	.string "What do people do if they need to go\n"
-	.string "to a washroom?\p"
+	.string "What do people do if they need to\n"
+	.string "go to a washroom?\p"
 	.string "What if my ROD hooks a big one while\n"
 	.string "I'm in the washroom? I just can't go…$"
 
 Route106_Text_NedDefeated: @ 8296553
-	.string "I lost because I'm trying to not go\n"
-	.string "to the washroom…$"
+	.string "I lost because I'm trying to not\n"
+	.string "go to the washroom…$"
 
 Route106_Text_NedPostBattle: @ 8296588
-	.string "Oh, no! I've got this feeling I'll hook\n"
-	.string "a big one!$"
+	.string "Oh, no! I've got this feeling I'll\n"
+	.string "hook a big one!$"
 
 Route106_Text_DouglasIntro: @ 82965BB
 	.string "Hahahah! I'm a lousy runner, but in\n"
