@@ -630,8 +630,8 @@ Route109_Text_EdmondPostBattle: @ 82972ED
 	.string "I'm a SAILOR, but…$"
 
 Route109_Text_RickyIntro: @ 829733B
-	.string "I'm thirsty… I could go for a SODA POP\n"
-	.string "at the SEASHORE HOUSE…$"
+	.string "I'm thirsty… I could go for a\n"
+	.string "SODA POP at the SEASHORE HOUSE…$"
 
 Route109_Text_RickyDefeated: @ 8297379
 	.string "Groan…$"
@@ -648,8 +648,9 @@ Route109_Text_LolaDefeated: @ 82974CF
 	.string "Mommy!$"
 
 Route109_Text_LolaPostBattle: @ 82974D6
-	.string "If you look at the beach from the sky,\n"
-	.string "it looks like a big flower garden!$"
+	.string "If you look at the beach from the\n"
+	.string "sky, it looks like a big\l"
+	.string "flower garden!$"
 
 Route109_Text_AustinaIntro: @ 82975C0
 	.string "I can't swim without my inner tube,\n"

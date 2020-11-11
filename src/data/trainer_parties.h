@@ -674,12 +674,12 @@ static const struct TrainerMonNoItemCustomMoves sParty_GabbyAndTy6[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Lola[] = {
     {
     .iv = 10,
-    .lvl = 12,
+    .lvl = 14,
     .species = SPECIES_AZURILL,
     },
     {
     .iv = 10,
-    .lvl = 12,
+    .lvl = 15,
     .species = SPECIES_AZURILL,
     }
 };
@@ -755,7 +755,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Lola5[] = {
 static const struct TrainerMonNoItemCustomMoves sParty_Ricky[] = {
     {
     .iv = 10,
-    .lvl = 13,
+    .lvl = 15,
     .species = SPECIES_ZIGZAGOON,
     .moves = {MOVE_SAND_ATTACK, MOVE_HEADBUTT, MOVE_TAIL_WHIP, MOVE_SURF}
     }
@@ -764,12 +764,12 @@ static const struct TrainerMonNoItemCustomMoves sParty_Ricky[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Simon[] = {
     {
     .iv = 0,
-    .lvl = 12,
+    .lvl = 14,
     .species = SPECIES_AZURILL,
     },
     {
     .iv = 0,
-    .lvl = 12,
+    .lvl = 15,
     .species = SPECIES_MARILL,
     }
 };
@@ -3410,27 +3410,48 @@ static const struct TrainerMonFullControl sParty_Roxanne1[] = {
     },
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
+static const struct TrainerMonFullControl sParty_Brawly1[] = {
     {
-    .iv = 100,
-    .lvl = 16,
-    .species = SPECIES_MACHOP,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_KARATE_CHOP, MOVE_LOW_KICK, MOVE_SEISMIC_TOSS, MOVE_BULK_UP}
-    },
-    {
-    .iv = 100,
+    .friendship = 0,
+    .ivs = BEST_IV_SPREAD,
     .lvl = 16,
     .species = SPECIES_MEDITITE,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_FOCUS_PUNCH, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_BULK_UP}
+	.ability = 0,
+	.shiny = FALSE,
+    .moves = {MOVE_FEINT, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_CONFUSION},
+	.evs = {0, 55, 0, 55, 55, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_SERIOUS,
+	.gender = MON_FEMALE,
+	.ball = ITEM_POKE_BALL,
     },
     {
-    .iv = 200,
+    .friendship = 0,
+    .ivs = BEST_IV_SPREAD,
+    .lvl = 16,
+    .species = SPECIES_MACHOP,
+    .heldItem = ITEM_NONE,
+	.ability = 0,
+	.shiny = FALSE,
+    .moves = {MOVE_KARATE_CHOP, MOVE_LOW_KICK, MOVE_SEISMIC_TOSS, MOVE_BULK_UP},
+	.evs = {55, 55, 55, 0, 0, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_ADAMANT,
+	.gender = MON_MALE,
+	.ball = ITEM_POKE_BALL,
+    },
+    {
+    .friendship = 0,
+    .ivs = BEST_IV_SPREAD,
     .lvl = 19,
     .species = SPECIES_MAKUHITA,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_ARM_THRUST, MOVE_VITAL_THROW, MOVE_REVERSAL, MOVE_BULK_UP}
+	.ability = 0,
+	.shiny = FALSE,
+    .moves = {MOVE_FORCE_PALM, MOVE_VITAL_THROW, MOVE_KNOCK_OFF, MOVE_BULK_UP},
+	.evs = {55, 55, 55, 0, 0, 55}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_ADAMANT,
+	.gender = MON_MALE,
+	.ball = ITEM_LUXURY_BALL,
     }
 };
 
@@ -6388,12 +6409,12 @@ static const struct TrainerMonNoItemCustomMoves sParty_AmyAndLiv6[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Huey[] = {
     {
     .iv = 10,
-    .lvl = 12,
+    .lvl = 14,
     .species = SPECIES_WINGULL,
     },
     {
     .iv = 10,
-    .lvl = 12,
+    .lvl = 15,
     .species = SPECIES_MACHOP,
     }
 };
@@ -6401,7 +6422,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Huey[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Edmond[] = {
     {
     .iv = 0,
-    .lvl = 13,
+    .lvl = 15,
     .species = SPECIES_WINGULL,
     }
 };
@@ -6422,17 +6443,17 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Ernest[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Dwayne[] = {
     {
     .iv = 0,
-    .lvl = 11,
+    .lvl = 14,
     .species = SPECIES_WINGULL,
     },
     {
     .iv = 0,
-    .lvl = 11,
+    .lvl = 15,
     .species = SPECIES_MACHOP,
     },
     {
     .iv = 0,
-    .lvl = 11,
+    .lvl = 15,
     .species = SPECIES_TENTACOOL,
     }
 };
@@ -8030,7 +8051,7 @@ static const struct TrainerMonFullControl sParty_MayRustboroMudkip[] = {
     .moves = {MOVE_WING_ATTACK, MOVE_QUICK_ATTACK, MOVE_GROWL, MOVE_PECK},
 	.evs = {0, 55, 0, 35, 0, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
 	.nature = NATURE_ADAMANT,
-	.gender = MON_MALE,
+	.gender = MON_FEMALE,
 	.ball = ITEM_POKE_BALL,
     },
     {
@@ -8044,7 +8065,7 @@ static const struct TrainerMonFullControl sParty_MayRustboroMudkip[] = {
     .moves = {MOVE_MEGA_DRAIN, MOVE_QUICK_ATTACK, MOVE_LEER, MOVE_POUND},
 	.evs = {0, 0, 0, 55, 55, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
 	.nature = NATURE_MODEST,
-	.gender = MON_MALE,
+	.gender = MON_FEMALE,
 	.ball = ITEM_POKE_BALL,
     }
 };
@@ -8723,7 +8744,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_KiraAndDan5[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Johanna[] = {
     {
     .iv = 0,
-    .lvl = 13,
+    .lvl = 16,
     .species = SPECIES_GOLDEEN,
     }
 };
@@ -9538,7 +9559,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Darian[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Hailey[] = {
     {
     .iv = 0,
-    .lvl = 13,
+    .lvl = 15,
     .species = SPECIES_MARILL,
     }
 };
@@ -9546,12 +9567,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Hailey[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Chandler[] = {
     {
     .iv = 0,
-    .lvl = 12,
+    .lvl = 14,
     .species = SPECIES_TENTACOOL,
     },
     {
     .iv = 0,
-    .lvl = 12,
+    .lvl = 15,
     .species = SPECIES_TENTACOOL,
     }
 };
@@ -10378,7 +10399,7 @@ static const struct TrainerMonFullControl sParty_MayRustboroTreecko[] = {
     .moves = {MOVE_WING_ATTACK, MOVE_QUICK_ATTACK, MOVE_GROWL, MOVE_PECK},
 	.evs = {0, 55, 0, 35, 0, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
 	.nature = NATURE_ADAMANT,
-	.gender = MON_MALE,
+	.gender = MON_FEMALE,
 	.ball = ITEM_POKE_BALL,
     },
     {
@@ -10392,7 +10413,7 @@ static const struct TrainerMonFullControl sParty_MayRustboroTreecko[] = {
     .moves = {MOVE_PECK, MOVE_SAND_ATTACK, MOVE_EMBER, MOVE_SCRATCH},
 	.evs = {0, 55, 0, 55, 0, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
 	.nature = NATURE_ADAMANT,
-	.gender = MON_MALE,
+	.gender = MON_FEMALE,
 	.ball = ITEM_POKE_BALL,
     }
 };
@@ -10409,7 +10430,7 @@ static const struct TrainerMonFullControl sParty_MayRustboroTorchic[] = {
     .moves = {MOVE_WING_ATTACK, MOVE_QUICK_ATTACK, MOVE_GROWL, MOVE_PECK},
 	.evs = {0, 55, 0, 35, 0, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
 	.nature = NATURE_ADAMANT,
-	.gender = MON_MALE,
+	.gender = MON_FEMALE,
 	.ball = ITEM_POKE_BALL,
     },
     {
@@ -10423,7 +10444,7 @@ static const struct TrainerMonFullControl sParty_MayRustboroTorchic[] = {
     .moves = {MOVE_MUD_SLAP, MOVE_WATER_GUN, MOVE_GROWL, MOVE_TACKLE},
 	.evs = {55, 55, 0, 0, 0, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
 	.nature = NATURE_BRAVE,
-	.gender = MON_MALE,
+	.gender = MON_FEMALE,
 	.ball = ITEM_POKE_BALL,
     }
 };

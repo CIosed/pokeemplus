@@ -449,14 +449,14 @@ Route109_EventScript_Elijah:: @ 81EEC06
 	end
 
 DewfordTown_Text_BrineyLandedInSlateportDeliverGoods: @ 81EEC1D
-	.string "MR. BRINEY: Ahoy!\n"
+	.string "{COLOR BLUE}MR. BRINEY: Ahoy!\n"
 	.string "We've made land in SLATEPORT!\p"
 	.string "I suppose you're going to visit CAPT.\n"
 	.string "STERN and deliver the DEVON GOODS?$"
 
 Route109_Text_BrineySailToDewfordQuestion: @ 81EEC96
-	.string "MR. BRINEY: I thought you're supposed\n"
-	.string "to deliver the DEVON GOODS.\p"
+	.string "MR. BRINEY: I thought you're\n"
+	.string "supposed to deliver the DEVON GOODS.\p"
 	.string "Would you like to sail back to\n"
 	.string "DEWFORD, then?$"
 
@@ -466,8 +466,9 @@ Route109_Text_BrineyDewfordItIs: @ 81EED06
 	.string "PEEKO, we're setting sail, my darling!$"
 
 Route109_Text_BrineyDeliverDevonGoods: @ 81EED5E
-	.string "MR. BRINEY: Then you go on and deliver\n"
-	.string "the DEVON GOODS. I'll be waiting.$"
+	.string "MR. BRINEY: Then you go on and\n"
+	.string "deliver the DEVON GOODS.\l"
+	.string "I'll be waiting.$"
 
 DewfordTown_Text_BrineyLandedInSlateport: @ 81EEDA7
 	.string "MR. BRINEY: Ahoy! We've made land in\n"
@@ -512,11 +513,12 @@ Route109_Text_WereGoingToMakeBigCastle: @ 81EEFF1
 	.string "We'll let you be a servant.$"
 
 Route109_Text_ZigzagoonPicksUpLitter: @ 81EF080
-	.string "The water around these parts is clean.\p"
+	.string "The water around these parts/n"
+	.string "is clean.\p"
 	.string "But, I get my ZIGZAGOON to pick up\n"
 	.string "litter from the shoreline at times.\p"
-	.string "Dirty water becomes rain and joins our\n"
-	.string "rivers, which we drink from…\p"
+	.string "Dirty water becomes rain and joins\n"
+	.string "our rivers, which we drink from…\p"
 	.string "If we pollute the sea, it all comes\n"
 	.string "back to haunt us eventually.$"
 

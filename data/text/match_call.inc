@@ -1,10 +1,11 @@
 MatchCall_Text_Mom1:: @ 82B227B
-	.string "MOM: Your father and you…\n"
-	.string "Everyone is captivated by POKéMON.\p"
+	.string "MOM: Your father and you…\p"
+	.string "Everyone is captivated\n"
+	.string "by POKéMON.\p"
 	.string "What is the charm of POKéMON?\p"
-	.string "Me?\n"
-	.string "I adore POKéMON that help me with\l"
-	.string "my everyday chores.$"
+	.string "Me?\p"
+	.string "I adore POKéMON that help\n"
+	.string "me with my everyday chores.$"
 
 MatchCall_Text_Mom2:: @ 82B2310
 	.string "MOM: Hi, {PLAYER}!\n"
@@ -37,8 +38,8 @@ MatchCall_Text_Roxanne2:: @ 82B250E
 	.string "I've been hearing about you!\p"
 	.string "As for me, I need some more time\n"
 	.string "before I can reopen the GYM.\p"
-	.string "But when I do, please visit my GYM\n"
-	.string "for a rematch!$"
+	.string "But when I do, please visit my\n"
+	.string "GYM for a rematch!$"
 
 MatchCall_Text_Roxanne3:: @ 82B25C1
 	.string "ROXANNE: {PLAYER}!\n"
@@ -53,12 +54,13 @@ MatchCall_Text_Roxanne4:: @ 82B2607
 
 MatchCall_Text_Brawly1:: @ 82B2659
 	.string "BRAWLY: Hey, there, {PLAYER}{KUN}!\p"
-	.string "I learned a lot from the battle we\n"
-	.string "had together.\p"
+	.string "I learned a lot from the battle\n"
+	.string "we had together.\p"
 	.string "I intend to do my training over,\n"
 	.string "then reopen the GYM.\p"
-	.string "It's going to take some time before\n"
-	.string "I'm ready to run the GYM again.\p"
+	.string "It's going to take some time\n"
+	.string "before I'm ready to run the\l"
+	.string "GYM again.\p"
 	.string "But if I can reopen the GYM,\n"
 	.string "I want you to challenge us again.$"
 
@@ -329,11 +331,13 @@ MatchCall_Text_May1:: @ 2B3AB3
 MatchCall_Text_May2:: @ 2B3B3F
 	.string "MAY: Hi, {PLAYER}{KUN}!\p"
 	.string "You know how little towns like\n"
-	.string "PETALBURG and DEWFORD have GYMS?\p"
+	.string "PETALBURG and DEWFORD\l"
+	.string "have GYMS?\p"
 	.string "For some reason, the big port of\n"
 	.string "SLATEPORT doesn't have a GYM.\p"
-	.string "When they finally build a GYM there,\n"
-	.string "I should apply to be the LEADER.$"
+	.string "When they finally build a GYM\n"
+	.string "there, I should apply to be\l"
+	.string "the LEADER.$"
 
 MatchCall_Text_May3:: @ 2B3C13
 	.string "MAY: Hi, {PLAYER}{KUN}!\p"
@@ -701,8 +705,8 @@ MatchCall_Text_Norman1:: @ 82B5719
 	.string "pay him a visit.$"
 
 MatchCall_Text_Norman2:: @ 82B5795
-	.string "DAD: Hm… Little by little, but also\n"
-	.string "very surely, you're getting\l"
+	.string "DAD: Hm… Little by little, but\n"
+	.string "also very surely, you're getting\l"
 	.string "tougher, {PLAYER}.\p"
 	.string "The stronger you get, the farther\n"
 	.string "and higher you soar from Mother\l"
@@ -878,8 +882,8 @@ MatchCall_Text_MrStone4:: @ 82B63A0
 	.string "protect the POKéMON in the area.\p"
 	.string "It's a no-brainer, really.\p"
 	.string "It's more important to let POKéMON\n"
-	.string "live in peace than worry about our\l"
-	.string "own convenience.$"
+	.string "live in peace than worry about\l"
+	.string "our own convenience.$"
 
 MatchCall_Text_MrStone5:: @ 82B64A2
 	.string "MR. STONE: Hello, hello, {PLAYER}{KUN}!\p"

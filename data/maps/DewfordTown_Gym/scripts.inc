@@ -314,7 +314,8 @@ DewfordTown_Gym_Text_GymGuideAdvice: @ 81FC9D6
 	.string "Hey, okay, go for it!$"
 
 DewfordTown_Gym_Text_GymGuidePostVictory: @ 81FCB5C
-	.string "Whoah! It's turned too bright in here!\p"
+	.string "Whoah! It's turned too bright\n"
+	.string "in here!\p"
 	.string "Your future is bright, too!$"
 
 DewfordTown_Gym_Text_TakaoIntro: @ 81FCB9F
@@ -404,22 +405,22 @@ DewfordTown_Gym_Text_BrawlyIntro: @ 81FCF44
 	.string "Let me see what you're made of!$"
 
 DewfordTown_Gym_Text_BrawlyDefeat: @ 81FD008
-	.string "Whoah, wow! You made a much bigger\n"
-	.string "splash than I expected!\p"
+	.string "Whoah, wow! You made a much\n"
+	.string "bigger splash than I expected!\p"
 	.string "You swamped me!\p"
 	.string "Okay, you've got me.\n"
 	.string "Take this GYM BADGE!$"
 
 DewfordTown_Gym_Text_ReceivedKnuckleBadge: @ 81FD07D
-	.string "{PLAYER} received the KNUCKLE BADGE\n"
+	.string "{COLOR DARK_GREY}{PLAYER} received the KNUCKLE BADGE\n"
 	.string "from BRAWLY.$"
 
 DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis: @ 81FD0A8
 	.string "The KNUCKLE BADGE makes all POKéMON\n"
-	.string "up to Level 30, even those you get in\l"
-	.string "trades, obey without question.\p"
-	.string "And, you'll be able to use the HM move\n"
-	.string "FLASH outside of battle.\p"
+	.string "up to Level 30, even those you get\l"
+	.string "in trades, obey without question.\p"
+	.string "And, you'll be able to use the HM\n"
+	.string "move FLASH outside of battle.\p"
 	.string "If you'd like, use this TECHNICAL\n"
 	.string "MACHINE, too.$"
 
@@ -430,13 +431,13 @@ DewfordTown_Gym_Text_ExplainBulkUp: @ 81FD181
 	.string "… … … … … …$"
 
 DewfordTown_Gym_Text_RegisteredBrawly: @ 81FD1E0
-	.string "Registered GYM LEADER BRAWLY\n"
+	.string "{COLOR DARK_GREY}Registered GYM LEADER BRAWLY\n"
 	.string "in the POKéNAV.$"
 
 DewfordTown_Gym_Text_BrawlyPostBattle: @ 81FD20D
-	.string "I can see your talent becoming a giant\n"
-	.string "wave to cause a storm of astonishment\l"
-	.string "among TRAINERS one day!$"
+	.string "I can see your talent becoming a\n"
+	.string "giant wave to cause a storm of\l"
+	.string "astonishment among TRAINERS one day!$"
 
 DewfordTown_Gym_Text_GymStatue: @ 81FD272
 	.string "DEWFORD TOWN POKéMON GYM$"

@@ -964,8 +964,8 @@ SlateportCity_EventScript_BerryCrushRankingsSign:: @ 81DD643
 	end
 
 SlateportCity_Text_EnergyGuruSellWhatYouNeed: @ 81DD64A
-	.string "I'm the ENERGY GURU! I'll go for it and\n"
-	.string "sell you what you need!$"
+	.string "I'm the ENERGY GURU! I'll go for\n"
+	.string "it and sell you what you need!$"
 
 SlateportCity_Text_OhYourPokemon: @ 81DD68A
 	.string "Oh?\n"
@@ -984,7 +984,8 @@ SlateportCity_Text_PutEffortRibbonOnMon: @ 81DD702
 	.string "on {STR_VAR_1}.$"
 
 SlateportCity_Text_GoForItLittleHarder: @ 81DD722
-	.string "You have to go for it a little harder.\p"
+	.string "You have to go for it a\n"
+	.string "little harder.\p"
 	.string "If you do, I'll give your POKéMON\n"
 	.string "something nice.$"
 
@@ -1002,8 +1003,8 @@ SlateportCity_Text_SeaweedFullOfLife: @ 81DD81A
 	.string "Ooh, look at this!\p"
 	.string "The seaweed you can get around these\n"
 	.string "parts is fresh and full of life.\p"
-	.string "Why, it looks like it can even rear up\n"
-	.string "and attack!$"
+	.string "Why, it looks like it can even\n"
+	.string "rear up and attack!$"
 
 SlateportCity_Text_HowTownIsBornAndGrows: @ 81DD8A6
 	.string "Where the water is clean, the fruits\n"
@@ -1313,7 +1314,8 @@ SlateportCity_Text_ExplainBerries: @ 81DEBCE
 
 SlateportCity_Text_ExplainBerryPowder: @ 81DED27
 	.string "I recently had machines installed at\n"
-	.string "POKéMON CENTERS for crushing BERRIES.\p"
+	.string "POKéMON CENTERS for crushing\l"
+	.string "BERRIES.\p"
 	.string "The BERRY CRUSH machines are at\n"
 	.string "the DIRECT CORNER upstairs.\p"
 	.string "Did you know?\p"

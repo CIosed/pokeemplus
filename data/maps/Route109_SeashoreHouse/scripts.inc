@@ -120,7 +120,8 @@ Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles: @ 8269685
 	.string "I'm more than just satisfied!\p"
 	.string "As thanks for showing me your hot\n"
 	.string "streak, I want you to take these.\p"
-	.string "It's half a dozen bottles of SODA POP!$"
+	.string "It's half a dozen bottles\n"
+	.string "of SODA POP!$"
 
 Route109_SeashoreHouse_Text_BagFull: @ 826973A
 	.string "Oh, but hey, your BAG's jammed full.\n"
@@ -156,9 +157,10 @@ Route109_SeashoreHouse_Text_DwaynePostBattle: @ 826989D
 	.string "hot battles and ice-cold SODA POP!$"
 
 Route109_SeashoreHouse_Text_JohannaIntro: @ 82698E3
-	.string "Boring battles aren't worth the effort.\p"
-	.string "Fiery hot battles are what toughen up\n"
-	.string "TRAINERS and POKéMON!$"
+	.string "Boring battles aren't worth\n"
+	.string "the effort.\p"
+	.string "Fiery hot battles are what toughen\n"
+	.string "up TRAINERS and POKéMON!$"
 
 Route109_SeashoreHouse_Text_JohannaDefeated: @ 8269947
 	.string "That's hot!$"
@@ -177,5 +179,6 @@ Route109_SeashoreHouse_Text_SimonDefeated: @ 82699C5
 Route109_SeashoreHouse_Text_SimonPostBattle: @ 82699DF
 	.string "If one of my POKéMON knew the move\n"
 	.string "for carrying me across water on its\l"
-	.string "back, I could get rid of this inner tube.$"
+	.string "back, I could get rid of this\l"
+	.string "inner tube.$"
 
