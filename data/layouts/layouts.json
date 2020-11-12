@@ -7090,6 +7090,16 @@
       "secondary_tileset": "gTileset_Snow",
       "border_filepath": "data/layouts/MtSilverPeakSummit/border.bin",
       "blockdata_filepath": "data/layouts/MtSilverPeakSummit/map.bin"
+    },
+    {
+      "id": "LAYOUT_SLATEPORT_CITY_COLD_STORAGE",
+      "name": "SlateportCity_ColdStorage_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/SlateportCity_ColdStorage/border.bin",
+      "blockdata_filepath": "data/layouts/SlateportCity_ColdStorage/map.bin"
     }
   ]
 }

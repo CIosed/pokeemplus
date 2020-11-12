@@ -2783,4 +2783,9 @@ extern const u8 gText_SavingDontTurnOff2[];
 extern const u8 gText_BlenderMaxSpeedRecord[];
 extern const u8 gText_234Players[];
 
+// pkmnbreedereggs
+extern const u8 gText_Common[];
+extern const u8 gText_Uncommon[];
+extern const u8 gText_Unique[];
+
 #endif // GUARD_STRINGS_H

@@ -838,6 +838,10 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/scripts/new_game.inc"
 	.include "data/scripts/hall_of_fame.inc"
 
+Nothing::
+    release
+	end
+
 EventScript_WhiteOut:: @ 8271857
 	call EverGrandeCity_HallOfFame_EventScript_ResetEliteFour
 	goto EventScript_ResetMrBriney
@@ -1199,7 +1203,7 @@ gText_SorryRecordCornerPreparation:: @ 8273125
 	.string "is under preparation.$"
 
 gText_PlayerHandedOverTheItem:: @ 8273161
-	.string "{PLAYER} handed over the\n"
+	.string "{COLOR DARK_GREY}{PLAYER} handed over the\n"
 	.string "{STR_VAR_1}.$"
 
 gText_ThankYouForAccessingMysteryGift:: @ 8273178
@@ -1331,3 +1335,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/MtSilverPeak2F/scripts.inc"
 
 	.include "data/maps/MtSilverPeakSummit/scripts.inc"
+
+	.include "data/maps/SlateportCity_ColdStorage/scripts.inc"

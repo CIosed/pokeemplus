@@ -1813,9 +1813,9 @@ static const u8 sPokeFluteDesc[] = _(
     "POKéMON.");
 
 static const u8 sSecretKeyDesc[] = _(
-    "The key to the\n"
-    "CINNABAR ISLAND\n"
-    "GYM's entrance.");
+    "A key found at\n"
+	"Slateport Harbor.\n"
+	"Where does it go?");
 
 static const u8 sBikeVoucherDesc[] = _(
     "A voucher for\n"

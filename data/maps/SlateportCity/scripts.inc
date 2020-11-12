@@ -22,7 +22,59 @@
 SlateportCity_MapScripts:: @ 81DCC61
 	map_script MAP_SCRIPT_ON_TRANSITION, SlateportCity_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, SlateportCity_OnFrame
+	map_script MAP_SCRIPT_ON_LOAD, SlateportCity_Travelers
 	.byte 0
+
+SlateportCity_Travelers::
+	 call_if_set FLAG_DELIVERED_WAREHOUSE_KEY, SlateportStorageDoorState
+     dotimebasedevents
+     call_if_unset FLAG_DAILY_SLATEPORT_CAFE, SlateportTravelersReset
+	 compare VAR_SLATEPORT_CAFE_STATE, 1
+	 call_if_eq SlateportTravelers_EggSalesman
+	 compare VAR_SLATEPORT_CAFE_STATE, 2
+	 call_if_eq SlateportTravelers_SpecialBallSalesman
+	 compare VAR_SLATEPORT_CAFE_STATE, 3
+	 call_if_eq SlateportTravelers_StoneSalesman
+	 dotimebasedevents
+	 goto_if_set FLAG_DAILY_SLATEPORT_CAFE, Nothing
+	 goto TravelerPlacement
+	 end
+
+SlateportStorageDoorState:
+     setmetatile 34, 44, 85, 1
+	 return
+
+TravelerPlacement::
+     setvar VAR_SLATEPORT_CAFE_STATE, 0
+	 random 7
+	 compare VAR_RESULT, 1
+	 call_if_eq SlateportTravelers_EggSalesman
+	 compare VAR_RESULT, 2
+	 call_if_eq SlateportTravelers_SpecialBallSalesman
+	 compare VAR_RESULT, 3
+	 call_if_eq SlateportTravelers_StoneSalesman
+	 setflag FLAG_DAILY_SLATEPORT_CAFE
+	 release
+	 end
+
+SlateportTravelersReset::
+     setvar VAR_SLATEPORT_CAFE_STATE, 0  
+     return	 
+
+SlateportTravelers_EggSalesman::
+     setvar VAR_SLATEPORT_CAFE_STATE, 1
+     setobjectxyperm 42, 7, 33
+	 return
+
+SlateportTravelers_SpecialBallSalesman::
+     setvar VAR_SLATEPORT_CAFE_STATE, 2
+     setobjectxyperm 41, 8, 48
+     return
+
+SlateportTravelers_StoneSalesman::
+     setvar VAR_SLATEPORT_CAFE_STATE, 3
+     setobjectxyperm 40, 11, 51
+	 return
 
 SlateportCity_OnTransition: @ 81DCC6C
 	setvar VAR_SLATEPORT_MUSEUM_1F_STATE, 0
@@ -175,6 +227,32 @@ SlateportCity_EventScript_EffortRibbonWoman:: @ 81DCDE4
 	waitfanfare
 	msgbox SlateportCity_Text_PutEffortRibbonOnMon, MSGBOX_DEFAULT
 	special GiveLeadMonEffortRibbon
+	release
+	end
+
+SlateportCity_EventScript_WaitingTrainer::
+    compare VAR_SLATEPORT_CAFE_STATE, 1
+    call_if_eq EggSalesmanIsHere
+    compare VAR_SLATEPORT_CAFE_STATE, 2
+    call_if_eq SpecialBallSalesmanIsHere
+    compare VAR_SLATEPORT_CAFE_STATE, 3
+    call_if_eq SpecialStoneSalesmanIsHere
+	msgbox SlateportCity_Text_WanderingTrio, MSGBOX_NPC
+	release
+	end
+
+EggSalesmanIsHere::
+	msgbox SlateportCity_Text_EggMerchant, MSGBOX_NPC
+	release
+	end
+
+SpecialBallSalesmanIsHere::
+	msgbox SlateportCity_Text_SpecialBallMerchant, MSGBOX_NPC
+	release
+	end
+
+SpecialStoneSalesmanIsHere::
+	msgbox SlateportCity_Text_SpecialStoneMerchant, MSGBOX_NPC
 	release
 	end
 
@@ -365,7 +443,12 @@ SlateportCity_EventScript_Sailor1:: @ 81DCFE5
 	end
 
 SlateportCity_EventScript_Sailor2:: @ 81DCFEE
+    call_if_set FLAG_DELIVERED_WAREHOUSE_KEY, SlateportCity_EventScript_Sailor2Warehouse
 	msgbox SlateportCity_Text_SinkOldBoats, MSGBOX_NPC
+	end
+
+SlateportCity_EventScript_Sailor2Warehouse::
+	msgbox SlateportCity_Text_ISawYou, MSGBOX_NPC
 	end
 
 SlateportCity_EventScript_PokefanF:: @ 81DCFF7
@@ -919,6 +1002,12 @@ SlateportCity_EventScript_ScottBattleTentScene:: @ 81DD5DC
 	closedoor 10, 12
 	waitdooranim
 	msgbox SlateportCity_Text_TakingBattleTentChallenge, MSGBOX_DEFAULT
+	applymovement LOCALID_SCOTT, Common_Movement_FaceUp
+	waitmovement 0
+    msgbox SlateportCity_Text_TakingBattleTentChallenge2, MSGBOX_DEFAULT
+	applymovement LOCALID_SCOTT, Common_Movement_WalkInPlaceFastestDown
+	waitmovement 0
+    msgbox SlateportCity_Text_TakingBattleTentChallenge3, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Movement_PlayerWatchScottExit
 	applymovement LOCALID_SCOTT, SlateportCity_Movement_ScottExitAfterBattleTent
@@ -963,6 +1052,713 @@ SlateportCity_EventScript_BerryCrushRankingsSign:: @ 81DD643
 	releaseall
 	end
 
+
+SlateportCity_ColdStorageSign::
+	msgbox ColdStorage_Text, MSGBOX_SIGN
+	end
+
+SlateportCity_StorageSailor::
+    call_if_set FLAG_DELIVERED_WAREHOUSE_KEY, SlateportCity_StorageSailorDone
+	checkitem ITEM_SECRET_KEY, 1
+	compare VAR_RESULT, 1
+	goto_if_eq HasFoundOddKey
+	msgbox StorageSailor_Text_1, MSGBOX_NPC
+    release
+	end
+
+SlateportCity_StorageSailorDone::
+	msgbox StorageSailor_Text_7, MSGBOX_NPC
+    release
+	end
+
+HasFoundOddKey::
+    lock
+	faceplayer
+	msgbox StorageSailor_Text_4, MSGBOX_DEFAULT
+	playse SE_PIN
+	applymovement 36, Common_Movement_ExclamationMark
+	waitmovement 0
+	delay 48
+	msgbox StorageSailor_Text_2, MSGBOX_DEFAULT
+	setvar VAR_0x8004, ITEM_SECRET_KEY
+    call Common_EventScript_PlayerHandedOverTheItem
+	setflag FLAG_DELIVERED_WAREHOUSE_KEY
+	delay 30
+	msgbox StorageSailor_Text_3, MSGBOX_NPC
+	goto getplayerpos_Slateport
+	release
+	end
+
+UnlockStorage::
+    applymovement 36, SlateportSailorMovement1
+	waitmovement 0
+	playse SE_SWITCH
+    applymovement 36, Common_Movement_WalkInPlaceFastestUp
+	waitmovement 0
+	delay 16
+	msgbox StorageSailor_Text_5, MSGBOX_DEFAULT
+	setmetatile 34, 44, 85, 1
+	special DrawWholeMapView
+	delay 16
+	call getplayerpos2_Slateport
+	release
+	end
+
+EndStorage::
+	msgbox StorageSailor_Text_6, MSGBOX_DEFAULT
+	closemessage
+    compare VAR_TEMP_8, 0
+	goto_if_eq SailorWalkDown
+    compare VAR_TEMP_8, 1
+	goto_if_eq SailorWalkRight
+    release
+	end
+
+SailorWalkDown::
+    applymovement 36, WalkBackSailor1Slateport
+    waitmovement 0
+    release
+	end
+
+SailorWalkRight::
+    applymovement 36, WalkBackSailor2Slateport
+    waitmovement 0
+    release
+	end
+
+WalkBackSailor1Slateport::
+    walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+WalkBackSailor2Slateport::
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+    walk_down
+	step_end
+
+getplayerpos_Slateport::
+    getplayerxy VAR_TEMP_0, VAR_TEMP_1
+    compare VAR_TEMP_1, 45
+    goto_if_le PlayerLocatedUp_Slateport
+    compare VAR_TEMP_1, 47
+    goto_if_eq PlayerLocatedBot_Slateport
+    compare VAR_TEMP_0, 38
+    goto_if_le PlayerLocatedLeft_Slateport
+    compare VAR_TEMP_0, 40
+    goto_if_eq PlayerLocatedRight_Slateport
+	release
+	end
+
+getplayerpos2_Slateport::
+    getplayerxy VAR_TEMP_0, VAR_TEMP_1
+    compare VAR_TEMP_0, 35
+    goto_if_eq PlayerLocatedRight2_Slateport
+    compare VAR_TEMP_1, 46
+	goto_if_eq PlayerLocatedBot2_Slateport
+
+PlayerLocatedUp_Slateport:
+    applymovement OBJ_EVENT_ID_PLAYER, WalkFromUp_Slateport
+    applymovement 36, WalkFromUp2_Slateport
+    waitmovement 0
+    goto UnlockStorage
+
+PlayerLocatedBot_Slateport:
+    applymovement OBJ_EVENT_ID_PLAYER, WalkFromBot_Slateport
+    applymovement 36, WalkFromUp2_Slateport
+    waitmovement 0
+    goto UnlockStorage
+	
+PlayerLocatedLeft_Slateport:
+    applymovement OBJ_EVENT_ID_PLAYER, WalkFromLeft_Slateport
+    applymovement 36, WalkFromLeft2_Slateport
+    waitmovement OBJ_EVENT_ID_PLAYER
+    goto UnlockStorage
+
+PlayerLocatedRight_Slateport:
+    applymovement OBJ_EVENT_ID_PLAYER, WalkFromRight_Slateport
+    applymovement 36, WalkFromUp2_Slateport
+    waitmovement 0
+    goto UnlockStorage
+
+PlayerLocatedRight2_Slateport::
+    applymovement 36, Common_Movement_WalkInPlaceFastestRight
+    applymovement OBJ_EVENT_ID_PLAYER,Common_Movement_WalkInPlaceFastestLeft
+    waitmovement 0
+	setvar VAR_TEMP_8, 0
+	goto EndStorage
+
+PlayerLocatedBot2_Slateport::
+    applymovement 36, Common_Movement_WalkInPlaceFastestDown
+    waitmovement 0
+	setvar VAR_TEMP_8, 1
+	goto EndStorage
+
+WalkFromUp2_Slateport::
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+    walk_up
+	step_end
+
+WalkFromLeft2_Slateport::
+    walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_in_place_fastest_up
+	step_end
+
+WalkFromUp_Slateport::
+    walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_in_place_fastest_up
+	step_end
+
+WalkFromBot_Slateport::
+    walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_in_place_fastest_up
+	step_end
+
+WalkFromLeft_Slateport::
+    delay_16
+    delay_8
+    delay_4
+	walk_in_place_fastest_up
+    walk_up
+	walk_left
+	walk_left
+	walk_left
+	delay_8
+	walk_in_place_fastest_up
+	step_end
+
+WalkFromRight_Slateport::
+    walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_in_place_fastest_up
+	step_end
+
+SlateportSailorMovement1::
+    delay_16
+	walk_in_place_fastest_left
+	delay_16
+	walk_in_place_fastest_right
+	delay_16
+	walk_in_place_fastest_up
+	delay_16
+	step_end
+
+SlateportCity_NPC_1::
+	msgbox SlateportCity_NPC_1_Text, MSGBOX_NPC
+    release
+	end
+
+SlateportCity_NPC_2::
+	msgbox SlateportCity_NPC_2_Text, MSGBOX_NPC
+    release
+	end
+
+SlateportTravelers_EggSalesman_NPC::
+    lockall
+	faceplayer
+	msgbox EggSalesmanIntro, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_eq EggSalesman_CancelSimple
+	special SpawnCameraObject
+	message EggSalesmanWhatEgg
+	applymovement OBJ_EVENT_ID_CAMERA, WalkRight4
+	waitmovement 0
+	showmoneybox 0, 0, 0
+    waitmessage
+    multichoice 16, 0, MULTI_PKMN_BREEDER_EGGS, 1
+	compare VAR_RESULT, 0
+	goto_if_eq EggSalesman_CommonEgg
+	compare VAR_RESULT, 1
+	goto_if_eq EggSalesman_UncommonEgg
+	compare VAR_RESULT, 2
+	goto_if_eq EggSalesman_UniqueEgg
+	compare VAR_RESULT, 3
+	goto_if_eq EggSalesman_Cancel
+	end
+
+EggSalesman_CommonEgg::
+    checkmoney 3000, 0
+	compare VAR_RESULT 0
+	goto_if_eq NotEnoughMoneyForEgg
+    getpartysize
+	compare VAR_RESULT, 6
+	goto_if_eq PartyIsFull
+	msgbox EggSalesmanCommonEgg, MSGBOX_DEFAULT
+	applymovement 5, Common_Movement_WalkInPlaceLeft
+	waitmovement 0
+	msgbox PeriodsPause, MSGBOX_DEFAULT
+	applymovement 5, Common_Movement_FacePlayer
+	waitmovement 0
+	goto RandomCommonEgg
+	releaseall
+	end
+
+EggSalesman_UncommonEgg::
+    checkmoney 7000, 0
+	compare VAR_RESULT 0
+	goto_if_eq NotEnoughMoneyForEgg
+    getpartysize
+	compare VAR_RESULT, 6
+	goto_if_eq PartyIsFull
+	msgbox EggSalesmanUncommonEgg, MSGBOX_DEFAULT
+	applymovement 5, Common_Movement_WalkInPlaceLeft
+	waitmovement 0
+	msgbox PeriodsPause, MSGBOX_DEFAULT
+	applymovement 5, Common_Movement_FacePlayer
+	waitmovement 0
+	goto RandomUncommonEgg
+	releaseall
+	end
+
+EggSalesman_UniqueEgg::
+    checkmoney 25000, 0
+	compare VAR_RESULT 0
+	goto_if_eq NotEnoughMoneyForEgg
+    getpartysize
+	compare VAR_RESULT, 6
+	goto_if_eq PartyIsFull
+	msgbox EggSalesmanUniqueEgg, MSGBOX_DEFAULT
+	applymovement 5, Common_Movement_WalkInPlaceLeft
+	waitmovement 0
+	msgbox PeriodsPause, MSGBOX_DEFAULT
+	applymovement 5, Common_Movement_FacePlayer
+	waitmovement 0
+	goto RandomOddEgg
+	releaseall
+	end
+
+RandomCommonEgg::
+	random 10
+    compare VAR_RESULT, 0
+	goto_if_eq PoochyenaEgg
+    compare VAR_RESULT, 1
+	goto_if_eq ZigzagoonEgg
+    compare VAR_RESULT, 2
+	goto_if_eq LotadEgg
+    compare VAR_RESULT, 3
+	goto_if_eq SeedotEgg
+    compare VAR_RESULT, 4
+	goto_if_eq WhismurEgg
+    compare VAR_RESULT, 5
+	goto_if_eq ElectrikeEgg
+    compare VAR_RESULT, 6
+	goto_if_eq RoseliaEgg
+    compare VAR_RESULT, 7
+	goto_if_eq NumelEgg
+    compare VAR_RESULT, 8
+	goto_if_eq SpoinkEgg
+    compare VAR_RESULT, 9
+	goto_if_eq LuvdiscEgg
+
+RandomUncommonEgg::
+	random 10
+    compare VAR_RESULT, 0
+	goto_if_eq ShroomishEgg
+    compare VAR_RESULT, 1
+	goto_if_eq TrapinchEgg
+    compare VAR_RESULT, 2
+	goto_if_eq TorkoalEgg
+    compare VAR_RESULT, 3
+	goto_if_eq BaltoyEgg
+    compare VAR_RESULT, 4
+	goto_if_eq CorphishEgg
+    compare VAR_RESULT, 5
+	goto_if_eq BarboachEgg
+    compare VAR_RESULT, 6
+	goto_if_eq DuskullEgg
+    compare VAR_RESULT, 7
+	goto_if_eq BanetteEgg
+    compare VAR_RESULT, 8
+	goto_if_eq SphealEgg
+    compare VAR_RESULT, 9
+	goto_if_eq SnoruntEgg
+
+RandomOddEgg::
+	random 5
+    compare VAR_RESULT, 0
+	goto_if_eq RaltsEgg
+    compare VAR_RESULT, 1
+	goto_if_eq SlakothEgg
+    compare VAR_RESULT, 2
+	goto_if_eq FeebasEgg
+    compare VAR_RESULT, 3
+	goto_if_eq ChimechoEgg
+    compare VAR_RESULT, 4
+	goto_if_eq BagonEgg
+
+PoochyenaEgg::
+	giveegg SPECIES_POOCHYENA
+	goto GiveMoneyCommon
+
+ZigzagoonEgg::
+	giveegg SPECIES_ZIGZAGOON
+	goto GiveMoneyCommon
+
+LotadEgg::
+	giveegg SPECIES_LOTAD
+	goto GiveMoneyCommon
+
+SeedotEgg::
+	giveegg SPECIES_SEEDOT
+	goto GiveMoneyCommon
+
+WhismurEgg::
+	giveegg SPECIES_WHISMUR
+	goto GiveMoneyCommon
+
+ElectrikeEgg::
+	giveegg SPECIES_ELECTRIKE
+	goto GiveMoneyCommon
+
+RoseliaEgg::
+	giveegg SPECIES_ROSELIA
+	goto GiveMoneyCommon
+
+NumelEgg::
+	giveegg SPECIES_NUMEL
+	goto GiveMoneyCommon
+
+SpoinkEgg::
+	giveegg SPECIES_SPOINK
+	goto GiveMoneyCommon
+
+LuvdiscEgg::
+	giveegg SPECIES_LUVDISC
+	goto GiveMoneyCommon
+
+ShroomishEgg::
+	giveegg SPECIES_SHROOMISH
+	goto GiveMoneyUncommon
+
+TrapinchEgg::
+	giveegg SPECIES_TRAPINCH
+	goto GiveMoneyUncommon
+
+TorkoalEgg::
+	giveegg SPECIES_TORKOAL
+	goto GiveMoneyUncommon
+
+BaltoyEgg::
+	giveegg SPECIES_BALTOY
+	goto GiveMoneyUncommon
+
+CorphishEgg::
+	giveegg SPECIES_CORPHISH
+	goto GiveMoneyUncommon
+
+BarboachEgg::
+	giveegg SPECIES_BARBOACH
+	goto GiveMoneyUncommon
+
+DuskullEgg::
+	giveegg SPECIES_DUSKULL
+	goto GiveMoneyUncommon
+
+BanetteEgg::
+	giveegg SPECIES_BANETTE
+	goto GiveMoneyUncommon
+
+SphealEgg::
+	giveegg SPECIES_SPHEAL
+	goto GiveMoneyUncommon
+
+SnoruntEgg::
+	giveegg SPECIES_SNORUNT
+	goto GiveMoneyUncommon
+
+RaltsEgg::
+	giveegg SPECIES_RALTS
+	goto GiveMoneyOdd
+
+SlakothEgg::
+	giveegg SPECIES_SLAKOTH
+	goto GiveMoneyOdd
+
+FeebasEgg::
+	giveegg SPECIES_FEEBAS
+	goto GiveMoneyOdd
+
+ChimechoEgg::
+	giveegg SPECIES_CHIMECHO
+	goto GiveMoneyOdd
+
+BagonEgg::
+	giveegg SPECIES_BAGON
+	goto GiveMoneyOdd
+
+GiveMoneyCommon::
+	msgbox EggSalesmanHereIsTheEgg, MSGBOX_DEFAULT
+	removemoney 3000 0
+    playse SE_ITEMFINDER
+	updatemoneybox 0 0
+	goto EndOfEggScript
+
+GiveMoneyUncommon::
+	msgbox EggSalesmanHereIsTheEgg, MSGBOX_DEFAULT
+	removemoney 7000 0
+    playse SE_ITEMFINDER
+	updatemoneybox 0 0
+	goto EndOfEggScript
+
+GiveMoneyOdd::
+	msgbox EggSalesmanHereIsTheEgg, MSGBOX_DEFAULT
+	removemoney 25000 0
+    playse SE_ITEMFINDER
+	updatemoneybox 0 0
+	goto EndOfEggScript
+
+EggSalesman_Cancel::
+    closemessage
+	hidemoneybox
+	applymovement 5, Common_Movement_WalkInPlaceLeft
+	applymovement OBJ_EVENT_ID_CAMERA, WalkLeft4
+	waitmovement 0
+	special RemoveCameraObject
+	releaseall
+	end
+
+EggSalesman_CancelSimple::
+	msgbox EggSalesmanNoBuyingToday, MSGBOX_DEFAULT
+    closemessage
+	applymovement 5, Common_Movement_WalkInPlaceLeft
+	waitmovement 0
+	releaseall
+	end
+
+PartyIsFull::
+	msgbox YourPartyIsFull, MSGBOX_DEFAULT
+    closemessage
+	hidemoneybox
+	applymovement 5, Common_Movement_WalkInPlaceLeft
+	applymovement OBJ_EVENT_ID_CAMERA, WalkLeft4
+	waitmovement 0
+	special RemoveCameraObject
+	releaseall
+	end
+
+NotEnoughMoneyForEgg::
+	msgbox GetMoreMoney, MSGBOX_DEFAULT
+    closemessage
+	hidemoneybox
+	applymovement 5, Common_Movement_WalkInPlaceLeft
+	applymovement OBJ_EVENT_ID_CAMERA, WalkLeft4
+	waitmovement 0
+	special RemoveCameraObject
+	releaseall
+	end
+
+EndOfEggScript::
+	playse MUS_OBTAIN_ITEM
+	msgbox EggSalesmanRecievedEgg, MSGBOX_DEFAULT
+    waitse
+	msgbox EggSalesmanTakeCareOfEgg, MSGBOX_DEFAULT
+	closemessage
+	hidemoneybox
+	applymovement 5, Common_Movement_WalkInPlaceLeft
+	applymovement OBJ_EVENT_ID_CAMERA, WalkLeft4
+	waitmovement 0
+	special RemoveCameraObject
+	releaseall
+	end
+
+SlateportTravelers_SpecialBallSalesman_NPC::
+	lock
+	faceplayer
+	message BallSalesman_Intro
+	waitmessage
+	pokemart SlateportTravelers_Pokeball_Salesman
+	msgbox PokeballSalesman_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+SlateportTravelers_Pokeball_Salesman::
+	.2byte ITEM_DUSK_BALL
+	.2byte ITEM_HEAL_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_FAST_BALL
+	.2byte ITEM_LEVEL_BALL
+	.2byte ITEM_LURE_BALL
+	.2byte ITEM_HEAVY_BALL
+	.2byte ITEM_LOVE_BALL
+	.2byte ITEM_FRIEND_BALL
+	.2byte ITEM_MOON_BALL
+	.2byte ITEM_NONE
+	release
+	end
+
+SlateportTravelers_StoneSalesman_NPC::
+	lock
+	faceplayer
+	message StoneSalesman_Intro
+	waitmessage
+	pokemart SlateportTravelers_Stoneball_Salesman
+	msgbox StoneSalesman_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+SlateportTravelers_Stoneball_Salesman::
+	.2byte ITEM_FIRE_STONE
+	.2byte ITEM_LEAF_STONE
+	.2byte ITEM_THUNDER_STONE
+	.2byte ITEM_WATER_STONE
+	.2byte ITEM_SUN_STONE
+	.2byte ITEM_NONE
+	release
+	end
+
+StorageSailor_Text_2::
+    .string "T-That's it! That key!\n"
+	.string "I've been looking all over for it!\p"
+	.string "Can I please have it?$"
+
+StorageSailor_Text_3::
+    .string "Gwhahahaha!\p"
+	.string "I've been searching all over\n"
+	.string "for this!\p"
+	.string "I thank you from the bottom of\n"
+	.string "my heart!\p"
+	.string "… … … … … …\p"
+	.string "What's that?\p"
+	.string "Oh, wait… {PAUSE}{25}I know!\p"
+	.string "Follow me.$"
+
+StorageSailor_Text_4::
+    .string "Hmm…?$"
+
+StorageSailor_Text_5::
+    .string "{COLOR DARK_GREY}The door was unlocked!$"
+
+StorageSailor_Text_6::
+    .string "There you go, just don't go telling\n"
+	.string "anyone!\p"
+	.string "Oh, and look out for wild Pokémon.\p"
+	.string "They recently infested these\n"
+	.string "warehouses.\p"
+	.string "Maybe a trainer like yourself can\n"
+	.string "do something about it.$"
+
+StorageSailor_Text_7::
+    .string "Slateport City has an abundance of\n"
+	.string "food thanks to the the surrouding\l"
+	.string "clean waters.\p"
+	.string "It's what helped the market grow\n"
+	.string "so fast, it's been here since day one.$"
+
+BallSalesman_Intro::
+    .string "Are you looking for some special\n"
+	.string "Pokéballs?\p"
+	.string "Have a look!$"
+
+PokeballSalesman_PleaseComeAgain::
+    .string "Please, come see me again\n"
+	.string "If you need some special Pokéballs!$"
+
+StoneSalesman_Intro::
+    .string "I collect rare stones.\n"
+	.string "I'm selling some of them.\p"
+	.string "Please, take a look!$"
+
+StoneSalesman_PleaseComeAgain::
+    .string "Please, come see me again\n"
+	.string "If you need some stones!$"
+
+EggSalesmanNoBuyingToday::
+    .string "That's unfortunate.\n"
+	.string "You take care!$"
+
+EggSalesmanIntro::
+	.string "Hello, I'm a Pokémon Breeder.\n"
+	.string "I have some spare eggs.\p"
+	.string "Would you like to buy one?$"
+
+EggSalesmanWhatEgg::
+    .string "What kind of Egg would you like?$"
+
+EggSalesmanCommonEgg::
+	.string "A Common Egg? Coming right up!$"
+
+EggSalesmanUncommonEgg::
+	.string "An Uncommon Egg? Coming right up!$"
+
+EggSalesmanUniqueEgg::
+	.string "An Odd Egg? Coming right up!$"
+
+YourPartyIsFull::
+    .string "It seems like you don't have\n"
+	.string "enough space in your party.\p"
+	.string "Please, come again!$"
+
+GetMoreMoney::
+    .string "It looks like you can't afford it.\n"
+	.string "Sorry!$"
+
+PeriodsPause::
+    .string "… … … … … …$"
+
+EggSalesmanHereIsTheEgg::
+    .string "Here it is, I found it!$"
+
+EggSalesmanRecievedEgg::
+    .string "{COLOR DARK_GREY}{PLAYER} received an Egg!$"
+
+EggSalesmanTakeCareOfEgg::
+    .string "Take good care of it!\p"
+	.string "Please come again!$"
+
+WalkRight4::
+    walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+WalkLeft4::
+    walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+SlateportCity_NPC_1_Text:
+    .string "The Pokémon Contest Hall opened in\n"
+	.string "Slateport recently.\p"
+	.string "I plan on entering after I improve the\n"
+	.string "condition of my Pokémon.$"
+	
+SlateportCity_NPC_2_Text:
+    .string "If battles aren't your thing, the\n"
+	.string "Contest Halls is a great alternative!$"
+
 SlateportCity_Text_EnergyGuruSellWhatYouNeed: @ 81DD64A
 	.string "I'm the ENERGY GURU! I'll go for\n"
 	.string "it and sell you what you need!$"
@@ -994,10 +1790,11 @@ SlateportCity_Text_EffortRibbonLooksGoodOnIt: @ 81DD77B
 	.string "RIBBON looks good on it!$"
 
 SlateportCity_Text_WonderIfLighthouseStartlesPokemon: @ 81DD7AD
-	.string "The light of the lighthouse reaches\n"
-	.string "dozens of miles away.\p"
-	.string "I wonder if it doesn't startle POKéMON\n"
-	.string "in the sea.$"
+	.string "Lots of organic products are stored\n"
+	.string "here in the Slateport warehouses.\p"
+	.string "I've heard that some Pokémon have\n"
+	.string "snuck in and adapted a lifestyle\l"
+	.string "in them.$"
 
 SlateportCity_Text_SeaweedFullOfLife: @ 81DD81A
 	.string "Ooh, look at this!\p"
@@ -1026,10 +1823,11 @@ SlateportCity_Text_BuyBricksSoDecorWontGetDirty: @ 81DD999
 	.string "when I leave them out.$"
 
 SlateportCity_Text_GoingToCompeteInBattleTent: @ 81DDA34
-	.string "Wroooar! I'm going to compete in\n"
-	.string "the BATTLE TENT, too!\p"
-	.string "But before that, I need to catch\n"
-	.string "some POKéMON!$"
+	.string "Yeah! I've waited so long for this!\n"
+	.string "POKÉMON CONTESTS!\l"
+	.string "I'm going to enter!\p"
+	.string "But before I do, I have to catch some\n"
+	.string "POKÉMON!$"
 
 SlateportCity_Text_BushedHikingFromMauville: @ 81DDA9A
 	.string "Whew… I'm just bushed…\p"
@@ -1128,6 +1926,14 @@ SlateportCity_Text_SinkOldBoats: @ 81DE04B
 	.string "They sink them in the sea so they\n"
 	.string "become habitats for POKéMON.$"
 
+SlateportCity_Text_ISawYou:
+    .string "Hey pal, I won't tell anoyne but\n"
+	.string "I saw what happened at the storage.\p"
+	.string "He unlocked the door for you, didn't\n"
+	.string "he?\p"
+	.string "I bet it's because you returned\n"
+	.string "something he lost!$"
+
 SlateportCity_Text_BuyTooMuch: @ 81DE0D2
 	.string "Whenever I visit here, I get carried\n"
 	.string "away and buy too much.$"
@@ -1144,12 +1950,10 @@ SlateportCity_Text_CantChangeTradeMonName: @ 81DE16C
 	.string "POKéMON is in the nickname.$"
 
 SlateportCity_Text_BattleTentBuiltRecently: @ 81DE1EC
-	.string "Recently, a BATTLE TENT was built\n"
+	.string "Recently, a CONTEST HALL was built\n"
 	.string "in SLATEPORT.\p"
-	.string "GYMS are fun, but the BATTLE TENT's\n"
-	.string "awesome in its own way.\p"
-	.string "You should go find tough POKéMON\n"
-	.string "for the BATTLE TENT!$"
+	.string "I wish they would've built something\n"
+	.string "more battle related.$"
 
 SlateportCity_Text_CaptSternBeingInterviewed: @ 81DE28E
 	.string "I was hoping that it was a famous star\n"
@@ -1243,8 +2047,9 @@ SlateportCity_Text_PleaseComeWithMe: @ 81DE8A0
 	.string "Please, come with me!$"
 
 SlateportCity_Text_BattleTentSign: @ 81DE8BC
-	.string "BATTLE TENT SLATEPORT SITE\n"
-	.string "“Find it! The ultimate POKéMON!”$"
+	.string "POKÉMON CONTESTS\n"
+	.string "NORMAL RANK Registration\p"
+	.string "“Gather here, all ye POKÉMON TRAINERS!”$"
 
 SlateportCity_Text_SternsShipyardWantedSign: @ 81DE8F8
 	.string "STERN'S SHIPYARD\p"
@@ -1391,10 +2196,56 @@ SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou: @ 81DF1D3
 SlateportCity_Text_TakingBattleTentChallenge: @ 81DF28C
 	.string "SCOTT: Oh, hey!\n"
 	.string "If it isn't {PLAYER}{KUN}!\p"
-	.string "{PLAYER}{KUN}, let me guess--you're going\n"
-	.string "to take the BATTLE TENT challenge?\p"
-	.string "Yeah! That's a good idea!\n"
-	.string "That's a really great idea!\p"
-	.string "After all, a tough TRAINER is\n"
-	.string "the perfect fit for the BATTLE TENT!\p"
-	.string "Give it your best effort!$"
+	.string "Are you going to check\n"
+	.string "out the CONTEST HALL?$"
+
+SlateportCity_Text_TakingBattleTentChallenge2: 
+	.string "… … … … … …\n"
+	.string "… … … … … …\p"
+	.string "If you ask me, it's not really worth it.\p"
+	.string "TRAINERS don't battle in here, they just\n"
+	.string "show off some moves.\p"
+	.string "Where's the excitement in that?$"
+
+SlateportCity_Text_TakingBattleTentChallenge3: 
+    .string "Oh, sorry.\n"
+	.string "Don't mind me. Just talking to myself.\p"
+	.string "Anyways, I'll be seeing you, {PLAYER}{KUN}!$"
+
+StorageSailor_Text_1:
+    .string "Urk… This is embarrasing…\p"
+	.string "I lost my keys to the storages…\p"
+	.string "Have you see a set of keys\n"
+	.string "anywhere?$"
+
+ColdStorage_Text:
+    .string "Cold Storage\n"
+	.string "No unauthorized personnel allowed!\p"
+	.string "BEWARE! Watch out for the\n"
+	.string "wild Pokémon!$"
+
+SlateportCity_Text_WanderingTrio:
+    .string "Hey! You look like a TRAINER.\n"
+	.string "I, too, am also a TRAINER.\p"
+	.string "I'm currently waiting for some\n"
+	.string "traveling merchants to appear\l"
+	.string "at the market.\p"
+	.string "They sell useful stuff for us trainers!$"
+
+SlateportCity_Text_EggMerchant:
+    .string "Hey, TRAINER!\n"
+	.string "Have you heard?\p"
+	.string "There's a lady selling POKéMON\n"
+	.string "EGGS at the market!$"
+
+SlateportCity_Text_SpecialBallMerchant:
+    .string "Hey, TRAINER!\n"
+	.string "Have you heard?\p"
+	.string "There's a lady selling special\n"
+	.string "POKé BALLS at the market!$"
+
+SlateportCity_Text_SpecialStoneMerchant:
+    .string "Hey, TRAINER!\n"
+	.string "Have you heard?\p"
+	.string "There's a lady selling special\n"
+	.string "STONES at the market!$"

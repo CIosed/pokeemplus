@@ -191,7 +191,8 @@
     "SlateportCity_PokemonCenter_2F",
     "SlateportCity_Mart",
     "SlateportCity_ContestLobby",
-    "SlateportCity_ContestHall"
+    "SlateportCity_ContestHall",
+    "SlateportCity_ColdStorage"
   ],
   "gMapGroup10": [
     "MauvilleCity_Gym",

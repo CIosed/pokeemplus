@@ -657,3 +657,11 @@ MagmaHideout_4F_EventScript_MaxRevive:: @ 829151F
 MagmaHideout_3F_3R_EventScript_ItemEscapeRope:: @ 829152C
 	finditem ITEM_ESCAPE_ROPE
 	end
+
+Slateport_EventScript_KeyPotion::
+	finditem ITEM_SECRET_KEY
+	end
+
+ColdStorage_EventScript_IcyRock::
+	finditem ITEM_ICY_ROCK
+	end
