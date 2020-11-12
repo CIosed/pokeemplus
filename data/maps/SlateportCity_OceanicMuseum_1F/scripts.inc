@@ -219,6 +219,7 @@ SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExit: @ 820AFC7
 	walk_fast_down
 	walk_fast_down
 	walk_fast_down
+	walk_fast_down
 	delay_8
 	step_end
 
@@ -232,19 +233,19 @@ SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExitNorth: @ 820AFCE
 	step_end
 
 SlateportCity_OceanicMuseum_1F_Text_WouldYouLikeToEnter: @ 820AFD5
-	.string "Welcome to the OCEANIC MUSEUM.\p"
+	.string "{COLOR RED}Welcome to the OCEANIC MUSEUM.\p"
 	.string "The entrance fee is ¥50.\n"
 	.string "Would you like to enter?$"
 
 SlateportCity_OceanicMuseum_1F_Text_PleaseEnjoyYourself: @ 820B026
-	.string "Please enjoy yourself.$"
+	.string "{COLOR RED}Please enjoy yourself.$"
 
 SlateportCity_OceanicMuseum_1F_Text_NotEnoughMoney: @ 820B03D
-	.string "Oh? I'm sorry, but you don't seem to\n"
+	.string "{COLOR RED}Oh? I'm sorry, but you don't seem to\n"
 	.string "have enough money.$"
 
 SlateportCity_OceanicMuseum_1F_Text_CatchUpWithYourGroup: @ 820B075
-	.string "Oh? You're with that group that\n"
+	.string "{COLOR RED}Oh? You're with that group that\n"
 	.string "went in earlier?\p"
 	.string "You're the only one who's late.\n"
 	.string "You'd better go catch up to them!$"
@@ -263,8 +264,8 @@ SlateportCity_OceanicMuseum_1F_Text_WouldStuffHereMakeMeRich: @ 820B165
 	.string "would it make me rich?$"
 
 SlateportCity_OceanicMuseum_1F_Text_CanLearnForNefariousDeeds: @ 820B19C
-	.string "What I learn here, I can put to use on\n"
-	.string "nefarious deeds…$"
+	.string "What I learn here, I can put to\n"
+	.string "use on nefarious deeds…$"
 
 SlateportCity_OceanicMuseum_1F_Text_RustboroBungled: @ 820B1D4
 	.string "If our goons didn't bungle things\n"
@@ -367,8 +368,8 @@ SlateportCity_OceanicMuseum_1F_Text_OceanicMinifact3: @ 820B912
 	.string "Which is bigger? The sea or land?\p"
 	.string "“The sea covers about 70% of\n"
 	.string "the planet, and the rest is land.\p"
-	.string "“The sea is therefore more than twice\n"
-	.string "the size of land.”$"
+	.string "“The sea is therefore more than\n"
+	.string "twice the size of land.”$"
 
 SlateportCity_OceanicMuseum_1F_Text_FossilDisplay: @ 820B9C0
 	.string "It's a fossil with wavy ridges on it.\p"

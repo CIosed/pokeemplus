@@ -138,7 +138,7 @@ SlateportCity_EventScript_ScottScene:: @ 81DCD1C
 	waitmovement 0
 	delay 60
 	msgbox SlateportCity_Text_MaybeThisTrainer, MSGBOX_DEFAULT
-	applymovement LOCALID_SCOTT, Common_Movement_WalkInPlaceFastestRight
+	applymovement LOCALID_SCOTT, Common_Movement_WalkInPlaceUp
 	waitmovement 0
 	msgbox SlateportCity_Text_LetsRegisterEachOther, MSGBOX_DEFAULT
 	closemessage
@@ -154,7 +154,7 @@ SlateportCity_EventScript_ScottScene:: @ 81DCD1C
 	applymovement LOCALID_SCOTT, SlateportCity_Movement_ScottExit
 	waitmovement 0
 	removeobject LOCALID_SCOTT
-	setobjectxyperm LOCALID_SCOTT, 10, 12
+	setobjectxyperm LOCALID_SCOTT, 9, 12
 	setobjectmovementtype LOCALID_SCOTT, MOVEMENT_TYPE_FACE_DOWN
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 2
@@ -173,9 +173,12 @@ SlateportCity_Movement_ScottApproachPlayer: @ 81DCDAC
 	walk_right
 	walk_right
 	walk_right
+	walk_down
 	walk_right
 	walk_right
 	walk_right
+	walk_right
+	face_up
 	step_end
 
 SlateportCity_Movement_ScottExit: @ 81DCDB4
@@ -993,13 +996,13 @@ SlateportCity_EventScript_ScottBattleTentScene:: @ 81DD5DC
 	lockall
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
-	opendoor 10, 12
+	opendoor 9, 12
 	waitdooranim
 	addobject LOCALID_SCOTT
 	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Movement_PushPlayerDown
 	applymovement LOCALID_SCOTT, SlateportCity_Movement_ScottExitBattleTent
 	waitmovement 0
-	closedoor 10, 12
+	closedoor 9, 12
 	waitdooranim
 	msgbox SlateportCity_Text_TakingBattleTentChallenge, MSGBOX_DEFAULT
 	applymovement LOCALID_SCOTT, Common_Movement_FaceUp
@@ -1750,14 +1753,14 @@ WalkLeft4::
 	step_end
 
 SlateportCity_NPC_1_Text:
-    .string "The Pokémon Contest Hall opened in\n"
+    .string "The POKÉMON CONTEST HALL opened in\n"
 	.string "Slateport recently.\p"
-	.string "I plan on entering after I improve the\n"
-	.string "condition of my Pokémon.$"
+	.string "I plan on entering after I improve\n"
+	.string "the condition of my POKÉMON.$"
 	
 SlateportCity_NPC_2_Text:
     .string "If battles aren't your thing, the\n"
-	.string "Contest Halls is a great alternative!$"
+	.string "CONTEST HALL is a great alternative!$"
 
 SlateportCity_Text_EnergyGuruSellWhatYouNeed: @ 81DD64A
 	.string "I'm the ENERGY GURU! I'll go for\n"
@@ -1826,8 +1829,8 @@ SlateportCity_Text_GoingToCompeteInBattleTent: @ 81DDA34
 	.string "Yeah! I've waited so long for this!\n"
 	.string "POKÉMON CONTESTS!\l"
 	.string "I'm going to enter!\p"
-	.string "But before I do, I have to catch some\n"
-	.string "POKÉMON!$"
+	.string "But before I do, I have to catch\n"
+	.string "some POKÉMON!$"
 
 SlateportCity_Text_BushedHikingFromMauville: @ 81DDA9A
 	.string "Whew… I'm just bushed…\p"
@@ -1838,8 +1841,9 @@ SlateportCity_Text_BushedHikingFromMauville: @ 81DDA9A
 
 SlateportCity_Text_EveryoneCallsHimCaptStern: @ 81DDB21
 	.string "STERN, the fellow who built the\n"
-	.string "MUSEUM, also happens to be the leader\l"
-	.string "of an undersea exploration team.\p"
+	.string "MUSEUM, also happens to be the\l"
+	.string "leader of an undersea exploration\l"
+	.string "team.\p"
 	.string "So, everyone calls him CAPT. STERN.$"
 
 SlateportCity_Text_WhatsLongLineOverThere: @ 81DDBAC
@@ -1849,8 +1853,8 @@ SlateportCity_Text_WhatsLongLineOverThere: @ 81DDBAC
 SlateportCity_Text_VisitedMuseumOften: @ 81DDBD5
 	.string "When I was a child, I visited\n"
 	.string "the MUSEUM often.\p"
-	.string "I used to dream about the mysteries of\n"
-	.string "the sea after seeing the exhibits.$"
+	.string "I used to dream about the mysteries\n"
+	.string "of the sea after seeing the exhibits.$"
 
 SlateportCity_Text_QuitPushing: @ 81DDC4F
 	.string "Hey, there! Quit pushing!\n"
@@ -1881,8 +1885,8 @@ SlateportCity_Text_DontButtIn: @ 81DDDC0
 
 SlateportCity_Text_RemindsMeOfLongLineForGames: @ 81DDDDF
 	.string "A long line, huh?\p"
-	.string "It reminds me of the times I lined up to\n"
-	.string "buy smash-hit games…$"
+	.string "It reminds me of the times I lined\n"
+	.string "up to buy smash-hit games…$"
 
 SlateportCity_Text_WhyAreWeLiningUp: @ 81DDE2F
 	.string "Why are we even lining up and paying?\n"
@@ -1906,7 +1910,8 @@ SlateportCity_Text_SaysSomethingLikeSeaIsEndless: @ 81DDEB8
 SlateportCity_Text_ShouldveBroughtMyGameBoy: @ 81DDF32
 	.string "Grumble…\p"
 	.string "I should've brought my Game Boy\n"
-	.string "Advance so I wouldn't get bored in line…\p"
+	.string "Advance so I wouldn't get bored\l"
+	.string "in line…\p"
 	.string "Grumble…$"
 
 SlateportCity_Text_HotSpringsAfterOperation: @ 81DDF8D
@@ -1940,8 +1945,8 @@ SlateportCity_Text_BuyTooMuch: @ 81DE0D2
 
 SlateportCity_Text_GetNameRaterToHelpYou: @ 81DE10E
 	.string "If you want to change your POKéMON's\n"
-	.string "nickname, you'll have to get the NAME\l"
-	.string "RATER to help you.$"
+	.string "nickname, you'll have to get the\l"
+	.string "NAME RATER to help you.$"
 
 SlateportCity_Text_CantChangeTradeMonName: @ 81DE16C
 	.string "Any POKéMON you get in a trade,\n"
@@ -2162,8 +2167,9 @@ SlateportCity_Text_ComeBackToTradeBerryPowder: @ 81DEFBC
 	.string "Did you know?$"
 
 SlateportCity_Text_YouDroveTeamAquaAway: @ 81DF032
-	.string "SCOTT: Huh?\n"
-	.string "I'm sure I met you somewhere before.\p"
+	.string "{COLOR BLUE}SCOTT: Huh?\p"
+	.string "I'm sure I met you somewhere\n"
+	.string "before.\p"
 	.string "Have I introduced myself to you?\n"
 	.string "If not, my name's SCOTT.\p"
 	.string "I just saw TEAM AQUA run away from\n"
@@ -2175,40 +2181,42 @@ SlateportCity_Text_MaybeThisTrainer: @ 81DF0FE
 	.string "Maybe, just maybe, this TRAINER…$"
 
 SlateportCity_Text_LetsRegisterEachOther: @ 81DF12B
-	.string "SCOTT: All right! I think you're going\n"
-	.string "to become a good friend.\p"
+	.string "SCOTT: All right! I think you're\n"
+	.string "going to become a good friend.\p"
 	.string "So, let's register each other in our\n"
 	.string "POKéNAVS.\p"
 	.string "… … … … … …$"
 
 SlateportCity_Text_RegisteredScott: @ 81DF1A6
-	.string "Registered this SCOTT person\n"
+	.string "{COLOR DARK_GREY}Registered this SCOTT person\n"
 	.string "in the POKéNAV.$"
 
 SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou: @ 81DF1D3
-	.string "SCOTT: What I'd like to do is tag along\n"
-	.string "with you, but I do want to keep an eye\l"
-	.string "on the talents of other people, too.\p"
+	.string "{COLOR BLUE}SCOTT: What I'd like to do is tag\n"
+	.string "along with you, but I do want to keep\l"
+	.string "an eye on the talents of other\l"
+	.string "people, too.\p"
 	.string "So, I'll be off to roam other towns\n"
 	.string "a bit more.\p"
 	.string "Be seeing you, {PLAYER}{KUN}!$"
 
 SlateportCity_Text_TakingBattleTentChallenge: @ 81DF28C
-	.string "SCOTT: Oh, hey!\n"
+	.string "{COLOR BLUE}SCOTT: Oh, hey!\n"
 	.string "If it isn't {PLAYER}{KUN}!\p"
-	.string "Are you going to check\n"
-	.string "out the CONTEST HALL?$"
+	.string "Are you going to check out the\n"
+	.string "CONTEST HALL?$"
 
 SlateportCity_Text_TakingBattleTentChallenge2: 
-	.string "… … … … … …\n"
+	.string "{COLOR BLUE}… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "If you ask me, it's not really worth it.\p"
-	.string "TRAINERS don't battle in here, they just\n"
-	.string "show off some moves.\p"
+	.string "If you ask me, it's not really\n"
+	.string "worth it.\p"
+	.string "TRAINERS don't battle in here, they\n"
+	.string "just show off some fancy moves.\p"
 	.string "Where's the excitement in that?$"
 
 SlateportCity_Text_TakingBattleTentChallenge3: 
-    .string "Oh, sorry.\n"
+    .string "{COLOR BLUE}Oh, sorry.\n"
 	.string "Don't mind me. Just talking to myself.\p"
 	.string "Anyways, I'll be seeing you, {PLAYER}{KUN}!$"
 

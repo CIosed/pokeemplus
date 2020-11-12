@@ -12,9 +12,11 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern:: @ 820BB00
 	msgbox SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts, MSGBOX_DEFAULT
 	closemessage
 	playbgm MUS_ENCOUNTER_AQUA, 1
+	playse SE_EXIT
 	addobject LOCALID_GRUNT_1
 	applymovement LOCALID_GRUNT_1, SlateportCity_OceanicMuseum_2F_Movement_FirstGruntEnter
 	waitmovement 0
+	playse SE_EXIT
 	addobject LOCALID_GRUNT_2
 	applymovement LOCALID_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_SecondGruntEnter
 	waitmovement 0
@@ -54,6 +56,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern:: @ 820BB00
 	msgbox SlateportCity_OceanicMuseum_2F_Text_MeddlingKid, MSGBOX_DEFAULT
 	closemessage
 	delay 35
+	playse SE_EXIT
 	addobject LOCALID_ARCHIE
 	applymovement LOCALID_ARCHIE, SlateportCity_OceanicMuseum_2F_Movement_ArchieEnter
 	applymovement LOCALID_GRUNT_2, SlateportCity_OceanicMuseum_2F_Movement_GruntMoveForArchie
@@ -155,12 +158,12 @@ SlateportCity_OceanicMuseum_2F_Movement_ArchieApproachPlayer: @ 820BCD6
 	step_end
 
 SlateportCity_OceanicMuseum_2F_Movement_ArchieEnter: @ 820BCD8
+    delay_16
 	walk_down
 	walk_down
 	walk_down
 	walk_down
 	walk_down
-	walk_right
 	walk_right
 	walk_right
 	walk_right
@@ -182,7 +185,6 @@ SlateportCity_OceanicMuseum_2F_Movement_FirstGruntApproach: @ 820BCE8
 	walk_down
 	walk_right
 	walk_right
-	walk_right
 	step_end
 
 SlateportCity_OceanicMuseum_2F_Movement_GruntDefeated: @ 820BCEF
@@ -200,7 +202,6 @@ SlateportCity_OceanicMuseum_2F_Movement_SecondGruntApproach: @ 820BCF5
 	walk_down
 	walk_down
 	walk_down
-	walk_right
 	walk_right
 	walk_right
 	walk_right
@@ -281,10 +282,10 @@ SlateportCity_OceanicMuseum_2F_EventScript_MuseumPatron3:: @ 820BD76
 SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts: @ 820BD8D
 	.string "Yes? If you're looking for STERN,\n"
 	.string "that would be me.\p"
-	.string "Ah! Those must be the parts I ordered\n"
-	.string "from MR. STONE of DEVON.\p"
-	.string "Thank you! That's great!\n"
-	.string "We can prepare for our expedition now.$"
+	.string "Ah! Those must be the parts I\n"
+	.string "ordered from MR. STONE of DEVON.\p"
+	.string "Thank you! That's great! We can\n"
+	.string "Prepare for our expedition now.$"
 
 SlateportCity_OceanicMuseum_2F_Text_WellTakeThoseParts: @ 820BE40
 	.string "Hehehe, hold it!\n"
@@ -318,8 +319,8 @@ SlateportCity_OceanicMuseum_2F_Text_Grunt2Defeat: @ 820BF66
 SlateportCity_OceanicMuseum_2F_Text_MeddlingKid: @ 820BF7A
 	.string "Now what? If we don't get the parts,\n"
 	.string "we're in for it!\p"
-	.string "Arrgh, I didn't count on being meddled\n"
-	.string "with by some meddling kid!$"
+	.string "Arrgh, I didn't count on being\n"
+	.string "meddled with by some meddling kid!$"
 
 SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong: @ 820BFF2
 	.string "I came to see what was taking so\n"
@@ -327,10 +328,8 @@ SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong: @ 820BFF2
 	.string "simps are held up by a mere child?$"
 
 SlateportCity_OceanicMuseum_2F_Text_ArchieWarning: @ 820C059
-	.string "We are TEAM AQUA,\n"
-	.string "and we love the sea!\p"
-	.string "And I am TEAM AQUA's leader,\n"
-	.string "ARCHIE!\p"
+	.string "We are TEAM AQUA, and I am\n"
+	.string "TEAM AQUA's leader, ARCHIE!\p"
 	.string "What makes you interfere with us?\p"
 	.string "…No! You can't be!\n"
 	.string "You're not one of TEAM MAGMA?\p"
@@ -338,19 +337,16 @@ SlateportCity_OceanicMuseum_2F_Text_ArchieWarning: @ 820C059
 	.string "You're not dressed for the part.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "POKéMON, people… All life depends on\n"
-	.string "the sea.\p"
-	.string "So, TEAM AQUA is dedicated to\n"
-	.string "the expansion of the sea.\p"
-	.string "Don't you agree? What we are doing\n"
-	.string "is a magnificent undertaking.\p"
-	.string "Ah, fine…\n"
-	.string "You're still too young to understand\l"
-	.string "our noble objective.\p"
-	.string "But, I warn you, don't even consider\n"
+	.string "TEAM MAGMA…{PAUSE}{50} They're up\n"
+	.string "to no good.\p"
+	.string "If you happen to see them, stay\n"
+	.string "cautios.\p"
+	.string "If we let them roam free, HOENN will\n"
+	.string "surely be destroyed…\p"
+	.string "So, I warn you, don't even consider\n"
 	.string "interfering with our plans again.\p"
 	.string "The consequences will cost you\n"
-	.string "dearly!\p"
+	.string "and everyone dearly!\p"
 	.string "And don't you forget it!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs: @ 820C2BE
@@ -364,12 +360,12 @@ SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs: @ 820C2BE
 SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo: @ 820C36C
 	.string "CAPT. STERN: Whoops!\n"
 	.string "There's no time to lose!\p"
-	.string "We have to set out on our ocean-floor\n"
-	.string "expedition really soon.\p"
+	.string "We have to set out on our\n"
+	.string "ocean-floor expedition really soon.\p"
 	.string "Thanks again, but now I've got\n"
 	.string "to go!\p"
-	.string "Feel free to wander around and check\n"
-	.string "out our facilities, though.$"
+	.string "Feel free to wander around and\n"
+	.string "check out our facilities, though.$"
 
 SlateportCity_OceanicMuseum_2F_Text_RemindsMeOfAbandonedShip: @ 820C43F
 	.string "I saw a model of a ship here.\p"
@@ -399,10 +395,10 @@ SlateportCity_OceanicMuseum_2F_Text_WaterQualitySample2: @ 820C566
 SlateportCity_OceanicMuseum_2F_Text_PressureExperiment: @ 820C5C6
 	.string "A rubber ball is expanding and\n"
 	.string "shrinking.\p"
-	.string "“In the sea, the weight of water itself\n"
-	.string "exerts pressure.\p"
-	.string "“In shallow water, the pressure is not\n"
-	.string "very heavy.\p"
+	.string "“In the sea, the weight of water\n"
+	.string "itself exerts pressure.\p"
+	.string "“In shallow water, the pressure is\n"
+	.string "not very heavy.\p"
 	.string "“However, in extremely deep water,\n"
 	.string "the pressure can reach even tens of\l"
 	.string "thousands of tons on a small area.”$"
@@ -414,13 +410,15 @@ SlateportCity_OceanicMuseum_2F_Text_HoennModel: @ 820C6C7
 	.string "Where is LITTLEROOT TOWN on this?$"
 
 SlateportCity_OceanicMuseum_2F_Text_DeepSeawaterDisplay: @ 820C72F
-	.string "It's a display on the flow of seawater.\p"
+	.string "It's a display on the flow\n"
+	.string "of seawater.\p"
 	.string "“Near the bottom of the sea, water\n"
 	.string "flows due to differences in such\l"
 	.string "factors as temperature and salinity.”$"
 
 SlateportCity_OceanicMuseum_2F_Text_SurfaceSeawaterDisplay: @ 820C7C1
-	.string "It's a display on the flow of seawater.\p"
+	.string "It's a display on the flow\n"
+	.string "of seawater.\p"
 	.string "“Toward the surface, seawater flows\n"
 	.string "as currents driven by the winds.”$"
 

@@ -331,14 +331,15 @@ SlateportCity_PokemonFanClub_Text_EnjoyDoingInterviews: @ 0828062E
 	.string "about POKéMON by doing interviews.$"
 
 SlateportCity_PokemonFanClub_Text_InterviewRequest: @ 08280674
-	.string "Hi, you seem to be very close to your\n"
-	.string "{STR_VAR_1}.\p"
+	.string "Hi, you seem to be very close\n"
+	.string "to your {STR_VAR_1}.\p"
 	.string "Do you know what?\n"
 	.string "I'm a TV reporter.\p"
 	.string "I travel around interviewing people\n"
 	.string "about POKéMON.\p"
-	.string "I'm wondering if you'd be willing to tell\n"
-	.string "me a little about your {STR_VAR_1}?$"
+	.string "I'm wondering if you'd be willing to\n"
+	.string "tell me a little about your\l"
+	.string "{STR_VAR_1}?$"
 
 SlateportCity_PokemonFanClub_Text_TellMeAnythingAboutYourMon: @ 0828073B
 	.string "Wow, thank you!\p"
