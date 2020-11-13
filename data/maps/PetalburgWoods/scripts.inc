@@ -10,10 +10,26 @@ PetalburgWoods_EventScript_DevonResearcherLeft:: @ 822DFD7
 	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherApproachPlayerLeft
 	waitmovement 0
 	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
+	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestLeft
+	delay 24
+	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestRight
+	delay 24
+	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestUp
+	waitmovement 0
+	delay 32
+	msgbox PetalburgWoods_Text_HaveYouSeenShroomish3, MSGBOX_DEFAULT
+	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestDown
+	waitmovement 0
+	delay 16
+	msgbox PetalburgWoods_Text_HaveYouSeenShroomish4, MSGBOX_DEFAULT
 	closemessage
 	playbgm MUS_ENCOUNTER_AQUA, 0
 	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaEntrance
 	waitmovement 0
+	playse SE_PIN
+	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_ExclamationMarkUp
+	waitmovement 0
+	delay 48
 	msgbox PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaApproachResearcherLeft
@@ -47,10 +63,33 @@ PetalburgWoods_EventScript_DevonResearcherRight:: @ 822E079
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestLeft
 	waitmovement 0
 	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
+	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestDown
+	delay 24
+	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestUp
+	delay 24
+	waitmovement 0
+	msgbox PetalburgWoods_Text_HaveYouSeenShroomish2, MSGBOX_DEFAULT
+	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestRight
+	waitmovement 0
+	delay 16
+	msgbox PetalburgWoods_Text_HaveYouSeenShroomish33, MSGBOX_DEFAULT
+	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestUp
+	waitmovement 0
+	msgbox PetalburgWoods_Text_HaveYouSeenShroomish2, MSGBOX_DEFAULT
+	delay 32
+	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestRight
+	waitmovement 0
+	msgbox PetalburgWoods_Text_HaveYouSeenShroomish4, MSGBOX_DEFAULT
 	closemessage
 	playbgm MUS_ENCOUNTER_AQUA, 0
 	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaEntrance
 	waitmovement 0
+	playse SE_PIN
+	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_ExclamationMarkUp
+	waitmovement 0
+	delay 16
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestUp
+	delay 48
 	msgbox PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaApproachResearcherRight
@@ -62,8 +101,6 @@ PetalburgWoods_EventScript_DevonResearcherRight:: @ 822E079
 	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherFleeToPlayerRight
 	waitmovement 0
 	msgbox PetalburgWoods_Text_YouHaveToHelpMe, MSGBOX_DEFAULT
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestUp
-	waitmovement 0
 	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
 	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaBackOff
@@ -287,17 +324,45 @@ PetalburgWoods_EventScript_James:: @ 822E284
 
 PetalburgWoods_Text_NotAOneToBeFound: @ 822E332
 	.string "{COLOR BLUE}Hmmm…\n"
-	.string "Not a one to be found…$"
+	.string "How much longer…?$"
 
 PetalburgWoods_Text_HaveYouSeenShroomish: @ 822E34F
-	.string "{COLOR BLUE}Hello, have you seen any POKéMON\n"
-	.string "called SHROOMISH around here?\p"
-	.string "I really love that POKéMON.$"
+	.string "{COLOR BLUE}Uhm… Hello.\p"
+	.string "You wouldn't be one of them,\n"
+	.string "would you?\p"
+	.string "… … … … … …\n"
+	.string "… … … … … …\p"
+	.string "Hmmm…\p"
+	.string "No, you don't look the part.\n"
+	.string "You're from around here, aren't you?\p"
+	.string "Ah! A rookie TRAINER, I see!\p"
+	.string "Me? I'm a DEVON employee, currently…\n"
+	.string "Erhm…$"
+
+PetalburgWoods_Text_HaveYouSeenShroomish2:
+	.string "{COLOR BLUE}… … … … … …\n"
+	.string "… … … … … …$"
+
+PetalburgWoods_Text_HaveYouSeenShroomish3:
+	.string "{COLOR BLUE}… … … … … …\n"
+	.string "… … … … … …\p"
+    .string "{COLOR BLUE}I'm trying to stay under the radar,\n"
+	.string "you see.$"
+
+PetalburgWoods_Text_HaveYouSeenShroomish33:
+    .string "{COLOR BLUE}I'm trying to stay under the radar,\n"
+	.string "you see.$"
+
+PetalburgWoods_Text_HaveYouSeenShroomish4:
+    .string "{COLOR BLUE}I'm actually being followed…\p"
+	.string "I've been in here for quite awhile\n"
+	.string "now, it's a good place to hide.$"
 
 PetalburgWoods_Text_IWasGoingToAmbushYou: @ 822E3AA
 	.string "{COLOR BLUE}I was going to ambush you, but you\n"
 	.string "had to dawdle in PETALBURG WOODS\l"
 	.string "forever, didn't you?\p"
+	.string "It's been hours!\n"
 	.string "I got sick of waiting, so here I am!$"
 
 PetalburgWoods_Text_HandOverThosePapers: @ 822E428
