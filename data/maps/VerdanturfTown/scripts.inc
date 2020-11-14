@@ -67,12 +67,12 @@ VerdanturfTown_Text_ManTryingToDigTunnel: @ 81EB5FD
 	.string "My papa told me.\p"
 	.string "He says this tunnel is full of\n"
 	.string "timid POKéMON.\p"
-	.string "They get all scared of loud noise and\n"
-	.string "make a big uproar.\p"
+	.string "They get all scared of loud noise\n"
+	.string "and make a big uproar.\p"
 	.string "So they had to stop the big tunnel\n"
 	.string "project.\p"
-	.string "But there's one man. He's trying to dig\n"
-	.string "the tunnel by himself!$"
+	.string "But there's one man. He's trying to\n"
+	.string "dig the tunnel by himself!$"
 
 VerdanturfTown_Text_ManDugTunnelForLove: @ 81EB6E0
 	.string "There was a man who dug a tunnel for\n"
@@ -83,14 +83,14 @@ VerdanturfTown_Text_AirCleanHere: @ 81EB736
 	.string "The way the winds blow, volcanic ash\n"
 	.string "is never blown in this direction.\p"
 	.string "The air is clean and delicious here.\n"
-	.string "Living here should do wonders for even\l"
-	.string "frail and sickly people.$"
+	.string "Living here should do wonders for\l"
+	.string "even frail and sickly people.$"
 
 VerdanturfTown_Text_MakeBattleTentDebut: @ 81EB7E2
-	.string "My POKéMON and I, we've been riding\n"
-	.string "a hot winning streak.\p"
-	.string "So I decided to make my BATTLE TENT\n"
-	.string "debut in this town.$"
+	.string "I'm feeling a little confident about\n"
+	.string "the cuteness of my POKÉMON.\p"
+	.string "I wanted to make its CONTEST debut,\n"
+	.string "so that's why I'm here.$"
 
 VerdanturfTown_Text_GuyTryingToBustThroughCave: @ 81EB854
 	.string "Did you see the cave next to the\n"

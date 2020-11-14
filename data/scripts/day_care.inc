@@ -305,8 +305,8 @@ Route117_Text_SeeWifeIfYoudLikeMeToRaiseMon: @ 8291FCF
 	.string "I'm the DAY-CARE MAN.\p"
 	.string "I help take care of the precious\n"
 	.string "POKéMON of TRAINERS.\p"
-	.string "If you'd like me to raise your POKéMON,\n"
-	.string "have a word with my wife.$"
+	.string "If you'd like me to raise your\n"
+	.string "POKéMON, have a word with my wife.$"
 
 Route117_Text_DoYouWantEgg: @ 829205D
 	.string "Ah, it's you!\p"

@@ -83,16 +83,17 @@ VerdanturfTown_WandasHouse_EventScript_WallysAuntEverGrande:: @ 8202989
 	end
 
 VerdanturfTown_WandasHouse_Text_StrongerSpeech: @ 8202993
-	.string "WALLY: I lost to you, {PLAYER}, but I'm\n"
-	.string "not feeling down anymore.\p"
-	.string "Because I have a new purpose in life.\n"
-	.string "Together with my RALTS, I'm going\l"
-	.string "to challenge POKéMON GYMS and become\l"
-	.string "a great TRAINER.\p"
+	.string "WALLY: I lost to you, {PLAYER}, but\n"
+	.string "I'm not feeling down anymore.\p"
+	.string "Because I have a new purpose\n"
+	.string "in life.\p"
+	.string "Together with my KIRLIA, I'm going\n"
+	.string "to challenge POKéMON GYMS and\l"
+	.string "become a great TRAINER.\p"
 	.string "Please watch me, {PLAYER}.\n"
 	.string "I'm going to be stronger than you.\p"
-	.string "When I do, I'm going to challenge you\n"
-	.string "to another battle.$"
+	.string "When I do, I'm going to challenge\n"
+	.string "you to another battle.$"
 
 VerdanturfTown_WandasHouse_Text_StrongerSpeechShort: @ 8202ABE
 	.string "WALLY: Please watch me, {PLAYER}.\n"
@@ -103,8 +104,8 @@ VerdanturfTown_WandasHouse_Text_StrongerSpeechShort: @ 8202ABE
 VerdanturfTown_WandasHouse_Text_WallysNextDoor: @ 8202B37
 	.string "UNCLE: Oh! {PLAYER}{KUN}!\n"
 	.string "WALLY's next door.\p"
-	.string "But, boy, there's something I have to\n"
-	.string "tell you.\p"
+	.string "But, boy, there's something I have\n"
+	.string "to tell you.\p"
 	.string "This natural environment is doing\n"
 	.string "wonders for WALLY's health.\p"
 	.string "Maybe it's not just the environment.\n"

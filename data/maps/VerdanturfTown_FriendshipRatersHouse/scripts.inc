@@ -63,8 +63,9 @@ VerdanturfTown_FriendshipRatersHouse_EventScript_Pikachu:: @ 82030DA
 	end
 
 VerdanturfTown_FriendshipRatersHouse_Text_SeeHowMuchPokemonLikesYou: @ 82030ED
-	.string "Let me see your POKéMON.\n"
-	.string "I'll check to see how much it likes you.\p"
+	.string "Let me see your POKéMON.\p"
+	.string "I'll check to see how much it\n"
+	.string "likes you.\p"
 	.string "Oh.\n"
 	.string "Your POKéMON…$"
 
@@ -79,7 +80,8 @@ VerdanturfTown_FriendshipRatersHouse_Text_VeryHappy: @ 8203192
 
 VerdanturfTown_FriendshipRatersHouse_Text_LikesYouQuiteALot: @ 82031D1
 	.string "It likes you quite a lot.\n"
-	.string "It seems to want to be babied a little.$"
+	.string "It seems to want to be babied\l"
+	.string "a little.$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_GettingUsedToYou: @ 8203213
 	.string "It's getting used to you.\n"

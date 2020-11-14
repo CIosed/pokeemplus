@@ -281,8 +281,8 @@ MauvilleCity_Gym_Text_GymGuidePostVictory: @ 820E283
 	.string "You've powered the door open!$"
 
 MauvilleCity_Gym_Text_KirkIntro: @ 820E2BC
-	.string "My electric soul, it'll shatter your\n"
-	.string "dreams whole, whoa-yeahah!$"
+	.string "My electric soul, it'll shatter\n"
+	.string "your dreams whole, whoa-yeahah!$"
 
 MauvilleCity_Gym_Text_KirkDefeat: @ 820E2FC
 	.string "That was plugged in, amped up,\n"
@@ -367,8 +367,6 @@ MauvilleCity_Gym_Text_ReceivedDynamoBadge: @ 820E77F
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis: @ 820E7AA
 	.string "With the DYNAMO BADGE, POKéMON can\n"
 	.string "use ROCK SMASH out of battle.\p"
-	.string "And, it will make your POKéMON a little\n"
-	.string "bit faster, too.\p"
 	.string "Hmm…\n"
 	.string "You should take this, too!$"
 
@@ -379,12 +377,12 @@ MauvilleCity_Gym_Text_ExplainShockWave: @ 820E844
 	.string "… … … … … …$"
 
 MauvilleCity_Gym_Text_RegisteredWattson: @ 820E8B5
-	.string "Registered GYM LEADER WATTSON\n"
+	.string "{COLOR DARK_GREY}Registered GYM LEADER WATTSON\n"
 	.string "in the POKéNAV.$"
 
 MauvilleCity_Gym_Text_WattsonPostBattle: @ 820E8E3
-	.string "I swell with optimism, seeing a promising\n"
-	.string "young TRAINER like you!$"
+	.string "I swell with optimism, seeing a\n"
+	.string "promising young TRAINER like you!$"
 
 MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor: @ 820E925
 	.string "Wahahahah!\n"

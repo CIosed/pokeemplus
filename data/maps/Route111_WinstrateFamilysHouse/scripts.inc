@@ -63,8 +63,8 @@ Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection:: @ 822A52C
 	end
 
 Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou: @ 822A539
-	.string "You're the first TRAINER I've seen who\n"
-	.string "deploys POKéMON so masterfully.\p"
+	.string "You're the first TRAINER I've seen\n"
+	.string "who deploys POKéMON so masterfully.\p"
 	.string "But, I should tell you--my son is\n"
 	.string "stronger than you.\p"
 	.string "He even took the POKéMON LEAGUE\n"
@@ -76,7 +76,8 @@ Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace: @ 822A5F4
 	.string "in training.\p"
 	.string "Since you've beaten all of us here,\n"
 	.string "I don't know if you need it, but we\l"
-	.string "would like you to have our MACHO BRACE.$"
+	.string "would like you to have our\l"
+	.string "MACHO BRACE.$"
 
 Route111_WinstrateFamilysHouse_Text_PassionateAboutBattles: @ 822A6B4
 	.string "When it comes to POKéMON battles,\n"
@@ -90,9 +91,11 @@ Route111_WinstrateFamilysHouse_Text_StrongerFamilyMembers: @ 822A6F7
 	.string "than Grandma.$"
 
 Route111_WinstrateFamilysHouse_Text_GrandsonStrong: @ 822A780
-	.string "There's no question that you're strong.\p"
-	.string "But if you were to battle my grandson,\n"
-	.string "you'd end up crying in frustration.\p"
+	.string "There's no question that you're\n"
+	.string "strong.\p"
+	.string "But if you were to battle my\n"
+	.string "grandson, you'd end up crying in\l"
+	.string "frustration.\p"
 	.string "He's much stronger than any TRAINER\n"
 	.string "our family knows.\p"
 	.string "He must be challenging the POKéMON\n"

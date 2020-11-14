@@ -731,8 +731,8 @@ RusturfTunnel_Text_WhyCantTheyKeepDigging: @ 822D510
 	.string "My beloved awaits me in VERDANTURF\n"
 	.string "TOWN just beyond here…\p"
 	.string "If RUSTBORO and VERDANTURF were\n"
-	.string "joined by this tunnel, I could visit\l"
-	.string "her every day…\p"
+	.string "joined by this tunnel, I could\l"
+	.string "visit her every day…\p"
 	.string "But this…\n"
 	.string "What am I to do?$"
 
@@ -742,21 +742,21 @@ RusturfTunnel_Text_ToGetToVerdanturf: @ 822D5F3
 	.string "through SLATEPORT and MAUVILLE…$"
 
 RusturfTunnel_Text_YouShatteredBoulderTakeHM: @ 822D65C
-	.string "Wow! You shattered that boulder\n"
+	.string "{COLOR BLUE}Wow! You shattered that boulder\n"
 	.string "blocking the way.\p"
-	.string "To show you how much I appreciate it,\n"
-	.string "I'd like you to have this HM.$"
+	.string "To show you how much I appreciate\n"
+	.string "it, I'd like you to have this HM.$"
 
 RusturfTunnel_Text_ExplainStrength: @ 822D6D2
-	.string "That HM contains STRENGTH.\p"
+	.string "{COLOR BLUE}That HM contains STRENGTH.\p"
 	.string "If a muscular POKéMON were to learn\n"
 	.string "that, it would be able to move even\l"
 	.string "large boulders.$"
 
 RusturfTunnel_Text_WandaReunion: @ 822D745
-	.string "WANDA!\n"
+	.string "{COLOR BLUE}WANDA!\n"
 	.string "Now I can see you anytime!\p"
-	.string "WANDA: That's…wonderful.\p"
+	.string "{COLOR RED}WANDA: That's… wonderful.\p"
 	.string "Please, take some rest at my home.$"
 
 RusturfTunnel_Text_BoyfriendOnOtherSideOfRock: @ 822D7A3
@@ -768,8 +768,9 @@ RusturfTunnel_Text_BoyfriendOnOtherSideOfRock: @ 822D7A3
 	.string "for the benefit of everyone.$"
 
 RusturfTunnel_Text_MikeIntro: @ 822D84D
-	.string "What do you call a wild man up in the\n"
-	.string "mountains? A mountain man, right?\p"
+	.string "What do you call a wild man up in\n"
+	.string "the mountains?\l"
+	.string "A mountain man, right?\p"
 	.string "So why don't they call a POKéMON in\n"
 	.string "the mountains a mountain POKéMON?$"
 

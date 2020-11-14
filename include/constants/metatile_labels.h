@@ -237,7 +237,7 @@
 #define METATILE_General_YellowCaveOpen        0x1A9
 
 // gTileset_GenericBuilding
-#define METATILE_GenericBuilding_TableEdge               0x2F1
+#define METATILE_GenericBuilding_TableEdge                      0x2F1
 #define METATILE_GenericBuilding_TrickHouse_Door_Closed_Bottom  0x32E
 #define METATILE_GenericBuilding_TrickHouse_Door_Closed_Top     0x32B
 #define METATILE_GenericBuilding_TrickHouse_Stairs_Down_Bottom  0x37C

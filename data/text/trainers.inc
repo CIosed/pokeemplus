@@ -999,8 +999,8 @@ Route111_Text_TravisDefeat: @ 8298DD8
 	.string "My POKéMON lost its pep…$"
 
 Route111_Text_TravisPostBattle: @ 8298DF1
-	.string "When I see a TRAINER with a lot of pep,\n"
-	.string "I can't help looking.$"
+	.string "When I see a TRAINER with a lot of\n"
+	.string "pep, I can't help looking.$"
 
 Route111_Text_IreneIntro: @ 8298E2F
 	.string "I don't know where you're going,\n"
@@ -1095,18 +1095,19 @@ Route111_Text_TyronIntro: @ 8299524
 	.string "This is my favorite kind of POKéMON!$"
 
 Route111_Text_TyronDefeat: @ 8299549
-	.string "Wait!\n"
-	.string "Did you get a good look at my POKéMON?$"
+	.string "Wait!\p"
+	.string "Did you get a good look at\l"
+	.string "my POKéMON?$"
 
 Route111_Text_TyronPostBattle: @ 8299576
-	.string "When having a battle, I get a kick out\n"
-	.string "of showing off my POKéMON.\p"
+	.string "When having a battle, I get a kick\n"
+	.string "out of showing off my POKéMON.\p"
 	.string "I bet everyone feels that way when\n"
 	.string "they enter a battle!$"
 
 Route111_Text_CelinaIntro: @ 82995F0
-	.string "Show me how to put a little excitement\n"
-	.string "into my life.$"
+	.string "Show me how to put a little\n"
+	.string "excitement into my life.$"
 
 Route111_Text_CelinaDefeat: @ 8299625
 	.string "Oh… My…\n"
@@ -1178,7 +1179,8 @@ Route112_Text_LarryDefeat: @ 8299AAC
 	.string "Waaaah!$"
 
 Route112_Text_LarryPostBattle: @ 8299AB4
-	.string "I'm not crying because I miss my mommy!\n"
+	.string "I'm not crying because I miss\n"
+	.string "my mommy!\p"
 	.string "Snivel…$"
 
 Route112_Text_CarolIntro: @ 8299AE4
@@ -1190,8 +1192,8 @@ Route112_Text_CarolDefeat: @ 8299B36
 	.string "Oh, you're so strong!$"
 
 Route112_Text_CarolPostBattle: @ 8299B4C
-	.string "It doesn't matter if you're good or bad\n"
-	.string "at singing or POKéMON.\p"
+	.string "It doesn't matter if you're good or\n"
+	.string "bad at singing or POKéMON.\p"
 	.string "If you have the most fun, you win!$"
 
 Route112_Text_BryantIntro: @ 8299BAE
@@ -1822,8 +1824,9 @@ Route117_Text_DylanPostBattle: @ 829C800
 	.string "that battle…$"
 
 Route117_Text_MariaIntro: @ 829C955
-	.string "I do my triathlon training with POKéMON,\n"
-	.string "so I'm pretty confident about my speed.$"
+	.string "I do my triathlon training with\n"
+	.string "POKéMON, so I'm pretty confident\l"
+	.string "about my speed.$"
 
 Route117_Text_MariaDefeat: @ 829C9A6
 	.string "I need to get more practices in,\n"
@@ -1846,19 +1849,19 @@ Route117_Text_DerekDefeat: @ 829CB87
 	.string "unchanged…$"
 
 Route117_Text_DerekPostBattle: @ 829CBAD
-	.string "All I did was follow my heart, and now\n"
-	.string "they call me a BUG MANIAC…\p"
-	.string "Still, I am an expert on BUG POKéMON,\n"
-	.string "so it's only natural that they call me\l"
-	.string "a BUG MANIAC.$"
+	.string "All I did was follow my heart, and\n"
+	.string "now they call me a BUG MANIAC…\p"
+	.string "Still, I am an expert on BUG\n"
+	.string "POKéMON, so it's only natural that\l"
+	.string "they call me a BUG MANIAC.$"
 
 Route117_Text_AnnaIntro: @ 829CC4A
-	.string "ANNA: I'm with my pretty junior student\n"
-	.string "partner. I have to do good!$"
+	.string "ANNA: I'm with my pretty junior\n"
+	.string "student partner. I have to do good!$"
 
 Route117_Text_AnnaDefeat: @ 829CC8E
-	.string "ANNA: I'm with my pretty junior student\n"
-	.string "partner! Let me win!$"
+	.string "ANNA: I'm with my pretty junior\n"
+	.string "student partner! Let me win!$"
 
 Route117_Text_AnnaPostBattle: @ 829CCCB
 	.string "ANNA: Your POKéMON have some good\n"
@@ -1870,8 +1873,9 @@ Route117_Text_AnnaNotEnoughMons: @ 829CD61
 	.string "bring two POKéMON with you.$"
 
 Route117_Text_MegIntro: @ 829CD9D
-	.string "MEG: I'm going to tag up with my super\n"
-	.string "senior student partner and beat you!$"
+	.string "MEG: I'm going to tag up with my\n"
+	.string "super senior student partner and\l"
+	.string "beat you!$"
 
 Route117_Text_MegDefeat: @ 829CDE9
 	.string "MEG: Oh, no!\n"
@@ -1950,8 +1954,8 @@ Route117_Text_AishaDefeat: @ 829D206
 	.string "over a loss--I would rather train.$"
 
 Route117_Text_AishaPostBattle: @ 829D24C
-	.string "I think that if you worry about losing,\n"
-	.string "you're more likely to lose.$"
+	.string "I think that if you worry about\n"
+	.string "losing, you're more likely to lose.$"
 
 Route118_Text_RoseIntro: @ 829D290
 	.string "The aroma of flowers has a magical\n"
@@ -2012,8 +2016,9 @@ Route118_Text_WadeDefeat: @ 829D64C
 	.string "I was beaten in heart?$"
 
 Route118_Text_WadePostBattle: @ 829D663
-	.string "Come to think of it, fishing is a battle\n"
-	.string "between a FISHERMAN and a POKéMON.$"
+	.string "Come to think of it, fishing is a\n"
+	.string "battle between a FISHERMAN and a\l"
+	.string "POKéMON.$"
 
 Route118_Text_DaltonIntro: @ 829D6AF
 	.string "Let my melody rock your soul!$"

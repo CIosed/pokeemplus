@@ -569,8 +569,8 @@ Route111_Text_VictorPostBattle: @ 81F156F
 
 Route111_Text_VictoriaIntro: @ 81F159D
 	.string "Oh, my goodness! Aren't you young?\p"
-	.string "You must be quite the TRAINER to beat\n"
-	.string "my husband, though.\p"
+	.string "You must be quite the TRAINER to\n"
+	.string "beat my husband, though.\p"
 	.string "It's my turn to battle now!$"
 
 Route111_Text_VictoriaDefeat: @ 81F1616
@@ -609,8 +609,8 @@ Route111_Text_VickyPostBattle: @ 81F1788
 
 Route111_Text_ToughToKeepWinningUpTheRanks: @ 81F17BA
 	.string "If you don't raise your POKéMON some\n"
-	.string "more, it could be tough to keep winning\l"
-	.string "up through the ranks.\p"
+	.string "more, it could be tough to keep\l"
+	.string "winning up through the ranks.\p"
 	.string "I've heard the POKéMON LEAGUE's\n"
 	.string "ELITE FOUR are far stronger than\l"
 	.string "any GYM LEADER.$"
@@ -643,10 +643,10 @@ Route111_Text_OldLadysRestStopSign: @ 81F194D
 Route111_Text_TrainerTipsSpAtkSpDef: @ 81F1987
 	.string "TRAINER TIPS\p"
 	.string "One of the indicators of a POKéMON's\n"
-	.string "powerfulness is SP. ATK. It stands for\l"
-	.string "“SPECIAL ATTACK.”\p"
-	.string "Likewise, SP. DEF stands for “SPECIAL\n"
-	.string "DEFENSE.”$"
+	.string "powerfulness is SP. ATK. It stands\l"
+	.string "for “SPECIAL ATTACK.”\p"
+	.string "Likewise, SP. DEF stands for\n"
+	.string "“SPECIAL DEFENSE.”$"
 
 Route111_Text_ShouldBeMirageTowerAroundHere: @ 81F1A22
 	.string "There should be a tower made of sand\n"

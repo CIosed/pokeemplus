@@ -555,7 +555,6 @@ MauvilleCity_Text_UncleVisitUsSometime: @ 81DFD34
 	.string "sometime?\l"
 	.string "I'm sure WALLY would enjoy it.$"
 
-
 MauvilleCity_Text_WallyPokenavCall: @ 81DFDFB
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"

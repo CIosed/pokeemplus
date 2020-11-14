@@ -2696,8 +2696,9 @@ gTVPokemonBattleUpdateText07:: @ 0828AE26
 	.string "“POKéMON BATTLE UPDATE!”$"
 
 GabbyAndTy_Text_GabbyPreFirstBattle: @ 0828AF05
-	.string "GABBY: Oh! We've just spotted a tough-\n"
-	.string "looking TRAINER here of all places!\p"
+	.string "GABBY: Oh! We've just spotted a\n"
+	.string "tough- looking TRAINER here of\l"
+	.string "all places!\p"
 	.string "Okay, roll camera!\n"
 	.string "Let's get this interview.$"
 
@@ -2708,8 +2709,9 @@ GabbyAndTy_Text_GabbyIntro: @ 0828AF7D
 	.string "you've become? Okay, cue interview!$"
 
 GabbyAndTy_Text_GabbyDefeatFirstTime: @ 0828B000
-	.string "GABBY: My eyes didn't lie!\n"
-	.string "I did discover an astonishing TRAINER!$"
+	.string "GABBY: My eyes didn't lie!\p"
+	.string "I did discover an astonishing\n"
+	.string "TRAINER!$"
 
 GabbyAndTy_Text_WhoAreYouInterview: @ 0828B042
 	.string "GABBY: Awesome! Awesome!\n"
@@ -2719,8 +2721,8 @@ GabbyAndTy_Text_WhoAreYouInterview: @ 0828B042
 	.string "Oh, please let me explain. We travel\n"
 	.string "around everywhere interviewing all\l"
 	.string "sorts of TRAINERS.\p"
-	.string "So, would you give us a bit of your time\n"
-	.string "for an interview?$"
+	.string "So, would you give us a bit of your\n"
+	.string "time for an interview?$"
 
 GabbyAndTy_Text_QuoteFromLastInterview: @ 0828B137
 	.string "GABBY: “{STR_VAR_1}!”\p"
@@ -2768,8 +2770,8 @@ GabbyAndTy_Text_DescribeYourFeelings: @ 0828B433
 GabbyAndTy_Text_PerfectWellBeSeeingYou: @ 0828B4AB
 	.string "GABBY: Mmm, yeah!\n"
 	.string "That's the perfect clincher!\p"
-	.string "I get the feeling that this will make\n"
-	.string "a great TV show.\p"
+	.string "I get the feeling that this will\n"
+	.string "make a great TV show.\p"
 	.string "There's a chance that they'll air this\n"
 	.string "on TV, so make sure to look for us!\p"
 	.string "Okay!\n"
