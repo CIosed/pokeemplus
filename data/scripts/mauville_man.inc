@@ -268,8 +268,8 @@ MauvilleCity_PokemonCenter_1F_Text_WhichTaleToTell: @ 828E673
 MauvilleCity_PokemonCenter_1F_Text_IKnowNoTales: @ 828E6AE
 	.string "But, I know of no legendary TRAINERS.\n"
 	.string "Hence, I know no tales.\p"
-	.string "Where does one find a TRAINER worthy\n"
-	.string "of a legendary tale?$"
+	.string "Where does one find a TRAINER\n"
+	.string "worthy of a legendary tale?$"
 
 MauvilleCity_PokemonCenter_1F_Text_YouDidStatXTimes: @ 828E726
 	.string "What's that?!\n"
@@ -286,8 +286,8 @@ MauvilleCity_PokemonCenter_1F_Text_CouldThereBeOtherLegends: @ 828E78A
 
 MauvilleCity_PokemonCenter_1F_Text_HaveYouAnyLegendaryTales: @ 828E7EE
 	.string "Are you a TRAINER?\p"
-	.string "Then tell me, have you any tales that\n"
-	.string "are even remotely legendary?$"
+	.string "Then tell me, have you any tales\n"
+	.string "that are even remotely legendary?$"
 
 @ Unused
 MauvilleCity_PokemonCenter_1F_Text_HearAnotherLegendaryTale: @ 828E844

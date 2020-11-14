@@ -238,8 +238,10 @@
 
 // gTileset_GenericBuilding
 #define METATILE_GenericBuilding_TableEdge               0x2F1
-#define METATILE_GenericBuilding_TrickHouse_Door_Closed  0x21B
-#define METATILE_GenericBuilding_TrickHouse_Stairs_Down  0x219
+#define METATILE_GenericBuilding_TrickHouse_Door_Closed_Bottom  0x32E
+#define METATILE_GenericBuilding_TrickHouse_Door_Closed_Top     0x32B
+#define METATILE_GenericBuilding_TrickHouse_Stairs_Down_Bottom  0x37C
+#define METATILE_GenericBuilding_TrickHouse_Stairs_Down_Top     0x326
 
 // gTileset_InsideOfTruck
 #define METATILE_InsideOfTruck_DoorClosedFloor_Bottom  0x21D
@@ -794,7 +796,8 @@
 #define METATILE_TrickHousePuzzle_RedDoorV_Open0              0x23A
 #define METATILE_TrickHousePuzzle_RedDoorV_Open1              0x242
 #define METATILE_TrickHousePuzzle_RedDoorV_Retracted          0x24A
-#define METATILE_TrickHousePuzzle_Stairs_Down                 0x20B
+#define METATILE_TrickHousePuzzle_Stairs_Down_Bottom          0x20B
+#define METATILE_TrickHousePuzzle_Stairs_Down_Top             0x203
 
 // gTileset_Underwater
 #define METATILE_Underwater_FloorShadow  0x228

@@ -248,7 +248,7 @@ MauvilleCity_GameCorner_EventScript_ReturnToChooseTMPrize:: @ 820FECE
 	goto MauvilleCity_GameCorner_EventScript_ChooseTMPrize
 
 MauvilleCity_GameCorner_EventScript_ChooseTMPrize:: @ 820FED9
-	multichoice 12, 0, MULTI_GAME_CORNER_TMS, 0
+	multichoice 19, 0, MULTI_GAME_CORNER_TMS, 0
 	switch VAR_RESULT
 	case 0, MauvilleCity_GameCorner_EventScript_TM32
 	case 1, MauvilleCity_GameCorner_EventScript_TM29
@@ -781,7 +781,8 @@ MauvilleCity_GameCorner_Text_RouletteTablesDifferentRates: @ 8210932
 	.string "pick a table.$"
 
 MauvilleCity_GameCorner_Text_EasyToLoseTrackOfTime: @ 821098E
-	.string "It's easy to lose track of time in here. \n"
+	.string "It's easy to lose track of time\n"
+	.string "in here.\p"
 	.string "I should get back to work.$"
 
 MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay: @ 82109D3
@@ -794,14 +795,15 @@ MauvilleCity_GameCorner_Text_RouletteOnlyLuck: @ 8210A05
 	.string "Win or lose, it's only by luck.$"
 
 MauvilleCity_GameCorner_Text_UpTo3CoinsCanBeUsed: @ 8210A51
-	.string "Up to three COINS can be used to play\n"
-	.string "the SLOTS.$"
+	.string "Up to three COINS can be used to\n"
+	.string "play the SLOTS.$"
 
 MauvilleCity_GameCorner_Text_DifficultToStopOn7: @ 8210A82
 	.string "It's very difficult to make it stop\n"
 	.string "right on “7.”\p"
-	.string "If it stops on “7” during the REEL TIME\n"
-	.string "bonus game, you'll receive extra COINS.$"
+	.string "If it stops on “7” during the REEL\n"
+	.string "TIME bonus game, you'll receive\l"
+	.string "extra COINS.$"
 
 MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo: @ 8210B04
 	.string "Here's some information for you\n"
@@ -810,8 +812,8 @@ MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo: @ 8210B04
 	.string "the more REEL TIME chances you get.\p"
 	.string "In a game with the maximum five\n"
 	.string "REEL TIME chances…\p"
-	.string "It is possible to receive four regular\n"
-	.string "bonuses, then a big bonus.\p"
+	.string "It is possible to receive four\n"
+	.string "regular bonuses, then a big bonus.\p"
 	.string "That would total 660 COINS, but it's\n"
 	.string "very difficult to get.$"
 

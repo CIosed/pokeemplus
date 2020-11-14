@@ -2061,7 +2061,8 @@ SlateportCity_Text_PleaseComeWithMe: @ 81DE8A0
 SlateportCity_Text_BattleTentSign: @ 81DE8BC
 	.string "POKÉMON CONTESTS\n"
 	.string "NORMAL RANK Registration\p"
-	.string "“Gather here, all ye POKÉMON TRAINERS!”$"
+	.string "“Gather here, all ye POKÉMON\n"
+	.string "TRAINERS!”$"
 
 SlateportCity_Text_SternsShipyardWantedSign: @ 81DE8F8
 	.string "STERN'S SHIPYARD\p"

@@ -142,8 +142,9 @@ Route103_Text_IsabellePostBattle: @ 829514D
 	.string "Sorry for almost crashing into you.$"
 
 Route103_Text_RhettIntro: @ 8295199
-	.string "Whoa!\n"
-	.string "How'd you get into a space this small?$"
+	.string "Whoa!\p"
+	.string "How'd you get into a space\n"
+	.string "this small?$"
 
 Route103_Text_RhettDefeated: @ 82951C6
 	.string "Whoa!\n"
@@ -161,8 +162,8 @@ Route103_Text_MarcosDefeated: @ 829522B
 
 Route103_Text_MarcosPostBattle: @ 8295246
 	.string "I was playing my guitar where few\n"
-	.string "people were around, but a lot of fans\l"
-	.string "have gathered.\p"
+	.string "people were around, but a lot\l"
+	.string "of fans have gathered.\p"
 	.string "Heh, maybe I should turn pro.$"
 
 Route104_Text_GinaIntro: @ 82952BB
@@ -819,7 +820,8 @@ Route110_Text_EdwardIntro: @ 829802B
 	.string "I cannot possibly lose!$"
 
 Route110_Text_EdwardDefeated: @ 8298064
-	.string "I failed to prophesize my own demise!$"
+	.string "I failed to prophesize my own\n"
+	.string "demise!$"
 
 Route110_Text_EdwardPostBattle: @ 829808A
 	.string "I see your future…\p"
@@ -847,8 +849,9 @@ Route110_Text_EdwinDefeated: @ 829818F
 	.string "my collection…$"
 
 Route110_Text_EdwinPostBattle: @ 82981B3
-	.string "When I see a POKéMON that I don't know,\n"
-	.string "my passion as a collector is ignited!$"
+	.string "When I see a POKéMON that I don't\n"
+	.string "know,my passion as a collector is\l"
+	.string "ignited!$"
 
 Route110_Text_DaleIntro: @ 82982CC
 	.string "Hey!\n"
@@ -863,19 +866,20 @@ Route110_Text_DalePostBattle: @ 8298303
 	.string "You have to focus on the floater.$"
 
 Route110_Text_IsabelIntro: @ 8298349
-	.string "Ahahaha! I would go anywhere to show\n"
-	.string "off my delightful POKéMON.$"
+	.string "Ahahaha! I would go anywhere to\n"
+	.string "show off my delightful POKéMON.$"
 
 Route110_Text_IsabelDefeated: @ 8298389
 	.string "Oh, dear, this won't do.$"
 
 Route110_Text_IsabelPostBattle: @ 82983A2
-	.string "Rather than battling, perhaps I should\n"
-	.string "show off my POKéMON at the FAN CLUB.$"
+	.string "Rather than battling, perhaps I\n"
+	.string "should show off my POKéMON at\l"
+	.string "the FAN CLUB.$"
 
 Route110_Text_TimmyIntro: @ 8298525
-	.string "I found some cool POKéMON in the grass\n"
-	.string "around here!$"
+	.string "I found some cool POKéMON in the\n"
+	.string "grass around here!$"
 
 Route110_Text_TimmyDefeated: @ 8298559
 	.string "Being cool isn't enough to win…$"
@@ -898,8 +902,8 @@ Route110_Text_AlyssaPostBattle: @ 8298612
 	.string "This is so humiliating for me!$"
 
 Route110_Text_JosephIntro: @ 8298642
-	.string "Okay! Full-throttle time! If you can't\n"
-	.string "groove, you get left behind!$"
+	.string "Okay! Full-throttle time! If you\n"
+	.string "can't groove, you get left behind!$"
 
 Route110_Text_JosephDefeated: @ 8298686
 	.string "You got into the groove all right…$"
@@ -916,8 +920,8 @@ Route110_Text_KalebDefeated: @ 8298735
 	.string "Have you no compassion or pity?$"
 
 Route110_Text_KalebPostBattle: @ 8298755
-	.string "Okay, okay, you've done the best you\n"
-	.string "could, my pretties.$"
+	.string "Okay, okay, you've done the best\n"
+	.string "you could, my pretties.$"
 
 Route111_Text_DrewIntro: @ 829878E
 	.string "Oh, hey! Those GO-GOGGLES suit you.\n"

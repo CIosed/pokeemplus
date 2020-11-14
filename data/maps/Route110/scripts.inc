@@ -428,6 +428,7 @@ Route110_EventScript_RivalExit:: @ 81EF8EC
 	setobjectmovementtype LOCALID_RIVAL, MOVEMENT_TYPE_FACE_RIGHT
 	setobjectmovementtype LOCALID_RIVAL_ON_BIKE, MOVEMENT_TYPE_FACE_RIGHT
 	removeobject LOCALID_RIVAL
+	playse SE_BIKE_BELL
 	addobject LOCALID_RIVAL_ON_BIKE
 	delay 45
 	compare VAR_0x8008, 1
@@ -725,7 +726,7 @@ Route110_Text_AquaActionsBringSmiles: @ 81EFC0D
 	.string "smiles to people's faces!$"
 
 Route110_Text_MayLetsBattle: @ 81EFC48
-	.string "MAY: Hi, {PLAYER}{KUN}, long time no see!\p"
+	.string "{COLOR RED}MAY: Hi, {PLAYER}{KUN}, long time no see!\p"
 	.string "While I was searching for other\n"
 	.string "POKéMON, my POKéMON grew stronger.\p"
 	.string "So…\n"
@@ -736,19 +737,19 @@ Route110_Text_MayDefeated: @ 81EFCCB
 	.string "You're better than I expected!$"
 
 Route110_Text_MayTakeThis: @ 81EFCF1
-	.string "MAY: {PLAYER}{KUN}, you've been busy\n"
+	.string "{COLOR RED}MAY: {PLAYER}{KUN}, you've been busy\n"
 	.string "training, too, haven't you?\p"
 	.string "I think you deserve a reward!\n"
 	.string "This is from me!$"
 
 Route110_Text_MayExplainItemfinder: @ 81EFD58
-	.string "MAY: That's an ITEMFINDER.\p"
-	.string "Try it out. If there is an item that's\n"
-	.string "not visible, it emits a sound.\p"
+	.string "{COLOR RED}MAY: That's an ITEMFINDER.\p"
+	.string "Try it out. If there is an item\n"
+	.string "that's not visible, it emits a sound.\p"
 	.string "Okay, {PLAYER}{KUN}, let's meet again!\p"
 	.string "I know it's a little silly coming from\n"
-	.string "me, but I think you should train a lot\l"
-	.string "harder for the next time.$"
+	.string "me, but I think you should train a\l"
+	.string "lot harder for the next time.$"
 
 Route110_Text_BrendanLetsBattle: @ 81EFE3F
 	.string "BRENDAN: Hey, {PLAYER}.\n"
@@ -803,7 +804,8 @@ Route110_Text_YouGotBikeFromRydel: @ 81F006A
 	.string "the place--it's good advertising!$"
 
 Route110_Text_TwoRoads: @ 81F0261
-	.string "The two roads, one above, one below…\p"
+	.string "The two roads, one above, one\n"
+	.string "below…\p"
 	.string "A road each for people and POKéMON.\n"
 	.string "Perhaps that is right and fair.$"
 
@@ -912,8 +914,8 @@ Route110_Text_TrainerTipsPrlzSleep: @ 81F090D
 
 Route110_Text_TrainerTipsRegisterItems: @ 81F0992
 	.string "TRAINER TIPS\p"
-	.string "The items in the BAG can be reorganized\n"
-	.string "by pressing SELECT.$"
+	.string "The items in the BAG can be\n"
+	.string "reorganized by pressing SELECT.$"
 
 Route110_Text_TrickHouseSign: @ 81F09DB
 	.string "“Three steps {RIGHT_ARROW} and two steps {UP_ARROW}\n"

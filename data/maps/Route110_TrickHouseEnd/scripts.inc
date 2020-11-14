@@ -39,7 +39,8 @@ Route110_TrickHouseEnd_EventScript_CloseDoor:: @ 826ACFF
 	end
 
 Route110_TrickHouseEnd_EventScript_SetDoorClosedMetatile:: @ 826AD0D
-	setmetatile 10, 1, METATILE_GenericBuilding_TrickHouse_Door_Closed, 1
+	setmetatile 10, 1, METATILE_GenericBuilding_TrickHouse_Door_Closed_Bottom, 1
+	setmetatile 10, 0, METATILE_GenericBuilding_TrickHouse_Door_Closed_Top, 1
 	return
 
 Route110_TrickHouseEnd_EventScript_TrickMaster:: @ 826AD17
@@ -268,10 +269,11 @@ Route110_TrickHouseEnd_Text_YouveMadeItToMe: @ 826B08D
 	.string "Hmmm… You're sharp!$"
 
 Route110_TrickHouseEnd_Text_AllNightToPlantTrees: @ 826B0BC
-	.string "It took me all night to plant all those\n"
-	.string "trees…\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two, three, four, five, six places!$"
+	.string "It took me all night to plant all\n"
+	.string "those trees…\p"
+	.string "You're almost my equal in greatness\n"
+	.string "by one, two, three, four, five,\l"
+	.string "six places!$"
 
 Route110_TrickHouseEnd_Text_AllNightToMakeMaze: @ 826B13B
 	.string "It took me all night to make the maze…\p"
@@ -358,10 +360,13 @@ Route110_TrickHouseEnd_Text_NoRoomForThis: @ 826B760
 	.string "your reward will be with me till later.$"
 
 Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou: @ 826B7EF
-	.string "Scrub that smug smirk from your face!\n"
-	.string "It's much too early to think you've won!\p"
-	.string "I'll make new tricks to stump you, I will.\n"
-	.string "You may mock me only when you're done.\p"
+	.string "Scrub that smug smirk from your face!\p"
+	.string "It's much too early to think\n"
+	.string "you've won!\p"
+	.string "I'll make new tricks to stump you,\n"
+	.string "I will.\p"
+	.string "You may mock me only when\n"
+	.string "you're done.\p"
 	.string "Come back for the next exciting\n"
 	.string "installment!$"
 

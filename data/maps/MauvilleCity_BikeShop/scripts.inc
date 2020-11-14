@@ -204,9 +204,10 @@ MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne: @ 820EF32
 	.string "way from LITTLEROOT?\p"
 	.string "My goodness!\n"
 	.string "That's ridiculously far!\p"
-	.string "If you had one of my BIKES, you could\n"
-	.string "go anywhere easily while feeling the\l"
-	.string "gentle caress of the wind!\p"
+	.string "If you had one of my BIKES, you\n"
+	.string "could go anywhere easily while\l"
+	.string "feeling the gentle caress of the\l"
+	.string "wind!\p"
 	.string "I'll tell you what!\n"
 	.string "I'll give you a BIKE!\p"
 	.string "Oh, wait a second!\p"
@@ -214,8 +215,9 @@ MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne: @ 820EF32
 	.string "two kinds of BIKES!\p"
 	.string "They are the MACH BIKE and\n"
 	.string "the ACRO BIKE!\p"
-	.string "The MACH BIKE is for cyclists who want\n"
-	.string "to feel the wind with their bodies!\p"
+	.string "The MACH BIKE is for cyclists who\n"
+	.string "want to feel the wind with their\l"
+	.string "bodies!\p"
 	.string "And an ACRO BIKE is for those who\n"
 	.string "prefer technical rides!\p"
 	.string "I'm a real sweetheart, so you can\n"
@@ -223,10 +225,10 @@ MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne: @ 820EF32
 	.string "Which one will you choose?$"
 
 MauvilleCity_BikeShop_Text_ChoseMachBike: @ 820F18D
-	.string "{PLAYER} chose the MACH BIKE.$"
+	.string "{COLOR DARK_GREY}{PLAYER} chose the MACH BIKE.$"
 
 MauvilleCity_BikeShop_Text_ChoseAcroBike: @ 820F1A5
-	.string "{PLAYER} chose the ACRO BIKE.$"
+	.string "{COLOR DARK_GREY}{PLAYER} chose the ACRO BIKE.$"
 
 MauvilleCity_BikeShop_Text_ComeBackToSwitchBikes: @ 820F1BD
 	.string "RYDEL: If you get the urge to switch\n"
@@ -241,11 +243,11 @@ MauvilleCity_BikeShop_Text_IllSwitchBikes: @ 820F22F
 	.string "I'll switch BIKES for you!$"
 
 MauvilleCity_BikeShop_Text_ExchangedMachForAcro: @ 820F263
-	.string "{PLAYER} got the MACH BIKE exchanged\n"
+	.string "{COLOR DARK_GREY}{PLAYER} got the MACH BIKE exchanged\n"
 	.string "for an ACRO BIKE.$"
 
 MauvilleCity_BikeShop_Text_ExchangedAcroForMach: @ 820F294
-	.string "{PLAYER} got the ACRO BIKE exchanged\n"
+	.string "{COLOR DARK_GREY}{PLAYER} got the ACRO BIKE exchanged\n"
 	.string "for a MACH BIKE.$"
 
 MauvilleCity_BikeShop_Text_HappyYouLikeIt: @ 820F2C4
@@ -264,9 +266,9 @@ MauvilleCity_BikeShop_Text_OhYourBikeIsInPC: @ 820F2F3
 MauvilleCity_BikeShop_Text_HandbooksAreInBack: @ 820F3C3
 	.string "I'm learning about BIKES while\n"
 	.string "I work here.\p"
-	.string "If you need advice on how to ride your\n"
-	.string "BIKE, there're a couple handbooks in\l"
-	.string "the back.$"
+	.string "If you need advice on how to ride\n"
+	.string "your BIKE, there're a couple\l"
+	.string "handbooks in the back.$"
 
 MauvilleCity_BikeShop_Text_MachHandbookWhichPage: @ 820F445
 	.string "It's a handbook on the MACH BIKE.\p"

@@ -711,8 +711,8 @@ gTVNameRaterText00:: @ 0828218A
 	.string "THE NAME RATER SHOW.\p"
 	.string "I tell your POKéMON's fortune from\n"
 	.string "the nickname you've bestowed.\p"
-	.string "Advice is what I have to give, and it is\n"
-	.string "helpful advice that I offer.\p"
+	.string "Advice is what I have to give, and\n"
+	.string "it is helpful advice that I offer.\p"
 	.string "Today, I shall do a reading of\n"
 	.string "the nickname {STR_VAR_3} of {STR_VAR_1}'s\l"
 	.string "POKéMON {STR_VAR_2}.\p"
@@ -721,8 +721,8 @@ gTVNameRaterText00:: @ 0828218A
 	.string "This nickname is…$"
 
 gTVNameRaterText01:: @ 0828229E
-	.string "A nickname that hints at talent in many\n"
-	.string "different ways.\p"
+	.string "A nickname that hints at talent in\n"
+	.string "many different ways.\p"
 	.string "I urge this TRAINER to take courage\n"
 	.string "and take on many challenges.$"
 
@@ -784,8 +784,8 @@ gTVNameRaterText10:: @ 0828274D
 gTVNameRaterText11:: @ 082827CB
 	.string "The nickname {STR_VAR_1}--it has a\n"
 	.string "sublime, flowing feel to it.\p"
-	.string "The flow from the initial letter “{STR_VAR_2}” to\n"
-	.string "“{STR_VAR_3}” is especially wonderful.$"
+	.string "The flow from the initial letter “{STR_VAR_2}”\n"
+	.string "to “{STR_VAR_3}” is especially wonderful.$"
 
 gTVNameRaterText12:: @ 08282849
 	.string "Let's examine other examples of fine\n"

@@ -8,7 +8,8 @@ Route110_TrickHousePuzzle1_OnLoad: @ 826B915
 	end
 
 Route110_TrickHousePuzzle1_EventScript_OpenDoor:: @ 826B921
-	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, 0
+	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down_Bottom, 0
+	setmetatile 13, 0, METATILE_TrickHousePuzzle_Stairs_Down_Top, 0
 	end
 
 Route110_TrickHousePuzzle1_EventScript_Scroll:: @ 826B92B
@@ -64,8 +65,9 @@ Route110_TrickHousePuzzle1_Text_EddieDefeat: @ 826BAB0
 	.string "And now I've lost…$"
 
 Route110_TrickHousePuzzle1_Text_EddiePostBattle: @ 826BAC3
-	.string "I lost my way, I lost a battle, and I'm\n"
-	.string "now even more lost… I can't get out…$"
+	.string "I lost my way, I lost a battle, and\n"
+	.string "I'm now even more lost…\l"
+	.string "I can't get out…$"
 
 Route110_TrickHousePuzzle1_Text_RobinIntro: @ 826BB10
 	.string "Just who is the TRICK MASTER?$"

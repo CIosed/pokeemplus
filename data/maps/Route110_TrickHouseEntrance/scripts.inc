@@ -512,7 +512,8 @@ Route110_TrickHouseEntrance_EventScript_GoInHolePrompt:: @ 826A110
 	end
 
 Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom:: @ 826A126
-	setmetatile 5, 1, METATILE_GenericBuilding_TrickHouse_Stairs_Down, 0
+	setmetatile 5, 1, METATILE_GenericBuilding_TrickHouse_Stairs_Down_Bottom, 0
+	setmetatile 5, 0, METATILE_GenericBuilding_TrickHouse_Stairs_Down_Top, 1
 	special DrawWholeMapView
 	delay 20
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp
@@ -618,7 +619,8 @@ Route110_TrickHousePuzzle1_EventScript_Door:: @ 826A289
 	msgbox Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_1_STATE, 2
-	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, 0
+	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down_Bottom, 0
+	setmetatile 13, 0, METATILE_TrickHousePuzzle_Stairs_Down_Top, 0
 	special DrawWholeMapView
 	releaseall
 	end
@@ -629,7 +631,8 @@ Route110_TrickHousePuzzle2_EventScript_Door:: @ 826A2B2
 	msgbox Route110_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_2_STATE, 2
-	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, 0
+	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down_Bottom, 0
+	setmetatile 13, 0, METATILE_TrickHousePuzzle_Stairs_Down_Top, 0
 	special DrawWholeMapView
 	releaseall
 	end
@@ -640,7 +643,8 @@ Route110_TrickHousePuzzle3_EventScript_Door:: @ 826A2DB
 	msgbox Route110_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_3_STATE, 2
-	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, 0
+	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down_Bottom, 0
+	setmetatile 13, 0, METATILE_TrickHousePuzzle_Stairs_Down_Top, 0
 	special DrawWholeMapView
 	releaseall
 	end
@@ -651,7 +655,8 @@ Route110_TrickHousePuzzle4_EventScript_Door:: @ 826A304
 	msgbox Route110_TrickHousePuzzle4_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_4_STATE, 2
-	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, 0
+	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down_Bottom, 0
+	setmetatile 13, 0, METATILE_TrickHousePuzzle_Stairs_Down_Top, 0
 	special DrawWholeMapView
 	releaseall
 	end
@@ -662,7 +667,8 @@ Route110_TrickHousePuzzle5_EventScript_Door:: @ 826A32D
 	msgbox Route110_TrickHousePuzzle5_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_5_STATE, 2
-	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, 0
+	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down_Bottom, 0
+	setmetatile 13, 0, METATILE_TrickHousePuzzle_Stairs_Down_Top, 0
 	special DrawWholeMapView
 	releaseall
 	end
@@ -673,7 +679,8 @@ Route110_TrickHousePuzzle6_EventScript_Door:: @ 826A356
 	msgbox Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_6_STATE, 2
-	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, 0
+	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down_Bottom, 0
+	setmetatile 13, 0, METATILE_TrickHousePuzzle_Stairs_Down_Top, 0
 	special DrawWholeMapView
 	releaseall
 	end
@@ -684,7 +691,8 @@ Route110_TrickHousePuzzle7_EventScript_Door:: @ 826A37F
 	msgbox Route110_TrickHousePuzzle7_EventScript_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_7_STATE, 2
-	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, 0
+	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down_Bottom, 0
+	setmetatile 13, 0, METATILE_TrickHousePuzzle_Stairs_Down_Top, 0
 	special DrawWholeMapView
 	releaseall
 	end
@@ -695,7 +703,8 @@ Route110_TrickHousePuzzle8_EventScript_Door:: @ 826A3A8
 	msgbox Route110_TrickHousePuzzle8_EventScript_WroteSecretCodeLockOpened, MSGBOX_DEFAULT
 	playse SE_PIN
 	setvar VAR_TRICK_HOUSE_PUZZLE_8_STATE, 2
-	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down, 0
+	setmetatile 13, 1, METATILE_TrickHousePuzzle_Stairs_Down_Bottom, 0
+	setmetatile 13, 0, METATILE_TrickHousePuzzle_Stairs_Down_Top, 0
 	special DrawWholeMapView
 	releaseall
 	end
@@ -800,7 +809,7 @@ Route110_TrickHouseEntrance_Text_ConcealedBeneathCushion: @ 826A6B6
 	.string "beneath this cushion? You're sharp!$"
 
 Route110_TrickHouseEntrance_Text_TheyCallMeTrickMaster: @ 826A709
-	.string "Behold!\p"
+	.string "{COLOR BLUE}Behold!\p"
 	.string "For I am the greatest living mystery\n"
 	.string "of a man in all of HOENN!\l"
 	.string "They call me…\p"
@@ -808,7 +817,7 @@ Route110_TrickHouseEntrance_Text_TheyCallMeTrickMaster: @ 826A709
 	.string "Wahahaha! Glad to meet you!$"
 
 Route110_TrickHouseEntrance_Text_ComeToChallengeTrickHouse: @ 826A78C
-	.string "You, you've come to challenge\n"
+	.string "{COLOR BLUE}You, you've come to challenge\n"
 	.string "my TRICK HOUSE, haven't you?\p"
 	.string "That's why you're here, isn't it?\n"
 	.string "Yes, it is!\p"
@@ -821,7 +830,8 @@ Route110_TrickHouseEntrance_Text_ItsAScroll: @ 826A878
 	.string "It's a scroll.$"
 
 Route110_TrickHouseEntrance_Text_GoInHoleBehindScroll: @ 826A887
-	.string "There is a big hole behind the scroll!\p"
+	.string "There is a big hole behind\n"
+	.string "the scroll!\p"
 	.string "Want to go in?$"
 
 Route110_TrickHouseEntrance_Text_LeavingOnJourneyNote: @ 826A8BD
@@ -838,10 +848,10 @@ Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick: @ 826A921
 Route110_TrickHouseEntrance_Text_InMidstOfDevisingNewChallenges: @ 826A9AF
 	.string "Hah? What?!\n"
 	.string "Oh, it's you!\p"
-	.string "I'm in the midst of devising new tricky\n"
-	.string "challenges!\p"
-	.string "It's not too much to ask for a bit more\n"
-	.string "time for me to think, is it now?\l"
+	.string "I'm in the midst of devising new\n"
+	.string "tricky challenges!\p"
+	.string "It's not too much to ask for a bit\n"
+	.string "more time for me to think, is it now?\l"
 	.string "You wouldn't begrudge me that?\l"
 	.string "Come back in a little while!$"
 

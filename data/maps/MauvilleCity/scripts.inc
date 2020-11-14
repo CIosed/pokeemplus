@@ -235,9 +235,9 @@ MauvilleCity_EventScript_WallyRequestBattleAgain:: @ 81DF690
 
 MauvilleCity_Movement_WallyExitNorth1: @ 81DF6A8
 	walk_left
+	walk_down
+	walk_down
 	walk_left
-	walk_down
-	walk_down
 	walk_left
 	step_end
 
@@ -314,9 +314,9 @@ MauvilleCity_Movement_PlayerWatchWallyExitNorth1: @ 81DF6DF
 MauvilleCity_Movement_WallysUncleExitNorth1: @ 81DF6E2
 	walk_left
 	walk_left
+	walk_down
+	walk_down
 	walk_left
-	walk_down
-	walk_down
 	step_end
 
 MauvilleCity_Movement_WallysUncleExitEast1: @ 81DF6E8
@@ -539,18 +539,18 @@ MauvilleCity_Text_ThankYouNotEnoughToBattle: @ 81DFBED
 	.string "being a real TRAINER is about.$"
 
 MauvilleCity_Text_UncleNoNeedToBeDown: @ 81DFC8A
-	.string "UNCLE: WALLY, there's no need to be so\n"
-	.string "down on yourself.\p"
-	.string "Why, what's keeping you from becoming\n"
-	.string "stronger and stronger?\p"
+	.string "UNCLE: WALLY, there's no need to\n"
+	.string "be so down on yourself.\p"
+	.string "Why, what's keeping you from\n"
+	.string "becoming stronger and stronger?\p"
 	.string "Come on, let's go home.\n"
 	.string "Everyone's waiting for you.$"
 
 MauvilleCity_Text_UncleVisitUsSometime: @ 81DFD34
 	.string "UNCLE: {PLAYER}{KUN}, it just dawned on me\n"
-	.string "that you must be the TRAINER who kept\l"
-	.string "an eye out for WALLY when he caught\l"
-	.string "his POKéMON.\p"
+	.string "that you must be the TRAINER who\l"
+	.string "kept an eye out for WALLY when he\l"
+	.string "caught his POKéMON.\p"
 	.string "Why don't you visit us in VERDANTURF\n"
 	.string "sometime?\l"
 	.string "I'm sure WALLY would enjoy it.$"
@@ -633,7 +633,8 @@ MauvilleCity_Text_AllSortsOfPeopleComeThrough: @ 81E037C
 	.string "people coming through.$"
 
 MauvilleCity_Text_RydelVeryGenerous: @ 81E03FB
-	.string "Have you been to RYDEL'S CYCLES yet?\p"
+	.string "Have you been to RYDEL'S CYCLES\n"
+	.string "yet?\p"
 	.string "RYDEL, the owner, is a very generous\n"
 	.string "man.$"
 
@@ -663,10 +664,10 @@ MauvilleCity_Text_ExplainTV: @ 81E056A
 	.string "Hi, do you check out TV at all?\p"
 	.string "They've added a bunch of cool new\n"
 	.string "shows recently.\p"
-	.string "TV is so cool. I've seen my friends on\n"
-	.string "TV just out of the blue.\p"
-	.string "And, sometimes, they even put you on TV\n"
-	.string "without telling you.\p"
+	.string "TV is so cool. I've seen my friends\n"
+	.string "on TV just out of the blue.\p"
+	.string "And, sometimes, they even put you\n"
+	.string "on TV without telling you.\p"
 	.string "I wish I would be on TV sometime.\p"
 	.string "That's why I think you should check\n"
 	.string "out TVs whenever you can.$"
