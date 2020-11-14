@@ -7,13 +7,14 @@ Route111_Text_MakingRoomUseTMToMakeYourOwn: @ 82762C9
 	.string "Will you use it to make your own room?$"
 
 Route111_Text_ExplainSecretPower: @ 827636E
-	.string "Find a big tree that looks like it might\n"
-	.string "drop some vines.\p"
-	.string "Use SECRET POWER in front of the tree.\n"
-	.string "Some vines should get free and drop\l"
+	.string "Find a big tree that looks like it\n"
+	.string "might drop some vines.\p"
+	.string "Use SECRET POWER in front of the\n"
+	.string "tree.\p"
+	.string "Some vines should get free and drop\n"
 	.string "down, so you can climb the tree.\p"
-	.string "You'll find a lot of space for putting\n"
-	.string "your favorite things.\p"
+	.string "You'll find a lot of space for\n"
+	.string "putting your favorite things.\p"
 	.string "It'll be your own secret room…\n"
 	.string "A SECRET BASE!\p"
 	.string "You should make one, too.\p"
@@ -21,12 +22,14 @@ Route111_Text_ExplainSecretPower: @ 827636E
 	.string "to make your SECRET BASE in a tree.\p"
 	.string "Try using SECRET POWER on rock walls\n"
 	.string "that have small indents in them.\p"
-	.string "I'm going to look for other places, too.\n"
+	.string "I'm going to look for other places,\n"
+	.string "too.\p"
 	.string "Okay, bye!$"
 
 Route111_Text_DontWantThis: @ 827655C
-	.string "Oh, you don't want this?\n"
-	.string "If you change your mind, tell me, okay?$"
+	.string "Oh, you don't want this?\p"
+	.string "If you change your mind, tell me,\n"
+	.string "okay?$"
 
 Route111_Text_DontHaveAnyRoom: @ 827659D
 	.string "Oh, you don't have any room for this.\p"

@@ -36,7 +36,8 @@ Route111_OldLadysRestStop_Text_RestUpHere: @ 822A978
 	.string "Oh, dear, dear.\n"
 	.string "Aren't your POKéMON exhausted?\p"
 	.string "If you'd like, rest up here.\n"
-	.string "That's a fine idea! You should do that.$"
+	.string "That's a fine idea!\l"
+	.string "You should do that.$"
 
 Route111_OldLadysRestStop_Text_TakeYourTimeRestUp: @ 822A9EC
 	.string "That's right.\n"
@@ -46,7 +47,8 @@ Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest: @ 822AA16
 	.string "Oh, dear, dear.\n"
 	.string "Are your POKéMON still tired?\p"
 	.string "You should take another rest here.\n"
-	.string "That's a fine idea. You should do that.$"
+	.string "That's a fine idea.\l"
+	.string "You should do that.$"
 
 Route111_OldLadysRestStop_Text_DontNeedToBeShy: @ 822AA8F
 	.string "Is that so?\n"

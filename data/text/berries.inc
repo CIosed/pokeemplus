@@ -22,7 +22,8 @@ Route104_Text_TrainersOftenMakeMonHoldBerries: @ 82A6E32
 Route111_Text_WateredPlantsEveryDayTakeBerry: @ 82A6EBD
 	.string "I watered the plants every day.\n"
 	.string "They grew lots of flowers.\p"
-	.string "And they gave me lots of BERRIES, too.\p"
+	.string "And they gave me lots of BERRIES,\n"
+	.string "too.\p"
 	.string "Here you go!\n"
 	.string "You can have it!$"
 

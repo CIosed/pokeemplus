@@ -1151,8 +1151,9 @@ Route112_Text_BriceDefeat: @ 82997CA
 	.string "Hahahaha!$"
 
 Route112_Text_BricePostBattle: @ 82997DC
-	.string "Hahahahaha! Something flew up my nose!\n"
-	.string "Hahahaha-hatchoo!$"
+	.string "Hahahahaha! Something flew up\n"
+	.string "my nose!\p"
+	.string "Hahahaha-{PAUSE 5}hatchoo!$"
 
 Route112_Text_TrentIntro: @ 8299815
 	.string "My legs are solid from pounding up\n"
@@ -1218,8 +1219,8 @@ Route112_Text_ShaylaDefeat: @ 8299C8F
 
 Route112_Text_ShaylaPostBattle: @ 8299CC6
 	.string "Are you busy right now?\n"
-	.string "I was thinking that maybe we can have\l"
-	.string "a rematch right now…\l"
+	.string "I was thinking that maybe we can\l"
+	.string "have a rematch right now…\l"
 	.string "But it's all right if you're busy.$"
 
 Route113_Text_JaylenIntro: @ 8299D3C
