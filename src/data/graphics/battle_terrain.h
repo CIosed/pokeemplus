@@ -92,3 +92,15 @@ const u32 gBattleTerrainPalette_Rusturf[] = INCBIN_U32("graphics/battle_terrain/
 const u32 gBattleTerrainTilemap_Rusturf[] = INCBIN_U32("graphics/battle_terrain/rusturf/map.bin.lz");
 const u32 gBattleTerrainAnimTiles_Rusturf[] = INCBIN_U32("graphics/battle_terrain/rusturf/anim_tiles.4bpp.lz");
 const u32 gBattleTerrainAnimTilemap_Rusturf[] = INCBIN_U32("graphics/battle_terrain/rusturf/anim_map.bin.lz");
+
+const u32 gBattleTerrainTiles_MtChimneyOutside[] = INCBIN_U32("graphics/battle_terrain/chimney_outside/tiles.4bpp.lz");
+const u32 gBattleTerrainPalette_MtChimneyOutside[] = INCBIN_U32("graphics/battle_terrain/chimney_outside/palette.gbapal.lz");
+const u32 gBattleTerrainTilemap_MtChimneyOutside[] = INCBIN_U32("graphics/battle_terrain/chimney_outside/map.bin.lz");
+const u32 gBattleTerrainAnimTiles_MtChimneyOutside[] = INCBIN_U32("graphics/battle_terrain/chimney_outside/anim_tiles.4bpp.lz");
+const u32 gBattleTerrainAnimTilemap_MtChimneyOutside[] = INCBIN_U32("graphics/battle_terrain/chimney_outside/anim_map.bin.lz");
+
+const u32 gBattleTerrainTiles_MtChimneyInside[] = INCBIN_U32("graphics/battle_terrain/chimney_inside/tiles.4bpp.lz");
+const u32 gBattleTerrainPalette_MtChimneyInside[] = INCBIN_U32("graphics/battle_terrain/chimney_inside/palette.gbapal.lz");
+const u32 gBattleTerrainTilemap_MtChimneyInside[] = INCBIN_U32("graphics/battle_terrain/chimney_inside/map.bin.lz");
+const u32 gBattleTerrainAnimTiles_MtChimneyInside[] = INCBIN_U32("graphics/battle_terrain/chimney_inside/anim_tiles.4bpp.lz");
+const u32 gBattleTerrainAnimTilemap_MtChimneyInside[] = INCBIN_U32("graphics/battle_terrain/chimney_inside/anim_map.bin.lz");

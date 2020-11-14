@@ -587,6 +587,10 @@ u8 BattleSetup_GetTerrainId(void)
         return BATTLE_TERRAIN_SAND;
 	if (MetatileBehavior_IsRusturf(tileBehavior))
         return BATTLE_TERRAIN_RUSTURF;
+	if (MetatileBehavior_IsMtChimneyOutside(tileBehavior))
+        return BATTLE_TERRAIN_MT_CHIMNEY_OUTSIDE;
+	if (MetatileBehavior_IsMtChimneyInside(tileBehavior))
+        return BATTLE_TERRAIN_MT_CHIMNEY_INSIDE;
 
     switch (gMapHeader.mapType)
     {

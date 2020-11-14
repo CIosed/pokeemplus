@@ -172,8 +172,8 @@ static const u8 sTileBitAttributes[] =
     [MB_UNUSED_9F] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_BERRY_TREE_SOIL] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_RUSTURF_CAVE] = TILE_ATTRIBUTES(TRUE, FALSE, TRUE),
-    [MB_UNUSED_A2] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
-    [MB_UNUSED_A3] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
+    [MB_MT_CHIMNEY_OUTSIDE] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
+    [MB_MT_CHIMNEY_INSIDE] = TILE_ATTRIBUTES(TRUE, FALSE, TRUE),
     [MB_UNUSED_A4] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_UNUSED_A5] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_UNUSED_A6] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
@@ -1608,6 +1608,22 @@ bool8 MetatileBehavior_IsRockStairs(u8 metatileBehavior)
 bool8 MetatileBehavior_IsRusturf(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_RUSTURF_CAVE)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsMtChimneyOutside(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_MT_CHIMNEY_OUTSIDE)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsMtChimneyInside(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_MT_CHIMNEY_INSIDE)
         return TRUE;
     else
         return FALSE;

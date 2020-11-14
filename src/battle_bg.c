@@ -698,6 +698,24 @@ static const struct BattleBackground gBattleTerrainTable[] =
         .entryTilemap = gBattleTerrainAnimTilemap_Rusturf,
         .palette = gBattleTerrainPalette_Rusturf,
     },
+
+    [BATTLE_TERRAIN_MT_CHIMNEY_OUTSIDE] =
+    {
+        .tileset = gBattleTerrainTiles_MtChimneyOutside,
+        .tilemap = gBattleTerrainTilemap_MtChimneyOutside,
+        .entryTileset = gBattleTerrainAnimTiles_MtChimneyOutside,
+        .entryTilemap = gBattleTerrainAnimTilemap_MtChimneyOutside,
+        .palette = gBattleTerrainPalette_MtChimneyOutside,
+    },
+
+    [BATTLE_TERRAIN_MT_CHIMNEY_INSIDE] =
+    {
+        .tileset = gBattleTerrainTiles_MtChimneyInside,
+        .tilemap = gBattleTerrainTilemap_MtChimneyInside,
+        .entryTileset = gBattleTerrainAnimTiles_MtChimneyInside,
+        .entryTilemap = gBattleTerrainAnimTilemap_MtChimneyInside,
+        .palette = gBattleTerrainPalette_MtChimneyInside,
+    },
 };
 
 static void sub_8035648(void);

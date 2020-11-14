@@ -346,17 +346,19 @@
 #define MOVE_EFFECT_CERTAIN             0x8000
 
 // Battle terrain defines for gBattleTerrain.
-#define BATTLE_TERRAIN_GRASS        0
-#define BATTLE_TERRAIN_LONG_GRASS   1
-#define BATTLE_TERRAIN_SAND         2
-#define BATTLE_TERRAIN_UNDERWATER   3
-#define BATTLE_TERRAIN_WATER        4
-#define BATTLE_TERRAIN_POND         5
-#define BATTLE_TERRAIN_MOUNTAIN     6
-#define BATTLE_TERRAIN_CAVE         7
-#define BATTLE_TERRAIN_BUILDING     8
-#define BATTLE_TERRAIN_PLAIN        9
-#define BATTLE_TERRAIN_RUSTURF      10
+#define BATTLE_TERRAIN_GRASS                0
+#define BATTLE_TERRAIN_LONG_GRASS           1
+#define BATTLE_TERRAIN_SAND                 2
+#define BATTLE_TERRAIN_UNDERWATER           3
+#define BATTLE_TERRAIN_WATER                4
+#define BATTLE_TERRAIN_POND                 5
+#define BATTLE_TERRAIN_MOUNTAIN             6
+#define BATTLE_TERRAIN_CAVE                 7
+#define BATTLE_TERRAIN_BUILDING             8
+#define BATTLE_TERRAIN_PLAIN                9
+#define BATTLE_TERRAIN_RUSTURF              10
+#define BATTLE_TERRAIN_MT_CHIMNEY_OUTSIDE      11
+#define BATTLE_TERRAIN_MT_CHIMNEY_INSIDE       12
 
 // Move targets
 #define MOVE_TARGET_SELECTED            0x0
