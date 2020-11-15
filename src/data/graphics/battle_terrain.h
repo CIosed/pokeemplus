@@ -104,3 +104,9 @@ const u32 gBattleTerrainPalette_MtChimneyInside[] = INCBIN_U32("graphics/battle_
 const u32 gBattleTerrainTilemap_MtChimneyInside[] = INCBIN_U32("graphics/battle_terrain/chimney_inside/map.bin.lz");
 const u32 gBattleTerrainAnimTiles_MtChimneyInside[] = INCBIN_U32("graphics/battle_terrain/chimney_inside/anim_tiles.4bpp.lz");
 const u32 gBattleTerrainAnimTilemap_MtChimneyInside[] = INCBIN_U32("graphics/battle_terrain/chimney_inside/anim_map.bin.lz");
+
+const u32 gBattleTerrainTiles_TallSootGrass[] = INCBIN_U32("graphics/battle_terrain/tall_soot_grass/tiles.4bpp.lz");
+const u32 gBattleTerrainPalette_TallSootGrass[] = INCBIN_U32("graphics/battle_terrain/tall_soot_grass/palette.gbapal.lz");
+const u32 gBattleTerrainTilemap_TallSootGrass[] = INCBIN_U32("graphics/battle_terrain/tall_soot_grass/map.bin.lz");
+const u32 gBattleTerrainAnimTiles_TallSootGrass[] = INCBIN_U32("graphics/battle_terrain/tall_soot_grass/anim_tiles.4bpp.lz");
+const u32 gBattleTerrainAnimTilemap_TallSootGrass[] = INCBIN_U32("graphics/battle_terrain/tall_soot_grass/anim_map.bin.lz");

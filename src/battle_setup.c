@@ -591,6 +591,8 @@ u8 BattleSetup_GetTerrainId(void)
         return BATTLE_TERRAIN_MT_CHIMNEY_OUTSIDE;
 	if (MetatileBehavior_IsMtChimneyInside(tileBehavior))
         return BATTLE_TERRAIN_MT_CHIMNEY_INSIDE;
+	if (MetatileBehavior_IsTallSootGrass(tileBehavior))
+        return BATTLE_TERRAIN_TALL_SOOT_GRASS;
 
     switch (gMapHeader.mapType)
     {
