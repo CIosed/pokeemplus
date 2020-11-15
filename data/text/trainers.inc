@@ -1234,7 +1234,8 @@ Route113_Text_JaylenDefeat: @ 8299D68
 Route113_Text_JaylenPostBattle: @ 8299D7D
 	.string "The volcanic ash blocks the sun,\n"
 	.string "so it doesn't get very warm.\p"
-	.string "That's good for me--I can't stand heat!$"
+	.string "That's good for me--I can't stand\n"
+	.string "heat!$"
 
 Route113_Text_DillonIntro: @ 8299DE3
 	.string "The volcano's eruption is proof that\n"
@@ -1355,16 +1356,17 @@ Route113_Text_LawrencePostBattle: @ 829A5BE
 	.string "I ought to hide under the ashes, too.$"
 
 Route113_Text_WyattIntro: @ 829A5E4
-	.string "Y-you want to battle with me?\n"
-	.string "Even though I just caught my POKéMON?$"
+	.string "Y-you want to battle with me?\p"
+	.string "Even though I just caught\n"
+	.string "my POKéMON?$"
 
 Route113_Text_WyattDefeat: @ 829A628
 	.string "Y-you're all happy to win?\n"
 	.string "Even though it's only me?$"
 
 Route113_Text_WyattPostBattle: @ 829A65D
-	.string "Oh, so now you want to say a word to\n"
-	.string "the loser?\p"
+	.string "Oh, so now you want to say a word\n"
+	.string "to the loser?\p"
 	.string "Aren't you just the coolest?\n"
 	.string "Humph!$"
 

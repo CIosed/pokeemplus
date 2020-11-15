@@ -323,15 +323,16 @@ Route113_GlassWorkshop_Text_GoCollectAshWithThis: @ 826F19D
 	.string "I'm specially gifted, huff-puff.\p"
 	.string "I make glass out of volcanic ash\n"
 	.string "and make items, huff-puff.\p"
-	.string "Go collect ashes with this, huff-puff.$"
+	.string "Go collect ashes with this,\n"
+	.string "huff-puff.$"
 
 Route113_GlassWorkshop_Text_ExplainSootSack: @ 826F252
 	.string "Just take that SOOT SACK and walk\n"
 	.string "through piles of ash, huff-puff.\p"
-	.string "And it will fill up with the volcanic ash,\n"
-	.string "huff-puff.\p"
-	.string "Once you think you've collected a good\n"
-	.string "amount, come see me, huff-puff.$"
+	.string "And it will fill up with the volcanic\n"
+	.string "ash, huff-puff.\p"
+	.string "Once you think you've collected a\n"
+	.string "good amount, come see me, huff-puff.$"
 
 Route113_GlassWorkshop_Text_LetsSeeCollectedAshes: @ 826F312
 	.string "Have you collected ashes, huff-puff?\n"
