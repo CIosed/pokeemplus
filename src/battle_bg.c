@@ -734,6 +734,13 @@ static const struct BattleBackground gBattleTerrainTable[] =
         .entryTilemap = gBattleTerrainAnimTilemap_SootGround,
         .palette = gBattleTerrainPalette_SootGround,
     },
+
+    [BATTLE_TERRAIN_FIELD] =
+    {
+        .tileset = gBattleTerrainTiles_Field,
+        .tilemap = gBattleTerrainTilemap_Field,
+        .palette = gBattleTerrainPalette_Field,
+    },
 };
 
 static void sub_8035648(void);

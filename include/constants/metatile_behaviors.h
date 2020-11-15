@@ -167,7 +167,7 @@
 #define MB_MT_CHIMNEY_INSIDE 0xA3
 #define MB_TALL_SOOT_GRASS 0xA4
 #define MB_SOOT_GROUND 0xA5
-#define MB_UNUSED_A6 0xA6
+#define MB_FIELD 0xA6
 #define MB_UNUSED_A7 0xA7
 #define MB_UNUSED_A8 0xA8
 #define MB_UNUSED_A9 0xA9
