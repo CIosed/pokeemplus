@@ -224,6 +224,7 @@
 #Claydoll (both frames and back)
 #Nosepass (both frames and back)
 #Feebas (backsprite)
+#Manectric (backsprite)
 #Snorut (backsprite
 #Duskull (ripped from RS Pinball, 2nd frame and back)
 #Huntail (both frames and back
