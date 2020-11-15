@@ -593,6 +593,8 @@ u8 BattleSetup_GetTerrainId(void)
         return BATTLE_TERRAIN_MT_CHIMNEY_INSIDE;
 	if (MetatileBehavior_IsTallSootGrass(tileBehavior))
         return BATTLE_TERRAIN_TALL_SOOT_GRASS;
+	if (MetatileBehavior_IsSootGround(tileBehavior))
+        return BATTLE_TERRAIN_SOOT_GROUND;
 
     switch (gMapHeader.mapType)
     {

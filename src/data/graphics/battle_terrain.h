@@ -110,3 +110,9 @@ const u32 gBattleTerrainPalette_TallSootGrass[] = INCBIN_U32("graphics/battle_te
 const u32 gBattleTerrainTilemap_TallSootGrass[] = INCBIN_U32("graphics/battle_terrain/tall_soot_grass/map.bin.lz");
 const u32 gBattleTerrainAnimTiles_TallSootGrass[] = INCBIN_U32("graphics/battle_terrain/tall_soot_grass/anim_tiles.4bpp.lz");
 const u32 gBattleTerrainAnimTilemap_TallSootGrass[] = INCBIN_U32("graphics/battle_terrain/tall_soot_grass/anim_map.bin.lz");
+
+const u32 gBattleTerrainTiles_SootGround[] = INCBIN_U32("graphics/battle_terrain/soot_ground/tiles.4bpp.lz");
+const u32 gBattleTerrainPalette_SootGround[] = INCBIN_U32("graphics/battle_terrain/soot_ground/palette.gbapal.lz");
+const u32 gBattleTerrainTilemap_SootGround[] = INCBIN_U32("graphics/battle_terrain/soot_ground/map.bin.lz");
+const u32 gBattleTerrainAnimTiles_SootGround[] = INCBIN_U32("graphics/battle_terrain/soot_ground/anim_tiles.4bpp.lz");
+const u32 gBattleTerrainAnimTilemap_SootGround[] = INCBIN_U32("graphics/battle_terrain/soot_ground/anim_map.bin.lz");

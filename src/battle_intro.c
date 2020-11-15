@@ -38,6 +38,7 @@ static const TaskFunc sBattleIntroSlideFuncs[] =
     BattleIntroSlide1, // BATTLE_TERRAIN_MT_CHIMNEY_OUTSIDE
     BattleIntroSlide1, // BATTLE_TERRAIN_MT_CHIMNEY_INSIDE
     BattleIntroSlide1, // BATTLE_TERRAIN_TALL_SOOT_GRASS
+    BattleIntroSlide1, // BATTLE_TERRAIN_SOOT_GROUND
 };
 
 void SetAnimBgAttribute(u8 bgId, u8 attributeId, u8 value)

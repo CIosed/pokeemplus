@@ -3331,6 +3331,11 @@ extern const u32 gBattleTerrainTilemap_TallSootGrass[];
 extern const u32 gBattleTerrainAnimTiles_TallSootGrass[];
 extern const u32 gBattleTerrainAnimTilemap_TallSootGrass[];
 extern const u32 gBattleTerrainPalette_TallSootGrass[];
+extern const u32 gBattleTerrainTiles_SootGround[];
+extern const u32 gBattleTerrainTilemap_SootGround[];
+extern const u32 gBattleTerrainAnimTiles_SootGround[];
+extern const u32 gBattleTerrainAnimTilemap_SootGround[];
+extern const u32 gBattleTerrainPalette_SootGround[];
 
 // pokedex
 extern const u32 gPokedexInterface_Gfx[];

@@ -360,6 +360,7 @@
 #define BATTLE_TERRAIN_MT_CHIMNEY_OUTSIDE      11
 #define BATTLE_TERRAIN_MT_CHIMNEY_INSIDE       12
 #define BATTLE_TERRAIN_TALL_SOOT_GRASS         13
+#define BATTLE_TERRAIN_SOOT_GROUND             14
 
 // Move targets
 #define MOVE_TARGET_SELECTED            0x0

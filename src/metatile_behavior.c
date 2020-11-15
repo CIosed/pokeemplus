@@ -175,7 +175,7 @@ static const u8 sTileBitAttributes[] =
     [MB_MT_CHIMNEY_OUTSIDE] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_MT_CHIMNEY_INSIDE] = TILE_ATTRIBUTES(TRUE, FALSE, TRUE),
     [MB_TALL_SOOT_GRASS] = TILE_ATTRIBUTES(TRUE, FALSE, TRUE),
-    [MB_UNUSED_A5] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
+    [MB_SOOT_GROUND] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_UNUSED_A6] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_UNUSED_A7] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_UNUSED_A8] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
@@ -1633,6 +1633,14 @@ bool8 MetatileBehavior_IsMtChimneyInside(u8 metatileBehavior)
 bool8 MetatileBehavior_IsTallSootGrass(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_TALL_SOOT_GRASS)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsSootGround(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_SOOT_GROUND)
         return TRUE;
     else
         return FALSE;

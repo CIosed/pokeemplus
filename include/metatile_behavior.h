@@ -150,6 +150,7 @@ bool8 MetatileBehavior_IsRusturf(u8);
 bool8 MetatileBehavior_IsMtChimneyOutside(u8);
 bool8 MetatileBehavior_IsMtChimneyInside(u8);
 bool8 MetatileBehavior_IsTallSootGrass(u8);
+bool8 MetatileBehavior_IsSootGround(u8);
 //sideways stairs
 bool8 MetatileBehavior_IsSidewaysStairsRightSide(u8);
 bool8 MetatileBehavior_IsSidewaysStairsLeftSide(u8);
