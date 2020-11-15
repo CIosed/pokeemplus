@@ -97,15 +97,17 @@ FallarborTown_PokemonCenter_1F_Text_LanetteGreeting: @ 8200C6B
 	.string "to access something on this PC.\p"
 	.string "Oh, I'm sorry. I'm LANETTE.\p"
 	.string "Honestly, I'm glad to meet you--it's\n"
-	.string "great you're using the Storage System.\p"
-	.string "If you could, please visit me at home.\n"
+	.string "great you're using the Storage\l"
+	.string "System.\p"
+	.string "If you could, please visit me at\n"
+	.string "home.\p"
 	.string "My house is on ROUTE 114.$"
 
 FallarborTown_PokemonCenter_1F_Text_FossilManiacEdgeOfTown: @ 8200E22
 	.string "I wonder what POKéMON looked like\n"
 	.string "long, long ago?\p"
-	.string "Maybe the FOSSIL MANIAC at the edge\n"
-	.string "of town will know.$"
+	.string "Maybe the FOSSIL MANIAC at the\n"
+	.string "edge of town will know.$"
 
 FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees: @ 8200E8B
 	.string "In the fields of FALLARBOR, we plant\n"

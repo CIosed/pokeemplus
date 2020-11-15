@@ -96,8 +96,8 @@ MoveTutor_Text_MetronomeTeach: @ 82C7449
 	.string "Wouldn't it be nice if there were\n"
 	.string "a spell that made money appear when\l"
 	.string "you waggle a finger?\p"
-	.string "If you want, I can teach your POKéMON\n"
-	.string "the move METRONOME.\p"
+	.string "If you want, I can teach your\n"
+	.string "POKéMON the move METRONOME.\p"
 	.string "Money won't appear, but your POKéMON\n"
 	.string "will waggle a finger. Yes?$"
 

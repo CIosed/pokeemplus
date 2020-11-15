@@ -91,12 +91,12 @@ FallarborTown_MoveRelearnersHouse_Text_DontHaveMoveToTeachPokemon: @ 82015DE
 	.string "I can teach that POKéMON.$"
 
 FallarborTown_MoveRelearnersHouse_Text_HandedOverHeartScale: @ 8201627
-	.string "{PLAYER} handed over one HEART SCALE\n"
+	.string "{COLOR DARK_GREY}{PLAYER} handed over one HEART SCALE\n"
 	.string "in exchange.$"
 
 FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale: @ 8201653
-	.string "If your POKéMON need to learn a move,\n"
-	.string "come back with a HEART SCALE.$"
+	.string "If your POKéMON need to learn a\n"
+	.string "move, come back with a HEART SCALE.$"
 
 FallarborTown_MoveRelearnersHouse_Text_CantTeachEgg: @ 8201697
 	.string "Hunh? There isn't a single move that\n"

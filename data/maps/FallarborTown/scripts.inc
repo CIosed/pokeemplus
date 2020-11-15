@@ -72,14 +72,15 @@ FallarborTown_Text_Azurill: @ 81EB3B5
 	.string "AZURILL: Rooreelooo.$"
 
 FallarborTown_Text_HaveYouChallengedFlannery: @ 81EB3CA
-	.string "Have you already challenged FLANNERY,\n"
-	.string "the LEADER of LAVARIDGE GYM?\p"
+	.string "Have you already challenged\n"
+	.string "FLANNERY, the LEADER of LAVARIDGE\l"
+	.string "GYM?\p"
 	.string "The girl's grandfather was famous.\n"
 	.string "He was one of the ELITE FOUR in the\l"
 	.string "POKéMON LEAGUE at one point.\p"
-	.string "It wouldn't surprise me to see FLANNERY\n"
-	.string "become a great TRAINER in her own\l"
-	.string "right.$"
+	.string "It wouldn't surprise me to see\n"
+	.string "FLANNERY become a great TRAINER in\l"
+	.string "her own right.$"
 
 FallarborTown_Text_BattleTentSign: @ 81EB4C2
 	.string "BATTLE TENT FALLARBOR SITE\n"

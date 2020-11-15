@@ -1508,7 +1508,7 @@ Route114_Text_IvyNotEnoughMons: @ 829B01B
 	.string "I think it must feel lonesome.$"
 
 Route114_Text_KaiIntro: @ 829B05D
-	.string "I landed a big one!\n"
+	.string "{COLOR BLUE}I landed a big one!\n"
 	.string "A huge one, I tell you!$"
 
 Route114_Text_KaiDefeat: @ 829B089
