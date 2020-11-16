@@ -1231,66 +1231,66 @@
             ]
           },
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 16,
-                "max_level": 16,
+                "max_level": 22,
                 "species": "SPECIES_SWABLU"
               },
               {
                 "min_level": 16,
-                "max_level": 16,
+                "max_level": 22,
                 "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 17,
-                "max_level": 17,
+                "max_level": 22,
                 "species": "SPECIES_SWABLU"
               },
               {
                 "min_level": 15,
-                "max_level": 15,
+                "max_level": 21,
                 "species": "SPECIES_SWABLU"
               },
               {
                 "min_level": 15,
-                "max_level": 15,
+                "max_level": 21,
                 "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 16,
-                "max_level": 16,
+                "max_level": 22,
                 "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 16,
-                "max_level": 16,
+                "max_level": 22,
                 "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 18,
-                "max_level": 18,
-                "species": "SPECIES_LOMBRE"
+                "max_level": 23,
+                "species": "SPECIES_NUZLEAF"
               },
               {
                 "min_level": 17,
-                "max_level": 17,
+                "max_level": 22,
                 "species": "SPECIES_SEVIPER"
               },
               {
                 "min_level": 15,
-                "max_level": 15,
+                "max_level": 23,
                 "species": "SPECIES_SEVIPER"
               },
               {
                 "min_level": 17,
-                "max_level": 17,
+                "max_level": 22,
                 "species": "SPECIES_SEVIPER"
               },
               {
                 "min_level": 15,
-                "max_level": 15,
+                "max_level": 22,
                 "species": "SPECIES_NUZLEAF"
               }
             ]

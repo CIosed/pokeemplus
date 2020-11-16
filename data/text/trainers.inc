@@ -1398,9 +1398,10 @@ Route114_Text_LucasPostBattle: @ 829A7D4
 
 Route114_Text_ShaneIntro: @ 829A818
 	.string "Camping's fun! You can fish, roast\n"
-	.string "marshmallows, and tell spooky stories!\p"
-	.string "But the best of all are the POKéMON\n"
-	.string "battles!$"
+	.string "marshmallows, and tell spooky\l"
+	.string "stories!\p"
+	.string "But the best of all are the\n"
+	.string "POKéMON battles!$"
 
 Route114_Text_ShaneDefeat: @ 829A88F
 	.string "Way too strong!$"
@@ -1441,8 +1442,8 @@ Route114_Text_BernieDefeat: @ 829AB1A
 	.string "Thanks for dousing my fire!$"
 
 Route114_Text_BerniePostBattle: @ 829AB36
-	.string "You really do have to be careful with\n"
-	.string "any sort of fire in a forest.\p"
+	.string "You really do have to be careful\n"
+	.string "with any sort of fire in a forest.\p"
 	.string "Don't ever underestimate the power\n"
 	.string "of fire.$"
 
@@ -1477,8 +1478,9 @@ Route114_Text_NolanPostBattle: @ 829AE3D
 
 Route114_Text_TyraIntro: @ 829AE96
 	.string "TYRA: Well, sure.\n"
-	.string "I'm in the mood for it.\l"
-	.string "I'll teach you a little about POKéMON.$"
+	.string "I'm in the mood for it.\p"
+	.string "I'll teach you a little about\n"
+	.string "POKéMON.$"
 
 Route114_Text_TyraDefeat: @ 829AEE7
 	.string "TYRA: What an amazing battle style!$"

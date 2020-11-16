@@ -59,8 +59,9 @@ Route114_LanettesHouse_Text_EverythingClutteredKeepThis: @ 822B34E
 Route114_LanettesHouse_Text_OrganizeYourBoxes: @ 822B407
 	.string "May I offer advice about my POKéMON\n"
 	.string "Storage System?\p"
-	.string "You should organize your BOXES so you\n"
-	.string "can tell which POKéMON are in them.$"
+	.string "You should organize your BOXES so\n"
+	.string "you can tell which POKéMON are\l"
+	.string "in them.$"
 
 Route114_LanettesHouse_Text_ResearchNotesPage1: @ 822B485
 	.string "It's LANETTE's research notes.\n"
@@ -96,8 +97,9 @@ Route114_LanettesHouse_Text_EmailFromBill: @ 822B6FC
 	.string "“… … … … … … …\p"
 	.string "“Your Storage System offers more\n"
 	.string "convenience than mine.\p"
-	.string "“It has a lot of user-friendly features\n"
-	.string "that make it fun and useful, too.\p"
+	.string "“It has a lot of user-friendly\n"
+	.string "features that make it fun and useful,\l"
+	.string "too.\p"
 	.string "“It makes me proud that I played\n"
 	.string "a part in its development.\p"
 	.string "“Here's hoping that you'll continue\n"

@@ -37,9 +37,10 @@ Route111_Text_WhatColorBerriesToLookForToday: @ 82A6F9A
 	.string "for today?$"
 
 Route114_Text_LoveUsingBerryCrushShareBerry: @ 82A6FCB
-	.string "I love using the BERRY CRUSH machine,\n"
-	.string "so I'm collecting BERRIES.\p"
-	.string "I'll share one with you, if you'd like.$"
+	.string "I love using the BERRY CRUSH\n"
+	.string "machine, so I'm collecting BERRIES.\p"
+	.string "I'll share one with you, if you'd\n"
+	.string "like.$"
 
 Route114_Text_TryBerryCrushWithFriends: @ 82A7034
 	.string "You should try the BERRY CRUSH\n"
