@@ -1447,8 +1447,8 @@ Route114_Text_BerniePostBattle: @ 829AB36
 	.string "of fire.$"
 
 Route114_Text_ClaudeIntro: @ 829ACB3
-	.string "If we were fishing, you wouldn't stand\n"
-	.string "a chance against me.\l"
+	.string "If we were fishing, you wouldn't\n"
+	.string "stand a chance against me.\l"
 	.string "So, bring on your POKéMON!$"
 
 Route114_Text_ClaudeDefeat: @ 829AD0A
