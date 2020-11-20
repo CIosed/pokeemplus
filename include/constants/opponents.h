@@ -42,16 +42,16 @@
 #define TRAINER_FELIX                        38
 #define TRAINER_VIOLET                       39
 #define TRAINER_WALLY_RUSTURF                40
-#define TRAINER_ROSE_3                       41 // Unused
-#define TRAINER_ROSE_4                       42 // Unused
-#define TRAINER_ROSE_5                       43 // Unused
+#define TRAINER_MAGMA_GRUNT_METEORFALLS_1    41
+#define TRAINER_MAGMA_GRUNT_METEORFALLS_2    42
+#define TRAINER_BRENDAN_METEORFALLS_1        43
 #define TRAINER_DUSTY                        44
 #define TRAINER_CHIP                         45
 #define TRAINER_FOSTER                       46
-#define TRAINER_DUSTY_2                      47 // Unused
-#define TRAINER_DUSTY_3                      48 // Unused
-#define TRAINER_DUSTY_4                      49 // Unused
-#define TRAINER_DUSTY_5                      50 // Unused
+#define TRAINER_BRENDAN_METEORFALLS_2        47
+#define TRAINER_BRENDAN_METEORFALLS_3        48
+#define TRAINER_MAY_METEORFALLS_1            49
+#define TRAINER_MAY_METEORFALLS_2            50
 #define TRAINER_GABBY_AND_TY_1               51
 #define TRAINER_GABBY_AND_TY_2               52
 #define TRAINER_GABBY_AND_TY_3               53
@@ -61,7 +61,7 @@
 #define TRAINER_LOLA                         57
 #define TRAINER_AUSTINA                      58
 #define TRAINER_GWEN                         59
-#define TRAINER_LOLA_2                       60 // Unused
+#define TRAINER_MAY_METEORFALLS_3            60
 #define TRAINER_LOLA_3                       61 // Unused
 #define TRAINER_LOLA_4                       62 // Unused
 #define TRAINER_LOLA_5                       63 // Unused

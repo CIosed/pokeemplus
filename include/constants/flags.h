@@ -44,8 +44,8 @@
 #define FLAG_KANTO                        0x20
 #define FLAG_HIDE_ROUTE_116_WALLY         0x21
 #define FLAG_HIDE_RUSTURF_TUNNEL_WALLY    0x22
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
+#define FLAG_METEOR_FALLS_RIVAL           0x23
+#define FLAG_METEOR_FALLS_RIVAL_CHECK     0x24
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
 #define FLAG_UNUSED_0x026    0x26 // Unused Flag
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag

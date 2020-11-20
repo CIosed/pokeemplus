@@ -784,5 +784,5 @@ RusturfTunnel_Text_MikePostBattle: @ 822D8F9
 	.string "There's a feel-good story!$"
 
 DontRun:
-    .string "You have to choose a\n"
+    .string "{COLOR DARK_GREY}You have to choose a\n"
 	.string "team to battle with!$"

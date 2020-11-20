@@ -456,57 +456,108 @@ static const struct TrainerMonNoItemCustomMoves sParty_WallyRusturf[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Rose3[] = {
+static const struct TrainerMonFullControl sParty_MagmaGruntMeteorFalls1[] = {
     {
-    .iv = 20,
-    .lvl = 28,
-    .species = SPECIES_SHROOMISH,
+    .ivs = BEST_IV_SPREAD,
+    .lvl = 27,
+    .species = SPECIES_SLUGMA,
+	.heldItem = ITEM_NONE,
+	.ability = 1,
+	.shiny = FALSE,
+    .moves = {MOVE_FLAME_BURST, MOVE_YAWN, MOVE_ANCIENT_POWER, MOVE_CLEAR_SMOG},
+	.evs = {100, 0, 0, 0, 100, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_MODEST,
+	.gender = MON_FEMALE,
+	.ball = ITEM_POKE_BALL,
     },
     {
-    .iv = 20,
-    .lvl = 28,
-    .species = SPECIES_GLOOM,
+    .ivs = BEST_IV_SPREAD,
+    .lvl = 27,
+    .species = SPECIES_MIGHTYENA,
+	.heldItem = ITEM_NONE,
+	.ability = 0,
+	.shiny = FALSE,
+    .moves = {MOVE_SWAGGER, MOVE_ASSURANCE, MOVE_FIRE_FANG, MOVE_SAND_ATTACK},
+	.evs = {0, 85, 0, 85, 0, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_JOLLY,
+	.gender = MON_FEMALE,
+	.ball = ITEM_POKE_BALL,
     },
     {
-    .iv = 20,
+    .ivs = BEST_IV_SPREAD,
     .lvl = 28,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_NUMEL,
+	.heldItem = ITEM_NONE,
+	.ability = 1,
+	.shiny = FALSE,
+    .moves = {MOVE_EARTH_POWER, MOVE_LAVA_PLUME, MOVE_ANCIENT_POWER, MOVE_WILL_O_WISP},
+	.evs = {100, 0, 0, 0, 0, 100}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_CALM,
+	.gender = MON_MALE,
+	.ball = ITEM_POKE_BALL,
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Rose4[] = {
+static const struct TrainerMonFullControl sParty_MagmaGruntMeteorFalls2[] = {
     {
-    .iv = 30,
-    .lvl = 31,
-    .species = SPECIES_SHROOMISH,
+    .ivs = BEST_IV_SPREAD,
+    .lvl = 27,
+    .species = SPECIES_TORKOAL,
+	.heldItem = ITEM_HEAT_ROCK,
+	.ability = 1,
+	.shiny = FALSE,
+    .moves = {MOVE_INCINERATE, MOVE_SMOKESCREEN, MOVE_SWAGGER, MOVE_SMOG},
+	.evs = {100, 0, 0, 0, 100, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_MODEST,
+	.gender = MON_MALE,
+	.ball = ITEM_POKE_BALL,
     },
     {
-    .iv = 30,
-    .lvl = 31,
-    .species = SPECIES_GLOOM,
+    .ivs = BEST_IV_SPREAD,
+    .lvl = 27,
+    .species = SPECIES_KOFFING,
+	.heldItem = ITEM_NONE,
+	.ability = 2,
+	.shiny = FALSE,
+    .moves = {MOVE_SLUDGE, MOVE_POISON_GAS, MOVE_ASSURANCE, MOVE_SMOKESCREEN},
+	.evs = {85, 0, 85, 0, 0, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_RELAXED,
+	.gender = MON_MALE,
+	.ball = ITEM_POKE_BALL,
     },
     {
-    .iv = 30,
-    .lvl = 31,
-    .species = SPECIES_ROSELIA,
+    .ivs = BEST_IV_SPREAD,
+    .lvl = 28,
+    .species = SPECIES_GOLBAT,
+	.heldItem = ITEM_NONE,
+	.ability = 0,
+	.shiny = FALSE,
+    .moves = {MOVE_CONFUSE_RAY, MOVE_POISON_FANG, MOVE_AIR_CUTTER, MOVE_SCREECH},
+	.evs = {0, 100, 0, 100, 0, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_HASTY,
+	.gender = MON_FEMALE,
+	.ball = ITEM_POKE_BALL,
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Rose5[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_BrendanMeteorFalls1[] = { // Torchic
     {
-    .iv = 40,
-    .lvl = 34,
-    .species = SPECIES_BRELOOM,
+    .iv = 100,
+    .lvl = 25,
+    .species = SPECIES_WAILMER,
+    .moves = MOVE_BRINE, MOVE_WATER_PULSE, MOVE_ROLLOUT, MOVE_ASTONISH
     },
     {
-    .iv = 40,
-    .lvl = 34,
-    .species = SPECIES_GLOOM,
+    .iv = 100,
+    .lvl = 26,
+    .species = SPECIES_SWELLOW,
+    .moves = MOVE_AERIAL_ACE, MOVE_DOUBLE_TEAM, MOVE_WING_ATTACK, MOVE_QUICK_ATTACK
     },
     {
-    .iv = 40,
-    .lvl = 34,
-    .species = SPECIES_ROSELIA,
+    .iv = 100,
+    .lvl = 27,
+    .species = SPECIES_COMBUSKEN,
+    .moves = MOVE_FLAME_CHARGE, MOVE_SAND_ATTACK, MOVE_DOUBLE_KICK, MOVE_BULK_UP
     }
 };
 
@@ -555,39 +606,87 @@ static const struct TrainerMonNoItemCustomMoves sParty_Foster[] = {
     }
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_Dusty2[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_BrendanMeteorFalls2[] = { // Treecko
     {
-    .iv = 60,
-    .lvl = 27,
-    .species = SPECIES_SANDSLASH,
-    .moves = {MOVE_DIG, MOVE_SLASH, MOVE_SAND_ATTACK, MOVE_POISON_STING}
+    .iv = 100,
+    .lvl = 25,
+    .species = SPECIES_WAILMER,
+    .moves = MOVE_BRINE, MOVE_WATER_PULSE, MOVE_ROLLOUT, MOVE_ASTONISH
+    },
+    {
+    .iv = 100,
+    .lvl = 26,
+    .species = SPECIES_SWELLOW,
+    .moves = MOVE_AERIAL_ACE, MOVE_DOUBLE_TEAM, MOVE_WING_ATTACK, MOVE_QUICK_ATTACK
+    },
+    {
+    .iv = 100,
+    .lvl = 28,
+    .species = SPECIES_GROVYLE,
+    .moves = MOVE_LEAF_BLADE, MOVE_PURSUIT, MOVE_QUICK_ATTACK, MOVE_MEGA_DRAIN
     }
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_Dusty3[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_BrendanMeteorFalls3[] = { // Mudkip
     {
-    .iv = 70,
-    .lvl = 30,
-    .species = SPECIES_SANDSLASH,
-    .moves = {MOVE_DIG, MOVE_SLASH, MOVE_SAND_ATTACK, MOVE_POISON_STING}
+    .iv = 100,
+    .lvl = 25,
+    .species = SPECIES_BRELOOM,
+    .moves = MOVE_MACH_PUNCH, MOVE_FEINT, MOVE_MEGA_DRAIN, MOVE_STUN_SPORE
+    },
+    {
+    .iv = 100,
+    .lvl = 26,
+    .species = SPECIES_SWELLOW,
+    .moves = MOVE_AERIAL_ACE, MOVE_DOUBLE_TEAM, MOVE_WING_ATTACK, MOVE_QUICK_ATTACK
+    },
+    {
+    .iv = 100,
+    .lvl = 28,
+    .species = SPECIES_MARSHTOMP,
+    .moves = MOVE_ROCK_SLIDE, MOVE_MUD_BOMB, MOVE_WATER_GUN, MOVE_PROTECT
     }
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_Dusty4[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_MayMeteorFalls1[] = { // Torhic
     {
-    .iv = 80,
-    .lvl = 33,
-    .species = SPECIES_SANDSLASH,
-    .moves = {MOVE_DIG, MOVE_SLASH, MOVE_SAND_ATTACK, MOVE_POISON_STING}
+    .iv = 100,
+    .lvl = 25,
+    .species = SPECIES_WAILMER,
+    .moves = MOVE_BRINE, MOVE_WATER_PULSE, MOVE_ROLLOUT, MOVE_ASTONISH
+    },
+    {
+    .iv = 100,
+    .lvl = 26,
+    .species = SPECIES_SWELLOW,
+    .moves = MOVE_AERIAL_ACE, MOVE_DOUBLE_TEAM, MOVE_WING_ATTACK, MOVE_QUICK_ATTACK
+    },
+    {
+    .iv = 100,
+    .lvl = 28,
+    .species = SPECIES_COMBUSKEN,
+    .moves = MOVE_FLAME_CHARGE, MOVE_SAND_ATTACK, MOVE_DOUBLE_KICK, MOVE_BULK_UP
     }
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_Dusty5[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_MayMeteorFalls2[] = { // Treecko
     {
-    .iv = 90,
-    .lvl = 36,
-    .species = SPECIES_SANDSLASH,
-    .moves = {MOVE_DIG, MOVE_SLASH, MOVE_SAND_ATTACK, MOVE_POISON_STING}
+    .iv = 100,
+    .lvl = 25,
+    .species = SPECIES_WAILMER,
+    .moves = MOVE_BRINE, MOVE_WATER_PULSE, MOVE_ROLLOUT, MOVE_ASTONISH
+    },
+    {
+    .iv = 100,
+    .lvl = 26,
+    .species = SPECIES_SWELLOW,
+    .moves = MOVE_AERIAL_ACE, MOVE_DOUBLE_TEAM, MOVE_WING_ATTACK, MOVE_QUICK_ATTACK
+    },
+    {
+    .iv = 100,
+    .lvl = 28,
+    .species = SPECIES_GROVYLE,
+    .moves = MOVE_LEAF_BLADE, MOVE_PURSUIT, MOVE_QUICK_ATTACK, MOVE_MEGA_DRAIN
     }
 };
 
@@ -700,16 +799,24 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Gwen[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Lola2[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_MayMeteorFalls3[] = { // Mudkip
     {
-    .iv = 10,
-    .lvl = 26,
-    .species = SPECIES_MARILL,
+    .iv = 100,
+    .lvl = 25,
+    .species = SPECIES_BRELOOM,
+    .moves = MOVE_MACH_PUNCH, MOVE_FEINT, MOVE_MEGA_DRAIN, MOVE_STUN_SPORE
     },
     {
-    .iv = 10,
+    .iv = 100,
     .lvl = 26,
-    .species = SPECIES_MARILL,
+    .species = SPECIES_SWELLOW,
+    .moves = MOVE_AERIAL_ACE, MOVE_DOUBLE_TEAM, MOVE_WING_ATTACK, MOVE_QUICK_ATTACK
+    },
+    {
+    .iv = 100,
+    .lvl = 28,
+    .species = SPECIES_MARSHTOMP,
+    .moves = MOVE_ROCK_SLIDE, MOVE_MUD_BOMB, MOVE_WATER_GUN, MOVE_PROTECT
     }
 };
 
