@@ -597,6 +597,8 @@ u8 BattleSetup_GetTerrainId(void)
         return BATTLE_TERRAIN_SOOT_GROUND;
 	if (MetatileBehavior_IsField(tileBehavior))
         return BATTLE_TERRAIN_FIELD;
+	if (MetatileBehavior_IsMeteorFalls(tileBehavior))
+        return BATTLE_TERRAIN_METEOR_FALLS;
 
     switch (gMapHeader.mapType)
     {

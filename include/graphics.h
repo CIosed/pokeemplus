@@ -3336,6 +3336,11 @@ extern const u32 gBattleTerrainTilemap_SootGround[];
 extern const u32 gBattleTerrainAnimTiles_SootGround[];
 extern const u32 gBattleTerrainAnimTilemap_SootGround[];
 extern const u32 gBattleTerrainPalette_SootGround[];
+extern const u32 gBattleTerrainTiles_MeteorFalls[];
+extern const u32 gBattleTerrainTilemap_MeteorFalls[];
+extern const u32 gBattleTerrainAnimTiles_MeteorFalls[];
+extern const u32 gBattleTerrainAnimTilemap_MeteorFalls[];
+extern const u32 gBattleTerrainPalette_MeteorFalls[];
 
 extern const u32 gBattleTerrainTiles_Field[];
 extern const u32 gBattleTerrainTilemap_Field[];

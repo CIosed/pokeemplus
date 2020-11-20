@@ -362,6 +362,7 @@
 #define BATTLE_TERRAIN_TALL_SOOT_GRASS         13
 #define BATTLE_TERRAIN_SOOT_GROUND             14
 #define BATTLE_TERRAIN_FIELD                   15
+#define BATTLE_TERRAIN_METEOR_FALLS            16
 
 // Move targets
 #define MOVE_TARGET_SELECTED            0x0

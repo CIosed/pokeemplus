@@ -120,3 +120,9 @@ const u32 gBattleTerrainAnimTilemap_SootGround[] = INCBIN_U32("graphics/battle_t
 const u32 gBattleTerrainTiles_Field[] = INCBIN_U32("graphics/battle_terrain/field/tiles.4bpp.lz");
 const u32 gBattleTerrainPalette_Field[] = INCBIN_U32("graphics/battle_terrain/field/palette.gbapal.lz");
 const u32 gBattleTerrainTilemap_Field[] = INCBIN_U32("graphics/battle_terrain/field/map.bin.lz");
+
+const u32 gBattleTerrainTiles_MeteorFalls[] = INCBIN_U32("graphics/battle_terrain/meteor_falls/tiles.4bpp.lz");
+const u32 gBattleTerrainPalette_MeteorFalls[] = INCBIN_U32("graphics/battle_terrain/meteor_falls/palette.gbapal.lz");
+const u32 gBattleTerrainTilemap_MeteorFalls[] = INCBIN_U32("graphics/battle_terrain/meteor_falls/map.bin.lz");
+const u32 gBattleTerrainAnimTiles_MeteorFalls[] = INCBIN_U32("graphics/battle_terrain/meteor_falls/anim_tiles.4bpp.lz");
+const u32 gBattleTerrainAnimTilemap_MeteorFalls[] = INCBIN_U32("graphics/battle_terrain/meteor_falls/anim_map.bin.lz");
