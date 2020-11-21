@@ -153,7 +153,7 @@ PetalburgWoods_EventScript_RemoveDevonResearcher:: @ 822E1A7
 	releaseall
 	end
 
-PetalburgWoods_Movement_DevonResearcherLookAround: @ 822E1B1
+PetalburgWoods_Movement_DevonResearcherLookAround:: @ 822E1B1
 	face_up
 	delay_16
 	delay_4

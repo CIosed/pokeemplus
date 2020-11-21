@@ -23,6 +23,16 @@ Common_Movement_ExclamationMarkUp:
 	emote_exclamation_mark
 	step_end
 
+Common_Movement_ExclamationMarkDown:
+    walk_in_place_fastest_down
+	emote_exclamation_mark
+	step_end
+
+Common_Movement_ExclamationMarkRight:
+    walk_in_place_fastest_right
+	emote_exclamation_mark
+	step_end
+
 Common_Movement_Delay48: @ 827259A
 	delay_16
 	delay_16

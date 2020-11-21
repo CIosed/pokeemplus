@@ -262,9 +262,20 @@
 #define METATILE_Lavaridge_AshGrass             0x207
 #define METATILE_Lavaridge_CaveEntrance_Bottom  0x25E
 #define METATILE_Lavaridge_CaveEntrance_Top     0x256
+#define METATILE_Lavaridge_Lava                 0x2BD
 #define METATILE_Lavaridge_LavaField            0x271
+#define METATILE_Lavaridge_MachineLava          0x2A2
 #define METATILE_Lavaridge_NormalGrass          0x206
 #define METATILE_Lavaridge_RockWall             0x274
+#define METATILE_Lavaridge_RockWallLava1        0x213
+#define METATILE_Lavaridge_RockWallLava2        0x214
+#define METATILE_Lavaridge_RockWallLava3        0x215
+#define METATILE_Lavaridge_RockWallLava4        0x21B
+#define METATILE_Lavaridge_RockWallLava5        0x21D
+#define METATILE_Lavaridge_RockWallLava6        0x289
+#define METATILE_Lavaridge_RockWallLava7        0x279
+#define METATILE_Lavaridge_RockWallLava8        0x31C
+#define METATILE_Lavaridge_RockWallLava9        0x3A3
 
 // gTileset_LilycoveMuseum
 #define METATILE_LilycoveMuseum_Painting0_Left   0x25A
