@@ -498,6 +498,7 @@ PlayerLocatedRight_MeteorFalls_4:
 
 PlayerLocatedRight_MeteorFalls_6:
     applymovement 11, Common_Movement_FacePlayer
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceRight
 	waitmovement 0
 	return
 

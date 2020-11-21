@@ -6,6 +6,7 @@ enum MapPreviewScreenId
     MPS_PETALBURG_WOODS = 0,
     MPS_RUSTURF_TUNNEL,
     MPS_GRANITE_CAVE,
+    MPS_METEOR_FALLS,
     // to do: other map previews
     MPS_COUNT
 };
