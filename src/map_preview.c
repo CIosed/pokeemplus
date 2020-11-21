@@ -109,6 +109,8 @@ static const u8 sGraniteCaveMapPreviewPalette[] = INCBIN_U8("graphics/map_previe
 static const u8 sGraniteCaveMapPreviewTiles[] = INCBIN_U8("graphics/map_preview/granite_cave_tiles.4bpp.lz");
 static const u8 sMeteorFallsMapPreviewPalette[] = INCBIN_U8("graphics/map_preview/meteor_falls_pal.gbapal");
 static const u8 sMeteorFallsMapPreviewTiles[] = INCBIN_U8("graphics/map_preview/meteor_falls_tiles.4bpp.lz");
+static const u8 sFieryPathMapPreviewPalette[] = INCBIN_U8("graphics/map_preview/fiery_path_pal.gbapal");
+static const u8 sFieryPathMapPreviewTiles[] = INCBIN_U8("graphics/map_preview/fiery_path_tiles.4bpp.lz");
 
 static const struct MapPreviewScreen sMapPreviewScreenData[MPS_COUNT] =
 {
@@ -155,6 +157,17 @@ static const struct MapPreviewScreen sMapPreviewScreenData[MPS_COUNT] =
         .tilesptr = sMeteorFallsMapPreviewTiles,
         .tilemapptr = sPetalburgWoodsMapPreviewTilemap,
         .palptr = sMeteorFallsMapPreviewPalette
+    },
+    [MPS_FIERY_PATH] = 
+    {
+        .mapsec = MAPSEC_FIERY_PATH,
+        .type = MPS_TYPE_CAVE,
+        #if FLAG_BASED_MAP_PREVIEW_TIME
+        .flagId = FLAG_VISITED_METEOR_FALLS, //flag needs to be added to constants/flags.h
+        #endif
+        .tilesptr = sFieryPathMapPreviewTiles,
+        .tilemapptr = sPetalburgWoodsMapPreviewTilemap,
+        .palptr = sFieryPathMapPreviewPalette
     },
     //etc...
     
