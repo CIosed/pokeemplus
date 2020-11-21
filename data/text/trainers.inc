@@ -1582,7 +1582,8 @@ Route115_Text_NobDefeat: @ 829B480
 	.string "My head is busted!$"
 
 Route115_Text_NobPostBattle: @ 829B49D
-	.string "I've been teaching my POKéMON karate.\p"
+	.string "I've been teaching my POKéMON\n"
+	.string "karate.\p"
 	.string "It looks like they'll get a lot better\n"
 	.string "than me. I'm excited about that.$"
 
