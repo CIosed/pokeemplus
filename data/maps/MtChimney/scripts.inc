@@ -20,7 +20,7 @@ MtChimney_OnResume: @ 822EDD2
 	end
 
 MtChimney_SetMetatiles:
-    compare VAR_ACTIVATE_MT_CHIMNEY, 1
+    compare VAR_ACTIVATE_MT_CHIMNEY, 2
 	call_if_ge IncreaseLavaHeight
 	end
 
@@ -246,6 +246,13 @@ VolcanoErupt::
 	playse SE_INTRO_BLAST
 	waitse
 	playse SE_M_EXPLOSION
+	delay 8
+	playse SE_M_EXPLOSION
+	delay 8
+	playse SE_M_EXPLOSION
+	delay 8
+	playse SE_M_EXPLOSION
+	delay 8
 	closemessage
 	delay 16
 	call IncreaseLavaHeight
@@ -276,10 +283,26 @@ VolcanoErupt::
 
 FightMaxie::
 	trainerbattle_no_intro TRAINER_MAXIE_MT_CHIMNEY, MtChimney_Text_MaxieDefeat
+	compare VAR_ACTIVATE_MT_CHIMNEY, 1
+	call_if_eq SetVarTossedMeteorite
+	compare VAR_ACTIVATE_MT_CHIMNEY, 2
+	call_if_ge MtChimneyBeforeEndScript
+	compare VAR_ACTIVATE_MT_CHIMNEY, 2
+	call_if_lt MtChimneyBeforeEndScript2
+
+MtChimneyBeforeEndScript2::
 	msgbox MtChimney_Text_MaxieYouHaventSeenLastOfMagma, MSGBOX_DEFAULT
 	giveitem ITEM_METEORITE
-	setflag FLAG_RECEIVED_METEORITE
 	closemessage
+	setflag FLAG_RECEIVED_METEORITE
+	call MtChimneyBeforeEndScript3
+
+MtChimneyBeforeEndScript::
+	msgbox MtChimney_Text_MaxieYouHaventSeenLastOfMagma2, MSGBOX_DEFAULT
+	closemessage
+	call MtChimneyBeforeEndScript3
+
+MtChimneyBeforeEndScript3::
 	delay 30
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_MAXIE
@@ -290,7 +313,7 @@ FightMaxie::
 	fadescreen FADE_FROM_BLACK
 	closemessage
 	delay 16
-	compare VAR_ACTIVATE_MT_CHIMNEY, 1
+	compare VAR_ACTIVATE_MT_CHIMNEY, 2
 	call_if_eq TossedMeteorite
 	setobjectxyperm LOCALID_ARCHIE, 10, 12
 	addobject LOCALID_ARCHIE
@@ -328,7 +351,7 @@ TossedMeteorite::
 	applymovement LOCALID_ARCHIE, Common_Movement_WalkInPlaceFastestUp
 	waitmovement 0
 	fadeoutbgm 1
-	msgbox MtChimney_ArchieTurnOnMachine, MSGBOX_DEFAULT
+	msgbox MtChimney_ArchieTurnOnMachine, MSGBOX_AUTOCLOSE
 	playse SE_M_EARTHQUAKE
 	setvar VAR_0x8004, 6  @ vertical pan
 	setvar VAR_0x8005, 6  @ horizontal pan
@@ -337,6 +360,7 @@ TossedMeteorite::
 	special ShakeCamera
 	waitstate
 	fadescreenspeed FADE_TO_WHITE 1
+	playse SE_INTRO_BLAST
 	closemessage
 	removeobject LOCALID_ARCHIE
 	delay 48
@@ -376,6 +400,10 @@ MtChimneyEndScript::
 	clearflag FLAG_HIDE_MT_CHIMNEY_LAVA_COOKIE_LADY
 	releaseall
 	end
+
+SetVarTossedMeteorite:
+    setvar VAR_ACTIVATE_MT_CHIMNEY, 2
+	return
 
 IncreaseLavaHeight::
 	setmetatile 15, 0, METATILE_Lavaridge_Lava, 1
@@ -943,11 +971,11 @@ MtChimney_Text_ArchieInterfere2:
 	.string "we'll all dissapear!$"
 
 MtChimney_Text_ArchieInterfere3:
-    .string "ARCHIE: Have you lost it!?\n"
-	.string "Then for what purpose did you do it?$"
+    .string "ARCHIE: Have you lost it?!\n"
+	.string "The whole mountain will erupt!$"
 
 MtChimney_Text_ArchieInterfere4:
-    .string "ARCHIE: Grah!\n"
+    .string "ARCHIE: Arghhh!\n"
 	.string "MAXIE! It's scorching-hot here!\p"
 	.string "The lava is raising!$"
 
@@ -1003,11 +1031,11 @@ MtChimney_Text_MaxieIntro3:
 	.string "MT. CHIMNEY is an integral part of\n"
 	.string "the HOENN region…\p"
 	.string "Without it heating up the region,\n"
-	.string "evaporating the water, we would see\l"
-	.string "a drastic increase in the sea level!\p"
+	.string "we would see a drastic increase\l"
+	.string "in the water levels!\p"
 	.string "You might not realise it but TEAM\n"
 	.string "AQUA's ideals are not only to stop\l"
-	.string "us!\p"
+	.string "us.\p"
 	.string "They want to wipe out the human\n"
 	.string "civilization!\p"
 	.string "Outnumbering them at this location\n"
@@ -1041,14 +1069,14 @@ MtChimney_Text_MaxieIntro6:
 	.string "{COLOR DARK_GREY}MAXIE tossed the METEORITE!\p"
 	.string "{COLOR BLUE}MAXIE: …{PAUSE 15} …{PAUSE 15} …{PAUSE 15} …{PAUSE 15} …{PAUSE 15} …\p"
 	.string "What's the meaning of this…?\p"
-	.string "Did we miscalculate?\p"
+	.string "Did I miscalculate?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "Nothing is happening…$"
 
 MtChimney_Text_MaxieIntro7:
     .string "…!\p"
-	.string "What intense power! Yes, yes!$"
+	.string "What intense power!$"
 
 MtChimney_Text_MaxieIntro8:
     .string "It's working! The volcano is reacting\n"
@@ -1078,16 +1106,17 @@ MtChimney_Text_MaxieIntro13:
 	.string "the volcano erupt!$"
 
 MtChimney_Text_MaxieIntro14:
-    .string "MAXIE: It's like I said.\p"
+    .string "MAXIE: Not quite.\n"
+	.string "On the contrary, however…\p"
 	.string "This METEORITE combined with that\n"
 	.string "MACHINE is too dangerous!\p"
 	.string "If utilized by some dangerous people\n"
-	.string "they could completly change the\l"
-	.string "whole region, it's dangerous!$"
+	.string "like yourself, the whole region\l"
+	.string "could be destroyed!$"
 
 MtChimney_Text_MaxieIntro15:
-    .string "MAXIE: W-What?\p"
-	.string "N-No, this wasn't supposed to\n"
+    .string "MAXIE: What?!\p"
+	.string "No, this wasn't supposed to\n"
 	.string "happen…!\p"
 	.string "ARCHIE: {PLAYER}!$"
 
@@ -1098,7 +1127,9 @@ MtChimney_Text_MaxieIntro16:
 MtChimney_Text_MaxieIntro17:
     .string "I can't allow you to interfere now.\p"
 	.string "Sometimes you have to take risks to\n"
-	.string "achieve what you are after!$"
+	.string "achieve what you are after!\p"
+	.string "You'll understand after I defeat\n"
+	.string "you!$"
 
 MtChimney_Text_MaxieIntro18:
     .string "No? What kind of logic is that?\p"
@@ -1106,8 +1137,10 @@ MtChimney_Text_MaxieIntro18:
 	.string "what I just said.\p"
 	.string "Destroying this METEORITE will ensure\n"
 	.string "the saftey of the region!\p"
-	.string "You must be a member of TEAM AQUA!\n"
-	.string "Prepare for your defeat!$"
+	.string "I suppose you must be a member of\n"
+	.string "TEAM AQUA after all.\p"
+	.string "I'll teach you the consequences of\n"
+	.string "meddling with TEAM MAGMA!$"
 
 MtChimney_Text_MaxieDefeat: @ 822F5CF
 	.string "What?!\p"
@@ -1118,8 +1151,15 @@ MtChimney_Text_MaxieYouHaventSeenLastOfMagma: @ 822F5F7
 	.string "I will back off this time.\p"
 	.string "But don't think that this is the last\n"
 	.string "you've seen of TEAM MAGMA…\p"
-    .string "Oh, and I suppose I'll entrust\n"
-	.string "this to you…$"
+    .string "Oh, and I suppose I'll have to\n"
+	.string "entrust this to you…$"
+
+MtChimney_Text_MaxieYouHaventSeenLastOfMagma2: @ 822F5F7
+	.string "MAXIE: But, enough.\n"
+	.string "I will back off this time.\p"
+	.string "But don't think that this is the last\n"
+	.string "you've seen of TEAM MAGMA…\p"
+	.string "Go ahead and activate the MACHINE…$"
 
 MtChimney_Text_TabithaIntro: @ 822F6AA
 	.string "Hehehe!\p"
@@ -1196,13 +1236,13 @@ MtChimney_Text_KeepMakingMoreLand: @ 822FAA5
 MtChimney_Text_Bufoh: @ 822FACB
 	.string "Bufoh!$"
 
-MtChimney_Text_ArchieGoStopTeamMagma: @ 822FAD2
+MtChimney_Text_ArchieGoStopTeamMagma: @ 822FAD2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 	.string "ARCHIE: Grr, {PLAYER}!\n"
 	.string "I should've guessed you'd show up!\p"
 	.string "See for yourself what the fanatics\n"
 	.string "of TEAM MAGMA are up to!\p"
-	.string "They're trying to inject the stolen\n"
-	.string "METEORITE's power into the volcano!\p"
+	.string "They're trying to use the stolen\n"
+	.string "METEORITE in the volcano.\p"
 	.string "Doing something like that will cause\n"
 	.string "the volcano's eruption!$"
 
@@ -1210,17 +1250,16 @@ MtChimney_Text_ArchieIHaveMyHandsFull: @ 822FBC7
 	.string "ARCHIE: Grrr…\p"
 	.string "I want to stop that MAXIE,\n"
 	.string "but I can't!\p"
-	.string "Not when I have my hands full battling\n"
-	.string "three opponents at once!$"
+	.string "Not when I have my hands full\n"
+	.string "battling three opponents at once!$"
 
 MtChimney_Text_ArchieThankYou: @ 822FC3D
-	.string "ARCHIE: {PLAYER}!\n"
-	.string "Thank you!\p"
-	.string "With your help, we thwarted TEAM\n"
-	.string "MAGMA's destructive plan!\p"
-	.string "But… You…\n"
-	.string "Whose side are you on?\p"
-	.string "Ah, it doesn't matter.\p"
+	.string "ARCHIE: {PLAYER}!\p"
+	.string "I suppose this must be quite\n"
+	.string "confusing all things considered.\p"
+	.string "However, TEAM MAGMA can't be trusted.\n"
+	.string "You can't trust their words, keep\l"
+	.string "that in mind if you encounter them.\p"
 	.string "We will remain vigilant and keep up\n"
 	.string "our pursuit of TEAM MAGMA.\p"
 	.string "{PLAYER}, we shall meet again!$"
