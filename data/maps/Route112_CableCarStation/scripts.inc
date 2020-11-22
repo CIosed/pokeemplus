@@ -34,6 +34,11 @@ Route112_CableCarStation_EventScript_ExitCableCar:: @ 822AAF3
 Route112_CableCarStation_EventScript_Attendant:: @ 822AB17
 	lock
 	faceplayer
+	compare VAR_ACTIVATE_MT_CHIMNEY, 3
+	call_if_le MtChimney_EventScript_AttendantWorried
+	call Route112_CableCarStation_EventScript_Attendant2
+
+Route112_CableCarStation_EventScript_Attendant2::
 	msgbox Route112_CableCarStation_Text_CableCarReadyGetOn, MSGBOX_YESNO
 	compare VAR_RESULT, YES
 	goto_if_eq Route112_CableCarStation_EventScript_RideCableCar

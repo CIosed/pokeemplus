@@ -8421,11 +8421,62 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MaxieMagmaHideout[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_MaxieMtChimney[] = {
+static const struct TrainerMonFullControl sParty_MaxieMtChimney[] = {
     {
-    .iv = 150,
-    .lvl = 1,
+    .friendship = 0,
+    .ivs = BEST_IV_SPREAD,
+    .lvl = 28,
+    .species = SPECIES_TORKOAL,
+    .heldItem = ITEM_HEAT_ROCK,
+	.ability = 1,
+	.shiny = FALSE,
+    .moves = {MOVE_BODY_SLAM, MOVE_LAVA_PLUME, MOVE_SMOKESCREEN, MOVE_SMOG},
+	.evs = {0, 95, 0, 0, 95, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_BRAVE,
+	.gender = MON_MALE,
+	.ball = ITEM_POKE_BALL,
+    },
+    {
+    .friendship = 0,
+    .ivs = BEST_IV_SPREAD,
+    .lvl = 28,
+    .species = SPECIES_MIGHTYENA,
+    .heldItem = ITEM_NONE,
+	.ability = 0,
+	.shiny = FALSE,
+    .moves = {MOVE_SWAGGER, MOVE_ASSURANCE, MOVE_FIRE_FANG, MOVE_THUNDER_FANG},
+	.evs = {0, 95, 0, 95, 0, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_ADAMANT,
+	.gender = MON_MALE,
+	.ball = ITEM_POKE_BALL,
+    },
+    {
+    .friendship = 0,
+    .ivs = BEST_IV_SPREAD,
+    .lvl = 29,
+    .species = SPECIES_CROBAT,
+    .heldItem = ITEM_NONE,
+	.ability = 0,
+	.shiny = FALSE,
+	.moves = {MOVE_CROSS_POISON, MOVE_CONFUSE_RAY, MOVE_ACROBATICS, MOVE_TOXIC},
+	.evs = {0, 95, 0, 95, 0, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_ADAMANT,
+	.gender = MON_MALE,
+	.ball = ITEM_POKE_BALL,
+    },
+    {
+    .friendship = 0,
+    .ivs = BEST_IV_SPREAD,
+    .lvl = 31,
     .species = SPECIES_CAMERUPT,
+    .heldItem = ITEM_NONE,
+	.ability = 1,
+	.shiny = FALSE,
+	.moves = {MOVE_EARTH_POWER, MOVE_LAVA_PLUME, MOVE_BODY_SLAM, MOVE_SWAGGER},
+	.evs = {95, 0, 40, 0, 95, 40}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_BASHFUL,
+	.gender = MON_MALE,
+	.ball = ITEM_POKE_BALL,
     }
 };
 

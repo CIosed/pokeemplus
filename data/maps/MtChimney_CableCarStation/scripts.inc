@@ -33,12 +33,22 @@ MtChimney_CableCarStation_EventScript_ExitCableCar:: @ 822AC27
 MtChimney_CableCarStation_EventScript_Attendant:: @ 822AC4B
 	lock
 	faceplayer
+	compare VAR_ACTIVATE_MT_CHIMNEY, 3
+	call_if_le MtChimney_EventScript_AttendantWorried
+	call MtChimney_CableCarStation_EventScript_Attendant2
+
+MtChimney_CableCarStation_EventScript_Attendant2::
 	msgbox MtChimney_CableCarStation_Text_CableCarReadyGetOn, MSGBOX_YESNO
 	compare VAR_RESULT, YES
 	goto_if_eq MtChimney_CableCarStation_EventScript_RideCableCar
 	compare VAR_RESULT, NO
 	goto_if_eq MtChimney_CableCarStation_EventScript_DeclineRide
 	end
+
+MtChimney_EventScript_AttendantWorried:
+	msgbox MtChimney_CableCarStation_Text_AttendantWorried, MSGBOX_DEFAULT
+	setvar VAR_ACTIVATE_MT_CHIMNEY, 3
+	return
 
 MtChimney_CableCarStation_EventScript_RideCableCar:: @ 822AC6C
 	msgbox MtChimney_CableCarStation_Text_StepThisWay, MSGBOX_DEFAULT
@@ -98,3 +108,8 @@ MtChimney_CableCarStation_Text_StepThisWay: @ 822ACF8
 MtChimney_CableCarStation_Text_RideAnotherTime: @ 822AD0E
 	.string "Please ride with us another time.$"
 
+MtChimney_CableCarStation_Text_AttendantWorried:
+    .string "Oh, uhm… Hi!\p"
+	.string "Fortunatley the CABLE CAR didn't\n"
+	.string "sustain any damage due to the\l"
+	.string "recent incident.$"

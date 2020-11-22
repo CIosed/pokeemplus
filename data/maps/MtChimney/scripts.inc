@@ -504,6 +504,8 @@ MtChimney_EventScript_ArchieExitNorth:: @ 822EEE8
 MtChimney_EventScript_LavaCookieLady:: @ 822EEF3
 	lock
 	faceplayer
+	compare VAR_ACTIVATE_MT_CHIMNEY, 3
+	call_if_le MtChimney_EventScript_LavaCookieLadyWorried
 	showmoneybox 0, 0, 0
 	msgbox MtChimney_Text_LavaCookiesJust200, MSGBOX_YESNO
 	compare VAR_RESULT, NO
@@ -521,6 +523,10 @@ MtChimney_EventScript_LavaCookieLady:: @ 822EEF3
 	hidemoneybox
 	release
 	end
+
+MtChimney_EventScript_LavaCookieLadyWorried::
+	msgbox MtChimney_Text_LavaCookieLadyWorried, MSGBOX_DEFAULT
+	return
 
 MtChimney_EventScript_BagIsFull:: @ 822EF51
 	msgbox gText_TooBadBagIsFull, MSGBOX_DEFAULT
@@ -951,6 +957,13 @@ MtChimney_EventScript_Sawyer:: @ 822F208
 	release
 	end
 
+MtChimney_Text_LavaCookieLadyWorried:
+    .string "M-My goodness!\n"
+	.string "Are you alright?\p"
+	.string "I thought for sure she would erupt!\n"
+	.string "But it seems she has settled down.\p"
+	.string "Oh, if you are interested…$"
+
 Ellipsis:
 	.string "{COLOR DARK_GREY}… … … … … …\n"
 	.string "… … … … … …\l"
@@ -972,7 +985,7 @@ MtChimney_Text_ArchieInterfere2:
 
 MtChimney_Text_ArchieInterfere3:
     .string "ARCHIE: Have you lost it?!\n"
-	.string "The whole mountain will erupt!$"
+	.string "Just look around!$"
 
 MtChimney_Text_ArchieInterfere4:
     .string "ARCHIE: Arghhh!\n"
@@ -1106,7 +1119,8 @@ MtChimney_Text_MaxieIntro13:
 	.string "the volcano erupt!$"
 
 MtChimney_Text_MaxieIntro14:
-    .string "MAXIE: Not quite.\n"
+    .string "MAXIE: You don't know what you are\n"
+	.string "talking about.\l"
 	.string "On the contrary, however…\p"
 	.string "This METEORITE combined with that\n"
 	.string "MACHINE is too dangerous!\p"
