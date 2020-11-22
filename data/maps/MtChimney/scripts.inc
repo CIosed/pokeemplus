@@ -479,7 +479,28 @@ IncreaseLavaHeight::
 	setmetatile 22, 1, METATILE_Lavaridge_Lava, 1
 	setmetatile 23, 1, METATILE_Lavaridge_Lava, 1
 	setmetatile 23, 0, METATILE_Lavaridge_Lava, 1
+	setmetatile 31, 14, METATILE_Lavaridge_Rock1, 1
+	setmetatile 32, 18, METATILE_Lavaridge_Rock2, 0
+	setmetatile 27, 24, METATILE_Lavaridge_Rock1, 1
+	setmetatile 29, 28, METATILE_Lavaridge_Rock2, 1
+	setmetatile 30, 29, METATILE_Lavaridge_Rock1, 1
+	setmetatile 29, 32, METATILE_Lavaridge_Rock2, 1
+	setmetatile 30, 36, METATILE_Lavaridge_Rock1, 1
+	setmetatile 30, 37, METATILE_Lavaridge_Rock2, 1
+	setmetatile 32, 37, METATILE_Lavaridge_Rock1, 1
+	setmetatile 34, 35, METATILE_Lavaridge_Rock2, 1
+	setmetatile 25, 30, METATILE_Lavaridge_Rock1, 1
+	setmetatile 31, 32, METATILE_Lavaridge_Rock2, 1
+	setmetatile 16, 29, METATILE_Lavaridge_Rock1, 1
+	setmetatile 12, 30, METATILE_Lavaridge_Rock2, 1
+	setmetatile 21, 27, METATILE_Lavaridge_Rock1, 1
+	setmetatile 18, 26, METATILE_Lavaridge_Rock2, 1
+	setmetatile 18, 22, METATILE_Lavaridge_Rock1, 1
+	setmetatile 14, 24, METATILE_Lavaridge_Rock2, 1
+	setmetatile 11, 21, METATILE_Lavaridge_Rock1, 1
+	setmetatile 8, 22, METATILE_Lavaridge_Rock2, 1
 	return
+
 
 MtChimney_EventScript_ArchieApproachPlayerEast:: @ 822EEC7
 	applymovement LOCALID_ARCHIE, MtChimney_Movement_ArchieApproachPlayerEast

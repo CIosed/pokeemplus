@@ -276,6 +276,9 @@
 #define METATILE_Lavaridge_RockWallLava7        0x279
 #define METATILE_Lavaridge_RockWallLava8        0x31C
 #define METATILE_Lavaridge_RockWallLava9        0x3A3
+#define METATILE_Lavaridge_Rock1        0x38E
+#define METATILE_Lavaridge_Rock2        0x38F
+
 
 // gTileset_LilycoveMuseum
 #define METATILE_LilycoveMuseum_Painting0_Left   0x25A
