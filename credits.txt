@@ -357,6 +357,7 @@
 #Meteor Falls Map Preview
 #Fiery Path Map Preview
 #Granite Cave Map Preview
+#Jagged Pass Map Preview
 
 / Edits/Custom Maps
 

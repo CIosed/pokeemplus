@@ -8,6 +8,7 @@ enum MapPreviewScreenId
     MPS_GRANITE_CAVE,
     MPS_METEOR_FALLS,
     MPS_FIERY_PATH,
+    MPS_JAGGED_PASS,
     // to do: other map previews
     MPS_COUNT
 };

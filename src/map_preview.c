@@ -111,6 +111,8 @@ static const u8 sMeteorFallsMapPreviewPalette[] = INCBIN_U8("graphics/map_previe
 static const u8 sMeteorFallsMapPreviewTiles[] = INCBIN_U8("graphics/map_preview/meteor_falls_tiles.4bpp.lz");
 static const u8 sFieryPathMapPreviewPalette[] = INCBIN_U8("graphics/map_preview/fiery_path_pal.gbapal");
 static const u8 sFieryPathMapPreviewTiles[] = INCBIN_U8("graphics/map_preview/fiery_path_tiles.4bpp.lz");
+static const u8 sJaggedPassMapPreviewPalette[] = INCBIN_U8("graphics/map_preview/jagged_pass_pal.gbapal");
+static const u8 sJaggedPassMapPreviewTiles[] = INCBIN_U8("graphics/map_preview/jagged_pass_tiles.4bpp.lz");
 
 static const struct MapPreviewScreen sMapPreviewScreenData[MPS_COUNT] =
 {
@@ -168,6 +170,17 @@ static const struct MapPreviewScreen sMapPreviewScreenData[MPS_COUNT] =
         .tilesptr = sFieryPathMapPreviewTiles,
         .tilemapptr = sPetalburgWoodsMapPreviewTilemap,
         .palptr = sFieryPathMapPreviewPalette
+    },
+    [MPS_JAGGED_PASS] = 
+    {
+        .mapsec = MAPSEC_JAGGED_PASS,
+        .type = MPS_TYPE_FOREST,
+        #if FLAG_BASED_MAP_PREVIEW_TIME
+        .flagId = FLAG_VISITED_METEOR_FALLS, //flag needs to be added to constants/flags.h
+        #endif
+        .tilesptr = sJaggedPassMapPreviewTiles,
+        .tilemapptr = sPetalburgWoodsMapPreviewTilemap,
+        .palptr = sJaggedPassMapPreviewPalette
     },
     //etc...
     
