@@ -760,6 +760,13 @@ static const struct BattleBackground gBattleTerrainTable[] =
         .palette = gBattleTerrainPalette_JaggedPass,
     },
 
+    [BATTLE_TERRAIN_JAGGED_PASS_TALL_GRASS] =
+    {
+        .tileset = gBattleTerrainTiles_JaggedPass,
+        .tilemap = gBattleTerrainTilemap_JaggedPass,
+        .palette = gBattleTerrainPalette_JaggedPass,
+    },
+
 };
 
 static void sub_8035648(void);

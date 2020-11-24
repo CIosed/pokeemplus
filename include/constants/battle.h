@@ -364,6 +364,7 @@
 #define BATTLE_TERRAIN_FIELD                   15
 #define BATTLE_TERRAIN_METEOR_FALLS            16
 #define BATTLE_TERRAIN_JAGGED_PASS             17
+#define BATTLE_TERRAIN_JAGGED_PASS_TALL_GRASS  18
 
 // Move targets
 #define MOVE_TARGET_SELECTED            0x0

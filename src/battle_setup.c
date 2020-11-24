@@ -601,6 +601,8 @@ u8 BattleSetup_GetTerrainId(void)
         return BATTLE_TERRAIN_METEOR_FALLS;
 	if (MetatileBehavior_IsJaggedPass(tileBehavior))
         return BATTLE_TERRAIN_JAGGED_PASS;
+	if (MetatileBehavior_IsJaggedPassTallGrass(tileBehavior))
+        return BATTLE_TERRAIN_JAGGED_PASS;
 
     switch (gMapHeader.mapType)
     {

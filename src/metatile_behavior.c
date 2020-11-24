@@ -179,7 +179,7 @@ static const u8 sTileBitAttributes[] =
     [MB_FIELD] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_METEOR_FALLS] = TILE_ATTRIBUTES(TRUE, FALSE, TRUE),
     [MB_JAGGED_PASS] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
-    [MB_UNUSED_A9] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
+    [MB_JAGGED_PASS_TALL_GRASS] = TILE_ATTRIBUTES(TRUE, FALSE, TRUE),
     [MB_UNUSED_AA] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_UNUSED_AB] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_UNUSED_AC] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
@@ -1665,6 +1665,14 @@ bool8 MetatileBehavior_IsMeteorFalls(u8 metatileBehavior)
 bool8 MetatileBehavior_IsJaggedPass(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_JAGGED_PASS)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsJaggedPassTallGrass(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_JAGGED_PASS_TALL_GRASS)
         return TRUE;
     else
         return FALSE;

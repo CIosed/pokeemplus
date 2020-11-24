@@ -8880,12 +8880,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Clark[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Eric[] = {
     {
     .iv = 0,
-    .lvl = 20,
-    .species = SPECIES_GEODUDE,
+    .lvl = 28,
+    .species = SPECIES_GRAVELER,
     },
     {
     .iv = 0,
-    .lvl = 20,
+    .lvl = 29,
     .species = SPECIES_BALTOY,
     }
 };

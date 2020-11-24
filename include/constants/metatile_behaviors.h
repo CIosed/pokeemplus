@@ -170,7 +170,7 @@
 #define MB_FIELD 0xA6
 #define MB_METEOR_FALLS 0xA7
 #define MB_JAGGED_PASS 0xA8
-#define MB_UNUSED_A9 0xA9
+#define MB_JAGGED_PASS_TALL_GRASS 0xA9
 #define MB_UNUSED_AA 0xAA
 #define MB_UNUSED_AB 0xAB
 #define MB_UNUSED_AC 0xAC
