@@ -126,3 +126,9 @@ const u32 gBattleTerrainPalette_MeteorFalls[] = INCBIN_U32("graphics/battle_terr
 const u32 gBattleTerrainTilemap_MeteorFalls[] = INCBIN_U32("graphics/battle_terrain/meteor_falls/map.bin.lz");
 const u32 gBattleTerrainAnimTiles_MeteorFalls[] = INCBIN_U32("graphics/battle_terrain/meteor_falls/anim_tiles.4bpp.lz");
 const u32 gBattleTerrainAnimTilemap_MeteorFalls[] = INCBIN_U32("graphics/battle_terrain/meteor_falls/anim_map.bin.lz");
+
+const u32 gBattleTerrainTiles_JaggedPass[] = INCBIN_U32("graphics/battle_terrain/jagged_pass/tiles.4bpp.lz");
+const u32 gBattleTerrainPalette_JaggedPass[] = INCBIN_U32("graphics/battle_terrain/jagged_pass/palette.gbapal.lz");
+const u32 gBattleTerrainTilemap_JaggedPass[] = INCBIN_U32("graphics/battle_terrain/jagged_pass/map.bin.lz");
+const u32 gBattleTerrainAnimTiles_JaggedPass[] = INCBIN_U32("graphics/battle_terrain/jagged_pass/anim_tiles.4bpp.lz");
+const u32 gBattleTerrainAnimTilemap_JaggedPass[] = INCBIN_U32("graphics/battle_terrain/jagged_pass/anim_map.bin.lz");
