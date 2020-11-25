@@ -2563,13 +2563,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Cole[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Jeff[] = {
     {
     .iv = 100,
-    .lvl = 22,
+    .lvl = 28,
     .species = SPECIES_SLUGMA,
     },
     {
     .iv = 100,
-    .lvl = 22,
-    .species = SPECIES_SLUGMA,
+    .lvl = 29,
+    .species = SPECIES_NUMEL,
     }
 };
 

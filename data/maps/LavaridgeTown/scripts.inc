@@ -338,12 +338,12 @@ LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad: @ 81EAA2E
 
 LavaridgeTown_Text_HaveEggWillYouTakeIt: @ 81EAB80
 	.string "I have here an EGG.\p"
-	.string "I'd hoped to hatch it by covering it in\n"
-	.string "hot sand by the hot springs.\l"
+	.string "I'd hoped to hatch it by covering it\n"
+	.string "in hot sand by the hot springs.\l"
 	.string "But that doesn't seem to be enough…\p"
-	.string "I've heard it would be best if it were\n"
-	.string "kept together with POKéMON and\l"
-	.string "carried about.\p"
+	.string "I've heard it would be best if it\n"
+	.string "were kept together with POKéMON\l"
+	.string "and carried about.\p"
 	.string "You are a TRAINER, yes?\n"
 	.string "And your POKéMON radiate vitality.\p"
 	.string "So, what say you?\n"
@@ -354,7 +354,7 @@ LavaridgeTown_Text_HopeYoullWalkPlentyWithEgg: @ 81EACC0
 	.string "this here EGG!$"
 
 LavaridgeTown_Text_ReceivedTheEgg: @ 81EACF4
-	.string "{PLAYER} received the EGG.$"
+	.string "{COLOR DARK_GREY}{PLAYER} received the EGG.$"
 
 LavaridgeTown_Text_NoRoomForThisEgg: @ 81EAD09
 	.string "Oh? You've too many POKéMON.\n"
@@ -366,18 +366,20 @@ LavaridgeTown_Text_AsYouWishThen: @ 81EAD44
 	.string "hatching this EGG, I will be here.$"
 
 LavaridgeTown_Text_EverySoOftenEggFoundAtDayCare: @ 81EAD9E
-	.string "Every so often, an EGG will be found at\n"
-	.string "the POKéMON DAY CARE.\p"
-	.string "Or at least that's how the rumor goes.$"
+	.string "Every so often, an EGG will be found\n"
+	.string "at the POKéMON DAY CARE.\p"
+	.string "Or at least that's how the rumor\n"
+	.string "goes.$"
 
 LavaridgeTown_Text_HotSpringsNeverRunDry: @ 81EAE03
-	.string "We draw as much hot water as we need,\n"
-	.string "and yet the hot springs never run dry.\p"
+	.string "We draw as much hot water as we\n"
+	.string "need, and yet the hot springs never\l"
+	.string "run dry.\p"
 	.string "Isn't it magical?\p"
 	.string "These hot springs appear near active\n"
 	.string "volcanoes. Veins of water under the\l"
-	.string "ground are heated by magma to well up\l"
-	.string "as hot springs.$"
+	.string "ground are heated by magma to well\l"
+	.string "up as hot springs.$"
 
 LavaridgeTown_Text_PokemonNippedBackside: @ 81EAEE1
 	.string "Being buried in this hot sand is…\n"
@@ -392,9 +394,10 @@ LavaridgeTown_Text_OhYouLikeHotSprings: @ 81EAF4E
 	.string "as you.$"
 
 LavaridgeTown_Text_BatheInHotSpringsEveryDay: @ 81EAF9B
-	.string "I bathe in the hot springs every day.\p"
-	.string "I want to become a beautiful and strong\n"
-	.string "GYM LEADER like FLANNERY.$"
+	.string "I bathe in the hot springs every\n"
+	.string "day.\p"
+	.string "I want to become a beautiful and\n"
+	.string "strong GYM LEADER like FLANNERY.$"
 
 LavaridgeTown_Text_IfPokemonInHotSprings: @ 81EB003
 	.string "If people put POKéMON in hot springs,\n"
@@ -403,11 +406,11 @@ LavaridgeTown_Text_IfPokemonInHotSprings: @ 81EB003
 	.string "a bubble bath, or even a lava bath…$"
 
 LavaridgeTown_Text_HotSpringsClaims: @ 81EB092
-	.string "They're claiming that these hot springs\n"
-	.string "are good for calming nervous tension,\l"
-	.string "relieving aching muscles, solving\l"
-	.string "romantic problems, and attracting\l"
-	.string "money…$"
+	.string "They're claiming that these hot\n"
+	.string "springs are good for calming\l"
+	.string "nervous tension, relieving\l"
+	.string "aching muscles, solving romantic\l"
+	.string "problems, and attracting money…$"
 
 LavaridgeTown_Text_TownSign: @ 81EB12B
 	.string "LAVARIDGE TOWN\p"

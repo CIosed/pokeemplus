@@ -111,9 +111,10 @@ Route112_Text_CantLetAnyonePassUntilTheyreBack: @ 81F2003
 	.string "we're not to let anyone pass, right.$"
 
 Route112_Text_NotEasyToGetBackToLavaridge: @ 81F204E
-	.string "Eh, I'd like to get to MAUVILLE, but if\n"
-	.string "I went down these ledges, it'd be no\l"
-	.string "easy matter to get back to LAVARIDGE.$"
+	.string "Eh, I'd like to get to MAUVILLE, but\n"
+	.string "if I went down these ledges, it'd be\l"
+	.string "no easy matter to get back to\l"
+	.string "LAVARIDGE.$"
 
 Route112_Text_MtChimneyCableCarSign: @ 81F20C1
 	.string "MT. CHIMNEY CABLE CAR\n"
