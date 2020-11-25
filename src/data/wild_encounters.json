@@ -2758,63 +2758,63 @@
             "mons": [
               {
                 "min_level": 21,
-                "max_level": 21,
+                "max_level": 22,
                 "species": "SPECIES_NUMEL"
               },
               {
                 "min_level": 21,
-                "max_level": 21,
+                "max_level": 23,
                 "species": "SPECIES_NUMEL"
               },
               {
                 "min_level": 21,
-                "max_level": 21,
+                "max_level": 23,
                 "species": "SPECIES_MACHOP"
               },
               {
                 "min_level": 20,
-                "max_level": 20,
-                "species": "SPECIES_NUMEL"
+                "max_level": 22,
+                "species": "SPECIES_GEODUDE"
               },
               {
                 "min_level": 20,
-                "max_level": 20,
-                "species": "SPECIES_SPOINK"
+                "max_level": 22,
+                "species": "SPECIES_MEDITITE"
               },
               {
                 "min_level": 20,
-                "max_level": 20,
+                "max_level": 22,
                 "species": "SPECIES_MACHOP"
               },
               {
                 "min_level": 21,
-                "max_level": 21,
+                "max_level": 23,
                 "species": "SPECIES_SPOINK"
               },
               {
                 "min_level": 22,
-                "max_level": 22,
+                "max_level": 24,
                 "species": "SPECIES_MACHOP"
               },
               {
                 "min_level": 22,
-                "max_level": 22,
-                "species": "SPECIES_NUMEL"
+                "max_level": 24,
+                "species": "SPECIES_GEODUDE"
               },
               {
                 "min_level": 22,
-                "max_level": 22,
+                "max_level": 24,
                 "species": "SPECIES_SPOINK"
               },
               {
                 "min_level": 22,
-                "max_level": 22,
+                "max_level": 24,
                 "species": "SPECIES_NUMEL"
               },
               {
                 "min_level": 22,
-                "max_level": 22,
-                "species": "SPECIES_SPOINK"
+                "max_level": 24,
+                "species": "SPECIES_MEDITITE"
               }
             ]
           }

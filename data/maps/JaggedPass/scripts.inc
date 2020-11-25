@@ -178,8 +178,8 @@ JaggedPass_Text_EthanDefeat: @ 8230B50
 	.string "trying to find a good footing…$"
 
 JaggedPass_Text_EthanPostBattle: @ 8230B93
-	.string "If I had an ACRO BIKE, I'd be able to\n"
-	.string "jump ledges.$"
+	.string "If I had an ACRO BIKE, I'd be able\n"
+	.string "to jump ledges.$"
 
 JaggedPass_Text_EthanRegister: @ 8230BC6
 	.string "When I get more used to this bumpiness,\n"
@@ -201,13 +201,14 @@ JaggedPass_Text_EthanPostRematch: @ 8230C94
 JaggedPass_Text_GruntIntro: @ 8230CCB
 	.string "Wah!\n"
 	.string "What are you doing here?\p"
-	.string "What am I doing in a place like this?\p"
+	.string "What am I doing in a place like\n"
+	.string "this?\p"
 	.string "What business is it of yours?$"
 
 JaggedPass_Text_GruntDefeat: @ 8230D2D
 	.string "Urrrgh…\p"
-	.string "I should've ducked into our HIDEOUT\n"
-	.string "right away…$"
+	.string "I should've espaced…\n"
+	.string "Nevermind…!$"
 
 JaggedPass_Text_GoWhereverYouWant: @ 8230D65
 	.string "Okay, oh-kay!\n"
