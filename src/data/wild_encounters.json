@@ -1042,62 +1042,62 @@
             "mons": [
               {
                 "min_level": 15,
-                "max_level": 15,
+                "max_level": 17,
                 "species": "SPECIES_NUMEL"
               },
               {
                 "min_level": 15,
-                "max_level": 15,
+                "max_level": 17,
                 "species": "SPECIES_NUMEL"
               },
               {
                 "min_level": 15,
-                "max_level": 15,
+                "max_level": 17,
                 "species": "SPECIES_MARILL"
               },
               {
                 "min_level": 14,
-                "max_level": 14,
+                "max_level": 16,
                 "species": "SPECIES_NUMEL"
               },
               {
                 "min_level": 14,
-                "max_level": 14,
-                "species": "SPECIES_NUMEL"
+                "max_level": 16,
+                "species": "SPECIES_VULPIX"
               },
               {
                 "min_level": 14,
-                "max_level": 14,
+                "max_level": 16,
+                "species": "SPECIES_TAILLOW"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_VULPIX"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
                 "species": "SPECIES_MARILL"
               },
               {
                 "min_level": 16,
-                "max_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_TAILLOW"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
+                "species": "SPECIES_VULPIX"
+              },
+              {
+                "min_level": 16,
+                "max_level": 18,
                 "species": "SPECIES_NUMEL"
               },
               {
                 "min_level": 16,
-                "max_level": 16,
-                "species": "SPECIES_MARILL"
-              },
-              {
-                "min_level": 16,
-                "max_level": 16,
-                "species": "SPECIES_NUMEL"
-              },
-              {
-                "min_level": 16,
-                "max_level": 16,
-                "species": "SPECIES_NUMEL"
-              },
-              {
-                "min_level": 16,
-                "max_level": 16,
-                "species": "SPECIES_NUMEL"
-              },
-              {
-                "min_level": 16,
-                "max_level": 16,
+                "max_level": 18,
                 "species": "SPECIES_NUMEL"
               }
             ]

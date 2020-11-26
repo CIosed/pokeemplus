@@ -89,7 +89,10 @@ LavaridgeTown_EventScript_BrendanGiveGoGoggles:: @ 81EA5DA
 
 LavaridgeTown_EventScript_RivalExit:: @ 81EA5FF
 	closemessage
+	applymovement 8, RivalWalkDownStair
+	waitmovement 0
 	removeobject LOCALID_RIVAL
+	playse SE_BIKE_BELL
 	addobject LOCALID_RIVAL_ON_BIKE
 	delay 30
 	compare VAR_0x8008, 9
@@ -123,15 +126,10 @@ LavaridgeTown_EventScript_RivalNoticePlayer:: @ 81EA63A
 	return
 
 LavaridgeTown_EventScript_RivalExitHerbShop:: @ 81EA65C
-	opendoor 12, 15
-	waitdooranim
 	addobject LOCALID_RIVAL
 	applymovement LOCALID_RIVAL, LavaridgeTown_Movement_RivalExitHerbShop
 	waitmovement 0
-	closedoor 12, 15
-	waitdooranim
-	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFastestLeft
-	waitmovement 0
+    delay 20
 	playse SE_PIN
 	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
 	waitmovement 0
@@ -147,6 +145,7 @@ LavaridgeTown_EventScript_RivalApproachPlayer1:: @ 81EA6A1
 	return
 
 LavaridgeTown_EventScript_RivalApproachPlayer2:: @ 81EA6AC
+    applymovement LOCALID_PLAYER, delay4
 	applymovement LOCALID_RIVAL, LavaridgeTown_Movement_RivalApproachPlayer2
 	waitmovement 0
 	return
@@ -162,10 +161,22 @@ LavaridgeTown_EventScript_RivalExit2:: @ 81EA6C9
 	waitmovement 0
 	return
 
+RivalWalkDownStair:
+    walk_down
+    walk_down
+	delay_16
+	delay_8
+    step_end
+
 LavaridgeTown_Movement_RivalExit2: @ 81EA6D4
 	walk_fast_right
 	walk_fast_right
 	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
 	walk_fast_up
 	walk_fast_up
 	walk_fast_up
@@ -193,23 +204,38 @@ LavaridgeTown_Movement_RivalExit1: @ 81EA6E3
 	walk_fast_right
 	step_end
 
+delay4:
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+	walk_in_place_fastest_down
+	step_end
+
 LavaridgeTown_Movement_RivalApproachPlayer2: @ 81EA6ED
 	walk_left
 	walk_left
 	walk_left
 	walk_left
 	walk_left
-	walk_left
+	walk_up
+	walk_up
 	step_end
 
 LavaridgeTown_Movement_RivalApproachPlayer1: @ 81EA6F4
 	walk_left
 	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_up
 	walk_up
 	step_end
 
 LavaridgeTown_Movement_RivalExitHerbShop: @ 81EA6F8
-	walk_down
+	walk_left
+	walk_left
+	walk_left
 	step_end
 
 LavaridgeTown_EventScript_HotSpringsTrigger:: @ 81EA6FA

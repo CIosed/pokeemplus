@@ -244,8 +244,8 @@ LavaridgeTown_Gym_B1F_Text_KeeganDefeat: @ 81FECE3
 LavaridgeTown_Gym_B1F_Text_KeeganPostBattle: @ 81FED02
 	.string "Your skill is real…\n"
 	.string "But our LEADER FLANNERY is strong.\p"
-	.string "If you don't watch yourself, you'll be\n"
-	.string "burned seriously.$"
+	.string "If you don't watch yourself, you'll\n"
+	.string "be burned seriously.$"
 
 LavaridgeTown_Gym_1F_Text_GeraldIntro: @ 81FED72
 	.string "Can your POKéMON withstand\n"
@@ -311,17 +311,17 @@ LavaridgeTown_Gym_B1F_Text_EliPostBattle: @ 81FF09A
 
 LavaridgeTown_Gym_1F_Text_FlanneryIntro: @ 81FF0DC
 	.string "Welcome… No, wait.\p"
-	.string "Puny TRAINER, how good to see you've\n"
-	.string "made it here!\p"
+	.string "Puny TRAINER, how good to see\n"
+	.string "you've made it here!\p"
 	.string "I have been entrusted with the…\n"
 	.string "No, wait.\p"
 	.string "I am FLANNERY, and I'm the GYM\n"
 	.string "LEADER here!\p"
-	.string "Uh…\n"
-	.string "Dare not underestimate me, though\l"
-	.string "I have been LEADER only a short time!\p"
+	.string "Uh…\p"
+	.string "Dare not underestimate me, though I\n"
+	.string "have been LEADER only a short time!\p"
 	.string "With skills inherited from my grand-\n"
-	.string "father, I shall, uh…demonstrate the\l"
+	.string "father, I shall, uh… demonstrate the\l"
 	.string "hot moves we have honed on this land!$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryDefeat: @ 81FF233
@@ -331,20 +331,21 @@ LavaridgeTown_Gym_1F_Text_FlanneryDefeat: @ 81FF233
 	.string "a GYM LEADER.\p"
 	.string "I tried too hard to be someone\n"
 	.string "I'm not.\p"
-	.string "I have to do things my natural way. If\n"
-	.string "I don't, my POKéMON will be confused.\p"
+	.string "I have to do things my natural way.\n"
+	.string "If I don't, my POKéMON will be\l"
+	.string "confused.\p"
 	.string "Thanks for teaching me that.\n"
 	.string "For that, you deserve this.$"
 
 LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge: @ 81FF32F
-	.string "{PLAYER} received the HEAT BADGE\n"
+	.string "{COLOR DARK_GREY}{PLAYER} received the HEAT BADGE\n"
 	.string "from FLANNERY.$"
 
 LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis: @ 81FF359
 	.string "If you have a HEAT BADGE, all POKéMON\n"
-	.string "up to Level 50, even those you get in\l"
-	.string "trades from other people, will obey\l"
-	.string "you completely.\p"
+	.string "up to Level 50, even those you get\l"
+	.string "in trades from other people, will\l"
+	.string "obey you completely.\p"
 	.string "And, it lets POKéMON use the HM move\n"
 	.string "STRENGTH outside of battle.\p"
 	.string "This is a token of my appreciation.\n"
@@ -355,11 +356,11 @@ LavaridgeTown_Gym_1F_Text_ExplainOverheat: @ 81FF45C
 	.string "That move inflicts serious damage on\n"
 	.string "the opponent.\p"
 	.string "But it also sharply cuts the SP. ATK\n"
-	.string "of the POKéMON using it. It might not\l"
-	.string "be suitable for longer battles.$"
+	.string "of the POKéMON using it. It might\l"
+	.string "not be suitable for longer battles.$"
 
 LavaridgeTown_Gym_1F_Text_RegisteredFlannery: @ 81FF517
-	.string "Registered GYM LEADER FLANNERY\n"
+	.string "{COLOR DARK_GREY}Registered GYM LEADER FLANNERY\n"
 	.string "in the POKéNAV.$"
 
 LavaridgeTown_Gym_1F_Text_FlanneryPostBattle: @ 81FF546

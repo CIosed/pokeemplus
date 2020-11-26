@@ -3753,16 +3753,16 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_FLANNERY_1] =
     {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
+        .partyFlags = F_TRAINER_PARTY_FULL_CONTROL,
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
         .trainerName = _("FLANNERY"),
-        .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE},
+        .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
         .partySize = ARRAY_COUNT(sParty_Flannery1),
-        .party = {.ItemCustomMoves = sParty_Flannery1},
+        .party = {.FullControl = sParty_Flannery1},
     },
 
     [TRAINER_NORMAN_1] =

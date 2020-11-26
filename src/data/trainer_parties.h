@@ -2555,7 +2555,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Dalton5[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Cole[] = {
     {
     .iv = 100,
-    .lvl = 23,
+    .lvl = 30,
     .species = SPECIES_NUMEL,
     }
 };
@@ -2576,15 +2576,15 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jeff[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Axle[] = {
     {
     .iv = 100,
-    .lvl = 23,
-    .species = SPECIES_NUMEL,
+    .lvl = 30,
+    .species = SPECIES_VULPIX,
     }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Jace[] = {
     {
     .iv = 100,
-    .lvl = 23,
+    .lvl = 30,
     .species = SPECIES_SLUGMA,
     }
 };
@@ -2592,7 +2592,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jace[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Keegan[] = {
     {
     .iv = 120,
-    .lvl = 23,
+    .lvl = 30,
     .species = SPECIES_SLUGMA,
     }
 };
@@ -3621,34 +3621,62 @@ static const struct TrainerMonFullControl sParty_Wattson1[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Flannery1[] = {
-    {
-    .iv = 200,
-    .lvl = 24,
-    .species = SPECIES_NUMEL,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_OVERHEAT, MOVE_TAKE_DOWN, MOVE_MAGNITUDE, MOVE_SUNNY_DAY}
+static const struct TrainerMonFullControl sParty_Flannery1[] = {
+	{
+    .friendship = 235,
+    .ivs = BEST_IV_SPREAD,
+    .lvl = 30,
+    .species = SPECIES_NINETALES,
+    .heldItem = ITEM_HEAT_ROCK,
+	.ability = 2,
+	.shiny = FALSE,
+    .moves = {MOVE_FLAMETHROWER, MOVE_CONFUSE_RAY, MOVE_HEX, MOVE_WILL_O_WISP},
+	.evs = {95, 0, 0, 0, 0, 95}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_CALM,
+	.gender = MON_FEMALE,
+	.ball = ITEM_POKE_BALL,
     },
     {
-    .iv = 200,
-    .lvl = 24,
+    .friendship = 235,
+    .ivs = BEST_IV_SPREAD,
+    .lvl = 30,
     .species = SPECIES_SLUGMA,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_OVERHEAT, MOVE_SMOG, MOVE_LIGHT_SCREEN, MOVE_SUNNY_DAY}
+	.ability = 1,
+	.shiny = FALSE,
+    .moves = {MOVE_INCINERATE, MOVE_ANCIENT_POWER, MOVE_WILL_O_WISP, MOVE_SUNNY_DAY},
+	.evs = {95, 0, 0, 0, 0, 95}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_CALM,
+	.gender = MON_FEMALE,
+	.ball = ITEM_POKE_BALL,
     },
     {
-    .iv = 250,
-    .lvl = 26,
+    .friendship = 235,
+    .ivs = BEST_IV_SPREAD,
+    .lvl = 31,
     .species = SPECIES_CAMERUPT,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_OVERHEAT, MOVE_TACKLE, MOVE_SUNNY_DAY, MOVE_ATTRACT}
+	.ability = 1,
+	.shiny = FALSE,
+    .moves = {MOVE_ROCK_SLIDE, MOVE_EARTH_POWER, MOVE_FLAMETHROWER, MOVE_AMNESIA},
+	.evs = {0, 0, 0, 95, 95, 0}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_MODEST,
+	.gender = MON_MALE,
+	.ball = ITEM_POKE_BALL,
     },
     {
-    .iv = 250,
-    .lvl = 29,
+    .friendship = 255,
+    .ivs = BEST_IV_SPREAD,
+    .lvl = 32,
     .species = SPECIES_TORKOAL,
-    .heldItem = ITEM_WHITE_HERB,
-    .moves = {MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_BODY_SLAM, MOVE_ATTRACT}
+    .heldItem = ITEM_NONE,
+	.ability = 0,
+	.shiny = FALSE,
+    .moves = {MOVE_BODY_SLAM, MOVE_FLAME_CHARGE, MOVE_OVERHEAT, MOVE_SMOKESCREEN},
+	.evs = {0, 95, 45, 0, 45, 95}, // HP, ATTACK, DEFENSE, SPEED, SP. ATK, SP. DEF
+	.nature = NATURE_NAIVE,
+	.gender = MON_FEMALE,
+	.ball = ITEM_LUXURY_BALL,
     }
 };
 
@@ -6712,7 +6740,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Ernest5[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Eli[] = {
     {
     .iv = 100,
-    .lvl = 23,
+    .lvl = 30,
     .species = SPECIES_NUMEL,
     }
 };
@@ -9126,7 +9154,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Johanna[] = {
 static const struct TrainerMonNoItemCustomMoves sParty_Gerald[] = {
     {
     .iv = 100,
-    .lvl = 23,
+    .lvl = 30,
     .species = SPECIES_KECLEON,
     .moves = {MOVE_FLAMETHROWER, MOVE_FURY_SWIPES, MOVE_FAINT_ATTACK, MOVE_BIND}
     }
@@ -9150,9 +9178,9 @@ static const struct TrainerMonNoItemCustomMoves sParty_Vivian[] = {
 static const struct TrainerMonNoItemCustomMoves sParty_Danielle[] = {
     {
     .iv = 100,
-    .lvl = 23,
+    .lvl = 30,
     .species = SPECIES_MEDITITE,
-    .moves = {MOVE_BIDE, MOVE_DETECT, MOVE_CONFUSION, MOVE_FIRE_PUNCH}
+    .moves = {MOVE_HI_JUMP_KICK, MOVE_DETECT, MOVE_FORCE_PALM, MOVE_FIRE_PUNCH}
     }
 };
 
