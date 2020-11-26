@@ -108,9 +108,9 @@ string generate_map_header_text(Json map_data, Json layouts_data, string version
         text << "\t.byte " << map_data["show_map_name"].bool_value() << "\n";
     else if (version == "emerald")
         text << "\tmap_header_flags "
-             << "allow_cycling=" << map_data["allow_cycling"].bool_value() << ", "
-             << "allow_escaping=" << map_data["allow_escaping"].bool_value() << ", "
-             << "allow_running=" << map_data["allow_running"].bool_value() << ", "
+             << "allow_bike=" << map_data["allow_bike"].bool_value() << ", "
+             << "allow_escape_rope=" << map_data["allow_escape_rope"].bool_value() << ", "
+             << "allow_run=" << map_data["allow_running"].bool_value() << ", "
              << "show_map_name=" << map_data["show_map_name"].bool_value() << "\n";
 
      text << "\t.byte " << map_data["battle_scene"].string_value() << "\n\n";
@@ -149,12 +149,12 @@ string generate_map_events_text(Json map_data) {
     string objects_label, warps_label, coords_label, bgs_label;
 
     if (map_data["object_events"].array_items().size() > 0) {
-        objects_label = map_data["name"].string_value() + "_ObjectEvents";
+        objects_label = map_data["name"].string_value() + "_EventObjects";
         text << objects_label << ":\n";
         for (unsigned int i = 0; i < map_data["object_events"].array_items().size(); i++) {
             auto obj_event = map_data["object_events"].array_items()[i];
             text << "\tobject_event " << i + 1 << ", "
-                 << obj_event["graphics_id"].string_value() << ", "
+                 << obj_event["graphics_id"].string_value() << ", 0, "
                  << obj_event["x"].int_value() << ", "
                  << obj_event["y"].int_value() << ", "
                  << obj_event["elevation"].int_value() << ", "

@@ -47,13 +47,6 @@ char *GetFileExtension(char *path)
 	while (extension > path && *extension != '.')
 		extension--;
 
-	return extension;
-}
-
-char *GetFileExtensionAfterDot(char *path)
-{
-	char *extension = GetFileExtension(path);
-
 	if (extension == path)
 		return NULL;
 

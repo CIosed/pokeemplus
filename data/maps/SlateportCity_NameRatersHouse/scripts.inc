@@ -74,8 +74,8 @@ SlateportCity_NameRatersHouse_EventScript_NewNameDifferent:: @ 8209B84
 SlateportCity_NameRatersHouse_Text_PleasedToRateMonNickname: @ 8209B8E
 	.string "Hi, hi! I'm the NAME RATER!\n"
 	.string "I'm the fortune-teller of names!\p"
-	.string "I shall be pleased to rate your\n"
-	.string "POKéMON's nickname.$"
+	.string "Which Pokémon's nickname should I\n"
+	.string "critique?$"
 
 SlateportCity_NameRatersHouse_Text_CritiqueWhichMonNickname: @ 8209BFF
 	.string "Which POKéMON's nickname should\n"

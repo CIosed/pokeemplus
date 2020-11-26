@@ -20,7 +20,6 @@
 
 #include <cstdio>
 #include <cstdarg>
-#include <stdexcept>
 #include <string>
 #include <memory>
 #include "preproc.h"
