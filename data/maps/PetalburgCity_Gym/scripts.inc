@@ -1574,8 +1574,8 @@ PetalburgCity_Gym_Text_AlexiaPostBadge: @ 8207069
 	.string "Hi! Have you tried using SURF?$"
 
 PetalburgCity_Gym_Text_JodyIntro: @ 8207088
-	.string "Our GYM LEADER told us to go all out\n"
-	.string "and beat you.\p"
+	.string "Our GYM LEADER told us to go all\n"
+	.string "out and beat you.\p"
 	.string "Even if you happen to be the\n"
 	.string "LEADER's kid!$"
 

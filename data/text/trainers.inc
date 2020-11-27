@@ -966,8 +966,9 @@ Route111_Text_BeauPostBattle: @ 8298A03
 	.string "and my POKéMON stronger.$"
 
 Route111_Text_BeckyIntro: @ 8298A65
-	.string "I heard there are fossils to be found\n"
-	.string "in the desert. Where could they be?$"
+	.string "I heard there are fossils to be\n"
+	.string "found in the desert.\l"
+	.string "Where could they be?$"
 
 Route111_Text_BeckyDefeat: @ 8298AAF
 	.string "I came up short…$"
@@ -977,13 +978,14 @@ Route111_Text_BeckyPostBattle: @ 8298AC0
 	.string "it must have been a sea before.$"
 
 Route111_Text_DustyIntro: @ 8298B08
-	.string "For thirty years I have searched for\n"
-	.string "ancient ruins!\l"
+	.string "For thirty years I have searched\n"
+	.string "for ancient ruins!\p"
 	.string "I am to be challenged?$"
 
 Route111_Text_DustyDefeat: @ 8298B53
 	.string "While I have searched for ruins,\n"
-	.string "I've not searched for strong POKéMON.$"
+	.string "I've not searched for strong\l"
+	.string "POKéMON.$"
 
 Route111_Text_DustyPostBattle: @ 8298B9A
 	.string "For thirty years I have searched for\n"
@@ -1055,8 +1057,8 @@ Route111_Text_BrookePostBattle: @ 82991C2
 	.string "much to be done.$"
 
 Route111_Text_CeliaIntro: @ 829934B
-	.string "I shouldn't have come to a place like\n"
-	.string "this for a picnic!$"
+	.string "I shouldn't have come to a place\n"
+	.string "like this for a picnic!$"
 
 Route111_Text_CeliaDefeat: @ 8299384
 	.string "Aww!\n"
@@ -1064,8 +1066,8 @@ Route111_Text_CeliaDefeat: @ 8299384
 
 Route111_Text_CeliaPostBattle: @ 82993A7
 	.string "In a sandstorm like this, I can't set\n"
-	.string "the places for a picnic even with my\l"
-	.string "GO-GOGGLES on…$"
+	.string "the places for a picnic even with\l"
+	.string "my GO-GOGGLES on…$"
 
 Route111_Text_BryanIntro: @ 8299401
 	.string "How tough are you?\n"

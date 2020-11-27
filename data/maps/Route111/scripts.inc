@@ -649,11 +649,12 @@ Route111_Text_TrainerTipsSpAtkSpDef: @ 81F1987
 	.string "“SPECIAL DEFENSE.”$"
 
 Route111_Text_ShouldBeMirageTowerAroundHere: @ 81F1A22
-	.string "There should be a tower made of sand\n"
-	.string "around here somewhere.\p"
+	.string "There should be a tower made of\n"
+	.string "sand around here somewhere.\p"
 	.string "But for some reason, it can be seen\n"
 	.string "sometimes, and sometimes not.\p"
-	.string "That's why I call it the MIRAGE TOWER.$"
+	.string "That's why I call it the\n"
+	.string "MIRAGE TOWER.$"
 
 Route111_Text_MirageTowerClearlyVisible: @ 81F1AC7
 	.string "I see it!\n"

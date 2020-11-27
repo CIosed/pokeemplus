@@ -140,12 +140,13 @@ LavaridgeTown_EventScript_RivalExitHerbShop:: @ 81EA65C
 	return
 
 LavaridgeTown_EventScript_RivalApproachPlayer1:: @ 81EA6A1
+    applymovement OBJ_EVENT_ID_PLAYER, LavaridgeTown_Movement_Delay4
 	applymovement LOCALID_RIVAL, LavaridgeTown_Movement_RivalApproachPlayer1
 	waitmovement 0
 	return
 
 LavaridgeTown_EventScript_RivalApproachPlayer2:: @ 81EA6AC
-    applymovement LOCALID_PLAYER, delay4
+    applymovement OBJ_EVENT_ID_PLAYER, LavaridgeTown_Movement_Delay4
 	applymovement LOCALID_RIVAL, LavaridgeTown_Movement_RivalApproachPlayer2
 	waitmovement 0
 	return
@@ -204,7 +205,7 @@ LavaridgeTown_Movement_RivalExit1: @ 81EA6E3
 	walk_fast_right
 	step_end
 
-delay4:
+LavaridgeTown_Movement_Delay4::
     delay_16
     delay_16
     delay_16
@@ -319,17 +320,20 @@ LavaridgeTown_EventScript_HerbShopSign:: @ 81EA7B7
 	end
 
 LavaridgeTown_Text_MayNiceBadgesTakeThis: @ 81EA7C0
-	.string "MAY: {PLAYER}{KUN}! Long time no see!\p"
-	.string "Oh? While I visited the hot springs,\n"
-	.string "you got the LAVARIDGE GYM BADGE.\p"
-	.string "You must have collected\n"
-	.string "good POKéMON…\l"
+	.string "{COLOR RED}MAY: {PLAYER}{KUN}!\p"
+	.string "What a relief to see you in one\n"
+	.string "piece!\p"
+	.string "I was on my way towards MT. CHIMNEY\n"
+	.string "but I got lost in the desert…\p"
+	.string "Hey, isn't that the LAVARIDGE\n"
+	.string "GYM BADGE?\p"
+	.string "You must have collected good Pokémon…\p"
 	.string "No, I believe you raised some.\p"
-	.string "I guess it would be okay for you to\n"
-	.string "have this.$"
+	.string "I guess it would be okay for you\n"
+	.string "to have this.$"
 
 LavaridgeTown_Text_MayExplainGoGogglesChallengeDad: @ 81EA897
-	.string "MAY: With those GO-GOGGLES, you'll\n"
+	.string "{COLOR RED}MAY: With those GO-GOGGLES, you'll\n"
 	.string "have no trouble getting through the\l"
 	.string "desert near ROUTE 111.\p"
 	.string "But, wow, {PLAYER}{KUN}…\n"
@@ -341,15 +345,17 @@ LavaridgeTown_Text_MayExplainGoGogglesChallengeDad: @ 81EA897
 	.string "See you again!$"
 
 LavaridgeTown_Text_BrendanNiceBadgesTakeThis: @ 81EA9A2
-	.string "BRENDAN: {PLAYER}, hey, it's been a while.\n"
-	.string "How's it going?\p"
-	.string "Hmm…\n"
-	.string "That's a decent collection of BADGES.\p"
+	.string "{COLOR BLUE}BRENDAN: {PLAYER}, so you're alright!\p"
+	.string "Sorry I couldn't make it in time to\n"
+	.string "MT. CHIMNEY…\l"
+	.string "But you defeated them right?\p"
+	.string "I can see that BADGE of yours, nice\n"
+	.string "work!\p"
 	.string "All right, then.\n"
 	.string "You may as well have this.$"
 
 LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad: @ 81EAA2E
-	.string "BRENDAN: Keep those with you if you're\n"
+	.string "{COLOR BLUE}BRENDAN: Keep those with you if you're\n"
 	.string "planning on going into that desert near\l"
 	.string "ROUTE 111.\p"
 	.string "There should be some POKéMON that\n"

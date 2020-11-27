@@ -88,7 +88,7 @@ PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing: @ 820444D
 	.string "I wonder how our WALLY is doing?$"
 
 PetalburgCity_WallysHouse_Text_PleaseExcuseUs: @ 820446E
-	.string "{PLAYER}{KUN}! Please excuse us for\n"
+	.string "{COLOR BLUE}{PLAYER}{KUN}! Please excuse us for\n"
 	.string "dragging you here this way.\p"
 	.string "But our WALLY's become very healthy\n"
 	.string "since he went to VERDANTURF TOWN.\p"
