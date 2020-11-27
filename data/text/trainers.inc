@@ -1558,20 +1558,21 @@ Route115_Text_TimothyDefeat: @ 829B230
 	.string "I'd imagined!$"
 
 Route115_Text_TimothyPostBattle: @ 829B258
-	.string "There is no such thing as a born genius.\n"
-	.string "It all depends on effort!\l"
+	.string "There is no such thing as a born\n"
+	.string "genius.\p"
+	.string "It all depends on effort!\n"
 	.string "That is what I believe…$"
 
 Route115_Text_KoichiIntro: @ 829B3CC
 	.string "You!\p"
-	.string "My MACHOP!\p"
+	.string "My MACHOKE!\p"
 	.string "Demand a battle!$"
 
 Route115_Text_KoichiDefeat: @ 829B3ED
 	.string "Ouch, ouch, ouch!$"
 
 Route115_Text_KoichiPostBattle: @ 829B3FF
-	.string "My MACHOP crew!\p"
+	.string "My POKéMON crew!\p"
 	.string "So long as they seek power, I will\n"
 	.string "grow strong with them!$"
 
@@ -1621,8 +1622,8 @@ Route115_Text_KyraDefeat: @ 829B85D
 	.string "Gasp, gasp…$"
 
 Route115_Text_KyraPostBattle: @ 829B869
-	.string "I made the mistake of trying to battle\n"
-	.string "while running!\p"
+	.string "I made the mistake of trying to\n"
+	.string "battle while running!\p"
 	.string "I should take a run to calm down…$"
 
 Route115_Text_JaidenIntro: @ 829B8C1

@@ -150,14 +150,14 @@
 
 // gTileset_Facility
 #define METATILE_Facility_DataPad                       0x3E4
-#define METATILE_Facility_NewMauvilleDoor_Closed_Tile0  0x314
-#define METATILE_Facility_NewMauvilleDoor_Closed_Tile1  0x315
+#define METATILE_Facility_NewMauvilleDoor_Closed_Tile0  0x324
+#define METATILE_Facility_NewMauvilleDoor_Closed_Tile1  0x323
 #define METATILE_Facility_NewMauvilleDoor_Closed_Tile2  0x316
 #define METATILE_Facility_NewMauvilleDoor_Closed_Tile3  0x31C
 #define METATILE_Facility_NewMauvilleDoor_Closed_Tile4  0x31D
 #define METATILE_Facility_NewMauvilleDoor_Closed_Tile5  0x31E
-#define METATILE_Facility_NewMauvilleDoor_Open_Tile0    0x2C3
-#define METATILE_Facility_NewMauvilleDoor_Open_Tile1    0x2C4
+#define METATILE_Facility_NewMauvilleDoor_Open_Tile0    0x319
+#define METATILE_Facility_NewMauvilleDoor_Open_Tile1    0x311
 #define METATILE_Facility_NewMauvilleDoor_Open_Tile2    0x2C5
 #define METATILE_Facility_NewMauvilleDoor_Open_Tile3    0x2CB
 #define METATILE_Facility_NewMauvilleDoor_Open_Tile4    0x2CC

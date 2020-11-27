@@ -3350,6 +3350,9 @@ extern const u32 gBattleTerrainPalette_JaggedPass[];
 extern const u32 gBattleTerrainTiles_Field[];
 extern const u32 gBattleTerrainTilemap_Field[];
 extern const u32 gBattleTerrainPalette_Field[];
+extern const u32 gBattleTerrainTiles_Lab[];
+extern const u32 gBattleTerrainTilemap_Lab[];
+extern const u32 gBattleTerrainPalette_Lab[];
 
 // pokedex
 extern const u32 gPokedexInterface_Gfx[];

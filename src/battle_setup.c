@@ -603,6 +603,8 @@ u8 BattleSetup_GetTerrainId(void)
         return BATTLE_TERRAIN_JAGGED_PASS;
 	if (MetatileBehavior_IsJaggedPassTallGrass(tileBehavior))
         return BATTLE_TERRAIN_JAGGED_PASS;
+	if (MetatileBehavior_IsLab(tileBehavior))
+        return BATTLE_TERRAIN_LAB;
 
     switch (gMapHeader.mapType)
     {
