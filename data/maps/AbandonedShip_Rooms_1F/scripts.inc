@@ -23,7 +23,7 @@ AbandonedShip_Rooms_1F_Text_TakingALookAround: @ 8237B15
 	.string "There appear to be other cabins…$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaIntro: @ 8237B76
-	.string "What on earth would compel you to\n"
+	.string "{COLOR RED}What on earth would compel you to\n"
 	.string "come here? You must be curious!$"
 
 AbandonedShip_Rooms_1F_Text_ThaliaDefeat: @ 8237BB8
@@ -34,23 +34,8 @@ AbandonedShip_Rooms_1F_Text_ThaliaPostBattle: @ 8237BDB
 	.string "He says he's just sightseeing,\n"
 	.string "but I don't know about that.$"
 
-AbandonedShip_Rooms_1F_Text_ThaliaRegister: @ 8237C2A
-	.string "You're such a tough TRAINER!\n"
-	.string "Let me register you as a memento!$"
-
-AbandonedShip_Rooms_1F_Text_ThaliaRematchIntro: @ 8237C69
-	.string "What on earth would compel you to\n"
-	.string "come back? You must really be curious!$"
-
-AbandonedShip_Rooms_1F_Text_ThaliaRematchDefeat: @ 8237CB2
-	.string "Aren't you too strong?$"
-
-AbandonedShip_Rooms_1F_Text_ThaliaPostRematch: @ 8237CC9
-	.string "I'm sure that man's up to something!\n"
-	.string "He just acts so suspiciously!$"
-
 AbandonedShip_Rooms_1F_Text_DemetriusIntro: @ 8237D0C
-	.string "Waaah!\n"
+	.string "{COLOR BLUE}Waaah!\n"
 	.string "I've been found! …Huh?$"
 
 AbandonedShip_Rooms_1F_Text_DemetriusDefeat: @ 8237D2A

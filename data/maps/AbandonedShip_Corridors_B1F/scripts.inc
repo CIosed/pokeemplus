@@ -13,11 +13,11 @@ AbandonedShip_Corridors_B1F_OnLoad: @ 8237D98
 	end
 
 AbandonedShip_Corridors_B1F_EventScript_LockStorageRoom:: @ 8237DAB
-	setmetatile 11, 4, METATILE_InsideShip_IntactDoor_Bottom_Locked, 1
+	setmetatile 13, 4, METATILE_InsideShip_IntactDoor_Bottom_Locked, 1
 	return
 
 AbandonedShip_Corridors_B1F_EventScript_UnlockStorageRoom:: @ 8237DB5
-	setmetatile 11, 4, METATILE_InsideShip_IntactDoor_Bottom_Unlocked, 1
+	setmetatile 13, 4, METATILE_InsideShip_IntactDoor_Bottom_Unlocked, 1
 	return
 
 AbandonedShip_Corridors_B1F_EventScript_TuberM:: @ 8237DBF
@@ -65,8 +65,9 @@ AbandonedShip_Corridors_B1F_Text_DuncanDefeat: @ 8237E80
 AbandonedShip_Corridors_B1F_Text_DuncanPostBattle: @ 8237E92
 	.string "The ship's bottom has sunk into the\n"
 	.string "depths.\p"
-	.string "If a POKéMON knew how to go underwater,\n"
-	.string "we might make some progress…$"
+	.string "If a POKéMON knew how to go \n"
+	.string "underwater, we might make some\l"
+    .string "progress…$"
 
 AbandonedShip_Corridors_B1F_Text_YayItsAShip: @ 8237F03
 	.string "Yay!\n"

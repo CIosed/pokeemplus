@@ -56,50 +56,12 @@ AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons: @ 823836F
 	.string "KIRA: Oh, you don't have two POKéMON?\n"
 	.string "We'll have to battle some other time!$"
 
-AbandonedShip_Rooms2_1F_Text_KiraRegister: @ 82383BB
-	.string "KIRA: Oh, you make me so angry!\n"
-	.string "I'm going to register you for that!$"
-
-AbandonedShip_Rooms2_1F_Text_DanRematchIntro: @ 82383FF
-	.string "DAN: We've been searching for\n"
-	.string "treasures all this time.\p"
-	.string "Our POKéMON have grown stronger, too.\n"
-	.string "Let us show you, okay?$"
-
-AbandonedShip_Rooms2_1F_Text_DanRematchDefeat: @ 8238473
-	.string "DAN: You're strong, as usual!$"
-
-AbandonedShip_Rooms2_1F_Text_DanPostRematch: @ 8238491
-	.string "DAN: We can't find any treasures,\n"
-	.string "we lose at POKéMON…\p"
-	.string "I want to go home… But if I say that,\n"
-	.string "she gets all angry with me…$"
-
 AbandonedShip_Rooms2_1F_Text_DanRematchNotEnoughMons: @ 8238509
 	.string "DAN: You don't even have two POKéMON.\n"
 	.string "You can't expect to beat us like that.$"
 
-AbandonedShip_Rooms2_1F_Text_KiraRematchIntro: @ 8238556
-	.string "KIRA: Oh? We meet again!\p"
-	.string "Just like us, you still haven't given up\n"
-	.string "searching for treasures, have you?\p"
-	.string "Want to make it so the loser has\n"
-	.string "to give up searching?$"
-
-AbandonedShip_Rooms2_1F_Text_KiraRematchDefeat: @ 82385F2
-	.string "KIRA: Oh, we lost again…$"
-
-AbandonedShip_Rooms2_1F_Text_KiraPostRematch: @ 823860B
-	.string "KIRA: We're not leaving until we raise\n"
-	.string "our POKéMON some more and we find\l"
-	.string "the treasures here!$"
-
-AbandonedShip_Rooms2_1F_Text_KiraRematchNotEnoughMons: @ 8238668
-	.string "KIRA: Oh, you don't have two POKéMON?\n"
-	.string "We'll have to battle some other time!$"
-
 AbandonedShip_Rooms2_1F_Text_JaniIntro: @ 82386B4
-	.string "I'm not good at swimming,\n"
+	.string "{COLOR RED}I'm not good at swimming,\n"
 	.string "but I am good at battles!$"
 
 AbandonedShip_Rooms2_1F_Text_JaniDefeat: @ 82386E8
@@ -111,7 +73,7 @@ AbandonedShip_Rooms2_1F_Text_JaniPostBattle: @ 8238708
 	.string "is kind of gross.$"
 
 AbandonedShip_Rooms2_1F_Text_GarrisonIntro: @ 823873F
-	.string "Strength and compassion…\n"
+	.string "{COLOR BLUE}Strength and compassion…\n"
 	.string "Those are a TRAINER's treasures!$"
 
 AbandonedShip_Rooms2_1F_Text_GarrisonDefeat: @ 8238779

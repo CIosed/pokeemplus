@@ -492,9 +492,11 @@ Route109_Text_ChillAtMyPapasSpot: @ 81EEEB4
 	.string "chill at my papa's spot!$"
 
 Route109_Text_LittleKidsDartAround: @ 81EEF08
-	.string "Little kids can dart around so quickly…\p"
-	.string "You don't dare take your eyes off them\n"
-	.string "for an instant. It's very taxing.\p"
+	.string "Little kids can dart around so\n"
+	.string "quickly…\p"
+	.string "You don't dare take your eyes off\n"
+	.string "them for an instant.\l"
+	.string "It's very taxing.\p"
 	.string "Mine are with my POKéMON, so they\n"
 	.string "should be okay, but…$"
 

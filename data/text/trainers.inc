@@ -118,7 +118,7 @@ Route103_Text_MiguelPostBattle: @ 8294F42
 	.string "even when it's fainted!$"
 
 Route103_Text_PeteIntro: @ 8295063
-	.string "This sort of distance…\n"
+	.string "{COLOR BLUE}This sort of distance…\n"
 	.string "You should just swim it!$"
 
 Route103_Text_PeteDefeated: @ 8295093
@@ -131,14 +131,15 @@ Route103_Text_PetePostBattle: @ 82950AA
 	.string "I'd want to SURF on it, too!$"
 
 Route103_Text_IsabelleIntro: @ 8295116
-	.string "Watch where you're going!\n"
+	.string "{COLOR RED}Watch where you're going!\n"
 	.string "We're going to crash!$"
 
 Route103_Text_IsabelleDefeated: @ 8295146
 	.string "Groan…$"
 
 Route103_Text_IsabellePostBattle: @ 829514D
-	.string "I'm a poor swimmer so I was practicing…\n"
+	.string "I'm a poor swimmer so I was\n"
+	.string "practicing…\p"
 	.string "Sorry for almost crashing into you.$"
 
 Route103_Text_RhettIntro: @ 8295199
@@ -313,8 +314,8 @@ Route105_Text_DominikDefeated: @ 8295EEA
 
 Route105_Text_DominikPostBattle: @ 8295F08
 	.string "Why is the sea blue?\p"
-	.string "I learned about that at the MUSEUM in\n"
-	.string "SLATEPORT, but I forgot.$"
+	.string "I learned about that at the MUSEUM\n"
+	.string "in SLATEPORT, but I forgot.$"
 
 Route105_Text_BeverlyIntro: @ 8295F5C
 	.string "My body feels lighter in the water.\n"
@@ -357,14 +358,15 @@ Route105_Text_AndresPostBattle: @ 82960FA
 Route105_Text_JosueIntro: @ 829626F
 	.string "I'm exhausted from swimming.\n"
 	.string "I'm just not used to it.\p"
-	.string "I need a battle for a change of pace!$"
+	.string "I need a battle for a\n"
+	.string "change of pace!$"
 
 Route105_Text_JosueDefeated: @ 82962CB
 	.string "I lost because I battled at sea.$"
 
 Route105_Text_JosuePostBattle: @ 82962EC
-	.string "Yeah, for me, the sky is a much better\n"
-	.string "match than the sea.$"
+	.string "Yeah, for me, the sky is a much\n"
+	.string "better match than the sea.$"
 
 Route106_Text_ElliotIntro: @ 8296327
 	.string "Which do you prefer, fishing in the\n"
@@ -417,8 +419,8 @@ Route106_Text_KylaPostBattle: @ 829669E
 
 Route107_Text_DarrinIntro: @ 82966E5
 	.string "Yawn…\p"
-	.string "I must have drifted off to sleep while\n"
-	.string "I was drifting in the waves.$"
+	.string "I must have drifted off to sleep\n"
+	.string "while I was drifting in the waves.$"
 
 Route107_Text_DarrinDefeated: @ 829672F
 	.string "Ahaha, I lost…\n"
@@ -455,7 +457,7 @@ Route107_Text_DenisePostBattle: @ 82969AB
 	.string "trendy at DEWFORD HALL.$"
 
 Route107_Text_BethIntro: @ 82969E4
-	.string "Did you want to battle me?\n"
+	.string "{COLOR RED}Did you want to battle me?\n"
 	.string "Sure, I'll go with you!$"
 
 Route107_Text_BethDefeated: @ 8296A17
@@ -501,7 +503,7 @@ Route107_Text_RayNotEnoughPokemon: @ 8296C34
 	.string "go bring some more POKéMON!$"
 
 Route107_Text_CamronIntro: @ 8296C6F
-	.string "I'm in the middle of a triathlon,\n"
+	.string "{COLOR BLUE}I'm in the middle of a triathlon,\n"
 	.string "but I'm nowhere near tired!$"
 
 Route107_Text_CamronDefeated: @ 8296CAD
@@ -581,7 +583,8 @@ Route108_Text_CarolinaDefeated: @ 82970D7
 
 Route108_Text_CarolinaPostBattle: @ 82970F0
 	.string "Since I'm at sea like this, I wouldn't\n"
-	.string "mind putting on a pink, frilly swimsuit…$"
+	.string "mind putting on a pink, frilly\l"
+	.string "swimsuit…$"
 
 Route109_Text_DavidIntro: @ 8297140
 	.string "Hiyah! Look at my chiseled abs!\n"
@@ -705,8 +708,9 @@ Route109_Text_PaulNotEnoughPokemon: @ 829781D
 	.string "together.$"
 
 Route109_Text_MelIntro: @ 8297872
-	.string "MEL: We're, like, totally in love.\n"
-	.string "Our romance is heating up all of HOENN!$"
+	.string "MEL: We're, like, totally in love.\p"
+	.string "Our romance is heating up all\n"
+	.string "of HOENN!$"
 
 Route109_Text_MelDefeated: @ 82978BD
 	.string "MEL: We lost, and it's my fault!\n"
@@ -758,8 +762,9 @@ Route109_Text_ElijahPostBattle: @ 8297AE5
 	.string "I guess I'll head for SLATEPORT.$"
 
 Route110_Text_JacobIntro: @ 8297B3F
-	.string "Whoa! Watch it!\n"
-	.string "I guess you're not used to BIKE racing.$"
+	.string "Whoa! Watch it!\p"
+	.string "I guess you're not used to\n"
+	.string "BIKE racing.$"
 
 Route110_Text_JacobDefeated: @ 8297B77
 	.string "Whoa!\n"
@@ -778,7 +783,8 @@ Route110_Text_AnthonyDefeated: @ 8297C0F
 	.string "Crash and burn!$"
 
 Route110_Text_AnthonyPostBattle: @ 8297C1F
-	.string "Speed alone won't let me win at POKéMON.\n"
+	.string "Speed alone won't let me win at\n"
+	.string "POKéMON.\p"
 	.string "I need to reconsider this…$"
 
 Route110_Text_BenjaminIntro: @ 8297C63
@@ -794,8 +800,9 @@ Route110_Text_BenjaminPostBattle: @ 8297CB4
 
 Route110_Text_AbigailIntro: @ 8297DFA
 	.string "The triathlon is hard in the extreme.\p"
-	.string "You have to complete the three events\n"
-	.string "of swimming, cycling, and running.$"
+	.string "You have to complete the three\n"
+	.string "events of swimming, cycling,\l"
+	.string "and running.$"
 
 Route110_Text_AbigailDefeated: @ 8297E69
 	.string "POKéMON battles are hard, too!$"
@@ -836,8 +843,8 @@ Route110_Text_JaclynDefeated: @ 82980E5
 	.string "I wondrously lost!$"
 
 Route110_Text_JaclynPostBattle: @ 82980F8
-	.string "You managed to win only because it was\n"
-	.string "a wonder! Yes, a wonder!\l"
+	.string "You managed to win only because it\n"
+	.string "was a wonder! Yes, a wonder!\l"
 	.string "Don't think you can win all the time!$"
 
 Route110_Text_EdwinIntro: @ 829815E

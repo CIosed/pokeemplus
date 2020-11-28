@@ -123,8 +123,8 @@ Route110_TrickHousePuzzle2_Text_TedPostBattle: @ 826BD70
 	.string "for me?$"
 
 Route110_TrickHousePuzzle2_Text_PaulIntro: @ 826BD9E
-	.string "Oh! You're on your second TRICK HOUSE\n"
-	.string "challenge!$"
+	.string "Oh! You're on your second TRICK\n"
+	.string "HOUSE challenge!$"
 
 Route110_TrickHousePuzzle2_Text_PaulDefeat: @ 826BDCF
 	.string "You're good at battling too?$"
