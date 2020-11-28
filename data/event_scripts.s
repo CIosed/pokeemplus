@@ -1256,6 +1256,51 @@ Common_EventScript_DirectCornerAttendant:: @ 8273767
 	call CableClub_EventScript_DirectCornerAttendant
 	end
 
+SCRIPT_SelfTrade_V2::
+	lock
+	faceplayer
+	msgbox SCRIPT_SelfTrade_Text_IllTradeIfYouWant, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq SCRIPT_SelfTrade_DeclineTrade
+	special ChoosePartyMon
+	waitstate
+	compare VAR_0x8004, 255
+	goto_if_eq SCRIPT_SelfTrade_DeclineTrade
+	copyvar VAR_0x8005, VAR_0x8004
+	setvar VAR_0x8004, 7
+	special CreateInGameTradePokemon
+	special DoInGameTradeScene
+	waitstate
+	msgbox SCRIPT_SelfTrade_Text_TradeBack, MSGBOX_DEFAULT
+	setvar VAR_0x8004, 8
+	special CreateInGameTradePokemon
+	special DoInGameTradeScene
+	waitstate
+	msgbox SCRIPT_SelfTrade_Text_ComeBack, MSGBOX_DEFAULT
+	release
+	end
+
+SCRIPT_SelfTrade_DeclineTrade::
+	msgbox SCRIPT_SelfTrade_Text_YouDontWantToThatsOkay, MSGBOX_DEFAULT
+	release
+	end
+
+SCRIPT_SelfTrade_Text_IllTradeIfYouWant:
+	.string "Hi! Are you looking to trade\n"
+	.string "POKéMON that evolve?\p"
+	.string "I can help you out!$"
+
+SCRIPT_SelfTrade_Text_ComeBack:
+	.string "Take good care of it!$"
+
+SCRIPT_SelfTrade_Text_TradeBack:
+    .string "And now we simply trade back!$"
+
+SCRIPT_SelfTrade_Text_YouDontWantToThatsOkay:
+	.string "You dont want to?\p"
+    .string "That's alright, come back\n"
+	.string "anytime.$"
+
 Common_EventScript_RemoveStaticPokemon:: @ 827376D
 	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject VAR_LAST_TALKED
