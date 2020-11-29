@@ -2908,8 +2908,8 @@ gTVInSearchOfTrainersText06:: @ 0828BEEE
 gTVInSearchOfTrainersText07:: @ 0828BF50
 	.string "Honestly speaking, I thought that\n"
 	.string "I might even be pretty good.\p"
-	.string "While we did end up losing, we did have\n"
-	.string "a hotly contested battle.\p"
+	.string "While we did end up losing, we did\n"
+	.string "have a hotly contested battle.\p"
 	.string "But if you're struggling against me,\n"
 	.string "you have a ways to go, {PLAYER}!$"
 

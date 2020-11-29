@@ -85,8 +85,8 @@ Route119_WeatherInstitute_1F_Text_Grunt1Defeat: @ 826FBBB
 
 Route119_WeatherInstitute_1F_Text_Grunt1PostBattle: @ 826FBD7
 	.string "Our BOSS knows everything.\p"
-	.string "But I'm just a GRUNT. What would I know\n"
-	.string "about what he's thinking?$"
+	.string "But I'm just a GRUNT. What would I\n"
+	.string "know about what he's thinking?$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4Intro: @ 826FC34
 	.string "Huh?\n"
@@ -97,8 +97,9 @@ Route119_WeatherInstitute_1F_Text_Grunt4Defeat: @ 826FC52
 	.string "I lost?!$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4PostBattle: @ 826FC60
-	.string "Oh, no…\n"
-	.string "I'll catch an earful for losing to a kid…\p"
+	.string "Oh, no…\p"
+	.string "I'll catch an earful for losing to\n"
+	.string "a kid…\p"
 	.string "I should just take a nap in the bed…$"
 
 Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs: @ 826FCB7
@@ -113,8 +114,8 @@ Route119_WeatherInstitute_1F_Text_WowYoureStrong: @ 826FCE5
 Route119_WeatherInstitute_1F_Text_ProfStudyingRain: @ 826FD2E
 	.string "The PROFESSOR loves rain.\n"
 	.string "That's a fact.\p"
-	.string "But if it keeps raining, people will be in\n"
-	.string "trouble. That's another fact.\p"
+	.string "But if it keeps raining, people will\n"
+	.string "be in trouble. That's another fact.\p"
 	.string "And thus, the PROFESSOR is studying\n"
 	.string "if the rain can be put to good use.$"
 

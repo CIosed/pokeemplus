@@ -2007,8 +2007,8 @@ Route118_Text_ChesterDefeat: @ 829D4C4
 	.string "They did take flight…$"
 
 Route118_Text_ChesterPostBattle: @ 829D4DA
-	.string "If they'd get stronger, they'd be able\n"
-	.string "to fly more freely…$"
+	.string "If they'd get stronger, they'd be\n"
+	.string "able to fly more freely…$"
 
 Route118_Text_BarnyIntro: @ 829D515
 	.string "I'm a FISHERMAN, but also a TRAINER.\n"
@@ -2075,8 +2075,9 @@ Route119_Text_BrentPostBattle: @ 829D902
 	.string "You'll never understand…$"
 
 Route119_Text_DonaldIntro: @ 829D941
-	.string "So, we finally meet!\n"
-	.string "My BUG POKéMON will keep you company!$"
+	.string "So, we finally meet!\p"
+	.string "My BUG POKéMON will keep you\n"
+	.string "company!$"
 
 Route119_Text_DonaldDefeat: @ 829D97C
 	.string "I wish we'd never met…$"
@@ -2086,7 +2087,8 @@ Route119_Text_DonaldPostBattle: @ 829D993
 	.string "Can you hurry up and move?$"
 
 Route119_Text_TaylorIntro: @ 829D9CD
-	.string "If you step forward, we step forward.\p"
+	.string "If you step forward, we step\n"
+	.string "forward.\p"
 	.string "If you turn right, we turn, too…$"
 
 Route119_Text_TaylorDefeat: @ 829DA14
@@ -2121,8 +2123,8 @@ Route119_Text_GregPostBattle: @ 829DB7C
 	.string "keep on mimicking your every move.$"
 
 Route119_Text_KentIntro: @ 829DBC2
-	.string "The MIMIC CIRCLE was formed by people\n"
-	.string "who like to MIMIC.\p"
+	.string "The MIMIC CIRCLE was formed by\n"
+	.string "people who like to MIMIC.\p"
 	.string "A battle starts the instant we meet!$"
 
 Route119_Text_KentDefeat: @ 829DC20
@@ -2173,15 +2175,15 @@ Route119_Text_HughPostBattle: @ 829E071
 	.string "flying come true!$"
 
 Route119_Text_PhilIntro: @ 829E0A5
-	.string "I'll show you the true potential of me\n"
-	.string "and my BIRD POKéMON!$"
+	.string "{COLOR BLUE}I'll show you the true potential of\n"
+	.string "me and my BIRD POKéMON!$"
 
 Route119_Text_PhilDefeat: @ 829E0E1
 	.string "We lacked potential…$"
 
 Route119_Text_PhilPostBattle: @ 829E0F6
-	.string "Ever since I was a little kid, I always\n"
-	.string "admired BIRD POKéMON…$"
+	.string "Ever since I was a little kid, I\n"
+	.string "always admired BIRD POKéMON…$"
 
 Route119_Text_YasuIntro: @ 829E134
 	.string "To lurk in shadows, and live in\n"
@@ -2222,8 +2224,8 @@ Route119_Text_HideoPostBattle: @ 829E2A3
 Route119_Text_ChrisIntro: @ 829E30D
 	.string "You spoke to me…\n"
 	.string "So you want to challenge me!\p"
-	.string "Sure! I'll try out the POKéMON I caught\n"
-	.string "while SURFING!$"
+	.string "Sure! I'll try out the POKéMON I\n"
+	.string "caught while SURFING!$"
 
 Route119_Text_ChrisDefeat: @ 829E372
 	.string "I don't have a clue about what it\n"
@@ -2232,7 +2234,8 @@ Route119_Text_ChrisDefeat: @ 829E372
 Route119_Text_ChrisPostBattle: @ 829E3A2
 	.string "Go for a SURF on my POKéMON…\p"
 	.string "Then fish off its back…\p"
-	.string "It's an indescribably luxuriant moment!$"
+	.string "It's an indescribably luxuriant\n"
+	.string "moment!$"
 
 Route119_Text_FabianIntro: @ 829E3FF
 	.string "Hit me with a power chord!\n"
@@ -2263,7 +2266,7 @@ Route119_Text_DaytonPostBattle: @ 829E532
 	.string "TRAINERS like you!$"
 
 Route119_Text_RachelIntro: @ 829E56F
-	.string "Wherever and whenever I may be,\n"
+	.string "{COLOR RED}Wherever and whenever I may be,\n"
 	.string "I always have my parasol in hand.$"
 
 Route119_Text_RachelDefeat: @ 829E5B1
@@ -2276,8 +2279,8 @@ Route119_Text_RachelPostBattle: @ 829E5CB
 	.string "I ever carry around.$"
 
 Route120_Text_ColinIntro: @ 829E62D
-	.string "Do you have any moves that can strike\n"
-	.string "a flying POKéMON?$"
+	.string "Do you have any moves that can\n"
+	.string "strike a flying POKéMON?$"
 
 Route120_Text_ColinDefeat: @ 829E665
 	.string "You soared above me!$"
@@ -2308,8 +2311,8 @@ Route120_Text_LorenzoDefeat: @ 829E884
 	.string "no danger of needing rescue!$"
 
 Route120_Text_LorenzoPostBattle: @ 829E8C5
-	.string "To travel wherever your heart desires\n"
-	.string "with POKéMON…\l"
+	.string "To travel wherever your heart\n"
+	.string "desires with POKéMON…\l"
 	.string "That's the joy of being a TRAINER.$"
 
 Route120_Text_JennaIntro: @ 829E91C
@@ -2365,7 +2368,8 @@ Route120_Text_ChipPostBattle: @ 829EC41
 
 Route120_Text_ClarissaIntro: @ 829ECA6
 	.string "Why am I carrying this parasol?\p"
-	.string "I'll tell you if you can win against me.$"
+	.string "I'll tell you if you can win\n"
+	.string "against me.$"
 
 Route120_Text_ClarissaDefeat: @ 829ECEF
 	.string "A parasol can't ward off POKéMON\n"
@@ -2377,7 +2381,7 @@ Route120_Text_ClarissaPostBattle: @ 829ED19
 	.string "So I shield them with my parasol.$"
 
 Route120_Text_AngelicaIntro: @ 829ED71
-	.string "Me, POKéMON, and my parasol…\p"
+	.string "{COLOR RED}Me, POKéMON, and my parasol…\p"
 	.string "If any one of them is missing,\n"
 	.string "the picture of beauty will be ruined.$"
 
@@ -2390,8 +2394,9 @@ Route120_Text_AngelicaPostBattle: @ 829EDF7
 	.string "get in your way.$"
 
 Route120_Text_KeigoIntro: @ 829EE50
-	.string "I will adopt the movements of POKéMON\n"
-	.string "and create new ninja techniques.$"
+	.string "I will adopt the movements of\n"
+	.string "POKéMON and create new ninja\l"
+	.string "techniques.$"
 
 Route120_Text_KeigoDefeat: @ 829EE97
 	.string "The creation of new ninja techniques\n"
@@ -2402,7 +2407,7 @@ Route120_Text_KeigoPostBattle: @ 829EED4
 	.string "a ninja sensei.$"
 
 Route120_Text_RileyIntro: @ 829EF08
-	.string "We ninja conceal ourselves under our\n"
+	.string "{COLOR BLUE}We ninja conceal ourselves under our\n"
 	.string "camouflage cloaks.\l"
 	.string "I bet you didn't know where I was!$"
 
@@ -2415,7 +2420,7 @@ Route120_Text_RileyPostBattle: @ 829EF89
 	.string "handmade.$"
 
 Route120_Text_CallieIntro: @ 829EFB1
-	.string "If you don't pay attention,\n"
+	.string "{COLOR RED}If you don't pay attention,\n"
 	.string "you could get hurt!$"
 
 Route120_Text_CallieDefeat: @ 829EFE1
@@ -2423,11 +2428,11 @@ Route120_Text_CallieDefeat: @ 829EFE1
 	.string "I was the one to get hurt.$"
 
 Route120_Text_CalliePostBattle: @ 829F002
-	.string "I wonder… Should I evolve my POKéMON?\n"
-	.string "They're cute the way they are, though.$"
+	.string "I should've paid more\n"
+	.string "attention.$"
 
 Route120_Text_LeonelIntro: @ 829F04F
-	.string "Your party POKéMON…\n"
+	.string "{COLOR BLUE}Your party POKéMON…\n"
 	.string "Do you have different types?$"
 
 Route120_Text_LeonelDefeat: @ 829F080
@@ -2463,7 +2468,7 @@ Route121_Text_WalterPostBattle: @ 829F21E
 	.string "again with my POKéMON.$"
 
 Route121_Text_TammyIntro: @ 829F381
-	.string "There are powers beyond our\n"
+	.string "{COLOR RED}There are powers beyond our\n"
 	.string "understanding in the world…$"
 
 Route121_Text_TammyDefeat: @ 829F3B9
@@ -2508,8 +2513,8 @@ Route121_Text_JoyNotEnoughMons: @ 829F5CE
 	.string "if you're going to challenge us!$"
 
 Route121_Text_JessicaIntro: @ 829F612
-	.string "Stop! Have a good look at my precious\n"
-	.string "POKéMON!$"
+	.string "Stop! Have a good look at my\n"
+	.string "precious POKéMON!$"
 
 Route121_Text_JessicaDefeat: @ 829F641
 	.string "Oh, how dare you!\n"
@@ -2533,7 +2538,7 @@ Route121_Text_CristinPostBattle: @ 829F7D4
 	.string "I'll win next time!$"
 
 Route121_Text_CaleIntro: @ 829F91A
-	.string "Can't you see that I have all this\n"
+	.string "{COLOR BLUE}Can't you see that I have all this\n"
 	.string "stuff with me?\p"
 	.string "Despite that, you still insist that\n"
 	.string "we battle?$"
@@ -2701,7 +2706,7 @@ Route123_Text_FernandoPostBattle: @ 82A0389
 	.string "I'd like to write a tune about you.$"
 
 Route123_Text_DavisIntro: @ 82A04C0
-	.string "This is my awesome BUG POKéMON!\n"
+	.string "{COLOR BLUE}This is my awesome BUG POKéMON!\n"
 	.string "My big brother got it for me.$"
 
 Route123_Text_DavisDefeat: @ 82A04FE
@@ -2713,15 +2718,15 @@ Route123_Text_DavisPostBattle: @ 82A0512
 	.string "You have to keep it a secret!$"
 
 Route123_Text_JazmynIntro: @ 82A054E
-	.string "My confidence will get a boost by\n"
+	.string "{COLOR RED}My confidence will get a boost by\n"
 	.string "beating someone obviously strong!$"
 
 Route123_Text_JazmynDefeat: @ 82A0592
 	.string "There goes my confidence…$"
 
 Route123_Text_JazmynPostBattle: @ 82A05AC
-	.string "They say that you can't judge a person\n"
-	.string "by their appearance.\p"
+	.string "They say that you can't judge a\n"
+	.string "person by their appearance.\p"
 	.string "But often, their looks don't lie…$"
 
 Route123_Text_FrederickIntro: @ 82A060A

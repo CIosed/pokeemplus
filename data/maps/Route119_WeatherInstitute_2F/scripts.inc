@@ -219,17 +219,18 @@ Route119_WeatherInstitute_2F_EventScript_WeatherScientist:: @ 827018B
 	end
 
 Route119_WeatherInstitute_2F_Text_Grunt2Intro: @ 827019C
-	.string "The INSTITUTE created a type of\n"
-	.string "POKéMON that has something to do with\l"
-	.string "the weather. We're here to take them!$"
+	.string "{COLOR BLUE}The INSTITUTE created a type of\n"
+	.string "POKéMON that has something to do\l"
+	.string "with the weather.\p"
+	.string "We're here to take them!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt2Defeat: @ 8270208
 	.string "Our plan's being spoiled by a kid?$"
 
 Route119_WeatherInstitute_2F_Text_Grunt2PostBattle: @ 827022B
 	.string "If the POKéMON they made here can\n"
-	.string "control the weather freely, then we of\l"
-	.string "TEAM AQUA definitely need it!$"
+	.string "control the weather freely, then we\l"
+	.string "of TEAM AQUA definitely need it!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Intro: @ 8270292
 	.string "We're TEAM AQUA!\n"
@@ -245,7 +246,7 @@ Route119_WeatherInstitute_2F_Text_Grunt3PostBattle: @ 82702DA
 	.string "You stay out of our way!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Intro: @ 8270335
-	.string "Don't tell me you're looking for that\n"
+	.string "{COLOR RED}Don't tell me you're looking for that\n"
 	.string "weather POKéMON, too?\p"
 	.string "That's a no-no!\n"
 	.string "We were here to get it first!$"
@@ -261,8 +262,8 @@ Route119_WeatherInstitute_2F_Text_Grunt5PostBattle: @ 82703C0
 
 Route119_WeatherInstitute_2F_Text_ShellyIntro: @ 8270409
 	.string "Ahahahaha!\p"
-	.string "You're going to meddle in TEAM AQUA's\n"
-	.string "affairs?\p"
+	.string "You're going to meddle in TEAM\n"
+	.string "AQUA's affairs?\p"
 	.string "You're either absolutely fearless,\n"
 	.string "simply ignorant, or both!\p"
 	.string "You're so cute, you're disgusting!\n"
@@ -279,24 +280,24 @@ Route119_WeatherInstitute_2F_Text_ShellyPostBattle: @ 82704E4
 	.string "in our business, anyway?$"
 
 Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy: @ 8270568
-	.string "We have a situation here!\p"
+	.string "{COLOR BLUE}We have a situation here!\p"
 	.string "A TEAM MAGMA mob just passed\n"
 	.string "the WEATHER INSTITUTE.\p"
 	.string "They appear to be headed for\n"
 	.string "MT. PYRE!$"
 
 Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre: @ 82705DD
-	.string "What?!\p"
+	.string "{COLOR BLUE}What?!\p"
 	.string "We can't waste any more time here!\n"
 	.string "We have to hurry to MT. PYRE, too!\p"
 	.string "Ahahahaha!\n"
 	.string "TEAM MAGMA, just you wait!$"
 
 Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon: @ 8270650
-	.string "Thanks!\n"
+	.string "{COLOR BLUE}Thanks!\n"
 	.string "Thanks to you, we're safe!\p"
-	.string "It might be an odd way of thanking you,\n"
-	.string "but take this POKéMON.$"
+	.string "It might be an odd way of thanking\n"
+	.string "you, but take this POKéMON.$"
 
 @ Unused
 Route119_WeatherInstitute_2F_Text_NoRoomForPokemon: @ 82706B2
@@ -304,18 +305,19 @@ Route119_WeatherInstitute_2F_Text_NoRoomForPokemon: @ 82706B2
 	.string "for this POKéMON.$"
 
 Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform: @ 82706E8
-	.string "{PLAYER} received CASTFORM!$"
+	.string "{COLOR DARK_GREY}{PLAYER} received CASTFORM!$"
 
 Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather: @ 82706FE
-	.string "That POKéMON changes shape according\n"
+	.string "{COLOR BLUE}That POKéMON changes shape according\n"
 	.string "to the weather conditions.\p"
 	.string "There're plenty of them in the\n"
 	.string "INSTITUTE--go ahead and take it.$"
 
 Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous: @ 827077E
 	.string "I've been researching rain for many\n"
-	.string "years, but it's ridiculous to think that\l"
-	.string "humans can freely change the weather.$"
+	.string "years, but it's ridiculous to think\l"
+	.string "that humans can freely change\l"
+	.string "the weather.$"
 
 Route119_WeatherInstitute_2F_Text_GroudonWeather: @ 82707F1
 	.string "I track weather patterns over\n"

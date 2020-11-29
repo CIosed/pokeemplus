@@ -140,8 +140,8 @@ FortreeCity_Gym_Text_GymGuideAdvice: @ 8216785
 	.string "bound {PLAYER}?\p"
 	.string "FORTREE GYM LEADER WINONA is\n"
 	.string "a master of FLYING-type POKéMON.\p"
-	.string "She's waiting at the back of this GYM,\n"
-	.string "behind the rotating doors.\p"
+	.string "She's waiting at the back of this\n"
+	.string "GYM, behind the rotating doors.\p"
 	.string "She's waiting for new challengers\n"
 	.string "who are trying to take wing!\p"
 	.string "Okay, go for it!$"
@@ -206,8 +206,9 @@ FortreeCity_Gym_Text_AshleyPostBattle: @ 8216B5F
 	.string "FORTREE can live without fear.$"
 
 FortreeCity_Gym_Text_HumbertoIntro: @ 8216B9E
-	.string "When WINONA takes to battle, her face\n"
-	.string "shines with beautiful determination…\p"
+	.string "When WINONA takes to battle, her\n"
+	.string "face shines with beautiful \l"
+	.string "determination…\p"
 	.string "I'm not letting you witness that\n"
 	.string "lovely sight!$"
 
@@ -217,8 +218,9 @@ FortreeCity_Gym_Text_HumbertoDefeat: @ 8216C18
 
 FortreeCity_Gym_Text_HumbertoPostBattle: @ 8216C32
 	.string "You'd better watch it!\n"
-	.string "Don't get distracted staring at WINONA\l"
-	.string "or you'll go crashing down in a heap!$"
+	.string "Don't get distracted staring at\l"
+	.string "WINONA or you'll go crashing\l"
+	.string "down in a heap!$"
 
 FortreeCity_Gym_Text_DariusIntro: @ 8216C96
 	.string "You'd better know that there are all\n"
@@ -230,8 +232,9 @@ FortreeCity_Gym_Text_DariusDefeat: @ 8216CF2
 
 FortreeCity_Gym_Text_DariusPostBattle: @ 8216D0F
 	.string "Sure, you beat me all right.\n"
-	.string "But you'd better watch it! Our LEADER\l"
-	.string "WINONA's POKéMON are all business.$"
+	.string "But you'd better watch it! Our\l"
+	.string "LEADER WINONA's POKéMON are all\l"
+	.string "business.$"
 
 FortreeCity_Gym_Text_WinonaIntro: @ 8216D75
 	.string "I am WINONA. I am the LEADER of\n"
@@ -251,13 +254,14 @@ FortreeCity_Gym_Text_WinonaDefeat: @ 8216E60
 	.string "I present to you this GYM BADGE.$"
 
 FortreeCity_Gym_Text_ReceivedFeatherBadge: @ 8216EEC
-	.string "{PLAYER} received the FEATHER BADGE\n"
+	.string "{COLOR DARK_GREY}{PLAYER} received the FEATHER BADGE\n"
 	.string "from WINONA.$"
 
 FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis: @ 8216F17
-	.string "With the FEATHER BADGE, all POKéMON up\n"
-	.string "to LV 70, even those received through\l"
-	.string "trades, will obey your every command.\p"
+	.string "With the FEATHER BADGE, all POKéMON\n"
+	.string "up to LV 70, even those received\l"
+	.string "through trades, will obey your\l"
+	.string "every command.\p"
 	.string "You will also be able to use\n"
 	.string "the HM move FLY outside of battle.\p"
 	.string "And this…\n"
@@ -265,12 +269,13 @@ FortreeCity_Gym_Text_ExplainFeatherBadgeTakeThis: @ 8216F17
 
 FortreeCity_Gym_Text_ExplainAerialAce: @ 8216FEC
 	.string "TM40 contains AERIAL ACE.\p"
-	.string "Its speed…\n"
-	.string "No POKéMON should be able to avoid it.\p"
+	.string "Its speed…\p"
+	.string "No POKéMON should be able to\n"
+	.string "avoid it.\p"
 	.string "… … … … … …$"
 
 FortreeCity_Gym_Text_RegisteredWinona: @ 8217044
-	.string "Registered GYM LEADER WINONA\n"
+	.string "{COLOR DARK_GREY}Registered GYM LEADER WINONA\n"
 	.string "in the POKéNAV.$"
 
 FortreeCity_Gym_Text_WinonaPostBattle: @ 8217071

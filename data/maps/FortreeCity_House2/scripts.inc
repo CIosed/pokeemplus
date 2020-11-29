@@ -57,13 +57,15 @@ FortreeCity_House2_Text_CoinInWhichHand: @ 82178D6
 FortreeCity_House2_Text_CorrectTryAgainWhichHand: @ 821796A
 	.string "Oh! Yes, correct!\p"
 	.string "We shall try again.\p"
-	.string "In which hand have I palmed the coin?\n"
+	.string "In which hand have I palmed the\n"
+	.string "coin?\p"
 	.string "The right or left?$"
 
 FortreeCity_House2_Text_CorrectTryAgainWhichHand2: @ 82179C9
 	.string "Oh! Yes, correct!\p"
 	.string "We shall try again.\p"
-	.string "In which hand have I palmed the coin?\n"
+	.string "In which hand have I palmed the\n"
+	.string "coin?\p"
 	.string "The right or left?$"
 
 FortreeCity_House2_Text_YourHiddenPowerHasAwoken: @ 8217A28

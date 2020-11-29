@@ -141,8 +141,8 @@ FortreeCity_Text_UnseeableUseDevonScope: @ 81E2A08
 
 FortreeCity_Text_UsedDevonScopePokemonFled: @ 81E2A48
 	.string "{PLAYER} used the DEVON SCOPE.\p"
-	.string "An invisible POKéMON became completely\n"
-	.string "visible!\p"
+	.string "An invisible POKéMON became\n"
+	.string "completely visible!\p"
 	.string "The startled POKéMON fled!$"
 
 FortreeCity_Text_CitySign: @ 81E2AAC

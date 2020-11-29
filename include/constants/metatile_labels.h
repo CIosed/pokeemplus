@@ -193,8 +193,8 @@
 #define METATILE_Fortree_SecretBase_LongGrass_TopRight     0x27B
 #define METATILE_Fortree_SecretBase_Shrub                  0x271
 #define METATILE_Fortree_SecretBase_ShrubOpen              0x278
-#define METATILE_Fortree_WoodBridge1_Bottom                0x29F
-#define METATILE_Fortree_WoodBridge1_Top                   0x297
+#define METATILE_Fortree_WoodBridge1_Bottom                0x358
+#define METATILE_Fortree_WoodBridge1_Top                   0x350
 
 // gTileset_General
 #define METATILE_General_BlueCaveIndent        0x1B0
@@ -218,7 +218,7 @@
 #define METATILE_General_MuddySlope_Frame3     0x0EB
 #define METATILE_General_RedCaveIndent         0x1A0
 #define METATILE_General_RedCaveOpen           0x1A1
-#define METATILE_General_ReflectiveWater       0x0A1
+#define METATILE_General_ReflectiveWater       0x10C
 #define METATILE_General_RockWall_GrassBase    0x079
 #define METATILE_General_RockWall_RockBase     0x07C
 #define METATILE_General_RockWall_SandBase     0x091

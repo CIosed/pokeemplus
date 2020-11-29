@@ -1642,62 +1642,62 @@
             "mons": [
               {
                 "min_level": 24,
-                "max_level": 24,
+                "max_level": 26,
                 "species": "SPECIES_ZIGZAGOON"
               },
               {
                 "min_level": 24,
-                "max_level": 24,
+                "max_level": 25,
                 "species": "SPECIES_ELECTRIKE"
               },
               {
                 "min_level": 26,
-                "max_level": 26,
+                "max_level": 27,
                 "species": "SPECIES_ZIGZAGOON"
               },
               {
                 "min_level": 26,
-                "max_level": 26,
+                "max_level": 27,
                 "species": "SPECIES_ELECTRIKE"
               },
               {
                 "min_level": 26,
-                "max_level": 26,
+                "max_level": 27,
                 "species": "SPECIES_LINOONE"
               },
               {
                 "min_level": 26,
-                "max_level": 26,
+                "max_level": 27,
                 "species": "SPECIES_MANECTRIC"
               },
               {
                 "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "max_level": 27,
+                "species": "SPECIES_PELIPPER"
               },
               {
                 "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "max_level": 27,
+                "species": "SPECIES_PELIPPER"
               },
               {
                 "min_level": 26,
-                "max_level": 26,
-                "species": "SPECIES_WINGULL"
+                "max_level": 28,
+                "species": "SPECIES_PELIPPER"
               },
               {
                 "min_level": 26,
-                "max_level": 26,
-                "species": "SPECIES_WINGULL"
+                "max_level": 28,
+                "species": "SPECIES_PELIPPER"
               },
               {
                 "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_WINGULL"
+                "max_level": 28,
+                "species": "SPECIES_PELIPPER"
               },
               {
                 "min_level": 25,
-                "max_level": 25,
+                "max_level": 27,
                 "species": "SPECIES_KECLEON"
               }
             ]
@@ -3530,62 +3530,62 @@
             "mons": [
               {
                 "min_level": 25,
-                "max_level": 25,
+                "max_level": 27,
                 "species": "SPECIES_ZIGZAGOON"
               },
               {
                 "min_level": 25,
-                "max_level": 25,
+                "max_level": 7,
                 "species": "SPECIES_LINOONE"
               },
               {
                 "min_level": 27,
-                "max_level": 27,
+                "max_level": 28,
                 "species": "SPECIES_ZIGZAGOON"
               },
               {
                 "min_level": 25,
-                "max_level": 25,
+                "max_level": 28,
                 "species": "SPECIES_ODDISH"
               },
               {
                 "min_level": 27,
-                "max_level": 27,
+                "max_level": 28,
                 "species": "SPECIES_LINOONE"
               },
               {
                 "min_level": 26,
-                "max_level": 26,
+                "max_level": 27,
                 "species": "SPECIES_ODDISH"
               },
               {
                 "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_ODDISH"
+                "max_level": 28,
+                "species": "SPECIES_GLOOM"
               },
               {
                 "min_level": 24,
-                "max_level": 24,
+                "max_level": 28,
                 "species": "SPECIES_ODDISH"
               },
               {
                 "min_level": 25,
-                "max_level": 25,
+                "max_level": 29,
                 "species": "SPECIES_TROPIUS"
               },
               {
                 "min_level": 26,
-                "max_level": 26,
+                "max_level": 29,
                 "species": "SPECIES_TROPIUS"
               },
               {
                 "min_level": 27,
-                "max_level": 27,
+                "max_level": 29,
                 "species": "SPECIES_TROPIUS"
               },
               {
                 "min_level": 25,
-                "max_level": 25,
+                "max_level": 29,
                 "species": "SPECIES_KECLEON"
               }
             ]
@@ -3684,63 +3684,63 @@
             "mons": [
               {
                 "min_level": 25,
-                "max_level": 25,
+                "max_level": 30,
                 "species": "SPECIES_POOCHYENA"
               },
               {
                 "min_level": 25,
-                "max_level": 25,
+                "max_level": 31,
                 "species": "SPECIES_MIGHTYENA"
               },
               {
                 "min_level": 27,
-                "max_level": 27,
+                "max_level": 31,
                 "species": "SPECIES_MIGHTYENA"
               },
               {
                 "min_level": 25,
-                "max_level": 25,
+                "max_level": 32,
                 "species": "SPECIES_ODDISH"
               },
               {
                 "min_level": 25,
-                "max_level": 25,
+                "max_level": 32,
                 "species": "SPECIES_MARILL"
               },
               {
                 "min_level": 26,
-                "max_level": 26,
+                "max_level": 33,
                 "species": "SPECIES_ODDISH"
               },
               {
                 "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_ODDISH"
+                "max_level": 33,
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_MARILL"
+                "max_level": 34,
+                "species": "SPECIES_NUZLEAF"
               },
               {
                 "min_level": 25,
-                "max_level": 25,
+                "max_level": 33,
                 "species": "SPECIES_ABSOL"
               },
               {
                 "min_level": 27,
-                "max_level": 27,
+                "max_level": 34,
                 "species": "SPECIES_ABSOL"
               },
               {
                 "min_level": 25,
-                "max_level": 25,
+                "max_level": 34,
                 "species": "SPECIES_KECLEON"
               },
               {
                 "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_SEEDOT"
+                "max_level": 34,
+                "species": "SPECIES_NUZLEAF"
               }
             ]
           },

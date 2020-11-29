@@ -48,6 +48,7 @@ Route121_Movement_Grunt1Exit: @ 81F5E59
 	step_end
 
 Route121_Movement_Grunt2Exit: @ 81F5E62
+    delay_16
 	walk_down
 	walk_down
 	walk_down
@@ -128,13 +129,13 @@ Route121_EventScript_Cristin:: @ 81F5FF8
 	end
 
 Route121_Text_OkayMoveOutToMtPyre: @ 81F605A
-	.string "Okay!\n"
+	.string "{COLOR BLUE}Okay!\n"
 	.string "We're to move out to MT. PYRE!$"
 
 Route121_Text_AheadLoomsMtPyre: @ 81F607F
 	.string "Ahead looms MT. PYRE…\p"
-	.string "It is a natural monument to the spirits \n"
-	.string "of departed POKéMON…$"
+	.string "It is a natural monument to the\n"
+	.string "spirits of departed POKéMON…$"
 
 Route121_Text_MtPyrePierSign: @ 81F60D3
 	.string "MT. PYRE PIER\p"

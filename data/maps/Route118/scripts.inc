@@ -225,20 +225,21 @@ Route118_EventScript_Deandre:: @ 81F40A7
 	end
 
 Route118_Text_StevenQuestions: @ 81F40BE
-	.string "STEVEN: Hi, {PLAYER}{KUN}!\p"
+	.string "{COLOR BLUE}STEVEN: Hi, {PLAYER}{KUN}!\p"
 	.string "It's me, STEVEN!\n"
 	.string "We met in the cave near DEWFORD.\p"
 	.string "Have you met many kinds of POKéMON\n"
 	.string "since I last saw you?\p"
-	.string "There are many, many kinds of POKéMON\n"
-	.string "in this wide world of ours.\p"
+	.string "There are many, many kinds of\n"
+	.string "POKéMON in this wide world of ours.\p"
 	.string "If you wanted to raise only your\n"
 	.string "favorites, that's fine.\p"
-	.string "Perhaps you find it more fun to raise\n"
-	.string "all sorts of POKéMON.\p"
+	.string "Perhaps you find it more fun to\n"
+	.string "raise all sorts of POKéMON.\p"
 	.string "As a TRAINER of POKéMON,\n"
 	.string "what do you think?\p"
-	.string "Of course, it's not any of my business.\p"
+	.string "Of course, it's not any of my\n"
+	.string "business.\p"
 	.string "It would be nice if we were to meet\n"
 	.string "again somewhere.$"
 

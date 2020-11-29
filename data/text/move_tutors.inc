@@ -125,8 +125,8 @@ MoveTutor_Text_SleepTalkTeach: @ 82C7637
 	.string "SLEEP TALK instead. Interested?$"
 
 MoveTutor_Text_SleepTalkDeclined: @ 82C76E2
-	.string "Oh, fine, fine. You want to stay awake\n"
-	.string "with HIDDEN POWER, too…$"
+	.string "Oh, fine, fine. You want to stay\n"
+	.string "awake with HIDDEN POWER, too…$"
 
 MoveTutor_Text_SleepTalkWhichMon: @ 82C7721
 	.string "Ah, an appreciative child!\n"

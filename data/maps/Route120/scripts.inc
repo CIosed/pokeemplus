@@ -49,8 +49,8 @@ Route120_OnLoad: @ 81F5474
 	end
 
 Route120_EventScript_CloseAncientTomb:: @ 81F5490
-	setmetatile 7, 54, METATILE_General_RockWall_RockBase, 1
-	setmetatile 7, 55, METATILE_General_RockWall_SandBase, 1
+	setmetatile 8, 54, METATILE_General_RockWall_RockBase, 1
+	setmetatile 8, 55, METATILE_General_RockWall_SandBase, 1
 	return
 
 Route120_EventScript_SetBridgeClearMetatiles:: @ 81F54A3
@@ -58,6 +58,7 @@ Route120_EventScript_SetBridgeClearMetatiles:: @ 81F54A3
 	setmetatile 12, 16, METATILE_Fortree_WoodBridge1_Bottom, 0
 	setmetatile 12, 17, METATILE_General_ReflectiveWater, 0
 	setmetatile 13, 17, METATILE_General_ReflectiveWater, 0
+	setmetatile 14, 17, METATILE_General_ReflectiveWater, 0
 	return
 
 Route120_EventScript_SetBridgeKecleonMovement:: @ 81F54C8
@@ -213,7 +214,7 @@ Route120_EventScript_StevenBattleKecleon:: @ 81F568B
 	playmoncry SPECIES_KECLEON, 2
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_KECLEON, 30, ITEM_NONE
+	setwildbattle SPECIES_KECLEON, 35, ITEM_NONE
 	setvar VAR_0x8009, 0
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
@@ -257,6 +258,7 @@ Route120_EventScript_StevenGiveDeconScope:: @ 81F572C
 	setmetatile 12, 16, METATILE_Fortree_WoodBridge1_Bottom, 0
 	setmetatile 12, 17, METATILE_General_ReflectiveWater, 0
 	setmetatile 13, 17, METATILE_General_ReflectiveWater, 0
+	setmetatile 14, 17, METATILE_General_ReflectiveWater, 0
 	special DrawWholeMapView
 	release
 	end
@@ -382,8 +384,8 @@ Route120_Text_StevenShowMeYourPower: @ 81F5B0F
 
 Route120_Text_StevenUsedDevonScope: @ 81F5B43
 	.string "STEVEN used the DEVON SCOPE.\p"
-	.string "An invisible POKéMON became completely\n"
-	.string "visible!\p"
+	.string "An invisible POKéMON became\n"
+	.string "completely visible!\p"
 	.string "The startled POKéMON attacked!$"
 
 Route120_Text_StevenGiveDevonScope: @ 81F5BAF
@@ -411,9 +413,9 @@ Kecleon_Text_WantToUseDevonScope: @ 81F5D23
 	.string "Want to use the DEVON SCOPE?$"
 
 Kecleon_Text_UseDevonScopeMonAttacked: @ 81F5D63
-	.string "{PLAYER} used the DEVON SCOPE.\p"
-	.string "An invisible POKéMON became completely\n"
-	.string "visible!\p"
+	.string "{COLOR DARK_GREY}{PLAYER} used the DEVON SCOPE.\p"
+	.string "An invisible POKéMON became\n"
+	.string "completely visible!\p"
 	.string "The startled POKéMON attacked!$"
 
 Route120_Text_RouteSignFortree: @ 81F5DCB
