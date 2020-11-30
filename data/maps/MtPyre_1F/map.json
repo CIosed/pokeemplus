@@ -85,7 +85,7 @@
     },
     {
       "x": 11,
-      "y": 1,
+      "y": 2,
       "elevation": 3,
       "dest_map": "MAP_MT_PYRE_2F",
       "dest_warp_id": 0

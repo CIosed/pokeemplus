@@ -40,7 +40,8 @@ MtPyre_1F_Text_ExplainCleanseTag: @ 8231005
 MtPyre_1F_Text_ComeToPayRespects: @ 823104F
 	.string "Did you come to pay your respect\n"
 	.string "to the spirits of departed POKéMON?\p"
-	.string "You must care for your POKéMON a lot.$"
+	.string "You must care for your POKéMON\n"
+	.string "a lot.$"
 
 MtPyre_1F_Text_RestingPlaceOfZigzagoon: @ 82310BA
 	.string "This is the final resting place of my\n"

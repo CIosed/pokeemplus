@@ -2489,8 +2489,8 @@ Route121_Text_KateDefeat: @ 829F43F
 
 Route121_Text_KatePostBattle: @ 829F476
 	.string "KATE: When someone's relying on me,\n"
-	.string "I get this urge to look cool in front\l"
-	.string "of them…$"
+	.string "I get this urge to look cool in\l"
+	.string "front of them…$"
 
 Route121_Text_KateNotEnoughMons: @ 829F4C9
 	.string "KATE: If you've only got one POKéMON,\n"
@@ -2505,8 +2505,9 @@ Route121_Text_JoyDefeat: @ 829F564
 	.string "JOY: Please forgive me, KATE!$"
 
 Route121_Text_JoyPostBattle: @ 829F582
-	.string "JOY: Ehehe, I'll have to train with KATE,\n"
-	.string "my senior student partner, again.$"
+	.string "JOY: Ehehe, I'll have to train with\n"
+	.string "KATE, my senior student partner,\l"
+	.string "again.$"
 
 Route121_Text_JoyNotEnoughMons: @ 829F5CE
 	.string "JOY: You need at least two POKéMON\n"
@@ -2525,7 +2526,7 @@ Route121_Text_JessicaPostBattle: @ 829F66F
 	.string "the SAFARI.$"
 
 Route121_Text_CristinIntro: @ 829F770
-	.string "I have this routine.\n"
+	.string "{COLOR RED}I have this routine.\n"
 	.string "Defeat five TRAINERS a day.\l"
 	.string "Guess what? You're number five!$"
 
@@ -2554,7 +2555,7 @@ Route121_Text_CalePostBattle: @ 829F9AE
 	.string "I wish I had a BAG like yours.$"
 
 Route121_Text_MylesIntro: @ 829FA1E
-	.string "There's nothing I love more than\n"
+	.string "{COLOR BLUE}There's nothing I love more than\n"
 	.string "checking out other people's POKéMON!$"
 
 Route121_Text_MylesDefeat: @ 829FA64
@@ -2565,7 +2566,7 @@ Route121_Text_MylesPostBattle: @ 829FA73
 	.string "How do you raise them?$"
 
 Route121_Text_PatIntro: @ 829FAA7
-	.string "I want everybody to see the POKéMON\n"
+	.string "{COLOR RED}I want everybody to see the POKéMON\n"
 	.string "I've raised!$"
 
 Route121_Text_PatDefeat: @ 829FAD8
@@ -2577,7 +2578,7 @@ Route121_Text_PatPostBattle: @ 829FAEA
 	.string "love and care--I don't pick favorites.$"
 
 Route121_Text_MarcelIntro: @ 829FB35
-	.string "My POKéMON have never tasted defeat!\n"
+	.string "{COLOR BLUE}My POKéMON have never tasted defeat!\n"
 	.string "On their next win, I'm entering them\l"
 	.string "in CONTESTS.$"
 
@@ -2585,8 +2586,8 @@ Route121_Text_MarcelDefeat: @ 829FB8C
 	.string "Oh, now what happened here?$"
 
 Route121_Text_MarcelPostBattle: @ 829FBA8
-	.string "I may have to train my gang some more\n"
-	.string "before entering any CONTEST.$"
+	.string "I may have to train my gang some\n"
+	.string "more before entering any CONTEST.$"
 
 Route123_Text_WendyIntro: @ 829FBEB
 	.string "Want to determine how strong you are?\n"
@@ -2637,7 +2638,7 @@ Route123_Text_CameronPostBattle: @ 829FE2A
 	.string "I thought I wouldn't lose to you…$"
 
 Route123_Text_JackiIntro: @ 829FF61
-	.string "Don't be too happy if your POKéMON\n"
+	.string "{COLOR RED}Don't be too happy if your POKéMON\n"
 	.string "develop psychic powers.\p"
 	.string "You need to refine those powers to\n"
 	.string "make them really useful.$"
@@ -2680,7 +2681,7 @@ Route123_Text_YukiNotEnoughMons: @ 82A0224
 	.string "don't have two POKéMON.$"
 
 Route123_Text_KindraIntro: @ 82A025F
-	.string "MT. PYRE…\n"
+	.string "{COLOR BLUE}MT. PYRE…\n"
 	.string "Where the spirits of POKéMON sleep…\l"
 	.string "Will your POKéMON sleep?$"
 
@@ -2730,7 +2731,7 @@ Route123_Text_JazmynPostBattle: @ 82A05AC
 	.string "But often, their looks don't lie…$"
 
 Route123_Text_FrederickIntro: @ 82A060A
-	.string "Hello, child!\n"
+	.string "{COLOR BLUE}Hello, child!\n"
 	.string "Can you spare some time?$"
 
 Route123_Text_FrederickDefeat: @ 82A0631
@@ -2748,7 +2749,8 @@ Route123_Text_AlbertoIntro: @ 82A06AF
 	.string "They're the best!$"
 
 Route123_Text_AlbertoDefeat: @ 82A0704
-	.string "Even in defeat, BIRD POKéMON are cool!$"
+	.string "Even in defeat, BIRD POKéMON\n"
+	.string "are cool!$"
 
 Route123_Text_AlbertoPostBattle: @ 82A072B
 	.string "I gather BIRD POKéMON feathers that\n"
@@ -2757,7 +2759,7 @@ Route123_Text_AlbertoPostBattle: @ 82A072B
 	.string "BIRD POKéMON feathers.$"
 
 Route123_Text_EdIntro: @ 82A079B
-	.string "When there are no TRAINERS around,\n"
+	.string "{COLOR BLUE}When there are no TRAINERS around,\n"
 	.string "I let my POKéMON battle each other.\l"
 	.string "I watch them.$"
 
@@ -2769,7 +2771,7 @@ Route123_Text_EdPostBattle: @ 82A080D
 	.string "I think they'll make me better.$"
 
 Route123_Text_JonasIntro: @ 82A0854
-	.string "I lay in ambush, and a TRAINER has\n"
+	.string "{COLOR BLUE}I lay in ambush, and a TRAINER has\n"
 	.string "landed in my trap!$"
 
 Route123_Text_JonasDefeat: @ 82A088A
@@ -2781,7 +2783,7 @@ Route123_Text_JonasPostBattle: @ 82A08CA
 	.string "TRAINER next time.$"
 
 Route123_Text_KayleyIntro: @ 82A0902
-	.string "I just bought this parasol.\n"
+	.string "{COLOR RED}I just bought this parasol.\n"
 	.string "My cuteness should be up by a third!$"
 
 Route123_Text_KayleyDefeat: @ 82A0943
