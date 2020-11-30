@@ -3353,6 +3353,9 @@ extern const u32 gBattleTerrainPalette_Field[];
 extern const u32 gBattleTerrainTiles_Lab[];
 extern const u32 gBattleTerrainTilemap_Lab[];
 extern const u32 gBattleTerrainPalette_Lab[];
+extern const u32 gBattleTerrainTiles_Pyre[];
+extern const u32 gBattleTerrainTilemap_Pyre[];
+extern const u32 gBattleTerrainPalette_Pyre[];
 
 // pokedex
 extern const u32 gPokedexInterface_Gfx[];

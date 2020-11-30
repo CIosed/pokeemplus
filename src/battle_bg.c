@@ -774,6 +774,13 @@ static const struct BattleBackground gBattleTerrainTable[] =
         .palette = gBattleTerrainPalette_Lab,
     },
 
+    [BATTLE_TERRAIN_MT_PYRE] =
+    {
+        .tileset = gBattleTerrainTiles_Pyre,
+        .tilemap = gBattleTerrainTilemap_Pyre,
+        .palette = gBattleTerrainPalette_Pyre,
+    },
+
 };
 
 static void sub_8035648(void);

@@ -136,3 +136,7 @@ const u32 gBattleTerrainAnimTilemap_JaggedPass[] = INCBIN_U32("graphics/battle_t
 const u32 gBattleTerrainTiles_Lab[] = INCBIN_U32("graphics/battle_terrain/lab/tiles.4bpp.lz");
 const u32 gBattleTerrainPalette_Lab[] = INCBIN_U32("graphics/battle_terrain/lab/palette.gbapal.lz");
 const u32 gBattleTerrainTilemap_Lab[] = INCBIN_U32("graphics/battle_terrain/lab/map.bin.lz");
+
+const u32 gBattleTerrainTiles_Pyre[] = INCBIN_U32("graphics/battle_terrain/pyre/tiles.4bpp.lz");
+const u32 gBattleTerrainPalette_Pyre[] = INCBIN_U32("graphics/battle_terrain/pyre/palette.gbapal.lz");
+const u32 gBattleTerrainTilemap_Pyre[] = INCBIN_U32("graphics/battle_terrain/pyre/map.bin.lz");

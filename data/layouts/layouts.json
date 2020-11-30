@@ -74,7 +74,7 @@
     {
       "id": "LAYOUT_SOOTOPOLIS_CITY",
       "name": "SootopolisCity_Layout",
-      "width": 60,
+      "width": 72,
       "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Sootopolis",
