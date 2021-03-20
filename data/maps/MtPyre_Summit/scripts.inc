@@ -456,8 +456,8 @@ MtPyre_Summit_Text_Grunt1Intro: @ 8232459
 	.string "We can't fall behind!$"
 
 MtPyre_Summit_Text_Grunt1Defeat: @ 82324A0
-	.string "I thought you were one of the MAGMAS\n"
-	.string "who happened to come back…$"
+	.string "I thought you were one of the\n"
+	.string "MAGMAS who happened to come back…$"
 
 MtPyre_Summit_Text_Grunt1PostBattle: @ 82324E0
 	.string "Yeah, so you are strong…\n"
@@ -466,7 +466,7 @@ MtPyre_Summit_Text_Grunt1PostBattle: @ 82324E0
 MtPyre_Summit_Text_Grunt2Intro: @ 8232513
 	.string "Hah!\n"
 	.string "Too bad for you!\p"
-	.string "If you came earlier, you only would've\n"
+	.string "If you came earlier, you would've\n"
 	.string "had to battle the wimpy TEAM MAGMA.\p"
 	.string "But since you arrived now, you have\n"
 	.string "to take on us toughies!$"
@@ -511,17 +511,19 @@ MtPyre_Summit_Text_Grunt4PostBattle: @ 82327D8
 	.string "with us members and our leader.$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo: @ 823281A
-	.string "ARCHIE: TEAM MAGMA's MAXIE got ahead\n"
-	.string "of us, but we also got what we wanted.\p"
+	.string "{COLOR BLUE}ARCHIE: TEAM MAGMA's MAXIE got\n"
+	.string "ahead of us, but we also got what\l"
+	.string "we wanted.\p"
 	.string "The RED ORB preserved at MT. PYRE…\n"
-	.string "I, ARCHIE, now have it in my possession!\p"
+	.string "I, ARCHIE, now have it in my\l"
+	.string "possession!\p"
 	.string "Fufufu… Now we can bring our ultimate\n"
 	.string "objective to fruition!\p"
 	.string "Okay, TEAM!\n"
 	.string "We're pulling out!$"
 
 MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis: @ 823290E
-	.string "Oh, no…\n"
+	.string "{COLOR RED}Oh, no…\n"
 	.string "This cannot happen…\p"
 	.string "Not only the BLUE ORB, but even\n"
 	.string "the RED ORB has been taken…\p"
@@ -585,14 +587,14 @@ MtPyre_Summit_Text_WillYouHearOutMyTale: @ 8232E0C
 	.string "The disembodied spirits of POKéMON\n"
 	.string "must find solace here…\p"
 	.string "Is it coincidence that you are here…\p"
-	.string "Will you hear out my tale? A tale long\n"
-	.string "told in the HOENN region?$"
+	.string "Will you hear out my tale? A tale\n"
+	.string "long told in the HOENN region?$"
 
 MtPyre_Summit_Text_GroudonKyogreTale: @ 8232F27
 	.string "It happened long, long ago…\p"
 	.string "The world was wracked by a ferocious\n"
-	.string "clash between the POKéMON of the land\l"
-	.string "and the POKéMON of the sea…\p"
+	.string "clash between the POKéMON of the\l"
+	.string "land and the POKéMON of the sea…\p"
 	.string "The POKéMON of the land raised\n"
 	.string "mountains and created continents…\p"
 	.string "The POKéMON of the sea raised huge\n"
@@ -600,8 +602,8 @@ MtPyre_Summit_Text_GroudonKyogreTale: @ 8232F27
 	.string "Their fierce duel raged without end.\p"
 	.string "The world was engulfed in massive\n"
 	.string "infernos and vicious storms.\p"
-	.string "The BLUE ORB and the RED ORB brought\n"
-	.string "an end to the calamity.\p"
+	.string "The BLUE ORB and the RED ORB\n"
+	.string "brought an end to the calamity.\p"
 	.string "Light poured from the two ORBS and\n"
 	.string "becalmed the enraged adversaries.\p"
 	.string "The pair, made docile, dove deep into\n"

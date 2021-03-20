@@ -107,7 +107,7 @@ MtPyre_2F_Text_DezNotEnoughMons: @ 8231582
 	.string "Just one POKéMON won't do at all.$"
 
 MtPyre_2F_Text_LeahIntro: @ 8231604
-	.string "You are an unfamiliar sight…\n"
+	.string "{COLOR RED}You are an unfamiliar sight…\n"
 	.string "Depart before anything befalls you!$"
 
 MtPyre_2F_Text_LeahDefeat: @ 8231645
