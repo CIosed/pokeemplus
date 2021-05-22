@@ -48,13 +48,11 @@ PlayersHouse_1F_EventScript_MomGoSeeRoom:: @ 8292765
 	end
 
 LittlerootTown_BrendansHouse_2F_EventScript_WallClock:: @ 8292781
-	lockall
 	setvar VAR_0x8004, MALE
 	goto PlayersHouse_2F_EventScript_WallClock
 	end
 
 LittlerootTown_MaysHouse_2F_EventScript_WallClock:: @ 829278D
-	lockall
 	setvar VAR_0x8004, FEMALE
 	goto PlayersHouse_2F_EventScript_WallClock
 	end
@@ -382,7 +380,6 @@ PlayersHouse_1F_EventScript_DidYouMeetProfBirch:: @ 8292AB0
 	end
 
 PlayersHouse_1F_EventScript_Vigoroth1:: @ 8292ABA
-	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_VIGOROTH, 0
@@ -392,7 +389,6 @@ PlayersHouse_1F_EventScript_Vigoroth1:: @ 8292ABA
 	end
 
 PlayersHouse_1F_EventScript_Vigoroth2:: @ 8292ACD
-	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_VIGOROTH, 0

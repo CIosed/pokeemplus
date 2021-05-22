@@ -43,8 +43,10 @@ Route102_Text_WatchMeCatchPokemon: @ 81EC1F8
 	.string "POKéMON hide in tall grass like this,\l"
 	.string "don't they?\p"
 	.string "Please watch me and see if I can\n"
-	.string "catch one properly.\p"
-	.string "…Whoa!$"
+	.string "catch one properly.$"
+
+Route102_Text_WatchMeCatchPokemon2: @ 81EC1F8
+	.string "{COLOR BLUE}…Whoa!$"
 
 Route102_Text_WallyIDidIt: @ 81EC271
 	.string "{COLOR BLUE}WALLY: I did it… It's my…\n"

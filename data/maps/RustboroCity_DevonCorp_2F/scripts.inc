@@ -296,8 +296,8 @@ RustboroCity_DevonCorp_2F_EventScript_WorkOnNext:: @ 8211BF1
 	end
 
 RustboroCity_DevonCorp_2F_Text_DeviceForTalkingToPokemon: @ 8211BFB
-	.string "We're developing a device for talking\n"
-	.string "with POKéMON.\p"
+	.string "We're developing a device for\n"
+	.string "talking with POKéMON.\p"
 	.string "But we haven't had much success…$"
 
 RustboroCity_DevonCorp_2F_Text_DevelopingNewBalls: @ 8211C50
@@ -329,8 +329,8 @@ RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav: @ 8211DF3
 	.string "the feelings of POKéMON.\p"
 	.string "Would you like me to describe its\n"
 	.string "features in detail?\p"
-	.string "No, no. I think you'll find out just by\n"
-	.string "trying the POKéNAV out.$"
+	.string "No, no. I think you'll find out\n"
+	.string "just by trying the POKéNAV out.$"
 
 RustboroCity_DevonCorp_2F_Text_DeviceToVisualizePokemonDreams: @ 8211EE0
 	.string "I'm trying to develop a device that\n"

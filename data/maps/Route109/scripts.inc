@@ -515,7 +515,7 @@ Route109_Text_WereGoingToMakeBigCastle: @ 81EEFF1
 	.string "We'll let you be a servant.$"
 
 Route109_Text_ZigzagoonPicksUpLitter: @ 81EF080
-	.string "The water around these parts/n"
+	.string "The water around these parts\n"
 	.string "is clean.\p"
 	.string "But, I get my ZIGZAGOON to pick up\n"
 	.string "litter from the shoreline at times.\p"

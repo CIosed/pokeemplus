@@ -2246,7 +2246,8 @@ SlateportCity_Text_WanderingTrio:
 	.string "I'm currently waiting for some\n"
 	.string "traveling merchants to appear\l"
 	.string "at the market.\p"
-	.string "They sell useful stuff for us trainers!$"
+	.string "They sell useful stuff for us\n"
+	.string "trainers!$"
 
 SlateportCity_Text_EggMerchant:
     .string "Hey, TRAINER!\n"

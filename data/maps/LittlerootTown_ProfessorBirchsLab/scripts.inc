@@ -720,10 +720,11 @@ LittlerootTown_ProfessorBirchsLab_Text_BirchAwayOnFieldwork: @ 81FA4E2
 	.string "Ergo, he isn't here.\p"
 	.string "Oh, let me explain what fieldwork is.\p"
 	.string "It is to study things in the natural\n"
-	.string "environment, like fields and mountains,\l"
-	.string "instead of a laboratory.\p"
-	.string "The PROF isn't one for doing desk work.\n"
-	.string "He's the type of person who would\l"
+	.string "environment, like fields and\l"
+	.string "mountains, instead of a laboratory.\p"
+	.string "The PROF isn't one for doing desk\n"
+	.string "work.\p"
+	.string "He's the type of person who would\n"
 	.string "rather go outside and experience\l"
 	.string "things than read about them here.$"
 
@@ -750,8 +751,8 @@ LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon: @ 81FA74D
 	.string "I guess you have your father's blood\n"
 	.string "in your veins after all!\p"
 	.string "Oh, yes. As thanks for rescuing me,\n"
-	.string "I'd like you to have the POKéMON you\l"
-	.string "used earlier.\p"
+	.string "I'd like you to have the POKéMON\l"
+	.string "you used earlier.\p"
 	.string "{COLOR DARK_GREY}{PLAYER} received the {STR_VAR_1}!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon: @ 81FA8B1
@@ -787,7 +788,8 @@ LittlerootTown_ProfessorBirchsLab_Text_BirchRivalGoneHome: @ 81FAA74
 
 LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex: @ 81FAB22
 	.string "{COLOR BLUE}PROF. BIRCH: Oh, hi, {PLAYER}{KUN}!\p"
-	.string "I heard you beat {RIVAL} on your first try.\n"
+	.string "I heard you beat {RIVAL} on your\n"
+	.string "first try.\p"
 	.string "That's excellent!\p"
 	.string "{RIVAL}'s been helping with my research\n"
 	.string "for a long time.\p"

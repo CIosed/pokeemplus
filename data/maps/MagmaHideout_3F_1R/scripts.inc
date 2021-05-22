@@ -20,14 +20,14 @@ MagmaHideout_3F_1R_Text_Grunt9Defeat: @ 823A229
 	.string "I'm getting heat exhaustion…$"
 
 MagmaHideout_3F_1R_Text_Grunt9PostBattle: @ 823A246
-	.string "Do you think it's odd that we're wearing\n"
+	.string "Isn't it odd that we're wearing\n"
 	.string "hoods in this magma-filled volcano?$"
 
 MagmaHideout_3F_1R_Text_Grunt16Intro: @ 823A293
 	.string "We joined so we can help our leader\n"
 	.string "achieve his fantastic vision.\p"
 	.string "I don't care if you're with TEAM AQUA\n"
-	.string "or if you're just some kid passing by.\p"
+	.string "or just some kid passing by.\p"
 	.string "No one interferes with us and gets\n"
 	.string "away with it!$"
 

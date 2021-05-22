@@ -22,7 +22,7 @@ MagmaHideout_2F_2R_EventScript_Grunt8:: @ 8239E4D
 	end
 
 MagmaHideout_2F_2R_Text_Grunt15Intro: @ 8239E64
-	.string "I don't have a bone to pick with you.\n"
+	.string "{COLOR RED}I don't have a bone to pick with you.\n"
 	.string "I'm just following orders!$"
 
 MagmaHideout_2F_2R_Text_Grunt15Defeat: @ 8239EA5
@@ -35,7 +35,7 @@ MagmaHideout_2F_2R_Text_Grunt15PostBattle: @ 8239EBB
 	.string "Fufufu… Fwahahaha!$"
 
 MagmaHideout_2F_2R_Text_Grunt6Intro: @ 8239F31
-	.string "I can't stand heat. Maybe I should've\n"
+	.string "{COLOR BLUE}I can't stand heat. Maybe I should've\n"
 	.string "joined TEAM AQUA instead…$"
 
 MagmaHideout_2F_2R_Text_Grunt6Defeat: @ 8239F71

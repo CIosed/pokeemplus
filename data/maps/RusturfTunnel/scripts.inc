@@ -622,22 +622,22 @@ RusturfTunnel_EventScript_Mike:: @ 822D1B1
 	end
 
 Wally_Talk_RusturfTunnel_1:
-    .string "{COLOR BLUE}Wally: {PLAYER}!$"
+    .string "{COLOR BLUE}WALLY: {PLAYER}!$"
 	
 Wally_Talk_RusturfTunnel_2:
     .string "{COLOR BLUE}That looks like him, over there!$"
 	
 Wally_Talk_RusturfTunnel_3_BOY:
-    .string "{COLOR BLUE}Wally: This is {PLAYER}!\n"
-	.string "He's a very talanted trainer.\p"
+    .string "{COLOR BLUE}WALLY: This is {PLAYER}!\n"
+	.string "He's a very talanted TRAINER.\p"
 	.string "I wouldn't been able to save\n"
-	.string "Peeko if it weren't for him!$"
+	.string "PEEKO if it weren't for him!$"
 
 Wally_Talk_RusturfTunnel_3_GIRL:
-    .string "{COLOR BLUE}Wally: This is {PLAYER}!\n"
-	.string "She's a very talanted trainer.\p"
+    .string "{COLOR BLUE}WALLY: This is {PLAYER}!\n"
+	.string "She's a very talanted TRAINER.\p"
 	.string "I wouldn't been able to save\n"
-	.string "Peeko if it weren't for her!$"
+	.string "PEEKO if it weren't for her!$"
 
 Wally_Talk_RusturfTunnel_4:
     .string "{COLOR BLUE}WALLY: Wasn't that something…\n"
@@ -648,7 +648,7 @@ Wally_Talk_RusturfTunnel_4:
 	.string "{PLAYER}!\l"
 	.string "Thank you…\p"
 	.string "A-anyways… This tunnel connects\n"
-	.string "Route 116 together with Verdanturf.\p"
+	.string "ROUTE 116 together with VERDANTURF.\p"
 	.string "I figured I could take a shortcut…$"
 
 Wally_Talk_RusturfTunnel_5:
@@ -662,7 +662,7 @@ Wally_Talk_RusturfTunnel_6:
 Wally_Talk_RusturfTunnel_7:
 	.string "{COLOR BLUE}Oh! I just remembered!\p"
 	.string "I heard somewhere that the\n"
-	.string "wild Whismur was getting upset\l"
+	.string "wild WHISMUR was getting upset\l"
 	.string "by heavy machinery here lately.\p"
 	.string "I hope the battle didn't disturb\n"
 	.string "them!\p"
@@ -671,15 +671,15 @@ Wally_Talk_RusturfTunnel_7:
 	.string "See you later, {PLAYER}!$"
 
 RusturfTunnel_Text_ComeAndGetSome: @ 822D1C8
-	.string "{COLOR BLUE}???: What, are you coming?\n"
+	.string "{COLOR BLUE}What, are you coming?\n"
 	.string "Come and get some, then!$"
 
 RusturfTunnel_Text_Peeko: @ 822D1F7
 	.string "PEEKO: Pii pihyoh!$"
 
 RusturfTunnel_Text_GruntIntro: @ 822D20A
-	.string "{COLOR BLUE}???: Grah, keelhaul it all!\p"
-	.string "This hostage Pokémon turned out to\n"
+	.string "{COLOR BLUE}Grah, keelhaul it all!\p"
+	.string "This hostage POKÉMON turned out to\n"
 	.string "be worthless!\p"
 	.string "And to think I made a getaway…\n"
 	.string "In this tunnel to nowhere!\p"
@@ -694,7 +694,7 @@ RusturfTunnel_Text_GruntDefeat: @ 822D2B0
 	.string "to a dead end!$"
 
 RusturfTunnel_Text_GruntTakePackage: @ 822D2E1
-	.string "{COLOR BLUE}???: This is plain not right…\p"
+	.string "{COLOR BLUE}This is plain not right…\p"
 	.string "The BOSS told me this would be a\n"
 	.string "slick-and-easy job to pull.\p"
 	.string "All I had to do was steal some\n"

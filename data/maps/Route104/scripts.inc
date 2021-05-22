@@ -332,11 +332,15 @@ Route104_EventScript_TrainerTipsDoubleBattles:: @ 81ED03C
 	end
 
 Route104_EventScript_Boy1:: @ 81ED045
-	msgbox Route104_Text_ThrowBallAtWeakenedPokemon, MSGBOX_NPC
+    faceplayer
+	msgbox Route104_Text_ThrowBallAtWeakenedPokemon, MSGBOX_DEFAULT
+	release
 	end
 
 Route104_EventScript_Woman:: @ 81ED04E
-	msgbox Route104_Text_OnlyThrowBallAtWildPokemon, MSGBOX_NPC
+    faceplayer
+	msgbox Route104_Text_OnlyThrowBallAtWildPokemon, MSGBOX_DEFAULT
+	release
 	end
 
 Route104_EventScript_Boy2:: @ 81ED057
@@ -357,7 +361,9 @@ Route104_EventScript_ReceivedBulletSeed:: @ 81ED086
 	end
 
 Route104_EventScript_Girl2:: @ 81ED090
-	msgbox Route104_Text_ImNotATrainer, MSGBOX_NPC
+    faceplayer
+	msgbox Route104_Text_ImNotATrainer, MSGBOX_DEFAULT
+	release
 	end
 
 Route104_EventScript_SailToDewford:: @ 81ED099
@@ -942,9 +948,10 @@ Route104_Text_ImNotATrainer: @ 81ED7A2
 Route104_Text_LikeFillingMouthWithSeedsTakeThis: @ 81ED838
 	.string "I like filling my mouth with seeds,\n"
 	.string "then spitting them out fast!\p"
-	.string "You can have this, so you try it out!\p"
-	.string "Use it on a POKéMON, and it will learn\n"
-	.string "a move for firing seeds rapidly.$"
+	.string "You can have this, so you try\n"
+	.string "it out!\p"
+	.string "Use it on a POKéMON, and it will\n"
+	.string "learn a move for firing seeds rapidly.$"
 
 Route104_Text_TMsAreOneTimeUse: @ 81ED8E7
 	.string "A word of advice!\p"
@@ -971,11 +978,11 @@ Route104_Text_MrBrineysCottage: @ 81EDA8C
 	.string "MR. BRINEY'S COTTAGE$"
 
 Route104_Text_RouteSignPetalburg: @ 81EDAA1
-	.string "ROUTE 1O4\n"
+	.string "ROUTE 104\n"
 	.string "{RIGHT_ARROW} PETALBURG CITY$"
 
 Route104_Text_RouteSignRustboro: @ 81EDABC
-	.string "ROUTE 1O4\n"
+	.string "ROUTE 104\n"
 	.string "{UP_ARROW} RUSTBORO CITY$"
 
 Route104_Text_PrettyPetalFlowShop: @ 81EDAD6

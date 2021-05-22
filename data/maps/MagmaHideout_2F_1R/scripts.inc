@@ -23,10 +23,10 @@ MagmaHideout_2F_1R_EventScript_Grunt5:: @ 8239B96
 
 MagmaHideout_2F_1R_Text_Grunt14Intro: @ 8239BAD
 	.string "What, what, what?\p"
-	.string "Only TEAM MAGMA members are supposed\n"
-	.string "to be in here!\p"
-	.string "But you're not dressed in TEAM MAGMA's\n"
-	.string "uniform…\p"
+	.string "Only TEAM MAGMA members are\n"
+	.string "supposed to be in here!\p"
+	.string "But you're not dressed in\n"
+	.string "TEAM MAGMA's uniform…\p"
 	.string "You rouse my suspicion!\n"
 	.string "Battle with me!$"
 
@@ -35,8 +35,8 @@ MagmaHideout_2F_1R_Text_Grunt14Defeat: @ 8239C4B
 	.string "My pride as a TEAM MAGMA member…$"
 
 MagmaHideout_2F_1R_Text_Grunt14PostBattle: @ 8239C74
-	.string "If you suffer from chills, you should\n"
-	.string "join TEAM MAGMA.$"
+	.string "If you suffer from chills, you\n"
+	.string "should join TEAM MAGMA.$"
 
 MagmaHideout_2F_1R_Text_Grunt3Intro: @ 8239CAB
 	.string "Hold it right there!\p"
@@ -48,8 +48,8 @@ MagmaHideout_2F_1R_Text_Grunt3Defeat: @ 8239D09
 	.string "I concede!$"
 
 MagmaHideout_2F_1R_Text_Grunt3PostBattle: @ 8239D1D
-	.string "Maybe it would've been better if I did\n"
-	.string "just let you go unchallenged…$"
+	.string "Maybe it would've been better if I\n"
+	.string "did just let you go unchallenged…$"
 
 MagmaHideout_2F_1R_Text_Grunt4Intro: @ 8239D62
 	.string "Ahah!\n"

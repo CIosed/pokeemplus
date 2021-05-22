@@ -372,7 +372,7 @@ DewfordTown_Gym_Text_LilithPostBattle: @ 81FCE08
 	.string "back at the entrance again!$"
 
 DewfordTown_Gym_Text_BrendenIntro: @ 81FCE48
-	.string "I'll show you the gumption of\n"
+	.string "{COLOR BLUE}I'll show you the gumption of\n"
 	.string "a sailing man!$"
 
 DewfordTown_Gym_Text_BrendenDefeat: @ 81FCE75

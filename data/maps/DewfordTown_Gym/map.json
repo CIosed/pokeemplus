@@ -121,7 +121,7 @@
   ],
   "warp_events": [
     {
-      "x": 5,
+      "x": 6,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_DEWFORD_TOWN",
@@ -149,7 +149,7 @@
     },
     {
       "type": "sign",
-      "x": 7,
+      "x": 8,
       "y": 23,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
@@ -165,7 +165,7 @@
     },
     {
       "type": "sign",
-      "x": 7,
+      "x": 8,
       "y": 24,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",

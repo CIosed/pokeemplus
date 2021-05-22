@@ -108,7 +108,7 @@
   ],
   "warp_events": [
     {
-      "x": 1,
+      "x": 2,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN",

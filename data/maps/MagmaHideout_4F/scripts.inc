@@ -136,7 +136,8 @@ MagmaHideout_4F_EventScript_Tabitha:: @ 823A6D1
 MagmaHideout_4F_Text_Grunt11Intro: @ 823A6E8
 	.string "I want to see GROUDON, too, but they\n"
 	.string "won't let me see even its tail…\p"
-	.string "It's got me feeling really frustrated.\p"
+	.string "It's got me feeling really\n"
+	.string "frustrated.\p"
 	.string "Oh, no!\n"
 	.string "I blabbed about GROUDON!$"
 
@@ -171,8 +172,9 @@ MagmaHideout_4F_Text_Grunt13PostBattle: @ 823A8C6
 	.string "C-come on, one more match…$"
 
 MagmaHideout_4F_Text_TabithaIntro: @ 823A8E1
-	.string "Hehehe!\n"
-	.string "You made it this far, so I'll tell you!\p"
+	.string "Hehehe!\p"
+	.string "You made it this far, so I'll\n"
+	.string "tell you!\p"
 	.string "That's right!\n"
 	.string "Up ahead, GROUDON is sleeping!\p"
 	.string "MAXIE went to GROUDON just seconds\n"

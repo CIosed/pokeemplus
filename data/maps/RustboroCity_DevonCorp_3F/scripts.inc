@@ -301,6 +301,8 @@ RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere: @ 8212C37
 	.string "tried to take it again.\p"
 	.string "Uh… Hehehe, so, uh, could I count\n"
 	.string "on you to do that for me?\p"
+	.string "They'd never expect you to\n"
+	.string "deilver it, it'd be ideal!\p"
 	.string "Oh, that's right.\n"
 	.string "Could you wait here a second?$"
 

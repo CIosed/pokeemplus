@@ -738,7 +738,7 @@ Route109_Text_ChandlerPostBattle: @ 82979BF
 	.string "tube, too…$"
 
 Route109_Text_HaileyIntro: @ 82979EC
-	.string "I can't swim, so I'm pretending\n"
+	.string "{COLOR RED}I can't swim, so I'm pretending\n"
 	.string "to swim.$"
 
 Route109_Text_HaileyDefeated: @ 8297A15
@@ -1718,7 +1718,7 @@ Route116_Text_JosePostBattle: @ 829BC42
 	.string "So they get strong quickly, too.$"
 
 Route116_Text_JaniceIntro: @ 829BC7F
-	.string "Let me teach you how strong my\n"
+	.string "{COLOR RED}Let me teach you how strong my\n"
 	.string "adorable POKéMON is!$"
 
 Route116_Text_JaniceDefeat: @ 829BCB3
@@ -1755,7 +1755,7 @@ Route116_Text_KarenPostBattle: @ 829C010
 
 Route116_Text_SarahIntro: @ 829C173
 	.string "Just so you know, I've never once\n"
-	.string "POKéMON's bested by anyone at anything.$"
+	.string "been bested by anyone at anything.$"
 
 Route116_Text_SarahDefeat: @ 829C1B8
 	.string "Oh, my goodness.\n"
@@ -1768,7 +1768,7 @@ Route116_Text_SarahPostBattle: @ 829C1EA
 	.string "my wealth has no meaning.$"
 
 Route116_Text_DawsonIntro: @ 829C266
-	.string "When you lay your eyes on my\n"
+	.string "{COLOR BLUE}When you lay your eyes on my\n"
 	.string "POKéMON's gorgeous fur, their\l"
 	.string "beauty will render you helpless!$"
 

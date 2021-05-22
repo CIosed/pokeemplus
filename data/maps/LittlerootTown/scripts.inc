@@ -989,7 +989,7 @@ LittlerootTown_Text_WearTheseRunningShoes: @ 81E87F0
 	.string "They'll put a zip in your step!$"
 
 LittlerootTown_Text_SwitchShoesWithRunningShoes: @ 81E8925
-	.string "{PLAYER} switched shoes with the\n"
+	.string "{COLOR DARK_GREY}{PLAYER} switched shoes with the\n"
 	.string "RUNNING SHOES.$"
 
 LittlerootTown_Text_ExplainRunningShoes: @ 81E894F
@@ -1017,8 +1017,8 @@ LittlerootTown_Text_CanUsePCToStoreItems: @ 81E8ACF
 
 LittlerootTown_Text_BirchSpendsDaysInLab: @ 81E8B25
 	.string "PROF. BIRCH spends days in his LAB\n"
-	.string "studying, then he'll suddenly go out in\l"
-	.string "the wild to do more research…\p"
+	.string "studying, then he'll suddenly go out\l"
+	.string "in the wild to do more research…\p"
 	.string "When does PROF. BIRCH spend time\n"
 	.string "at home?$"
 

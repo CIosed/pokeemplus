@@ -38,7 +38,6 @@ JaggedPass_OnLoad: @ 823069C
 	end
 
 JaggedPass_EventScript_ConcealHideoutEntrance:: @ 82306A8
-	setmetatile 16, 17, METATILE_Lavaridge_RockWall, 1
 	setmetatile 16, 18, METATILE_Lavaridge_RockWall, 1
 	end
 
@@ -59,7 +58,6 @@ JaggedPass_EventScript_OpenMagmaHideout:: @ 82306BB
 	special ShakeCamera
 	waitstate
 	playse SE_EFFECTIVE
-	setmetatile 16, 17, METATILE_Lavaridge_CaveEntrance_Top, 1
 	setmetatile 16, 18, METATILE_Lavaridge_CaveEntrance_Bottom, 0
 	special DrawWholeMapView
 	delay 30

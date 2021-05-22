@@ -10,6 +10,7 @@ PetalburgWoods_EventScript_DevonResearcherLeft:: @ 822DFD7
 	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherApproachPlayerLeft
 	waitmovement 0
 	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
+	closemessage
 	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestLeft
 	delay 24
 	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestRight
@@ -63,6 +64,7 @@ PetalburgWoods_EventScript_DevonResearcherRight:: @ 822E079
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestLeft
 	waitmovement 0
 	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
+	closemessage
 	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestDown
 	delay 24
 	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestUp
@@ -79,8 +81,8 @@ PetalburgWoods_EventScript_DevonResearcherRight:: @ 822E079
 	delay 32
 	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestRight
 	waitmovement 0
-	msgbox PetalburgWoods_Text_HaveYouSeenShroomish4, MSGBOX_DEFAULT
 	closemessage
+	msgbox PetalburgWoods_Text_HaveYouSeenShroomish4, MSGBOX_DEFAULT
 	playbgm MUS_ENCOUNTER_AQUA, 0
 	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaEntrance
 	waitmovement 0
@@ -141,6 +143,7 @@ PetalburgWoods_EventScript_BagFull:: @ 822E17D
 
 PetalburgWoods_EventScript_DevonResearcherFinish:: @ 822E18B
 	msgbox PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro, MSGBOX_DEFAULT
+	closemessage
 	applymovement LOCALID_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherStartExit
 	waitmovement 0
 	msgbox PetalburgWoods_Text_ICantBeWastingTime, MSGBOX_DEFAULT
@@ -407,7 +410,7 @@ PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro: @ 822E6C7
 	.string "they were after something important?$"
 
 PetalburgWoods_Text_ICantBeWastingTime: @ 822E712
-	.string "{COLOR BLUE}Hmmm… I wonder…\n"
+	.string "{COLOR BLUE}I wonder…\n"
 	.string "I can't be wasting time!$"
 
 PetalburgWoods_Text_YoureLoadedWithItems: @ 822E741

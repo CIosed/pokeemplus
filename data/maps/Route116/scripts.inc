@@ -168,7 +168,6 @@ Route116_EventScript_BrineyTrigger:: @ 81F2D95
 	applymovement 11, Common_Movement_WalkInPlaceDown
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceUp
 	applymovement 29, Common_Movement_WalkInPlaceUp
-	waitmovement 0
 	msgbox Route116_Text_ScoundrelMadeOffWithPeeko, MSGBOX_DEFAULT
 	closemessage
 	playmoncry SPECIES_WINGULL, 2
@@ -390,13 +389,13 @@ WallyWalkInCave:
 	step_end
 
 Wally_Talk_1:
-	.string "{COLOR BLUE}Wally: {PLAYER}!$"
+	.string "{COLOR BLUE}WALLY: {PLAYER}!$"
 
 Wally_Talk_2:
 	.string "{COLOR BLUE}Uhm… I… I need your help!\p"
-	.string "Mr. Briney here got his Pokémon\n"
+	.string "MR. BRINEY here got his POKéMON\n"
 	.string "kidnapped by this thug.\p"
-	.string "But I don't think me and Ralts can\n"
+	.string "But I don't think me and RALTS can\n"
 	.string "take him on by ourselves.$"
 
 Wally_Talk_3:

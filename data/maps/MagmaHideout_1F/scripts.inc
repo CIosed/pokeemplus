@@ -17,10 +17,11 @@ MagmaHideout_1F_EventScript_Grunt2:: @ 82398A3
 	end
 
 MagmaHideout_1F_Text_Grunt1Intro: @ 82398BA
-	.string "When TEAM MAGMA has roll call, we get\n"
-	.string "important guarding assignments in\l"
-	.string "the order that we line up.\p"
-	.string "That's why I'm stuck off in this corner.\n"
+	.string "When TEAM MAGMA has roll call, we\n"
+	.string "get important guarding assignments\l"
+	.string "in the order that we line up.\p"
+	.string "That's why I'm stuck off in this\n"
+	.string "corner.\p"
 	.string "I'm always late to roll call!$"
 
 MagmaHideout_1F_Text_Grunt1Defeat: @ 8239964

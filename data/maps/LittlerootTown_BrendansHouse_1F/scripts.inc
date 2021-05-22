@@ -64,7 +64,6 @@ LittlerootTown_BrendansHouse_1F_OnFrame: @ 81F77EA
 	.2byte 0
 
 LittlerootTown_BrendansHouse_1F_EventScript_GoUpstairsToSetClock:: @ 81F7814
-	lockall
 	msgbox PlayersHouse_1F_Text_GoSetTheClock, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs
@@ -80,7 +79,6 @@ LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs: @ 81F783A
 	step_end
 
 LittlerootTown_BrendansHouse_1F_EventScript_EnterHouseMovingIn:: @ 81F783C
-	lockall
 	setvar VAR_0x8004, LOCALID_MOM
 	setvar VAR_0x8005, MALE
 	goto PlayersHouse_1F_EventScript_EnterHouseMovingIn
@@ -120,7 +118,6 @@ LittlerootTown_BrendansHouse_1F_Movement_RivalMomApproach: @ 81F789C
 	step_end
 
 LittlerootTown_BrendansHouse_1F_EventScript_GoSeeRoom:: @ 81F78A3
-	lockall
 	setvar VAR_0x8004, LOCALID_MOM
 	setvar VAR_0x8005, MALE
 	applymovement VAR_0x8004, Common_Movement_WalkInPlaceFastestLeft
@@ -129,19 +126,16 @@ LittlerootTown_BrendansHouse_1F_EventScript_GoSeeRoom:: @ 81F78A3
 	end
 
 LittlerootTown_BrendansHouse_1F_EventScript_MeetRival0:: @ 81F78BE
-	lockall
 	setvar VAR_0x8008, 0
 	goto LittlerootTown_BrendansHouse_1F_EventScript_MeetRival
 	end
 
 LittlerootTown_BrendansHouse_1F_EventScript_MeetRival1:: @ 81F78CA
-	lockall
 	setvar VAR_0x8008, 1
 	goto LittlerootTown_BrendansHouse_1F_EventScript_MeetRival
 	end
 
 LittlerootTown_BrendansHouse_1F_EventScript_MeetRival2:: @ 81F78D6
-	lockall
 	setvar VAR_0x8008, 2
 	goto LittlerootTown_BrendansHouse_1F_EventScript_MeetRival
 	end

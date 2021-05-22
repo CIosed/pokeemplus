@@ -109,7 +109,7 @@ GraniteCave_StevensRoom_Movement_StevenExitSouth:
 text_1:
     .string "{COLOR BLUE}???: Hmm…\p"
 	.string "So these are the super-ancient\n"
-	.string "Pokémon…$"
+	.string "POKéMON…$"
 	
 text_2:
     .string "{COLOR BLUE}Hm?$"
@@ -140,7 +140,7 @@ GraniteCave_StevensRoom_Text_ThankYouTakeThis:
 	.string "STEEL WING.$"
 
 GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister:
-	.string "{COLOR BLUE}STEVEN: Your POKÉMON appear quite\n"
+	.string "{COLOR BLUE}STEVEN: Your POKéMON appear quite\n"
 	.string "capable.\p"
 	.string "Looking at you all together…\p"
 	.string "I think you have in you what it takes\n"
@@ -148,12 +148,12 @@ GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister:
 	.string "Provided you keep training, that is.\p"
 	.string "I know, since we've gotten to know\n"
 	.string "each other, let's register one\l"
-	.string "another in our POKÉNAVS.\p"
+	.string "another in our POKéNAVS.\p"
 	.string "… … … … … …$"
 
 GraniteCave_StevensRoom_Text_RegisteredSteven:
 	.string "Registered STEVEN\n"
-	.string "in the POKÉNAV.$"
+	.string "in the POKéNAV.$"
 
 GraniteCave_StevensRoom_Text_IveGotToHurryAlong:
 	.string "{COLOR BLUE}Good luck to you.\n"

@@ -122,7 +122,7 @@
   "warp_events": [
     {
       "x": 2,
-      "y": 1,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_RUSTBORO_CITY_FLAT1_1F",
       "dest_warp_id": 2

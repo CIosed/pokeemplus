@@ -113,8 +113,10 @@ RustboroCity_PokemonSchool_EventScript_GaveQuickClaw:: @ 8213FFB
 
 RustboroCity_PokemonSchool_Movement_TeacherCheckOnStudentsWest: @ 8214010
 	walk_left
+	walk_left
 	walk_down
 	walk_down
+	walk_right
 	walk_right
 	walk_in_place_fastest_down
 	delay_16
@@ -131,8 +133,10 @@ RustboroCity_PokemonSchool_Movement_TeacherCheckOnStudentsWest: @ 8214010
 	walk_up
 	walk_left
 	walk_left
+	walk_left
 	walk_up
 	walk_up
+	walk_right
 	walk_right
 	step_end
 

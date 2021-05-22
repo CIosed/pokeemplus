@@ -43,7 +43,7 @@
   ],
   "warp_events": [
     {
-      "x": 2,
+      "x": 3,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_RUSTBORO_CITY",

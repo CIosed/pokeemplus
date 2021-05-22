@@ -87,6 +87,14 @@ PetalburgCity_Gym_EventScript_ReturnFromWallyTutorial:: @ 82049A4
 	lockall
 	msgbox PetalburgCity_Gym_Text_DadSoDidItWorkOut, MSGBOX_DEFAULT
 	msgbox PetalburgCity_Gym_Text_WallyThankYouBye, MSGBOX_DEFAULT
+	playfanfare 1
+	msgbox PetalburgCity_Gym_Text_WallyThankYouBye2, MSGBOX_DEFAULT
+	delay 10
+	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFastestLeft
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestRight
+	waitmovement 0
+	msgbox PetalburgCity_Gym_Text_WallyThankYouBye3, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFastestDown
 	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitGym
@@ -106,6 +114,8 @@ PetalburgCity_Gym_Movement_WallyExitGym: @ 82049EC
 	walk_down
 	walk_down
 	walk_down
+	walk_left
+	walk_in_place_down
 	delay_16
 	step_end
 
@@ -151,7 +161,7 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorialEast:: @ 8204AA1
 
 PetalburgCity_Gym_EventScript_BeginWallyTutorial:: @ 8204AAC
 	addobject LOCALID_WALLY
-	playse SE_DOOR
+	playse SE_EXIT
 	compare VAR_0x8008, 0
 	call_if_eq PetalburgCity_Gym_EventScript_WallyArriveSouth
 	compare VAR_0x8008, 1
@@ -182,7 +192,15 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorial:: @ 8204AAC
 	compare VAR_0x8008, 3
 	call_if_eq PetalburgCity_Gym_EventScript_NormanAddressWallyEast
 	msgbox PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon, MSGBOX_DEFAULT
+	closemessage
+	playfanfare 1
+	msgbox PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon2, MSGBOX_DEFAULT
+	delay 10
 	msgbox PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall, MSGBOX_DEFAULT
+	closemessage
+	playfanfare 1
+	msgbox PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall2, MSGBOX_DEFAULT
+	delay 10
 	msgbox PetalburgCity_Gym_Text_WallyOhWowThankYou, MSGBOX_DEFAULT
 	compare VAR_0x8008, 0
 	call_if_eq PetalburgCity_Gym_EventScript_NormanFaceDoorSouth
@@ -250,25 +268,39 @@ PetalburgCity_Gym_EventScript_ExitGymWithWallySouth:: @ 8204C78
 	applymovement LOCALID_NORMAN, Common_Movement_WalkInPlaceFastestDown
 	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitSouthWest
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallySouth
-	waitmovement 0
+	waitmovement LOCALID_WALLY
+	playse SE_EXIT
+	removeobject LOCALID_WALLY
+	waitmovement OBJ_EVENT_ID_PLAYER
 	return
 
 PetalburgCity_Gym_EventScript_ExitGymWithWallyNorth:: @ 8204C91
 	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitNorth
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallyNorth
-	waitmovement 0
+	waitmovement LOCALID_WALLY
+	playse SE_EXIT
+	removeobject LOCALID_WALLY
+	waitmovement OBJ_EVENT_ID_PLAYER
+	applymovement OBJ_EVENT_ID_PLAYER, Player_ExitGym
+	waitmovement OBJ_EVENT_ID_PLAYER
 	return
 
 PetalburgCity_Gym_EventScript_ExitGymWithWallyWest:: @ 8204CA3
 	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitSouthWest
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallyWest
-	waitmovement 0
+	waitmovement LOCALID_WALLY
+	playse SE_EXIT
+	removeobject LOCALID_WALLY
+	waitmovement OBJ_EVENT_ID_PLAYER
 	return
 
 PetalburgCity_Gym_EventScript_ExitGymWithWallyEast:: @ 8204CB5
 	applymovement LOCALID_WALLY, PetalburgCity_Gym_Movement_WallyExitEast
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Gym_Movement_PlayerExitWithWallyEast
-	waitmovement 0
+	waitmovement LOCALID_WALLY
+	playse SE_EXIT
+	removeobject LOCALID_WALLY
+	waitmovement OBJ_EVENT_ID_PLAYER
 	return
 
 PetalburgCity_Gym_EventScript_NormanAddressPlayerSouth:: @ 8204CC7
@@ -707,6 +739,7 @@ PetalburgCity_Gym_Movement_WallyExitNorth: @ 82050F2
 	walk_down
 	walk_down
 	walk_down
+	walk_left
 	walk_in_place_fastest_up
 	delay_16
 	walk_in_place_down
@@ -715,7 +748,6 @@ PetalburgCity_Gym_Movement_WallyExitNorth: @ 82050F2
 PetalburgCity_Gym_Movement_WallyExitEast: @ 82050FA
 	walk_down
 	walk_down
-	walk_right
 	walk_down
 	walk_in_place_fastest_up
 	delay_16
@@ -737,7 +769,6 @@ PetalburgCity_Gym_Movement_PlayerExitWithWallyNorth: @ 8205109
 	delay_16
 	walk_down
 	walk_down
-	walk_down
 	delay_8
 	step_end
 
@@ -749,8 +780,8 @@ PetalburgCity_Gym_Movement_PlayerExitWithWallySouth: @ 8205111
 	walk_down
 	walk_down
 	walk_down
+	walk_left
 	walk_down
-	delay_8
 	step_end
 
 PetalburgCity_Gym_Movement_PlayerExitWithWallyWest: @ 820511B
@@ -759,8 +790,8 @@ PetalburgCity_Gym_Movement_PlayerExitWithWallyWest: @ 820511B
 	walk_down
 	walk_down
 	walk_down
+	walk_left
 	walk_down
-	delay_8
 	step_end
 
 PetalburgCity_Gym_Movement_PlayerExitWithWallyEast: @ 8205123
@@ -772,7 +803,10 @@ PetalburgCity_Gym_Movement_PlayerExitWithWallyEast: @ 8205123
 	walk_down
 	walk_right
 	walk_down
-	delay_8
+	step_end
+
+Player_ExitGym:
+	walk_down
 	step_end
 
 PetalburgCity_Gym_EventScript_NoAmountOfTrainingIsEnough:: @ 820512D
@@ -1270,15 +1304,19 @@ PetalburgCity_Gym_Text_DadPlayerGoWithWally: @ 82059E8
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon: @ 8205A46
 	.string "WALLY, here, I'll loan\n"
-	.string "you my POKéMON.\p"
-	.string "WALLY received a ZIGZAGOON!$"
+	.string "you my POKéMON.$"
+
+PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon2: @ 8205A46
+	.string "{COLOR DARK_GREY}WALLY received a ZIGZAGOON!$"
 
 PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall: @ 8205A89
 	.string "WALLY: Oh, wow!\n"
 	.string "A POKéMON!\p"
 	.string "DAD: Hm. I'll give you a\n"
-	.string "POKé BALL, too. Go for it!\p"
-	.string "WALLY received a POKé BALL!$"
+	.string "POKé BALL, too. Go for it!$"
+
+PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall2: @ 8205A89
+	.string "{COLOR DARK_GREY}WALLY received a POKé BALL!$"
 
 PetalburgCity_Gym_Text_WallyOhWowThankYou: @ 8205AF4
 	.string "WALLY: Oh, wow!\n"
@@ -1293,8 +1331,13 @@ PetalburgCity_Gym_Text_DadSoDidItWorkOut: @ 8205B32
 
 PetalburgCity_Gym_Text_WallyThankYouBye: @ 8205B4C
 	.string "{COLOR BLUE}WALLY: Thank you, yes, it did.\n"
-	.string "Here's your POKéMON back.\p"
-	.string "{PLAYER}, thank you for coming along\n"
+	.string "Here's your POKéMON back.$"
+
+PetalburgCity_Gym_Text_WallyThankYouBye2: @ 8205B4C
+	.string "{COLOR DARK_GREY}WALLY returned the ZIGZAGOON.$"
+
+PetalburgCity_Gym_Text_WallyThankYouBye3: @ 8205B4C
+	.string "{COLOR BLUE}{PLAYER}, thank you for coming along\n"
 	.string "with me.\p"
 	.string "You two are why I was able to catch\n"
 	.string "my POKéMON.\p"

@@ -40,13 +40,16 @@ PetalburgCity_OnFrame: @ 81DC31C
 	.2byte 0
 
 PetalburgCity_EventScript_WallyTutorial:: @ 81DC32E
-	lockall
 	special SavePlayerParty
 	special PutZigzagoonInPlayerParty
 	applymovement LOCALID_WALLY, PetalburgCity_Movement_WallyTutorialWally
 	applymovement OBJ_EVENT_ID_PLAYER, PetalburgCity_Movement_WallyTutorialPlayer
 	waitmovement 0
 	msgbox Route102_Text_WatchMeCatchPokemon, MSGBOX_DEFAULT
+	closemessage
+    playmoncry SPECIES_ZIGZAGOON, 1
+	delay 20
+	msgbox Route102_Text_WatchMeCatchPokemon2, MSGBOX_DEFAULT
 	special StartWallyTutorialBattle
 	waitstate
 	msgbox Route102_Text_WallyIDidIt, MSGBOX_DEFAULT

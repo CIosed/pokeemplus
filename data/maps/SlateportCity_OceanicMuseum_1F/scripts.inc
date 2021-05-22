@@ -229,6 +229,8 @@ SlateportCity_OceanicMuseum_1F_Movement_FamiliarGruntExitNorth: @ 820AFCE
 	walk_fast_down
 	walk_fast_down
 	walk_fast_down
+	walk_fast_left
+	walk_fast_down
 	delay_8
 	step_end
 
