@@ -2486,12 +2486,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GruntAquaHideout8[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Shawn[] = {
     {
     .iv = 100,
-    .lvl = 21,
+    .lvl = 19,
     .species = SPECIES_VOLTORB,
     },
     {
     .iv = 100,
-    .lvl = 21,
+    .lvl = 20,
     .species = SPECIES_MAGNEMITE,
     }
 };
@@ -3636,7 +3636,7 @@ static const struct TrainerMonFullControl sParty_Wattson1[] = {
     {
     .friendship = 0,
     .ivs = BEST_IV_SPREAD,
-    .lvl = 24,
+    .lvl = 23,
     .species = SPECIES_MAGNEMITE,
     .heldItem = ITEM_NONE,
 	.ability = 0,
@@ -3650,7 +3650,7 @@ static const struct TrainerMonFullControl sParty_Wattson1[] = {
     {
     .friendship = 255,
     .ivs = BEST_IV_SPREAD,
-    .lvl = 26,
+    .lvl = 24,
     .species = SPECIES_MANECTRIC,
     .heldItem = ITEM_SITRUS_BERRY,
 	.ability = 0,
@@ -7132,7 +7132,7 @@ static const struct TrainerMonFullControl sParty_BrendanRoute110Mudkip[] = {
     {
     .friendship = 0,
     .ivs = BEST_IV_SPREAD,
-    .lvl = 22,
+    .lvl = 20,
     .species = SPECIES_GROVYLE,
     .heldItem = ITEM_NONE,
 	.ability = 0,
@@ -7244,7 +7244,7 @@ static const struct TrainerMonFullControl sParty_BrendanRoute110Treecko[] = {
     {
     .friendship = 0,
     .ivs = BEST_IV_SPREAD,
-    .lvl = 22,
+    .lvl = 20,
     .species = SPECIES_COMBUSKEN,
     .heldItem = ITEM_NONE,
 	.ability = 0,
@@ -7356,7 +7356,7 @@ static const struct TrainerMonFullControl sParty_BrendanRoute110Torchic[] = {
     {
     .friendship = 0,
     .ivs = BEST_IV_SPREAD,
-    .lvl = 22,
+    .lvl = 20,
     .species = SPECIES_MARSHTOMP,
     .heldItem = ITEM_NONE,
 	.ability = 0,
@@ -7468,7 +7468,7 @@ static const struct TrainerMonFullControl sParty_MayRoute110Mudkip[] = {
     {
     .friendship = 0,
     .ivs = BEST_IV_SPREAD,
-    .lvl = 22,
+    .lvl = 20,
     .species = SPECIES_GROVYLE,
     .heldItem = ITEM_NONE,
 	.ability = 0,
@@ -7580,7 +7580,7 @@ static const struct TrainerMonFullControl sParty_MayRoute110Treecko[] = {
     {
     .friendship = 0,
     .ivs = BEST_IV_SPREAD,
-    .lvl = 22,
+    .lvl = 20,
     .species = SPECIES_COMBUSKEN,
     .heldItem = ITEM_NONE,
 	.ability = 0,
@@ -7692,7 +7692,7 @@ static const struct TrainerMonFullControl sParty_MayRoute110Torchic[] = {
     {
     .friendship = 0,
     .ivs = BEST_IV_SPREAD,
-    .lvl = 22,
+    .lvl = 20,
     .species = SPECIES_MARSHTOMP,
     .heldItem = ITEM_NONE,
 	.ability = 0,
@@ -11396,7 +11396,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Johnson[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Melina[] = {
     {
     .iv = 0,
-    .lvl = 20,
+    .lvl = 19,
     .species = SPECIES_DODUO,
     }
 };
@@ -11404,7 +11404,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Melina[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Brandi[] = {
     {
     .iv = 0,
-    .lvl = 20,
+    .lvl = 19,
     .species = SPECIES_KIRLIA,
     }
 };
@@ -11412,7 +11412,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Brandi[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Aisha[] = {
     {
     .iv = 0,
-    .lvl = 20,
+    .lvl = 19,
     .species = SPECIES_MEDITITE,
     }
 };
@@ -12900,14 +12900,14 @@ static const struct TrainerMonItemCustomMoves sParty_Juan5[] = {
 static const struct TrainerMonItemCustomMoves sParty_Angelo[] = {
     {
     .iv = 100,
-    .lvl = 21,
+    .lvl = 19,
     .species = SPECIES_ILLUMISE,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_CHARM, MOVE_STRUGGLE_BUG}
     },
     {
     .iv = 100,
-    .lvl = 21,
+    .lvl = 20,
     .species = SPECIES_VOLBEAT,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_CONFUSE_RAY, MOVE_STRUGGLE_BUG}

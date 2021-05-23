@@ -504,8 +504,8 @@ MauvilleCity_Text_WallyWillYouBattleMe: @ 81DF9B2
 
 MauvilleCity_Text_WallyMyUncleWontKnowImStrong: @ 81DFA4A
 	.string "WALLY: Oh… If you won't battle me,\n"
-	.string "{PLAYER}, my UNCLE won't know that I've\l"
-	.string "become really strong.$"
+	.string "{PLAYER}, my UNCLE won't know that\l"
+	.string "I've become really strong.$"
 
 MauvilleCity_Text_UncleCanYouBattleWally: @ 81DFAA5
 	.string "UNCLE: {PLAYER}{KUN}, was it?\n"

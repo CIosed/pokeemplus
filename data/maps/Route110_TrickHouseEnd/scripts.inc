@@ -360,7 +360,8 @@ Route110_TrickHouseEnd_Text_NoRoomForThis: @ 826B760
 	.string "your reward will be with me till later.$"
 
 Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou: @ 826B7EF
-	.string "Scrub that smug smirk from your face!\p"
+	.string "Scrub that smug smirk from\n"
+	.string "your face!\p"
 	.string "It's much too early to think\n"
 	.string "you've won!\p"
 	.string "I'll make new tricks to stump you,\n"

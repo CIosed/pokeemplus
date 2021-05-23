@@ -755,8 +755,8 @@ MauvilleCity_GameCorner_Text_DontBeNegative: @ 82107CE
 	.string "You can have this!$"
 
 MauvilleCity_GameCorner_Text_CantWinJackpot: @ 82107FB
-	.string "There's a prize I want, but I can't win\n"
-	.string "the jackpot.$"
+	.string "There's a prize I want, but I\n"
+	.string "can't win the jackpot.$"
 
 MauvilleCity_GameCorner_Text_NeedCoinCaseGoNextDoor: @ 8210830
 	.string "Hey, kid, if you want to play here,\n"

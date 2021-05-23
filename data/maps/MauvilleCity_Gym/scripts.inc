@@ -281,7 +281,7 @@ MauvilleCity_Gym_Text_GymGuidePostVictory: @ 820E283
 	.string "You've powered the door open!$"
 
 MauvilleCity_Gym_Text_KirkIntro: @ 820E2BC
-	.string "My electric soul, it'll shatter\n"
+	.string "{COLOR BLUE}My electric soul, it'll shatter\n"
 	.string "your dreams whole, whoa-yeahah!$"
 
 MauvilleCity_Gym_Text_KirkDefeat: @ 820E2FC
@@ -289,8 +289,8 @@ MauvilleCity_Gym_Text_KirkDefeat: @ 820E2FC
 	.string "over-driven electric, man!$"
 
 MauvilleCity_Gym_Text_KirkPostBattle: @ 820E336
-	.string "POKéMON and rock, it's all about heart,\n"
-	.string "whoa-yeah!$"
+	.string "POKéMON and rock, it's all about\n"
+	.string "heart, whoa-yeah!$"
 
 MauvilleCity_Gym_Text_ShawnIntro: @ 820E369
 	.string "I trained under WATTSON!\n"

@@ -166,7 +166,7 @@ Route110_TrickHouseEntrance_EventScript_SetHidingSpotPuzzle1:: @ 8269C8C
 	end
 
 Route110_TrickHouseEntrance_EventScript_SetHidingSpotPuzzle2:: @ 8269C94
-	setobjectxy LOCALID_TRICK_MASTER, 11, 5
+	setobjectxy LOCALID_TRICK_MASTER, 10, 5
 	end
 
 Route110_TrickHouseEntrance_EventScript_SetHidingSpotPuzzle3:: @ 8269C9C
@@ -182,7 +182,7 @@ Route110_TrickHouseEntrance_EventScript_SetHidingSpotPuzzle5:: @ 8269CAC
 	end
 
 Route110_TrickHouseEntrance_EventScript_SetHidingSpotPuzzle6:: @ 8269CB4
-	setobjectxy LOCALID_TRICK_MASTER, 11, 1
+	setobjectxy LOCALID_TRICK_MASTER, 10, 1
 	end
 
 Route110_TrickHouseEntrance_EventScript_SetHidingSpotPuzzle7:: @ 8269CBC

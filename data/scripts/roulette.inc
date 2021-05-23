@@ -38,7 +38,7 @@ Roulette_Text_SpecialRateTable:: @ 82A5B6B
 	.string "Special rate table right now!$"
 
 Roulette_Text_ControlsInstruction:: @ 82A5B89
-	.string "Place your wager with the + Control\n"
+	.string "Place your wager with the Control\n"
 	.string "Pad, then press the A Button.$"
 
 Roulette_Text_ItsAHit:: @ 82A5BCB

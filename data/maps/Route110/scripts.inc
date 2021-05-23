@@ -933,12 +933,12 @@ Route110_Text_ThereIsNoRecord: @ 81F0A5E
 	.string "challenge. There is no record…$"
 
 Route110_Text_ImagineSeeingYouHere: @ 81F0AB5
-	.string "PROF. BIRCH: Oh, {PLAYER}{KUN}!\n"
+	.string "{COLOR BLUE}PROF. BIRCH: Oh, {PLAYER}{KUN}!\n"
 	.string "Imagine seeing you here!\p"
 	.string "And where might my {RIVAL} be?$"
 
 Route110_Text_HeardYouInstallMatchCall: @ 81F0AFF
-	.string "Oh, I see!\n"
+	.string "{COLOR BLUE}Oh, I see!\n"
 	.string "You two are running separately.\l"
 	.string "Well, that's fine.\p"
 	.string "Oh, yes, I heard that your POKéNAV\n"
@@ -950,11 +950,11 @@ Route110_Text_HeardYouInstallMatchCall: @ 81F0AFF
 	.string "… … … … … …$"
 
 Route110_Text_RegisteredBirchInPokenav: @ 81F0C0C
-	.string "Registered PROF. BIRCH\n"
+	.string "{COLOR DARK_GREY}Registered PROF. BIRCH\n"
 	.string "in the POKéNAV.$"
 
 Route110_Text_KeepAnEyeOutForRival: @ 81F0C33
-	.string "PROF. BIRCH: {PLAYER}{KUN}…\p"
+	.string "{COLOR BLUE}PROF. BIRCH: {PLAYER}{KUN}…\p"
 	.string "Please keep an eye out for my {RIVAL}.\n"
 	.string "… … … … … …\p"
 	.string "Well, I had better get going.\n"

@@ -896,7 +896,7 @@ Route110_Text_TimmyPostBattle: @ 8298579
 	.string "just caught.$"
 
 Route110_Text_AlyssaIntro: @ 82985AB
-	.string "I fell off CYCLING ROAD…\p"
+	.string "{COLOR RED}I fell off CYCLING ROAD…\p"
 	.string "I'll get over my embarrassment by\n"
 	.string "battling with you!$"
 
@@ -920,7 +920,7 @@ Route110_Text_JosephPostBattle: @ 82986A9
 	.string "Losing has made me a better man!$"
 
 Route110_Text_KalebIntro: @ 82986ED
-	.string "When cute POKéMON help each other…\n"
+	.string "{COLOR BLUE}When cute POKéMON help each other…\n"
 	.string "You won't see a more adorable sight!$"
 
 Route110_Text_KalebDefeated: @ 8298735
@@ -1101,11 +1101,11 @@ Route111_Text_BrandenPostBattle: @ 82994FB
 	.string "my sandwiches.$"
 
 Route111_Text_TyronIntro: @ 8299524
-	.string "This is my favorite kind of POKéMON!$"
+	.string "{COLOR BLUE}This is my favorite kind of POKéMON!$"
 
 Route111_Text_TyronDefeat: @ 8299549
 	.string "Wait!\p"
-	.string "Did you get a good look at\l"
+	.string "Did you get a good look at\n"
 	.string "my POKéMON?$"
 
 Route111_Text_TyronPostBattle: @ 8299576
@@ -1127,7 +1127,7 @@ Route111_Text_CelinaPostBattle: @ 829964B
 	.string "You're one fabulous TRAINER.$"
 
 Route111_Text_HaydenIntro: @ 8299682
-	.string "When you're as famished as I am,\n"
+	.string "{COLOR BLUE}When you're as famished as I am,\n"
 	.string "there is no room for pity!$"
 
 Route111_Text_HaydenDefeat: @ 82996BE
