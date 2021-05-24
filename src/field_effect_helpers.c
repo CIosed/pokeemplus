@@ -85,11 +85,11 @@ static void LoadObjectRegularReflectionPalette(struct ObjectEvent *objectEvent, 
     {
         if (graphicsInfo->paletteSlot == 0)
         {
-            LoadPlayerObjectReflectionPalette(graphicsInfo->paletteTag1, paletteIndex);
+            LoadPlayerObjectReflectionPalette(graphicsInfo->paletteTag, paletteIndex);
         }
         else if (graphicsInfo->paletteSlot == 10)
         {
-            LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag1, paletteIndex);
+            LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag, paletteIndex);
         }
         else
         {

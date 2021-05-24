@@ -118,7 +118,7 @@ static void GetObjectEventMovingCameraOffset(s16 *, s16 *);
 //static struct ObjectEventTemplate *GetObjectEventTemplateByLocalIdAndMap(u8, u8, u8);
 static void LoadObjectEventPalette(u16);
 static void RemoveObjectEventIfOutsideView(struct ObjectEvent *);
-static void sub_808E1B8(u8, s16, s16);
+static void SpawnObjectEventOnReturnToField(u8, s16, s16);
 static void SetPlayerAvatarObjectEventIdAndObjectId(u8, u8);
 static void sub_808E38C(struct ObjectEvent *);
 static u8 sub_808E8F4(const struct SpritePalette *);
@@ -1449,16 +1449,16 @@ static u8 TrySetupObjectEventSprite(struct ObjectEventTemplate *objectEventTempl
     paletteSlot = graphicsInfo->paletteSlot;
     if (paletteSlot == 0)
     {
-        LoadPlayerObjectReflectionPalette(graphicsInfo->paletteTag1, 0);
+        UpdateSpritePaletteWithWeather(IndexOfSpritePaletteTag(graphicsInfo->paletteTag));
     }
     else if (paletteSlot == 10)
     {
-        LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag1, 10);
+        LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag, 10);
     }
     else if (paletteSlot >= 16)
     {
         paletteSlot -= 16;
-        sub_808EAB0(graphicsInfo->paletteTag1, paletteSlot);
+        sub_808EAB0(graphicsInfo->paletteTag, paletteSlot);
     }
 
     if (objectEvent->movementType == MOVEMENT_TYPE_INVISIBLE)
@@ -1560,7 +1560,7 @@ static void MakeObjectTemplateFromObjectEventGraphicsInfo(u16 graphicsId, void (
     const struct ObjectEventGraphicsInfo *graphicsInfo = GetObjectEventGraphicsInfo(graphicsId);
 
     spriteTemplate->tileTag = graphicsInfo->tileTag;
-    spriteTemplate->paletteTag = graphicsInfo->paletteTag1;
+    spriteTemplate->paletteTag = graphicsInfo->paletteTag;
     spriteTemplate->oam = graphicsInfo->oam;
     spriteTemplate->anims = graphicsInfo->anims;
     spriteTemplate->images = graphicsInfo->images;
@@ -1636,11 +1636,11 @@ u8 CreateObjectSprite(u16 graphicsId, u8 a1, s16 x, s16 y, u8 z, u8 direction)
         sprite->data[1] = z;
         if (graphicsInfo->paletteSlot == 10)
         {
-            LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag1, graphicsInfo->paletteSlot);
+            LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot);
         }
         else if (graphicsInfo->paletteSlot >= 16)
         {
-            sub_808EAB0(graphicsInfo->paletteTag1, graphicsInfo->paletteSlot | 0xf0);
+            sub_808EAB0(graphicsInfo->paletteTag, graphicsInfo->paletteSlot | 0xf0);
         }
         if (subspriteTables != NULL)
         {
@@ -1739,13 +1739,13 @@ void sub_808E16C(s16 x, s16 y)
     {
         if (gObjectEvents[i].active)
         {
-            sub_808E1B8(i, x, y);
+            SpawnObjectEventOnReturnToField(i, x, y);
         }
     }
     CreateReflectionEffectSprites();
 }
 
-static void sub_808E1B8(u8 objectEventId, s16 x, s16 y)
+static void SpawnObjectEventOnReturnToField(u8 objectEventId, s16 x, s16 y)
 {
     u8 spriteId;
     u8 paletteSlot;
@@ -1776,16 +1776,16 @@ static void sub_808E1B8(u8 objectEventId, s16 x, s16 y)
     paletteSlot = graphicsInfo->paletteSlot;
     if (paletteSlot == 0)
     {
-        LoadPlayerObjectReflectionPalette(graphicsInfo->paletteTag1, graphicsInfo->paletteSlot);
+        LoadPlayerObjectReflectionPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot);
     }
     else if (paletteSlot == 10)
     {
-        LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag1, graphicsInfo->paletteSlot);
+        LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot);
     }
     else if (paletteSlot >= 16)
     {
         paletteSlot -= 16;
-        sub_808EAB0(graphicsInfo->paletteTag1, paletteSlot);
+        sub_808EAB0(graphicsInfo->paletteTag, paletteSlot);
     }
     *(u16 *)&spriteTemplate.paletteTag = 0xFFFF;
     spriteId = CreateSprite(&spriteTemplate, 0, 0, 0);
@@ -1798,7 +1798,7 @@ static void sub_808E1B8(u8 objectEventId, s16 x, s16 y)
         sprite->pos1.x += 8;
         sprite->pos1.y += 16 + sprite->centerToCornerVecY;
 
-        UpdateSpritePaletteWithWeather(IndexOfSpritePaletteTag(graphicsInfo->paletteTag1)); //not paletteSlot in case of dynamic ow pals
+        UpdateSpritePaletteWithWeather(IndexOfSpritePaletteTag(graphicsInfo->paletteTag)); //not paletteSlot in case of dynamic ow pals
         sprite->images = graphicsInfo->images;
         if (objectEvent->movementType == MOVEMENT_TYPE_PLAYER)
         {
@@ -1854,16 +1854,21 @@ void ObjectEventSetGraphicsId(struct ObjectEvent *objectEvent, u16 graphicsId)
     paletteSlot = graphicsInfo->paletteSlot;
     if (paletteSlot == 0)
     {
-        PatchObjectPalette(graphicsInfo->paletteTag1, graphicsInfo->paletteSlot);
+        PatchObjectPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot);
+        #if DYNAMIC_OW_PALS == TRUE
+            UpdateSpritePaletteWithWeather(FindObjectEventPaletteIndexByTag(graphicsInfo->paletteTag);
+        #else
+            UpdateSpritePaletteWithWeather(graphicsInfo->paletteSlot);
+        #endif
     }
     else if (paletteSlot == 10)
     {
-        LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag1, graphicsInfo->paletteSlot);
+        LoadSpecialObjectReflectionPalette(graphicsInfo->paletteTag, graphicsInfo->paletteSlot);
     }
     else if (paletteSlot >= 16)
     {
         paletteSlot -= 16;
-        sub_808EAB0(graphicsInfo->paletteTag1, paletteSlot);
+        sub_808EAB0(graphicsInfo->paletteTag, paletteSlot);
     }
     sprite->oam.shape = graphicsInfo->oam->shape;
     sprite->oam.size = graphicsInfo->oam->size;
@@ -1961,7 +1966,7 @@ const struct ObjectEventGraphicsInfo *GetObjectEventGraphicsInfo(u16 graphicsId)
     {
         graphicsId = OBJ_EVENT_GFX_NINJA_BOY;
     }
-    
+
     return gObjectEventGraphicsInfoPointers[graphicsId];
 }
 
@@ -2427,7 +2432,7 @@ void SetObjectEventDirection(struct ObjectEvent *objectEvent, u8 direction)
 
 static const u8 *GetObjectEventScriptPointerByLocalIdAndMap(u8 localId, u8 mapNum, u8 mapGroup)
 {
-    return GetObjectEventTemplateByLocalIdAndMap(localId, mapNum, mapGroup)->script;  
+    return GetObjectEventTemplateByLocalIdAndMap(localId, mapNum, mapGroup)->script;
 }
 
 const u8 *GetObjectEventScriptPointerByObjectEventId(u8 objectEventId)
@@ -4821,7 +4826,7 @@ u8 GetSidewaysStairsCollision(struct ObjectEvent *objectEvent, u8 dir, u8 curren
 {
     if ((dir == DIR_SOUTH || dir == DIR_NORTH) && collision != COLLISION_NONE)
         return collision;
-    
+
     if (MetatileBehavior_IsSidewaysStairsLeftSide(nextBehavior))
     {
         //moving ONTO left side stair
@@ -4854,7 +4859,7 @@ u8 GetSidewaysStairsCollision(struct ObjectEvent *objectEvent, u8 dir, u8 curren
         else
             return collision;
     }
-    
+
     return collision;
 }
 
@@ -4870,7 +4875,7 @@ static u8 GetVanillaCollision(struct ObjectEvent *objectEvent, s16 x, s16 y, u8 
         return COLLISION_ELEVATION_MISMATCH;
     else if (DoesObjectCollideWithObjectAt(objectEvent, x, y))
         return COLLISION_OBJECT_EVENT;
-    
+
     return COLLISION_NONE;
 }
 
@@ -4910,9 +4915,9 @@ u8 GetCollisionAtCoords(struct ObjectEvent *objectEvent, s16 x, s16 y, u32 dir)
     u8 currentBehavior = MapGridGetMetatileBehaviorAt(objectEvent->currentCoords.x, objectEvent->currentCoords.y);
     u8 nextBehavior = MapGridGetMetatileBehaviorAt(x, y);
     u8 collision;
-    
+
     objectEvent->directionOverwrite = DIR_NONE;
-    
+
     //sideways stairs checks
     if (MetatileBehavior_IsSidewaysStairsLeftSideTop(nextBehavior) && dir == DIR_EAST)
         return COLLISION_IMPASSABLE;    //moving onto left-side top edge east from regular ground -> nope
@@ -4931,10 +4936,10 @@ u8 GetCollisionAtCoords(struct ObjectEvent *objectEvent, s16 x, s16 y, u32 dir)
     else if (!(MetatileBehavior_IsSidewaysStairsLeftSideBottom(currentBehavior) || MetatileBehavior_IsSidewaysStairsRightSideBottom(currentBehavior))
      && dir == DIR_NORTH && (MetatileBehavior_IsSidewaysStairsLeftSideBottom(nextBehavior) || MetatileBehavior_IsSidewaysStairsRightSideBottom(nextBehavior)))
         return COLLISION_IMPASSABLE;    //trying to move north onto top stair tile at same level from non-stair -> no
-    
+
     // regular checks
     collision = GetVanillaCollision(objectEvent, x, y, dir);
-    
+
     //sideways stairs checks
     collision = GetSidewaysStairsCollision(objectEvent, dir, currentBehavior, nextBehavior, collision);
     switch (collision)
@@ -4950,7 +4955,7 @@ u8 GetCollisionAtCoords(struct ObjectEvent *objectEvent, s16 x, s16 y, u32 dir)
         objectEvent->directionOverwrite = GetRightSideStairsDirection(dir);
         return COLLISION_NONE;
     }
-    
+
     return collision;
 }
 
@@ -5016,7 +5021,7 @@ static bool8 DoesObjectCollideWithObjectAt(struct ObjectEvent *objectEvent, s16 
     {
         curObject = &gObjectEvents[i];
         if (curObject->active && curObject != objectEvent)
-        {            
+        {
             // check for collision if curObject is active, not the object in question, and not exempt from collisions
             if ((curObject->currentCoords.x == x && curObject->currentCoords.y == y) || (curObject->previousCoords.x == x && curObject->previousCoords.y == y))
             {
@@ -5165,10 +5170,10 @@ static u8 TryUpdateMovementActionOnStairs(struct ObjectEvent *objectEvent, u8 mo
 {
     if (objectEvent->isPlayer)
         return movementActionId;    //handled separately
-    
+
     if (!ObjectMovingOnRockStairs(objectEvent, objectEvent->movementDirection))
         return movementActionId;
-    
+
     switch (movementActionId)
     {
         case MOVEMENT_ACTION_WALK_NORMAL_DOWN:
@@ -5188,7 +5193,7 @@ bool8 ObjectEventSetHeldMovement(struct ObjectEvent *objectEvent, u8 movementAct
 {
     if (ObjectEventIsMovementOverridden(objectEvent))
         return TRUE;
-    
+
     movementActionId = TryUpdateMovementActionOnStairs(objectEvent, movementActionId);
 
     UnfreezeObjectEvent(objectEvent);
@@ -9368,7 +9373,7 @@ bool8 PlayerIsUnderWaterfall(struct ObjectEvent *objectEvent)
     MoveCoordsInDirection(DIR_NORTH, &x, &y, 0, 1);
     if (MetatileBehavior_IsWaterfall(MapGridGetMetatileBehaviorAt(x, y)))
         return TRUE;
-    
+
     return FALSE;
 }
 
