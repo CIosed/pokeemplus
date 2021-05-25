@@ -827,36 +827,36 @@ Route110_Text_WhichShouldIChoose: @ 81F0390
 	.string "and look for POKéMON?$"
 
 Route110_Text_CyclingChallengeResultSummary: @ 81F03FF
-	.string "Number of collisions:\n"
+	.string "{COLOR BLUE}Number of collisions:\n"
 	.string "… … {STR_VAR_1}!\p"
 	.string "Total time:\n"
 	.string "… … {STR_VAR_2}!$"
 
 Route110_Text_ChallengeReactionBest: @ 81F0431
-	.string "Bravo! Splendid showing!\p"
+	.string "{COLOR BLUE}Bravo! Splendid showing!\p"
 	.string "Your love of cycling comes from deep\n"
 	.string "within your heart.\l"
 	.string "You've shaken me to my very soul!$"
 
 Route110_Text_ChallengeReactionGood: @ 81F04A4
-	.string "Your technique is remarkable.\p"
+	.string "{COLOR BLUE}Your technique is remarkable.\p"
 	.string "I suggest you speed up a bit while\n"
 	.string "still avoiding collisions.$"
 
 Route110_Text_ChallengeReactionOk: @ 81F0500
-	.string "I would consider you a work in\n"
+	.string "{COLOR BLUE}I would consider you a work in\n"
 	.string "progress.\p"
 	.string "Still, I hope you don't forget the\n"
 	.string "sheer pleasure of cycling.$"
 
 Route110_Text_ChallengeReactionBad: @ 81F0567
-	.string "My word… Your cycling skills border\n"
+	.string "{COLOR BLUE}My word… Your cycling skills border\n"
 	.string "on terrifying.\p"
 	.string "Most certainly, you need much more\n"
 	.string "practice riding.$"
 
 Route110_Text_ChallengeReactionWorst: @ 81F05CE
-	.string "…I am aghast…\p"
+	.string "{COLOR BLUE}…I am aghast…\p"
 	.string "You're perhaps not cut out for this\n"
 	.string "unfortunate cycling business.\p"
 	.string "You ought to give serious thought to\n"

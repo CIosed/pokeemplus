@@ -276,7 +276,8 @@ Route110_TrickHouseEnd_Text_AllNightToPlantTrees: @ 826B0BC
 	.string "six places!$"
 
 Route110_TrickHouseEnd_Text_AllNightToMakeMaze: @ 826B13B
-	.string "It took me all night to make the maze…\p"
+	.string "It took me all night to make\n"
+	.string "the maze…\p"
 	.string "You're almost my equal in greatness by\n"
 	.string "one, two, three, four, five places!$"
 

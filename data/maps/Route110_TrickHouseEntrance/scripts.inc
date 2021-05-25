@@ -747,7 +747,7 @@ Route110_TrickHouseEntrance_EventScript_DoHidingSpotSparkle1:: @ 826A429
 	return
 
 Route110_TrickHouseEntrance_EventScript_DoHidingSpotSparkle2:: @ 826A439
-	setvar VAR_0x8004, 11  @ x
+	setvar VAR_0x8004, 10  @ x
 	setvar VAR_0x8005, 5   @ y
 	call Route110_TrickHouseEntrance_EventScript_DoHidingSpotSparkle
 	return

@@ -1051,7 +1051,7 @@ Route111_Text_WiltonPostBattle: @ 8298FD4
 
 Route111_Text_BrookeIntro: @ 8299143
 	.string "Oh, your POKéMON look like serious\n"
-	.string "actors.\l"
+	.string "actors.\p"
 	.string "I have to ask you for an engagement.$"
 
 Route111_Text_BrookeDefeat: @ 8299193
@@ -1218,7 +1218,7 @@ Route112_Text_BryantPostBattle: @ 8299BFB
 	.string "It has a certain flair to it.$"
 
 Route112_Text_ShaylaIntro: @ 8299C34
-	.string "Oh, aren't you an adorable TRAINER!\n"
+	.string "{COLOR RED}Oh, aren't you an adorable TRAINER!\n"
 	.string "Please, I need a romantic battle!\l"
 	.string "I'm somewhat decent!$"
 
@@ -1330,7 +1330,7 @@ Route113_Text_TiaNotEnoughMons: @ 829A419
 	.string "If we don't, we won't win!$"
 
 Route113_Text_CobyIntro: @ 829A453
-	.string "Pfft, with these wings I can\n"
+	.string "{COLOR BLUE}Pfft, with these wings I can\n"
 	.string "flick you away!$"
 
 Route113_Text_CobyDefeat: @ 829A480
@@ -1390,12 +1390,12 @@ Route114_Text_LennyDefeat: @ 829A707
 	.string "Yodelayhihoo!$"
 
 Route114_Text_LennyPostBattle: @ 829A715
-	.string "When I was a wee tyke, I believed there\n"
-	.string "was someone copying me and shouting\l"
-	.string "back, “Yodelayhihoo.”$"
+	.string "When I was a wee tyke, I believed\n"
+	.string "there was someone copying me and\l"
+	.string "shouting back, “Yodelayhihoo.”$"
 
 Route114_Text_LucasIntro: @ 829A777
-	.string "If you're not prepared, you shouldn't\n"
+	.string "{COLOR BLUE}If you're not prepared, you shouldn't\n"
 	.string "be up in the mountains!$"
 
 Route114_Text_LucasDefeat: @ 829A7B5

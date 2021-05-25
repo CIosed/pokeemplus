@@ -108,8 +108,8 @@ FallarborTown_CozmosHouse_Text_MayIHaveMeteorite: @ 8201249
 
 FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls: @ 82012BC
 	.string "PROF. COZMO went off to METEOR\n"
-	.string "FALLS on ROUTE 114 with some people\l"
-	.string "from TEAM MAGMA.$"
+	.string "FALLS on ROUTE 114 with some\l"
+	.string "people from TEAM MAGMA.$"
 
 FallarborTown_CozmosHouse_Text_FeelSorryForCozmo: @ 8201310
 	.string "Poor PROF. COZMO…\n"

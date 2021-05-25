@@ -2828,7 +2828,8 @@ GabbyAndTy_Text_TyNotEnoughMons: @ 0828B841
 	.string "better footage, but…$"
 
 GabbyAndTy_Text_TyDefeatFirstTime: @ 0828B8B1
-	.string "TY: Yep, we sure spotted a hot TRAINER.\n"
+	.string "TY: Yep, we sure spotted a hot\n"
+	.string "TRAINER.\p"
 	.string "This is a huge scoop for us!$"
 
 GabbyAndTy_Text_TyDefeat: @ 0828B8F6

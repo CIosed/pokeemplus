@@ -130,8 +130,8 @@ Route110_TrickHousePuzzle2_Text_PaulDefeat: @ 826BDCF
 	.string "You're good at battling too?$"
 
 Route110_TrickHousePuzzle2_Text_PaulPostBattle: @ 826BDEC
-	.string "The TRICK MASTER rigged all the tricks\n"
-	.string "in this house all by himself.$"
+	.string "The TRICK MASTER rigged all the\n"
+	.string "tricks in this house all by himself.$"
 
 Route110_TrickHousePuzzle2_Text_GeorgiaIntro: @ 826BE31
 	.string "I want to make my own GYM one day.\n"
@@ -141,6 +141,7 @@ Route110_TrickHousePuzzle2_Text_GeorgiaDefeat: @ 826BE77
 	.string "I didn't study battling enough!$"
 
 Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle: @ 826BE97
-	.string "You're strong, aren't you?\n"
-	.string "Maybe even enough to be a GYM LEADER!$"
+	.string "You're strong, aren't you?\p"
+	.string "Maybe even enough to be\n"
+	.string "a GYM LEADER!$"
 
