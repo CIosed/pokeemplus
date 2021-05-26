@@ -1671,7 +1671,7 @@ Route115_Text_AlixPostBattle: @ 829BA04
 	.string "I think I will TELEPORT home.$"
 
 Route115_Text_MarleneIntro: @ 829BA2C
-	.string "You've disturbed my meditation…\n"
+	.string "{COLOR RED}You've disturbed my meditation…\n"
 	.string "You'll be punished for it.$"
 
 Route115_Text_MarleneDefeat: @ 829BA67

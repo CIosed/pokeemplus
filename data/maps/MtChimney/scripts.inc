@@ -47,6 +47,9 @@ MtChimney_EventScript_ArchieBusyFighting:: @ 822EE02
 MtChimney_EventScript_Maxie:: @ 822EE0B
 	lockall
 	playbgm MUS_ENCOUNTER_MAGMA, 0
+	compare VAR_ACTIVATE_MT_CHIMNEY, 2
+	call_if_ge TossedMeteoriteRematch
+	
 	msgbox MtChimney_Text_MeteoriteWillActivateVolcano, MSGBOX_DEFAULT
 	applymovement LOCALID_MAXIE, Common_Movement_FacePlayer
 	waitmovement 0
@@ -281,8 +284,20 @@ VolcanoErupt::
 	msgbox MtChimney_Text_MaxieIntro17, MSGBOX_DEFAULT
 	call FightMaxie
 
+TossedMeteoriteRematch::
+    setvar VAR_ACTIVATE_MT_CHIMNEY 4
+    playse SE_PIN
+	applymovement LOCALID_MAXIE, Common_Movement_ExclamationMarkRight
+	delay 16
+	applymovement LOCALID_MAXIE, Common_Movement_WalkInPlaceRight
+	waitmovement 0
+	msgbox MtChimney_Text_MaxieRematch, MSGBOX_DEFAULT
+	call FightMaxie
+
 FightMaxie::
 	trainerbattle_no_intro TRAINER_MAXIE_MT_CHIMNEY, MtChimney_Text_MaxieDefeat
+	compare VAR_ACTIVATE_MT_CHIMNEY, 4
+	call_if_eq MtChimneyBeforeEndScript3
 	compare VAR_ACTIVATE_MT_CHIMNEY, 1
 	call_if_eq SetVarTossedMeteorite
 	compare VAR_ACTIVATE_MT_CHIMNEY, 2
@@ -322,6 +337,20 @@ MtChimneyBeforeEndScript3::
 	compare VAR_FACING, DIR_NORTH
 	call_if_eq MtChimney_EventScript_ArchieApproachPlayerNorth
 	goto MtChimneyEndScript
+
+//MtChimneyBeforeEndScript4
+	//applymovement LOCALID_ARCHIE, ArchieMoveToInterfere
+	//waitmovement 0
+	//msgbox MtChimney_Text_MaxieYouHaventSeenLastOfMagma2, MSGBOX_DEFAULT
+	//closemessage
+	//call MtChimneyBeforeEndScript3
+
+
+	//call_if_eq MtChimney_EventScript_ArchieApproachPlayerEast
+	//compare VAR_FACING, DIR_NORTH
+	//call_if_eq MtChimney_EventScript_ArchieApproachPlayerNorth
+	//goto MtChimneyEndScript
+
 
 TossedMeteorite::
 	playse SE_M_EARTHQUAKE
@@ -525,8 +554,8 @@ MtChimney_EventScript_ArchieExitNorth:: @ 822EEE8
 MtChimney_EventScript_LavaCookieLady:: @ 822EEF3
 	lock
 	faceplayer
-	compare VAR_ACTIVATE_MT_CHIMNEY, 3
-	call_if_le MtChimney_EventScript_LavaCookieLadyWorried
+	compare VAR_ACTIVATE_MT_CHIMNEY, 2
+	call_if_ge MtChimney_EventScript_LavaCookieLadyWorried
 	showmoneybox 0, 0, 0
 	msgbox MtChimney_Text_LavaCookiesJust200, MSGBOX_YESNO
 	compare VAR_RESULT, NO
@@ -1009,8 +1038,8 @@ MtChimney_Text_ArchieInterfere3:
 	.string "Just look around!$"
 
 MtChimney_Text_ArchieInterfere4:
-    .string "ARCHIE: Arghhh!\n"
-	.string "MAXIE! It's scorching-hot here!\p"
+    .string "ARCHIE: MAXIE!\n"
+	.string "It's scorching-hot here!\p"
 	.string "The lava is raising!$"
 
 MtChimney_Text_ArchieInterfere5:
@@ -1196,6 +1225,11 @@ MtChimney_Text_MaxieYouHaventSeenLastOfMagma2: @ 822F5F7
 	.string "you've seen of TEAM MAGMA…\p"
 	.string "Go ahead and activate the MACHINE…$"
 
+MtChimney_Text_MaxieRematch: @ 822F5F7
+	.string "MAXIE: I will not let you\n"
+	.string "interfere with our plans."
+	.string "Begone!$"
+
 MtChimney_Text_TabithaIntro: @ 822F6AA
 	.string "Hehehe!\p"
 	.string "So you've come all the way here!\p"
@@ -1231,7 +1265,7 @@ MtChimney_Text_Grunt2PostBattle: @ 822F859
 	.string "in our way?$"
 
 MtChimney_Text_Grunt1Intro: @ 822F8B6
-	.string "If there were more land, I'd be able\n"
+	.string "{COLOR RED}If there were more land, I'd be able\n"
 	.string "to get a big house of my own!\p"
 	.string "I'm going to build it on hardened\n"
 	.string "lava!$"

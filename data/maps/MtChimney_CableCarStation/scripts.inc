@@ -33,8 +33,8 @@ MtChimney_CableCarStation_EventScript_ExitCableCar:: @ 822AC27
 MtChimney_CableCarStation_EventScript_Attendant:: @ 822AC4B
 	lock
 	faceplayer
-	compare VAR_ACTIVATE_MT_CHIMNEY, 3
-	call_if_le MtChimney_EventScript_AttendantWorried
+	compare VAR_ACTIVATE_MT_CHIMNEY, 2
+	call_if_ge MtChimney_EventScript_AttendantWorried
 	call MtChimney_CableCarStation_EventScript_Attendant2
 
 MtChimney_CableCarStation_EventScript_Attendant2::

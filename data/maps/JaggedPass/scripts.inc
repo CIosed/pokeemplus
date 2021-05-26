@@ -219,7 +219,7 @@ JaggedPass_Text_BoulderShakingInResponseToEmblem: @ 8230DBA
 	.string "response to the MAGMA EMBLEM!$"
 
 JaggedPass_Text_JulioIntro: @ 8230DF7
-	.string "Aiyeeh! It's awfully scary to shoot\n"
+	.string "{COLOR BLUE}Aiyeeh! It's awfully scary to shoot\n"
 	.string "down the mountain in one go!$"
 
 JaggedPass_Text_JulioDefeat: @ 8230E38
@@ -230,7 +230,7 @@ JaggedPass_Text_JulioPostBattle: @ 8230E57
 	.string "my rear end's sore…$"
 
 JaggedPass_Text_AutumnIntro: @ 8230E8E
-	.string "I climb this hill every day.\n"
+	.string "{COLOR RED}I climb this hill every day.\n"
 	.string "I have confidence in my strength!$"
 
 JaggedPass_Text_AutumnDefeat: @ 8230ECD
