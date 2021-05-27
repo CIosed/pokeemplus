@@ -221,6 +221,7 @@
 #Mightyena (both frames and back)
 #Zigzagoon (both frames and back)
 #Linoone (both frames and back)
+#Wurmple (both frames and back)
 #Lombre (both frames and back)
 #Ludicolo (both frames and back)
 #Seedot (both frames and back)
