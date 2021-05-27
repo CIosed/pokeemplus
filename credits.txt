@@ -218,6 +218,7 @@
 #Marshtomp (both frames anc back)
 #Swampert (both frames and back)
 #Poocheyna (both frames and back)
+#Mightyena (both frames and back)
 #Zigzagoon (both frames and back)
 #Linoone (both frames and back)
 #Lombre (both frames and back)
