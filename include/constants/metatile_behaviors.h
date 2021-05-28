@@ -173,7 +173,7 @@
 #define MB_JAGGED_PASS_TALL_GRASS 0xA9
 #define MB_LAB 0xAA
 #define MB_MT_PYRE 0xAB
-#define MB_UNUSED_AC 0xAC
+#define MB_MIRAGE_TOWER 0xAC
 #define MB_UNUSED_AD 0xAD
 #define MB_UNUSED_AE 0xAE
 #define MB_UNUSED_AF 0xAF

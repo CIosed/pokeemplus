@@ -140,3 +140,9 @@ const u32 gBattleTerrainTilemap_Lab[] = INCBIN_U32("graphics/battle_terrain/lab/
 const u32 gBattleTerrainTiles_Pyre[] = INCBIN_U32("graphics/battle_terrain/pyre/tiles.4bpp.lz");
 const u32 gBattleTerrainPalette_Pyre[] = INCBIN_U32("graphics/battle_terrain/pyre/palette.gbapal.lz");
 const u32 gBattleTerrainTilemap_Pyre[] = INCBIN_U32("graphics/battle_terrain/pyre/map.bin.lz");
+
+const u32 gBattleTerrainTiles_MirageTower[] = INCBIN_U32("graphics/battle_terrain/miragetower/tiles.4bpp.lz");
+const u32 gBattleTerrainPalette_MirageTower[] = INCBIN_U32("graphics/battle_terrain/miragetower/palette.gbapal.lz");
+const u32 gBattleTerrainTilemap_MirageTower[] = INCBIN_U32("graphics/battle_terrain/miragetower/map.bin.lz");
+const u32 gBattleTerrainAnimTiles_MirageTower[] = INCBIN_U32("graphics/battle_terrain/miragetower/anim_tiles.4bpp.lz");
+const u32 gBattleTerrainAnimTilemap_MirageTower[] = INCBIN_U32("graphics/battle_terrain/miragetower/anim_map.bin.lz");

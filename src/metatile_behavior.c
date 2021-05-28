@@ -182,7 +182,7 @@ static const u8 sTileBitAttributes[] =
     [MB_JAGGED_PASS_TALL_GRASS] = TILE_ATTRIBUTES(TRUE, FALSE, TRUE),
     [MB_LAB] = TILE_ATTRIBUTES(TRUE, FALSE, TRUE),
     [MB_MT_PYRE] = TILE_ATTRIBUTES(TRUE, FALSE, TRUE),
-    [MB_UNUSED_AC] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
+    [MB_MIRAGE_TOWER] = TILE_ATTRIBUTES(TRUE, FALSE, TRUE),
     [MB_UNUSED_AD] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_UNUSED_AE] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_UNUSED_AF] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
@@ -1689,6 +1689,14 @@ bool8 MetatileBehavior_IsLab(u8 metatileBehavior)
 bool8 MetatileBehavior_IsMtPyre(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_MT_PYRE)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsMirageTower(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_MIRAGE_TOWER)
         return TRUE;
     else
         return FALSE;

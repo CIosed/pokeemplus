@@ -327,7 +327,7 @@ LavaridgeTown_Text_MayNiceBadgesTakeThis: @ 81EA7C0
 	.string "but I got lost in the desert…\p"
 	.string "Hey, isn't that the LAVARIDGE\n"
 	.string "GYM BADGE?\p"
-	.string "You must have collected good Pokémon…\p"
+	.string "You must have collected good Pokémon!\p"
 	.string "No, I believe you raised some.\p"
 	.string "I guess it would be okay for you\n"
 	.string "to have this.$"

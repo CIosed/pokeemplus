@@ -157,6 +157,7 @@ bool8 MetatileBehavior_IsJaggedPass(u8);
 bool8 MetatileBehavior_IsJaggedPassTallGrass(u8);
 bool8 MetatileBehavior_IsLab(u8);
 bool8 MetatileBehavior_IsMtPyre(u8);
+bool8 MetatileBehavior_IsMirageTower(u8);
 //sideways stairs
 bool8 MetatileBehavior_IsSidewaysStairsRightSide(u8);
 bool8 MetatileBehavior_IsSidewaysStairsLeftSide(u8);

@@ -367,6 +367,7 @@
 #define BATTLE_TERRAIN_JAGGED_PASS_TALL_GRASS  18
 #define BATTLE_TERRAIN_LAB                     19
 #define BATTLE_TERRAIN_MT_PYRE                 20
+#define BATTLE_TERRAIN_MIRAGE_TOWER            21
 
 // Move targets
 #define MOVE_TARGET_SELECTED            0x0

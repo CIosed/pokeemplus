@@ -342,10 +342,10 @@ LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge: @ 81FF32F
 	.string "from FLANNERY.$"
 
 LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis: @ 81FF359
-	.string "If you have a HEAT BADGE, all POKéMON\n"
-	.string "up to Level 50, even those you get\l"
-	.string "in trades from other people, will\l"
-	.string "obey you completely.\p"
+	.string "If you have a HEAT BADGE, all\n"
+	.string "POKéMON up to Level 50, even those\l"
+	.string "you get in trades from other people,\l"
+	.string "will obey you completely.\p"
 	.string "And, it lets POKéMON use the HM move\n"
 	.string "STRENGTH outside of battle.\p"
 	.string "This is a token of my appreciation.\n"

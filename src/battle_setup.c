@@ -607,6 +607,8 @@ u8 BattleSetup_GetTerrainId(void)
         return BATTLE_TERRAIN_LAB;
 	if (MetatileBehavior_IsMtPyre(tileBehavior))
         return BATTLE_TERRAIN_MT_PYRE;
+	if (MetatileBehavior_IsMirageTower(tileBehavior))
+        return BATTLE_TERRAIN_MIRAGE_TOWER;
 
     switch (gMapHeader.mapType)
     {

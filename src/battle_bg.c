@@ -781,6 +781,15 @@ static const struct BattleBackground gBattleTerrainTable[] =
         .palette = gBattleTerrainPalette_Pyre,
     },
 
+    [BATTLE_TERRAIN_MIRAGE_TOWER] =
+    {
+        .tileset = gBattleTerrainTiles_MirageTower,
+        .tilemap = gBattleTerrainTilemap_MirageTower,
+        .entryTileset = gBattleTerrainAnimTiles_MirageTower,
+        .entryTilemap = gBattleTerrainAnimTilemap_MirageTower,
+        .palette = gBattleTerrainPalette_MirageTower,
+    },
+
 };
 
 static void sub_8035648(void);
