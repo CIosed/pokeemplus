@@ -1064,7 +1064,7 @@ Route111_Text_BrookePostBattle: @ 82991C2
 	.string "much to be done.$"
 
 Route111_Text_CeliaIntro: @ 829934B
-	.string "I shouldn't have come to a place\n"
+	.string "{COLOR RED}I shouldn't have come to a place\n"
 	.string "like this for a picnic!$"
 
 Route111_Text_CeliaDefeat: @ 8299384

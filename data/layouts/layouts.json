@@ -3805,7 +3805,7 @@
       "id": "LAYOUT_MIRAGE_TOWER_1F",
       "name": "MirageTower_1F_Layout",
       "width": 21,
-      "height": 17,
+      "height": 20,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_MirageTower",
       "border_filepath": "data/layouts/MirageTower_1F/border.bin",
