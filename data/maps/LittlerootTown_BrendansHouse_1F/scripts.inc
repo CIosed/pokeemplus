@@ -66,17 +66,17 @@ LittlerootTown_BrendansHouse_1F_OnFrame: @ 81F77EA
 LittlerootTown_BrendansHouse_1F_EventScript_GoUpstairsToSetClock:: @ 81F7814
 	msgbox PlayersHouse_1F_Text_GoSetTheClock, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs
-	applymovement LOCALID_MOM, LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs
+	//applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs
+	//applymovement LOCALID_MOM, LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs
 	waitmovement 0
-	warp MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F, 255, 7, 1
+	warp MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F, 0, 6, 2
 	waitstate
 	releaseall
 	end
 
-LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs: @ 81F783A
-	walk_up
-	step_end
+//LittlerootTown_BrendansHouse_1F_Movement_PushTowardStairs: @ 81F783A
+//	walk_up
+//	step_end
 
 LittlerootTown_BrendansHouse_1F_EventScript_EnterHouseMovingIn:: @ 81F783C
 	setvar VAR_0x8004, LOCALID_MOM

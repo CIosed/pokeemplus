@@ -66,17 +66,17 @@ LittlerootTown_MaysHouse_1F_EventScript_GoUpstairsToSetClock:: @ 81F8964
 	lockall
 	msgbox PlayersHouse_1F_Text_GoSetTheClock, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_MaysHouse_1F_Movement_PushTowardStairs
-	applymovement LOCALID_MOM, LittlerootTown_MaysHouse_1F_Movement_PushTowardStairs
-	waitmovement 0
-	warp MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F, 255, 1, 1
+	//applymovement OBJ_EVENT_ID_PLAYER, LittlerootTown_MaysHouse_1F_Movement_PushTowardStairs
+	//applymovement LOCALID_MOM, LittlerootTown_MaysHouse_1F_Movement_PushTowardStairs
+	//waitmovement 0
+	warp MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F, 0, 2, 2
 	waitstate
 	releaseall
 	end
 
-LittlerootTown_MaysHouse_1F_Movement_PushTowardStairs: @ 81F898A
-	walk_up
-	step_end
+//LittlerootTown_MaysHouse_1F_Movement_PushTowardStairs: @ 81F898A
+//	walk_up
+//	step_end
 
 LittlerootTown_MaysHouse_1F_EventScript_EnterHouseMovingIn:: @ 81F898C
 	lockall
@@ -321,8 +321,6 @@ LittlerootTown_MaysHouse_1F_Movement_MayGoUpstairs1: @ 81F8BB5
 	walk_up
 	walk_in_place_fastest_left
 	walk_left
-	walk_in_place_fastest_up
-	walk_up
 	step_end
 
 LittlerootTown_MaysHouse_1F_Movement_MayGoUpstairs2: @ 81F8BBF
@@ -330,7 +328,8 @@ LittlerootTown_MaysHouse_1F_Movement_MayGoUpstairs2: @ 81F8BBF
 	walk_left
 	walk_in_place_fastest_up
 	walk_up
-	walk_up
+	walk_in_place_fastest_left
+	walk_left
 	step_end
 
 RivalsHouse_1F_Text_OhYoureTheNewNeighbor: @ 81F8BC5
