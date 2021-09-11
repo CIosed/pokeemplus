@@ -78,11 +78,13 @@ PetalburgWoods_EventScript_DevonResearcherRight:: @ 822E079
 	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestUp
 	waitmovement 0
 	msgbox PetalburgWoods_Text_HaveYouSeenShroomish2, MSGBOX_DEFAULT
+	closemessage
 	delay 32
 	applymovement LOCALID_DEVON_EMPLOYEE, Common_Movement_WalkInPlaceFastestRight
 	waitmovement 0
 	closemessage
 	msgbox PetalburgWoods_Text_HaveYouSeenShroomish4, MSGBOX_DEFAULT
+	closemessage
 	playbgm MUS_ENCOUNTER_AQUA, 0
 	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaEntrance
 	waitmovement 0
@@ -335,7 +337,6 @@ PetalburgWoods_Text_HaveYouSeenShroomish: @ 822E34F
 	.string "would you?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "Hmmm…\p"
 	.string "No, you don't look the part.\n"
 	.string "You're from around here, aren't you?\p"
 	.string "Ah! A rookie TRAINER, I see!\p"
@@ -362,7 +363,7 @@ PetalburgWoods_Text_HaveYouSeenShroomish4:
 	.string "now, it's a good place to hide.$"
 
 PetalburgWoods_Text_IWasGoingToAmbushYou: @ 822E3AA
-	.string "{COLOR BLUE}I was going to ambush you, but you\n"
+	.string "{COLOR BLUE}???: I was going to ambush you, but you\n"
 	.string "had to dawdle in PETALBURG WOODS\l"
 	.string "forever, didn't you?\p"
 	.string "It's been hours!\n"

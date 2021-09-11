@@ -726,7 +726,7 @@ Route109_Text_MelNotEnoughPokemon: @ 829792E
 	.string "battle together.$"
 
 Route109_Text_ChandlerIntro: @ 829798A
-	.string "Tadaah! See?\n"
+	.string "{COLOR BLUE}Tadaah! See?\n"
 	.string "My inner tube's round!$"
 
 Route109_Text_ChandlerDefeated: @ 82979AE

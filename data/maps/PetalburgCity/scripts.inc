@@ -47,7 +47,7 @@ PetalburgCity_EventScript_WallyTutorial:: @ 81DC32E
 	waitmovement 0
 	msgbox Route102_Text_WatchMeCatchPokemon, MSGBOX_DEFAULT
 	closemessage
-    playmoncry SPECIES_ZIGZAGOON, 1
+    playmoncry SPECIES_RALTS, 1
 	delay 20
 	msgbox Route102_Text_WatchMeCatchPokemon2, MSGBOX_DEFAULT
 	special StartWallyTutorialBattle

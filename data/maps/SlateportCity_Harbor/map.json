@@ -121,7 +121,7 @@
   ],
   "warp_events": [
     {
-      "x": 11,
+      "x": 12,
       "y": 14,
       "elevation": 0,
       "dest_map": "MAP_SLATEPORT_CITY",

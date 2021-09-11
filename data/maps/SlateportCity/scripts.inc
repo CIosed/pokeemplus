@@ -2182,7 +2182,7 @@ SlateportCity_Text_YouDroveTeamAquaAway: @ 81DF032
 	.string "If not, my name's SCOTT.\p"
 	.string "I just saw TEAM AQUA run away from\n"
 	.string "here like they were stung.\p"
-	.string "Let me guess--you drove them away?$"
+	.string "Let me guess, you drove them away?$"
 
 SlateportCity_Text_MaybeThisTrainer: @ 81DF0FE
 	.string "{COLOR BLUE}SCOTT: Hmm…\n"

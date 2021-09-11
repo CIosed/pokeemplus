@@ -105,7 +105,8 @@ Route109_SeashoreHouse_Text_SeashoreHouseIntro: @ 8269555
 	.string "But you can call me MR. SEA!\p"
 	.string "What I love above all is to see hot\n"
 	.string "POKéMON battles.\p"
-	.string "Let me see that your heart burns hot!\p"
+	.string "Let me see that your heart burns\n"
+	.string "hot!\p"
 	.string "If you can defeat all the TRAINERS\n"
 	.string "here, I'll reward your efforts.$"
 
